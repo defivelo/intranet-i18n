@@ -9,6 +9,9 @@ Update parent repository:
         SUBMODULE_UPDATE_COMMIT_MESSAGE: "i18n: Update ${SUBMODULE_PATH} to ${CI_COMMIT_SHORT_SHA}"
         WEBLATE_PRIVATE_TOKEN: "This needs to be set in repository CI / CD Settings → Variables"
     image: curlimages/curl
+    only:
+        refs:
+            - master
     script:
         - 'RETURN=`mktemp`;
            STATUS_CODE=`curl --silent --request PUT --header "PRIVATE-TOKEN: ${WEBLATE_PRIVATE_TOKEN}" "https://gitlab.liip.ch/api/v4/projects/${PARENT_REPOSITORY_ID}/repository/submodules/${SUBMODULE_PATH}" --data "branch=${PARENT_REPOSITORY_BRANCH}&commit_sha=${CI_COMMIT_SHA}&commit_message=${SUBMODULE_UPDATE_COMMIT_MESSAGE}" --output $RETURN --write-out "%{http_code}"`;
