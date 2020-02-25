@@ -1329,14 +1329,12 @@ msgstr "DEFI VELO mobil"
 
 #: apps/user/export.py:166 apps/user/forms.py:79 apps/user/models.py:162
 msgid "Numéro d'employé Crésus"
-msgstr ""
+msgstr "Mitarbeiternummer Crésus"
 
 #: apps/user/export.py:170 apps/user/forms.py:113 apps/user/models.py:178
 #: apps/user/templates/auth/user_detail.html:117
-#, fuzzy
-#| msgid "Nom de la classe"
 msgid "Nom de la banque"
-msgstr "Name der Klasse"
+msgstr "Name der Bank"
 
 #: apps/user/export.py:173
 msgid "IBAN"
@@ -1540,7 +1538,7 @@ msgstr "Zugangsdaten schicken"
 
 #: apps/user/templates/auth/user_detail.html:65
 msgid "N° d'employé Crésus"
-msgstr ""
+msgstr "Mitarbeiternummer Crésus"
 
 #: apps/user/templates/auth/user_detail.html:70
 msgid "Adresse"
