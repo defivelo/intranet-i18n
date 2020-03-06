@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-05 17:55+0100\n"
+"POT-Creation-Date: 2020-03-06 16:47+0100\n"
 "PO-Revision-Date: 2017-09-14 09:58+0000\n"
 "Last-Translator: Didier Raboud <me+transifex@odyx.org>\n"
 "Language-Team: German (http://www.transifex.com/defivelo/db/language/de/)\n"
@@ -96,6 +96,7 @@ msgstr "Neuer Artikel"
 #: apps/challenge/templates/challenge/season_staff_update.html:32
 #: apps/challenge/templates/challenge/session_form.html:61
 #: apps/orga/templates/orga/organization_form.html:39
+#: apps/salary/templates/salary/month_timesheets.html:93
 msgid "Enregistrer"
 msgstr "Speichern"
 
@@ -110,6 +111,7 @@ msgstr "Speichern"
 #: apps/challenge/templates/challenge/session_form.html:65
 #: apps/orga/templates/orga/organization_form.html:41
 #: apps/orga/templates/orga/organization_form.html:43
+#: apps/salary/templates/salary/month_timesheets.html:95
 #: apps/user/templates/actions/mark_inactive.html:22
 #: apps/user/templates/auth/user_form.html:108
 #: apps/user/templates/auth/user_send_credentials.html:26
@@ -223,7 +225,7 @@ msgid "Année"
 msgstr "Jahr"
 
 #: apps/challenge/forms/season.py:64 apps/user/models.py:433
-#: defivelo/roles.py:94
+#: defivelo/roles.py:96
 msgid "Chargé·e de projet"
 msgstr "ProjektleiterIn"
 
@@ -233,7 +235,7 @@ msgstr "Verfügbarkeiten für:"
 
 #: apps/challenge/forms/session.py:61 apps/challenge/models/session.py:56
 #: apps/challenge/templates/challenge/session_detail.html:56
-#: apps/user/models.py:170
+#: apps/salary/models.py:10 apps/user/models.py:170
 msgid "Date"
 msgstr "Datum"
 
@@ -441,7 +443,8 @@ msgstr "Anzahl Helme"
 #: apps/challenge/templates/challenge/session_detail.html:111
 #: apps/challenge/templates/challenge/session_detail.html:170
 #: apps/orga/export.py:59 apps/orga/models.py:56
-#: apps/orga/templates/orga/organization_detail.html:65 apps/user/models.py:223
+#: apps/orga/templates/orga/organization_detail.html:65
+#: apps/salary/models.py:17 apps/user/models.py:223
 msgid "Remarques"
 msgstr "Bemerkungen"
 
@@ -671,6 +674,8 @@ msgid "Vélos"
 msgstr "Velos"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:52
+#: apps/salary/templates/salary/month_timesheets.html:50
+#: apps/salary/templates/salary/month_timesheets.html:69
 msgid "Total"
 msgstr ""
 
@@ -1256,6 +1261,7 @@ msgid "Ville"
 msgstr "Stadt"
 
 #: apps/common/templates/export_buttons.html:4
+#: apps/salary/templates/salary/month_timesheets.html:89
 msgid "Imprimer"
 msgstr "Drucken"
 
@@ -1489,6 +1495,68 @@ msgstr "Schule aktualisiert"
 msgid "Établissement créé"
 msgstr "Schule erstellt"
 
+#: apps/salary/forms.py:72
+#, python-brace-format
+msgid ""
+"Vous ne pouvez pas rentrer des heures pour le {day}: aucune qualif ce jour-"
+"ci."
+msgstr ""
+
+#: apps/salary/forms.py:106
+msgid "Valider"
+msgstr ""
+
+#: apps/salary/models.py:12
+#, fuzzy
+#| msgid "Administra·teur·trice"
+msgid "Heures moni·teur·trice"
+msgstr "AdministratorIn"
+
+#: apps/salary/models.py:13
+#, fuzzy
+#| msgid "Liste des intervenants"
+msgid "Heures intervenant·e"
+msgstr "Liste der ReferentInnen"
+
+#: apps/salary/models.py:15
+msgid "Heures supplémentaires"
+msgstr ""
+
+#: apps/salary/models.py:16
+#, fuzzy
+#| msgid "Permis de travail"
+msgid "Heures de trajet"
+msgstr "Arbeitsbewilligung"
+
+#: apps/salary/templates/salary/month_timesheets.html:5
+#: apps/salary/templates/salary/month_timesheets.html:22
+#, fuzzy, python-format
+#| msgid "Exports pour %(month)s %(year)s"
+msgid "Heures pour %(month)s %(year)s"
+msgstr "Exporte für %(month)s%(year)s"
+
+#: apps/salary/templates/salary/month_timesheets.html:20
+#, fuzzy, python-format
+#| msgid "Exports pour %(month)s %(year)s"
+msgid "Heures de %(name)s pour %(month)s %(year)s"
+msgstr "Exporte für %(month)s%(year)s"
+
+#: apps/salary/templates/salary/month_timesheets.html:77
+msgid "Total CHF"
+msgstr ""
+
+#: apps/salary/templates/salary/month_timesheets.html:100
+msgid "Vous ne pouvez pas entrer des heures dans le futur."
+msgstr ""
+
+#: apps/salary/templates/salary/month_timesheets.html:102
+msgid "Vous n'avez pas encore d'heures a rentrer ce mois."
+msgstr ""
+
+#: apps/salary/templates/salary/month_timesheets.html:104
+msgid "Vous n'avez pas travaillé ce mois."
+msgstr ""
+
 #: apps/user/export.py:38
 msgid "Yes"
 msgstr "Ja"
@@ -1680,12 +1748,12 @@ msgstr "hat Zugang"
 msgid "Administra·teur·trice"
 msgstr "AdministratorIn"
 
-#: apps/user/models.py:430 defivelo/roles.py:95
+#: apps/user/models.py:430 defivelo/roles.py:97
 msgid "Super-utilisa·teur·trice"
 msgstr "Super-NutzerIn"
 
 #: apps/user/models.py:509 apps/user/templates/auth/user_form.html:7
-#: defivelo/templates/header.html:97
+#: defivelo/templates/header.html:98
 msgid "Profil"
 msgstr "Profil"
 
@@ -1978,7 +2046,7 @@ msgstr "Liste der LeiterInnen"
 msgid "Liste des intervenants"
 msgstr "Liste der ReferentInnen"
 
-#: defivelo/roles.py:93
+#: defivelo/roles.py:95
 msgid "Aucun rôle"
 msgstr "Keine Rolle"
 
@@ -2275,23 +2343,27 @@ msgstr "Exporte pro Monat"
 msgid "Prochaines Qualifs (public)"
 msgstr "Nächste Qualis (öffentlich)"
 
-#: defivelo/templates/header.html:77
+#: defivelo/templates/header.html:74
+msgid "Heures"
+msgstr ""
+
+#: defivelo/templates/header.html:78
 msgid "Admin"
 msgstr ""
 
-#: defivelo/templates/header.html:80
+#: defivelo/templates/header.html:81
 msgid "Configurations cantonales annuelles"
 msgstr ""
 
-#: defivelo/templates/header.html:98
+#: defivelo/templates/header.html:99
 msgid "Change password"
 msgstr "Mein Passwort ändern"
 
-#: defivelo/templates/header.html:99
+#: defivelo/templates/header.html:100
 msgid "Log out"
 msgstr "Abmelden"
 
-#: defivelo/templates/header.html:103
+#: defivelo/templates/header.html:104
 msgid "Log in"
 msgstr "Abmelden"
 
@@ -2315,7 +2387,7 @@ msgstr "Projekt herunterladen"
 msgid "Accueil"
 msgstr "Hauptseite"
 
-#: defivelo/urls.py:53
+#: defivelo/urls.py:54
 msgid "Intranet DÉFI VÉLO"
 msgstr "DEFI VELO Intranet"
 
