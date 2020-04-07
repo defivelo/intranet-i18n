@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-09 08:50+0100\n"
+"POT-Creation-Date: 2020-04-07 13:45+0200\n"
 "PO-Revision-Date: 2020-02-25 10:30+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -525,7 +525,7 @@ msgid "Logistique vélos"
 msgstr ""
 
 #: apps/challenge/models/session.py:103
-#: apps/challenge/templates/challenge/invoice_detail.html:49
+#: apps/challenge/templates/challenge/invoice_detail.html:52
 msgid "Sessions"
 msgstr ""
 
@@ -598,7 +598,7 @@ msgid "Année courante"
 msgstr ""
 
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:44
-#: apps/challenge/templates/challenge/invoice_detail.html:29
+#: apps/challenge/templates/challenge/invoice_detail.html:32
 #: apps/challenge/templates/challenge/invoice_list.html:40
 #: apps/challenge/templates/challenge/invoice_yearly_list.html:53
 #: apps/challenge/templates/challenge/session_detail.html:33
@@ -636,12 +636,12 @@ msgstr ""
 msgid "1004 Lausanne"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:36
+#: apps/challenge/templates/challenge/invoice_detail.html:39
 #, python-format
 msgid "Lausanne, le %(date)s"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:42
+#: apps/challenge/templates/challenge/invoice_detail.html:45
 #, python-format
 msgid ""
 "%(nb_participants)s étudiant-e-s de votre établissement vont participer à "
@@ -654,76 +654,76 @@ msgid ""
 "la commune de Sierre."
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:50
+#: apps/challenge/templates/challenge/invoice_detail.html:53
 msgid "Participants"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:51
+#: apps/challenge/templates/challenge/invoice_detail.html:54
 #: apps/challenge/templates/challenge/session_detail.html:67
 #: apps/challenge/templates/challenge/session_detail.html:159
 msgid "Vélos"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:52
+#: apps/challenge/templates/challenge/invoice_detail.html:55
 #: apps/salary/templates/salary/month_timesheets.html:50
 #: apps/salary/templates/salary/month_timesheets.html:69
 msgid "Total"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:82
+#: apps/challenge/templates/challenge/invoice_detail.html:85
 #, python-format
 msgid ""
 "Paiement à 30 jours sur le compte de notre mandataire, avec la mention "
 "« DÉFI VÉLO %(ref)s »"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:86
+#: apps/challenge/templates/challenge/invoice_detail.html:89
 #: apps/user/export.py:173
 msgid "IBAN"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:86
+#: apps/challenge/templates/challenge/invoice_detail.html:89
 msgid "CH41 0079 0016 9412 2759 3"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:87
+#: apps/challenge/templates/challenge/invoice_detail.html:90
 msgid "PRO VELO SCHWEIZ"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:88
+#: apps/challenge/templates/challenge/invoice_detail.html:91
 msgid "Birkenweg 61"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:89
+#: apps/challenge/templates/challenge/invoice_detail.html:92
 msgid "3001"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:89
-#: apps/challenge/templates/challenge/invoice_detail.html:93
+#: apps/challenge/templates/challenge/invoice_detail.html:92
+#: apps/challenge/templates/challenge/invoice_detail.html:96
 msgid "Berne"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:92
+#: apps/challenge/templates/challenge/invoice_detail.html:95
 msgid "Banque Cantonale Bernoise SA"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:93
+#: apps/challenge/templates/challenge/invoice_detail.html:96
 msgid "3000"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:94
+#: apps/challenge/templates/challenge/invoice_detail.html:97
 msgid "CCP"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:94
+#: apps/challenge/templates/challenge/invoice_detail.html:97
 msgid "30-106-9 "
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:99
+#: apps/challenge/templates/challenge/invoice_detail.html:102
 msgid "Avec nos remerciements,"
 msgstr ""
 
-#: apps/challenge/templates/challenge/invoice_detail.html:100
+#: apps/challenge/templates/challenge/invoice_detail.html:103
 msgid "DÉFI VÉLO"
 msgstr ""
 
@@ -1478,14 +1478,14 @@ msgstr ""
 msgid "Établissement créé"
 msgstr ""
 
-#: apps/salary/forms.py:82
+#: apps/salary/forms.py:84
 #, python-brace-format
 msgid ""
 "Vous ne pouvez pas rentrer des heures pour le {day}: aucune qualif ce jour-"
 "ci."
 msgstr ""
 
-#: apps/salary/forms.py:116
+#: apps/salary/forms.py:118
 msgid "Valider"
 msgstr ""
 
@@ -1494,7 +1494,7 @@ msgid "Heures moni·teur·trice"
 msgstr ""
 
 #: apps/salary/models.py:15
-msgid "Heures intervenant·e"
+msgid "Intervention(s)"
 msgstr ""
 
 #: apps/salary/models.py:17
@@ -1531,6 +1531,10 @@ msgstr ""
 
 #: apps/salary/templates/salary/month_timesheets.html:104
 msgid "Vous n'avez pas travaillé ce mois."
+msgstr ""
+
+#: apps/salary/templates/salary/month_timesheets.html:116
+msgid "Tout Selectionner"
 msgstr ""
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:5
