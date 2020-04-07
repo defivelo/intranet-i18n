@@ -3,7 +3,7 @@ Update parent repository:
         - docker-nonswiss-ok
     variables:
         GIT_STRATEGY: none
-        PARENT_REPOSITORY_BRANCH: sprint-1/master
+        PARENT_REPOSITORY_BRANCH: master
         PARENT_REPOSITORY_ID: 2131 # https://gitlab.liip.ch/swing/defivelo/intranet/
         SUBMODULE_PATH: locale
         SUBMODULE_UPDATE_COMMIT_MESSAGE: "i18n: Auto update of ./${SUBMODULE_PATH}"
