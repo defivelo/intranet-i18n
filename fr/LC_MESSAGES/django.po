@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 16:17+0200\n"
+"POT-Creation-Date: 2020-04-09 17:18+0200\n"
 "PO-Revision-Date: 2020-02-25 10:30+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -1259,6 +1259,7 @@ msgid "Imprimer"
 msgstr ""
 
 #: apps/common/templates/export_buttons.html:12
+#: apps/salary/templates/salary/timesheets_yearly_overview.html:99
 #: defivelo/templates/license.html:10
 #, python-format
 msgid "Télécharger au format %(format)s"
@@ -1529,7 +1530,7 @@ msgid "Heures de %(name)s pour %(month)s %(year)s"
 msgstr ""
 
 #: apps/salary/templates/salary/month_timesheets.html:77
-#: apps/salary/templates/salary/timesheets_yearly_overview.html:86
+#: apps/salary/templates/salary/timesheets_yearly_overview.html:87
 msgid "Total CHF"
 msgstr ""
 
@@ -1568,8 +1569,13 @@ msgstr ""
 msgid "Tous les cantons"
 msgstr ""
 
-#: apps/salary/templates/salary/timesheets_yearly_overview.html:95
+#: apps/salary/templates/salary/timesheets_yearly_overview.html:113
 msgid "Aucun résultat."
+msgstr ""
+
+#: apps/salary/views.py:249
+#, python-brace-format
+msgid "Export Crésus {month} {year}"
 msgstr ""
 
 #: apps/user/export.py:38

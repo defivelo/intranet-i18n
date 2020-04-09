@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 16:17+0200\n"
+"POT-Creation-Date: 2020-04-09 17:18+0200\n"
 "PO-Revision-Date: 2017-09-14 09:58+0000\n"
 "Last-Translator: Didier Raboud <me+transifex@odyx.org>\n"
 "Language-Team: German (http://www.transifex.com/defivelo/db/language/de/)\n"
@@ -1283,6 +1283,7 @@ msgid "Imprimer"
 msgstr "Drucken"
 
 #: apps/common/templates/export_buttons.html:12
+#: apps/salary/templates/salary/timesheets_yearly_overview.html:99
 #: defivelo/templates/license.html:10
 #, python-format
 msgid "Télécharger au format %(format)s"
@@ -1563,7 +1564,7 @@ msgid "Heures de %(name)s pour %(month)s %(year)s"
 msgstr "Exporte für %(month)s%(year)s"
 
 #: apps/salary/templates/salary/month_timesheets.html:77
-#: apps/salary/templates/salary/timesheets_yearly_overview.html:86
+#: apps/salary/templates/salary/timesheets_yearly_overview.html:87
 msgid "Total CHF"
 msgstr ""
 
@@ -1604,11 +1605,17 @@ msgstr ""
 msgid "Tous les cantons"
 msgstr "Alle Saisons"
 
-#: apps/salary/templates/salary/timesheets_yearly_overview.html:95
+#: apps/salary/templates/salary/timesheets_yearly_overview.html:113
 #, fuzzy
 #| msgid "Aucun rôle"
 msgid "Aucun résultat."
 msgstr "Keine Rolle"
+
+#: apps/salary/views.py:249
+#, fuzzy, python-brace-format
+#| msgid "Exports pour %(month)s %(year)s"
+msgid "Export Crésus {month} {year}"
+msgstr "Exporte für %(month)s%(year)s"
 
 #: apps/user/export.py:38
 msgid "Yes"
