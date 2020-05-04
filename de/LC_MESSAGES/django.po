@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-20 12:04+0200\n"
-"PO-Revision-Date: 2020-04-28 09:39+0000\n"
+"PO-Revision-Date: 2020-05-12 09:00+0000\n"
 "Last-Translator: Romain de Wolff <romain.dewolff@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
@@ -378,7 +378,7 @@ msgstr "{session}: {chosen}{helper} {is_available}"
 
 #: apps/challenge/models/invoices.py:47
 msgid "Brouillon"
-msgstr ""
+msgstr "Entwurf"
 
 #: apps/challenge/models/invoices.py:48
 msgid "Validée"
