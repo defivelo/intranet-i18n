@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-20 12:04+0200\n"
 "PO-Revision-Date: 2020-05-12 09:00+0000\n"
-"Last-Translator: Romain de Wolff <romain.dewolff@liip.ch>\n"
+"Last-Translator: Laura Mosimann <laura.mosimann@label-vert.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
 "Language: de\n"
@@ -39,13 +39,11 @@ msgstr ""
 
 #: apps/article/models.py:45
 msgid "Image"
-msgstr ""
+msgstr "Bild"
 
 #: apps/article/models.py:47
-#, fuzzy
-#| msgid "Verified"
 msgid "Modified"
-msgstr "Bestätigt"
+msgstr ""
 
 #: apps/article/models.py:49
 msgid "Body"
@@ -72,7 +70,7 @@ msgstr "Artikel <em>%(title)s</em> definitiv löschen?"
 #: apps/challenge/templates/challenge/session_confirm_delete.html:22
 #: apps/orga/templates/orga/organization_confirm_delete.html:13
 msgid "Supprimer vraiment"
-msgstr "Löschen"
+msgstr "Wirklich löschen"
 
 #: apps/article/templates/article/article_confirm_delete.html:13
 msgid "Retour à l'accueil"
@@ -148,7 +146,7 @@ msgstr "Als Referent"
 #: apps/challenge/__init__.py:47
 #: apps/challenge/templates/challenge/session_detail.html:101
 msgid "Moniteur de Secours"
-msgstr "Notfall-Leiter"
+msgstr "Notfall-LeiterIn"
 
 #: apps/challenge/__init__.py:48 apps/challenge/models/availability.py:127
 #: apps/user/__init__.py:39 defivelo/templatetags/dv_filters.py:223
@@ -176,6 +174,8 @@ msgid ""
 "L'espace des factures établissements pour l'année {season.year} est épuisé "
 "avec l'identifiant {ref}."
 msgstr ""
+"Der Platz für die Rechnungen der Schulen für das Jahr {season.year} ist "
+"aufgebraucht mit dem Identifikator {ref}."
 
 #: apps/challenge/forms/qualification.py:54
 #: apps/challenge/models/qualification.py:80
@@ -382,7 +382,7 @@ msgstr "Entwurf"
 
 #: apps/challenge/models/invoices.py:48
 msgid "Validée"
-msgstr ""
+msgstr "Bestätigt"
 
 #: apps/challenge/models/invoices.py:53
 #: apps/challenge/templates/challenge/invoice_detail.html:24
@@ -396,12 +396,12 @@ msgstr "Status"
 #: apps/challenge/models/invoices.py:55
 #: apps/challenge/templates/challenge/invoice_list.html:16
 msgid "Référence"
-msgstr ""
+msgstr "Referenz"
 
 #: apps/challenge/models/invoices.py:56
 #: apps/challenge/templates/challenge/invoice_list.html:17
 msgid "Titre"
-msgstr ""
+msgstr "Titel"
 
 #: apps/challenge/models/qualification.py:53 apps/orga/export.py:34
 #: apps/orga/models.py:45 apps/orga/templates/orga/organization_filter.html:61
@@ -511,11 +511,11 @@ msgstr "Absage"
 
 #: apps/challenge/models/session.py:83
 msgid "Report …"
-msgstr "Verschiebung ..."
+msgstr "Verschiebung …"
 
 #: apps/challenge/models/session.py:84
 msgid "Autre …"
-msgstr "Anderes ..."
+msgstr "Anderes …"
 
 #: apps/challenge/models/session.py:87 apps/challenge/models/session.py:119
 #: apps/challenge/templates/challenge/session_detail.html:65
@@ -564,42 +564,44 @@ msgstr "{place} {date}{time}"
 #: apps/challenge/models/settings.py:32
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:33
 msgid "Coût par vélo"
-msgstr ""
+msgstr "Kosten pro Velo"
 
 #: apps/challenge/models/settings.py:36 apps/challenge/models/settings.py:44
 msgid "CHF"
-msgstr ""
+msgstr "CHF"
 
 #: apps/challenge/models/settings.py:40
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:34
-#, fuzzy
-#| msgid "Nombre de participants"
 msgid "Coût par participant"
-msgstr "Anzahl TeilnehmerInnen"
+msgstr "Kosten pro TeilnehmerInnen"
 
 #: apps/challenge/models/settings.py:50
+#, fuzzy
 msgid "Configuration cantonale par année"
-msgstr ""
+msgstr "Kantonale Konfiguration pro Jahr"
 
 #: apps/challenge/models/settings.py:51
+#, fuzzy
 msgid "Configurations cantonales par année"
-msgstr ""
+msgstr "Kantonale Konfigurationen pro Jahr"
 
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:4
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:15
+#, fuzzy
 msgid "Édition de la configuration cantonale annuelle"
-msgstr ""
+msgstr "Bearbeitung der jährlichen kantonalen Konfiguration"
 
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:4
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:15
+#, fuzzy
 msgid "Nouvelle configuration cantonale annuelle"
-msgstr ""
+msgstr "Neue jährliche kantonale Konfiguration"
 
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:5
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:8
-#, python-format
+#, fuzzy, python-format
 msgid "Configurations cantonales pour %(year)s"
-msgstr ""
+msgstr "Kantonale Konfigurationen für %(year)s"
 
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:18
 #: apps/challenge/templates/challenge/invoice_yearly_list.html:18
@@ -622,46 +624,42 @@ msgid "Éditer"
 msgstr "Bearbeiten"
 
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:53
-#, fuzzy
-#| msgid "Créer une nouvelle saison"
 msgid "Créer une nouvelle configuration"
-msgstr "Neue Saison erstellen"
+msgstr "Neue Konfiguration erstellen"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:4
 #, python-format
 msgid "Facture %(ref)s"
-msgstr ""
+msgstr "Rechnung %(ref)s"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:9
-#, fuzzy
-#| msgid "Intranet DÉFI VÉLO"
 msgid "Coordination DÉFI VÉLO"
-msgstr "DEFI VELO Intranet"
+msgstr "Koordinationsstelle DEFI VELO"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:10
 msgid "c/o Label Vert sàrl"
-msgstr ""
+msgstr "c/o Label Vert GmbH"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:11
 msgid "Rue Sébeillon 9a"
-msgstr ""
+msgstr "Rue Sébeillon 9a"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:12
 msgid "1004 Lausanne"
-msgstr ""
+msgstr "1004 Lausanne"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:32
 msgid "La facture n'est pas à jour."
-msgstr ""
+msgstr "Die Rechnung ist nicht aktuell."
 
 #: apps/challenge/templates/challenge/invoice_detail.html:37
 msgid "Rafraîchir"
-msgstr ""
+msgstr "Aktualisieren"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:49
 #, python-format
 msgid "Lausanne, le %(date)s"
-msgstr ""
+msgstr "Lausanne, %(date)s"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:55
 #, python-format
@@ -676,12 +674,19 @@ msgid ""
 "routière et l’Office fédéral de l’énergie (OFEN). Nous nous réjouissons de "
 "votre confiance et vous remercions par avance de votre collaboration."
 msgstr ""
+"Demnächst werden, %(nb_participants)s SchülerInnen aus Ihrer Schule bei DEFI "
+"VELO mitmachen, der interkantonalen Velo-Challenge. Durch die Teilnahme "
+"Ihrer Schule leisten Sie einen Beitrag für den Erfolg einer innovativen "
+"Veloförderaktion, für die Bewegungsförderung und die Verkehrssicherheit. "
+"DEFI VELO stellt die Freude und das Lernen durch Erfahrung in den "
+"Vordergrund und ist allgemein anerkannt für seine Qualitäten: die Aktion "
+"wird unter anderem unterstützt von Gesundheitsförderung Schweiz, dem Fonds "
+"für Verkehrssicherheit und dem Bundesamt für Energie. Wir freuen uns über "
+"Ihr Vertrauen und danken Ihnen im Voraus für die Zusammenarbeit."
 
 #: apps/challenge/templates/challenge/invoice_detail.html:63
-#, fuzzy
-#| msgid "%(n)s participants"
 msgid "Participants"
-msgstr "%(n)s Teilnehmer"
+msgstr "TeilnehmerInnen"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:64
 #: apps/challenge/templates/challenge/session_detail.html:68
@@ -693,13 +698,15 @@ msgstr "Velos"
 #: apps/salary/templates/salary/month_timesheets.html:50
 #: apps/salary/templates/salary/month_timesheets.html:69
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:99
 msgid ""
 "La facture est établie selon les listes fournies par le·la "
 "coordinateur·trice de l'établissement."
 msgstr ""
+"Die Rechnung wurde aufgrund der von der Kontaktperson der Schule vorgelegten "
+"Listen erstellt."
 
 #: apps/challenge/templates/challenge/invoice_detail.html:100
 #, python-format
@@ -707,29 +714,29 @@ msgid ""
 "Paiement à 30 jours sur le compte de notre mandataire, avec la mention "
 "« DÉFI VÉLO %(ref)s »"
 msgstr ""
+"Bezahlen innert 30 Tagen auf folgendes Konto, mit Verweis \"DEFI VELO %(ref)"
+"s \""
 
 #: apps/challenge/templates/challenge/invoice_detail.html:104
 msgid "Banque Cantonale Bernoise SA"
-msgstr ""
+msgstr "Berner Kantonalbank AG"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:105
 msgid "3000"
-msgstr ""
+msgstr "3000"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:105
 #: apps/challenge/templates/challenge/invoice_detail.html:112
 msgid "Berne"
-msgstr ""
+msgstr "Bern"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:106
-#, fuzzy
-#| msgid "CCP ?"
 msgid "CCP"
-msgstr "Postkonto?"
+msgstr "Postkonto"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:106
 msgid "30-106-9"
-msgstr ""
+msgstr "30-106-9"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:109
 #: apps/user/export.py:173
@@ -738,74 +745,68 @@ msgstr "IBAN"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:109
 msgid "CH41 0079 0016 9412 2759 3"
-msgstr ""
+msgstr "CH41 0079 0016 9412 2759 3"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:110
 msgid "PRO VELO SCHWEIZ"
-msgstr ""
+msgstr "PRO VELO SCHWEIZ"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:111
 msgid "Birkenweg 61"
-msgstr ""
+msgstr "Birkenweg 61"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:112
 msgid "3001"
-msgstr ""
+msgstr "3001"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:117
 msgid "Avec nos remerciements,"
-msgstr ""
+msgstr "Mit bestem Dank"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:118
-#, fuzzy
-#| msgid "Intranet DÉFI VÉLO"
 msgid "DÉFI VÉLO"
-msgstr "DEFI VELO Intranet"
+msgstr "DEFI VELO"
 
 #: apps/challenge/templates/challenge/invoice_form.html:4
 #: apps/challenge/templates/challenge/invoice_form.html:15
-#, fuzzy, python-format
-#| msgid "Édition de la saison"
+#, python-format
 msgid "Édition de la facture %(ref)s"
-msgstr "Bearbeitung der Saison"
+msgstr "Bearbeitung der Rechnung %(ref)s"
 
 #: apps/challenge/templates/challenge/invoice_form.html:4
 #: apps/challenge/templates/challenge/invoice_form.html:15
 msgid "Création de facture"
-msgstr ""
+msgstr "Rechnung erstellen"
 
 #: apps/challenge/templates/challenge/invoice_list.html:5
 #, python-format
 msgid "%(season)s: factures pour %(orga)s"
-msgstr ""
+msgstr "%(season)s: Rechnungen für %(orga)s"
 
 #: apps/challenge/templates/challenge/invoice_list.html:8
 #, python-format
 msgid "%(orga)s: Factures"
-msgstr ""
+msgstr "%(orga)s: Rechnungen"
 
 #: apps/challenge/templates/challenge/invoice_list.html:18
 msgid "Montant"
-msgstr ""
+msgstr "Betrag"
 
 #: apps/challenge/templates/challenge/invoice_list.html:50
-#, fuzzy
-#| msgid "Nouvel article"
 msgid "Nouvelle facture"
-msgstr "Neuer Artikel"
+msgstr "Neue Rechnung"
 
 #: apps/challenge/templates/challenge/invoice_yearly_list.html:5
 #: apps/challenge/templates/challenge/invoice_yearly_list.html:8
-#, fuzzy, python-format
-#| msgid "Saisons %(year)s"
+#, python-format
 msgid "Factures %(year)s"
-msgstr "Saisons %(year)s"
+msgstr "Rechnungen %(year)s"
 
 #: apps/challenge/templates/challenge/qualification_confirm_delete.html:4
 #: apps/challenge/templates/challenge/qualification_confirm_delete.html:7
 #, python-format
 msgid "Suppression de la Qualif' %(qualification)s ?"
-msgstr "Quali %(qualification)s löschen?"
+msgstr "Quali %(qualification)s löschen?"
 
 #: apps/challenge/templates/challenge/qualification_confirm_delete.html:11
 #, python-format
@@ -819,7 +820,7 @@ msgstr "Zurück zur Liste der Qualis"
 #: apps/challenge/templates/challenge/qualification_form.html:4
 #: apps/challenge/templates/challenge/qualification_form.html:11
 msgid "Édition de la Qualif'"
-msgstr "Halbtag bearbeiten"
+msgstr "Quali bearbeiten"
 
 #: apps/challenge/templates/challenge/qualification_form.html:4
 #: apps/challenge/templates/challenge/qualification_form.html:11
@@ -848,7 +849,7 @@ msgstr "Verfügbarkeiten"
 
 #: apps/challenge/templates/challenge/season_availability.html:49
 msgid "Attribuer les moniteurs"
-msgstr "Leiter zuteilen"
+msgstr "LeiterInnen zuteilen"
 
 #: apps/challenge/templates/challenge/season_availability_partial_helper_columns.html:4
 msgid "Éditer les disponibilités"
@@ -932,6 +933,18 @@ msgid ""
 "    %(planning_link)s\n"
 "\n"
 msgstr ""
+"Hallo %(full_name)s\n"
+"\n"
+"Der definitive Einsatzplan von DEFI VELO %(season_desc)s ist nun auf dem "
+"Intranet bereit. Bitte schau ihn dir an und notiere dir die Daten der "
+"Qualis, für welche du eingeteilt bist. Bei Fragen wende dich an deine "
+"Projektleitung.\n"
+"\n"
+"Du kannst direkt hier auf den Einsatzplan zugreifen oder über dein "
+"persönliches Intranet-Konto.\n"
+"\n"
+"    %(planning_link)s\n"
+"\n"
 
 #: apps/challenge/templates/challenge/season_email_to_state_running.txt:9
 #: apps/user/templates/auth/email_user_send_credentials.txt:13
@@ -941,6 +954,9 @@ msgid ""
 "\n"
 "L’équipe DÉFI VÉLO - %(site_domain)s"
 msgstr ""
+"Liebe Grüsse\n"
+"\n"
+"Dein DEFI VELO-Team - %(site_domain)s"
 
 #: apps/challenge/templates/challenge/season_email_to_state_running.txt:12
 msgid ""
@@ -950,6 +966,11 @@ msgid ""
 "que nous n’avons finalement pas besoin de toi. N'hésite pas à contacter ton "
 "chargé de projet régional si tu as des questions.\n"
 msgstr ""
+"\n"
+"P.S.: Du erhälst diese Mail, weil du mindesten eine Verfügbarkeit unter \""
+"falls nötig\" eingetragen hast. Falls kein Datum in deinem Einsatzplan "
+"erscheint, wurdest du nicht eingeteilt. Kontaktiere deine regionale "
+"Projektleitung, falls du Fragen hast.\n"
 
 #: apps/challenge/templates/challenge/season_errors.html:7
 msgid "Toutes les sessions avec des Qualif's incohérentes"
@@ -978,25 +999,25 @@ msgstr "Neue Saison"
 #, fuzzy
 #| msgid "Intervenants de la saison"
 msgid "Changer l'état de la saison"
-msgstr "ReferentInnen der Saison"
+msgstr "Zustand der Saison ändern"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:12
 #, python-format
 msgid "Vers \"%(tostate)s\""
-msgstr ""
+msgstr "Zu \"%(tostate)s\""
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:14
 #, python-format
 msgid "Envoyer le courriel suivant et passer la saison vers '%(tostate)s'' ?"
-msgstr ""
+msgstr "Nächste Nachricht verschicken und die Saison zu '%(tostate)s' ändern ?"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:16
 msgid "Sujet:"
-msgstr ""
+msgstr "Betreff:"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:20
 msgid "Ce courriel sera envoyé à:"
-msgstr ""
+msgstr "Diese Nachricht wird verschickt an:"
 
 #: apps/challenge/templates/challenge/season_list.html:5
 #: apps/challenge/templates/challenge/season_list.html:8
@@ -1014,10 +1035,8 @@ msgstr "Meine Verfügbarkeiten"
 #: apps/challenge/templates/challenge/season_list.html:45
 #: apps/challenge/templates/challenge/season_list.html:61
 #: defivelo/templates/header.html:40
-#, fuzzy
-#| msgid "Planning"
 msgid "Mon planning"
-msgstr "Einsatzplan"
+msgstr "Mein Einsatzplan"
 
 #: apps/challenge/templates/challenge/season_list.html:70
 msgid "Créer une nouvelle saison"
@@ -1063,7 +1082,7 @@ msgstr "Halbtag %(session)s löschen?"
 msgid ""
 "Supprimer la session %(session)s définitivement (y compris toutes ses "
 "Qualifs) ?"
-msgstr "Halbtag %(session)s definitiv löschen (mit allen Qualis)?"
+msgstr "Halbtag %(session)s definitiv löschen (inkl. aller Qualis)?"
 
 #: apps/challenge/templates/challenge/session_confirm_delete.html:14
 msgid "Qualifs qui seront supprimées"
@@ -1118,7 +1137,7 @@ msgstr "Klasse"
 #: apps/challenge/templates/challenge/session_detail.html:137
 #, python-format
 msgid "%(n)s participants"
-msgstr "%(n)s Teilnehmer"
+msgstr "%(n)s TeilnehmerInnen"
 
 #: apps/challenge/templates/challenge/session_detail.html:146
 msgid "Vélo urbain"
@@ -1176,7 +1195,7 @@ msgstr "Saison bearbeiten"
 
 #: apps/challenge/templates/challenge/session_list_links.html:7
 msgid "Annoncer le planning"
-msgstr ""
+msgstr "Einsatzplan bekanntgeben"
 
 #: apps/challenge/templates/challenge/session_list_links.html:13
 msgid "Sessions avec Qualif' incohérente"
@@ -1188,20 +1207,17 @@ msgstr "Neuen Halbtag erstellen"
 
 #: apps/challenge/templates/orga/organization_list.html:5
 #: apps/challenge/templates/orga/organization_list.html:8
-#, fuzzy, python-format
-#| msgid "Exports pour la saison %(season)s %(year)s"
+#, python-format
 msgid "Établissements pour la saison %(season)s"
-msgstr "Exporte der Saison%(season)s%(year)s"
+msgstr "Schulen der Saison %(season)s%(year)s"
 
 #: apps/challenge/templates/orga/organization_list.html:16
 msgid "Factures"
-msgstr ""
+msgstr "Rechnungen"
 
 #: apps/challenge/templates/orga/organization_list.html:31
-#, fuzzy
-#| msgid "Créer une saison"
 msgid "Créer une facture"
-msgstr "Saison erstellen"
+msgstr "Rechnung erstellen"
 
 #: apps/challenge/templates/widgets/BSChoiceRadioSelect_option.html:2
 #: apps/challenge/templates/widgets/BSRadioSelect_option.html:2
@@ -1234,16 +1250,13 @@ msgid "Intervenants"
 msgstr "ReferentInnen"
 
 #: apps/challenge/views/season.py:462
-#, fuzzy
-#| msgid "Prénom"
 msgid "{Prénom} {Nom}"
-msgstr "Vorname"
+msgstr "{Prénom} {Nom}"
 
 #: apps/challenge/views/season.py:473
-#, fuzzy, python-brace-format
-#| msgid "Planning_Saison"
+#, python-brace-format
 msgid "Planning {season}"
-msgstr "Einsatzplan_Saison"
+msgstr "Einsatzplan {season}"
 
 #. Translators: Moniteur + / Photographe
 #: apps/challenge/views/season.py:523 defivelo/templatetags/dv_filters.py:265
@@ -1260,7 +1273,7 @@ msgstr "Verfügbarkeiten aktualisiert"
 
 #: apps/challenge/views/season.py:882
 msgid "Choix du personnel mises à jour"
-msgstr "Wahl des Personnels aktualisiert"
+msgstr "Auswahl der LeiterInnen aktualisiert"
 
 #: apps/challenge/views/season.py:945
 msgid "Saison créée"
@@ -1280,7 +1293,7 @@ msgstr "ReferentInnen der Saison"
 
 #: apps/challenge/views/season.py:999
 msgid "Erreurs dans les qualifs de la saison"
-msgstr ""
+msgstr "Fehler in den Qualis der Saison"
 
 #: apps/challenge/views/session.py:134
 #, python-format
@@ -1300,12 +1313,14 @@ msgid "Session supprimée"
 msgstr "Halbtag gelöscht"
 
 #: apps/challenge/views/settings.py:73
+#, fuzzy
 msgid "Configuration cantonale par année créée"
-msgstr ""
+msgstr "Kantonale Konfiguration pro Jahr erstellt"
 
 #: apps/challenge/views/settings.py:77
+#, fuzzy
 msgid "Configuration cantonale par année mise à jour"
-msgstr ""
+msgstr "Kantonale Konfiguration pro Jahr aktualisiert"
 
 #: apps/common/__init__.py:52
 msgid "Haut-Valais"
@@ -1455,7 +1470,7 @@ msgstr "Schliessen"
 
 #: apps/info/templates/info/qualifs_calendar.html:21
 msgid "Filtrer le calendrier"
-msgstr ""
+msgstr "Kalender filtern"
 
 #: apps/info/templates/info/qualifs_calendar.html:30
 #: apps/orga/templates/orga/organization_filter.html:22
@@ -1465,8 +1480,6 @@ msgstr "Zurücksetzen"
 
 #: apps/info/templates/info/qualifs_calendar.html:31
 #: apps/info/templates/info/qualifs_calendar.html:47
-#, fuzzy
-#| msgid "Filter"
 msgid "Filtrer"
 msgstr "Filtern"
 
@@ -1619,36 +1632,32 @@ msgid ""
 "Vous ne pouvez pas rentrer des heures pour le {day}: aucune qualif ce jour-"
 "ci."
 msgstr ""
+"Für den {day}: können keine Stunden eingetragen werden: keine Quali an "
+"diesem Tag."
 
 #: apps/salary/forms.py:126
 msgid "Valider"
-msgstr ""
+msgstr "Bestätigen"
 
 #: apps/salary/models.py:14
-#, fuzzy
-#| msgid "Administra·teur·trice"
 msgid "Heures moni·teur·trice"
-msgstr "AdministratorIn"
+msgstr "Stunden LeiterInnen"
 
 #: apps/salary/models.py:15
-#, fuzzy
-#| msgid "Intervenants"
 msgid "Intervention(s)"
-msgstr "ReferentInnen"
+msgstr "Einsatz/Einsätze"
 
 #: apps/salary/models.py:17
 msgid "Participation(s) comme moniteur 2"
-msgstr ""
+msgstr "Teilnahme(n) als LeiterIn 2"
 
 #: apps/salary/models.py:20
 msgid "Heures supplémentaires"
-msgstr ""
+msgstr "Zusätzliche Stunden"
 
 #: apps/salary/models.py:21
-#, fuzzy
-#| msgid "Permis de travail"
 msgid "Heures de trajet"
-msgstr "Arbeitsbewilligung"
+msgstr "Reisezeit"
 
 #: apps/salary/templates/salary/email_send_timesheets_reminder.txt:1
 #, python-format
@@ -1671,51 +1680,65 @@ msgid ""
 "trajet, tu dois tout de même valider mensuellement ton décompte d’heures. "
 "Par défaut, ton chargé de projet le validera en l’état actuel.\n"
 msgstr ""
+"Hallo\n"
+"\n"
+"Wir haben festgestellt, dass du deine zusätzlichen Stunden und die Reisezeit "
+"noch nicht in deiner DEFI VELO Stundenabrechnung eingetragen hast. Bitte "
+"erledige dies so rasch wie möglich, damit wir die Lohnauszahlung ausführen "
+"können. Bei Fragen melde dich bei deiner Projektleitung.\n"
+"\n"
+"Du kannst über folgenden Link auf deine Stundenabrechnung zugreifen:\n"
+"%(timesheets_url)s\n"
+"\n"
+"Liebe Grüsse\n"
+"\n"
+"Dein DEFI VELO-Team - %(site_domain)s\n"
+"\n"
+"PS: Auch wenn du keine zusätzlichen Stunden oder Reisezeit hast, musst du "
+"deine Stundenabrechnung jeden Monat bestätigen. Ansonsten validiert deine "
+"Projektleitung deine Stundenabrechnung im aktuellen Zustand.\n"
 
 #: apps/salary/templates/salary/month_timesheets.html:5
 #: apps/salary/templates/salary/month_timesheets.html:22
-#, fuzzy, python-format
-#| msgid "Exports pour %(month)s %(year)s"
+#, python-format
 msgid "Heures pour %(month)s %(year)s"
-msgstr "Exporte für %(month)s%(year)s"
+msgstr "Stunden für %(month)s%(year)s"
 
 #: apps/salary/templates/salary/month_timesheets.html:20
-#, fuzzy, python-format
-#| msgid "Exports pour %(month)s %(year)s"
+#, python-format
 msgid "Heures de %(name)s pour %(month)s %(year)s"
-msgstr "Exporte für %(month)s%(year)s"
+msgstr "Stunden von %(name)s für %(month)s %(year)s"
 
 #: apps/salary/templates/salary/month_timesheets.html:77
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:87
 msgid "Total CHF"
-msgstr ""
+msgstr "Total CHF"
 
 #: apps/salary/templates/salary/month_timesheets.html:100
 msgid "Vous ne pouvez pas entrer des heures dans le futur."
-msgstr ""
+msgstr "Du kannst keine Stunden in der Zukunft eintragen."
 
 #: apps/salary/templates/salary/month_timesheets.html:102
 msgid "Vous n'avez pas encore d'heures a rentrer ce mois."
-msgstr ""
+msgstr "Du hast noch keine Stunden zum Eintragen in diesem Monat."
 
 #: apps/salary/templates/salary/month_timesheets.html:104
 msgid "Vous n'avez pas travaillé ce mois."
-msgstr ""
+msgstr "Du hast nicht gearbeitet in diesem Monat."
 
 #: apps/salary/templates/salary/month_timesheets.html:116
 msgid "Tout Sélectionner"
-msgstr ""
+msgstr "Alles markieren"
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:5
 #, python-format
 msgid "Rappel de soumission des heures pour %(month_year)s\n"
-msgstr ""
+msgstr "Erinnerung zur Einreichung der Stunden für den %(month_year)s\n"
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:9
-#, fuzzy, python-format
-#| msgid "Exports pour %(month)s %(year)s"
+#, python-format
 msgid "Rappel de soumission des heures pour %(month_year)s"
-msgstr "Exporte für %(month)s%(year)s"
+msgstr "Erinnerung zur Einreichung der Stunden vom %(month_year)s"
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:11
 #, python-format
@@ -1723,16 +1746,17 @@ msgid ""
 "Ce rappel sera envoyé aux moniteurs qui ont participé à une session durant "
 "%(month_year)s et qui n’ont pas encore soumis leurs heures."
 msgstr ""
+"Diese Erinnerung wird an alle LeiterInnen verschickt, welche an einem "
+"Halbtag im %(month_year)s teilgenommen und ihre Stunden noch nicht "
+"eingereicht haben."
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:16
-#, fuzzy
-#| msgid "Commentaires"
 msgid "Destinataires"
-msgstr "Bemerkungen"
+msgstr "EmpfängerInnen"
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:27
 msgid "Contenu de l’email"
-msgstr ""
+msgstr "Inhalt des E-Mails"
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:32
 #: apps/user/templates/auth/user_send_credentials.html:25
@@ -1743,54 +1767,53 @@ msgstr "Senden"
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:19
 #, python-format
 msgid "Décompte salaires %(year)s"
-msgstr ""
+msgstr "Lohnabrechnungen %(year)s"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:36
 #, python-format
 msgid "Canton sélectionné: %(active_canton)s"
-msgstr ""
+msgstr "Ausgewählter Kanton: %(active_canton)s"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:38
 msgid "Filtrer par canton"
-msgstr ""
+msgstr "Filtern nach Kanton"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:44
-#, fuzzy
-#| msgid "Toutes les saisons"
 msgid "Tous les cantons"
-msgstr "Alle Saisons"
+msgstr "Alle Kantone"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:94
 msgid "Envoyer un rappel"
-msgstr ""
+msgstr "Eine Erinnerung verschicken"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:99
 msgid "Envoyer un rappel aux moniteurs qui n'ont pas remplis leurs heures"
 msgstr ""
+"Eine Erinnerung an die LeiterInnen schicken, welche ihre Stunden noch nicht "
+"angegeben haben"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:134
-#, fuzzy
-#| msgid "Aucun rôle"
 msgid "Aucun résultat."
-msgstr "Keine Rolle"
+msgstr "Keine Resultat."
 
 #: apps/salary/views.py:267
-#, fuzzy, python-brace-format
-#| msgid "Exports pour %(month)s %(year)s"
+#, python-brace-format
 msgid "Export Crésus {month} {year}"
-msgstr "Exporte für %(month)s%(year)s"
+msgstr "Export Cresus {month} {year}"
 
 #: apps/salary/views.py:344
 msgid "Aucun rappel à envoyer: les heures de ce mois sont déjà remplies."
 msgstr ""
+"Keine Erinnerung verschicken: die Stunden von diesem Monat wurden bereits "
+"angegeben."
 
 #: apps/salary/views.py:364
 msgid "Rappel de soumission des heures expédié."
-msgstr ""
+msgstr "Erinnerung zur Einreichung der Stunden verschickt."
 
 #: apps/salary/views.py:385
 msgid "Soumission des heures"
-msgstr ""
+msgstr "Einreichen der Stunden"
 
 #: apps/user/export.py:38
 msgid "Yes"
@@ -1843,10 +1866,8 @@ msgstr "AHV-Nr."
 
 #: apps/user/export.py:114 apps/user/models.py:208
 #: apps/user/templates/auth/user_detail.html:129
-#, fuzzy
-#| msgid "État"
 msgid "État civil"
-msgstr "Stand"
+msgstr "Zivilstand"
 
 #: apps/user/export.py:119 apps/user/models.py:214
 msgid "Expérience pédagogique"
@@ -1904,7 +1925,7 @@ msgstr "Geführte Kantone"
 
 #: apps/user/forms.py:78
 msgid "Un utilisateur avec cette adresse e-mail existe déjà."
-msgstr ""
+msgstr "Ein/e BenutzerIn mit dieser E-Mailadresse existiert bereits."
 
 #: apps/user/models.py:69
 msgid "Réserve"
@@ -1920,23 +1941,23 @@ msgstr "Gelöscht"
 
 #: apps/user/models.py:86
 msgid "Célibataire"
-msgstr ""
+msgstr "Ledig"
 
 #: apps/user/models.py:87
 msgid "Marié·e"
-msgstr ""
+msgstr "Verheiratet"
 
 #: apps/user/models.py:88
 msgid "Divorcé·e"
-msgstr ""
+msgstr "Geschieden"
 
 #: apps/user/models.py:89
 msgid "Veu·f·ve"
-msgstr ""
+msgstr "Verwitwet"
 
 #: apps/user/models.py:90
 msgid "En partenariat enregistré"
-msgstr ""
+msgstr "In eingetragener Partnerschaft"
 
 #: apps/user/models.py:100
 msgid "En prêt"
@@ -1972,7 +1993,7 @@ msgstr "Hat bereits Zugangsdaten"
 
 #: apps/user/models.py:285
 msgid "Accès à l'Intranet"
-msgstr ""
+msgstr "Zugang zum Intranet"
 
 #: apps/user/models.py:418
 msgid "A accès"
@@ -2089,19 +2110,19 @@ msgstr "Mitarbeiternummer Crésus"
 
 #: apps/user/templates/auth/user_detail.html:139
 msgid "Première formation : "
-msgstr "Erste Ausbildung:"
+msgstr "Erste Ausbildung: "
 
 #: apps/user/templates/auth/user_detail.html:142
 msgid "Dernière formation : "
-msgstr "Letzte Ausbildung:"
+msgstr "Letzte Ausbildung: "
 
 #: apps/user/templates/auth/user_detail.html:154
 msgid "Dernière mise à jour : "
-msgstr "Letzte Aktualisierung:"
+msgstr "Letzte Aktualisierung: "
 
 #: apps/user/templates/auth/user_detail.html:164
 msgid "Dernière mise à jour: "
-msgstr "Letzte Aktualisierung:"
+msgstr "Letzte Aktualisierung: "
 
 #: apps/user/templates/auth/user_detail.html:169
 msgid "Exp. pédagogique"
@@ -2228,11 +2249,11 @@ msgstr "Alle LeiterInnen wurden als inaktiv markiert."
 
 #: apps/user/views/credentials.py:34
 msgid "Données de connexion expédiées."
-msgstr "Zugangsdaten verschickt"
+msgstr "Zugangsdaten verschickt."
 
 #: apps/user/views/credentials.py:66
 msgid "Données de connexion ré-expédiées."
-msgstr "Zugangsdaten erneut verschickt"
+msgstr "Zugangsdaten erneut verschickt."
 
 #: apps/user/views/credentials.py:80
 msgid "Rôle assigné à l'utilisa·teur·trice"
@@ -2271,10 +2292,8 @@ msgid "Aucun rôle"
 msgstr "Keine Rolle"
 
 #: defivelo/settings/base.py:297
-#, fuzzy
-#| msgid "Intranet DÉFI VÉLO"
 msgid "DÉFI VÉLO: "
-msgstr "DEFI VELO Intranet"
+msgstr "DEFI VELO: "
 
 #: defivelo/templates/account/email.html:5
 msgid "Account"
@@ -2338,7 +2357,7 @@ msgid "Do you really want to remove the selected e-mail address?"
 msgstr "Wollen Sie wirklich Ihre E-Mail-Adresse entfernen?"
 
 #: defivelo/templates/account/email/email_confirmation_message.txt:1
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Hello from %(site_name)s!\n"
 "\n"
@@ -2349,10 +2368,12 @@ msgid ""
 "To confirm this is correct, go to %(activate_url)s\n"
 msgstr ""
 "E-Mail von %(site_name)s!\n"
-"Der Benutzer %(user_display)s der Seite %(site_domain)s hat uns gemeldet, "
-"diese E-Mail-Adresse zu besitzen.\n"
 "\n"
-"Um zu bestätigen, dass du der Besitzer bist, klicke auf %(activate_url)s\n"
+"Du erhältst dieses E-Mail, weil %(user_display)s der Seite %(site_domain)s "
+"deine E-Mail-Adresse angegeben hat, um den Account zu verbinden.\n"
+"\n"
+"Um zu bestätigen, dass du der/die BesitzerIn bist, klicke auf %(activate_url)"
+"s\n"
 
 #: defivelo/templates/account/email/email_confirmation_message.txt:7
 #, python-format
@@ -2378,6 +2399,7 @@ msgid ""
 "link below to reset your password."
 msgstr ""
 "E-Mail von %(site_name)s!\n"
+"\n"
 "Du erhältst diese E-Mail, weil du oder jemand anderes ein Passwort angefragt "
 "hat für das Benutzerkonto von %(site_domain)s.\n"
 "Falls du nichts angefragt hast, kannst du diese Nachricht ignorieren. "
@@ -2531,7 +2553,7 @@ msgstr "Übersetzung"
 
 #: defivelo/templates/base.html:44
 msgid "Hébergement"
-msgstr ""
+msgstr "Beherbergung"
 
 #: defivelo/templates/header.html:9 defivelo/templates/header.html:50
 msgid "Toutes les saisons"
@@ -2549,7 +2571,7 @@ msgstr "Kalender"
 #, fuzzy
 #| msgid "Formation"
 msgid "Facturation"
-msgstr "Ausbildung"
+msgstr "Rechnungsstellung"
 
 #: defivelo/templates/header.html:59
 msgid "Créer une saison"
@@ -2577,15 +2599,16 @@ msgstr "Nächste Qualis (öffentlich)"
 
 #: defivelo/templates/header.html:83
 msgid "Contrôle des heures"
-msgstr ""
+msgstr "Kontrolle der Stunden"
 
 #: defivelo/templates/header.html:88
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: defivelo/templates/header.html:91
+#, fuzzy
 msgid "Configurations cantonales annuelles"
-msgstr ""
+msgstr "Jährliche kantonale Konfigurationen"
 
 #: defivelo/templates/header.html:109
 msgid "Change password"
