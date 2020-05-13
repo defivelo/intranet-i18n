@@ -1209,7 +1209,7 @@ msgstr "Neuen Halbtag erstellen"
 #: apps/challenge/templates/orga/organization_list.html:8
 #, python-format
 msgid "Établissements pour la saison %(season)s"
-msgstr "Schulen der Saison %(season)s%(year)s"
+msgstr "Schulen der Saison %(season)s"
 
 #: apps/challenge/templates/orga/organization_list.html:16
 msgid "Factures"
