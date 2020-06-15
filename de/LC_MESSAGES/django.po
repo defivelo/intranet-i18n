@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-11 14:52+0200\n"
-"PO-Revision-Date: 2020-05-12 09:00+0000\n"
+"PO-Revision-Date: 2020-06-18 10:03+0000\n"
 "Last-Translator: Laura Mosimann <laura.mosimann@label-vert.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
@@ -505,10 +505,8 @@ msgid "Durée"
 msgstr "Dauer"
 
 #: apps/challenge/models/session.py:61
-#, fuzzy
-#| msgid "Attribuer les moniteurs"
 msgid "Visible pour les moniteurs"
-msgstr "LeiterInnen zuteilen"
+msgstr "Sichtbar für die LeiterInnen"
 
 #: apps/challenge/models/session.py:72
 msgid "Lieu de la Qualif'"
@@ -551,10 +549,8 @@ msgid "Sessions"
 msgstr "Halbtage"
 
 #: apps/challenge/models/session.py:118
-#, fuzzy
-#| msgid "Disponibilités"
 msgid "Visibilité"
-msgstr "Verfügbarkeiten"
+msgstr "Sichtbarkeit"
 
 #: apps/challenge/models/session.py:120
 #: apps/challenge/templates/challenge/session_detail.html:67
@@ -939,20 +935,7 @@ msgid "Par semaine"
 msgstr "pro Woche"
 
 #: apps/challenge/templates/challenge/season_email_to_state_open.txt:1
-#, fuzzy, python-format
-#| msgid ""
-#| "Bonjour %(full_name)s,\n"
-#| "\n"
-#| "Le planning DÉFI VÉLO définitif %(season_desc)s est maintenant disponible "
-#| "sur l'Intranet. Merci d’aller le consulter et de prendre note des dates "
-#| "des Qualifs où tu dois être présent. En cas de questions, tu peux "
-#| "t’adresser à ton chargé de projet.\n"
-#| "\n"
-#| "Tu peux accéder au planning directement ici ou via ton compte personnel "
-#| "Intranet.\n"
-#| "\n"
-#| "    %(planning_link)s\n"
-#| "\n"
+#, python-format
 msgid ""
 "Bonjour %(full_name)s,\n"
 "\n"
@@ -969,9 +952,9 @@ msgid ""
 msgstr ""
 "Hallo %(full_name)s\n"
 "\n"
-"Der definitive Einsatzplan von DEFI VELO %(season_desc)s ist nun auf dem "
-"Intranet bereit. Bitte schau ihn dir an und notiere dir die Daten der "
-"Qualis, für welche du eingeteilt bist. Bei Fragen wende dich an deine "
+"Der Einsatzplan von DEFI VELO %(season_desc)s ist nun auf dem Intranet "
+"bereit. Bitte fülle so rasch wie möglich deine Verfügbarkeiten aus, damit "
+"wir die Saison vorbereiten können. Bei Fragen wende dich an deine "
 "Projektleitung.\n"
 "\n"
 "Du kannst direkt hier auf den Einsatzplan zugreifen oder über dein "
@@ -1001,6 +984,11 @@ msgid ""
 "dans ce canton, tu peux aller modifier ton profil intranet ou contacter ton "
 "chargé de projet régional\n"
 msgstr ""
+"\n"
+"PS: Du erhältst diese E-Mail, weil du diesem Kanton zugeteilt bist oder weil "
+"du ihn als mobilen Kanton ausgewählt hast. Falls du nicht mehr in diesem "
+"Kanton arbeiten möchtest, kannst du dies in deinem Intranet-Profil anpassen "
+"oder deine regionale Projektleitung kontaktieren.\n"
 
 #: apps/challenge/templates/challenge/season_email_to_state_running.txt:1
 #, python-format
@@ -1099,12 +1087,16 @@ msgid ""
 "Cet utilisateur ne peut pas se connecter à l’intranet (il n'a pas de mot de "
 "passe)."
 msgstr ""
+"Dieser Nutzer/diese Nutzerin kann sich nicht ins Intranet einloggen (kein "
+"Passwort)."
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:39
 msgid ""
 "Certains destinataires ne peuvent pas se connecter à l’intranet (ils n’ont "
 "pas de mot de passe)."
 msgstr ""
+"Einige EmpfängerInnen können sich nicht ins Intranet einloggen (sie haben "
+"kein Passwort)."
 
 #: apps/challenge/templates/challenge/season_list.html:5
 #: apps/challenge/templates/challenge/season_list.html:8
@@ -1114,10 +1106,8 @@ msgid "Saisons %(year)s"
 msgstr "Saisons %(year)s"
 
 #: apps/challenge/templates/challenge/season_list.html:39
-#, fuzzy
-#| msgid "Toutes les sessions"
 msgid "Liste des sessions"
-msgstr "Alle Halbtage"
+msgstr "Liste der Halbtage"
 
 #: apps/challenge/templates/challenge/season_list.html:42
 #: apps/challenge/templates/challenge/season_list.html:55
@@ -1279,10 +1269,8 @@ msgid "Nouvelle session"
 msgstr "Neuer Halbtag"
 
 #: apps/challenge/templates/challenge/session_item_in_list.html:17
-#, fuzzy
-#| msgid "Sessions"
 msgid "Session invisible"
-msgstr "Halbtage"
+msgstr "Halbtag unsichtbar"
 
 #: apps/challenge/templates/challenge/session_item_in_list.html:22
 msgid "Aucune Qualif'"
@@ -1301,16 +1289,12 @@ msgid "Éditer la saison"
 msgstr "Saison bearbeiten"
 
 #: apps/challenge/templates/challenge/session_list_links.html:9
-#, fuzzy
-#| msgid "Annoncer le planning"
 msgid "Diffuser le planning"
-msgstr "Einsatzplan bekanntgeben"
+msgstr "Einsatzplan verschicken"
 
 #: apps/challenge/templates/challenge/session_list_links.html:12
-#, fuzzy
-#| msgid "Annoncer le planning"
 msgid "Finaliser le planning"
-msgstr "Einsatzplan bekanntgeben"
+msgstr "Einsatzplan fertigstellen"
 
 #: apps/challenge/templates/challenge/session_list_links.html:21
 msgid "Sessions avec Qualif' incohérente"
@@ -1639,10 +1623,8 @@ msgstr "Webseite"
 #: apps/orga/templates/orga/organization_detail.html:46
 #: apps/orga/templates/orga/organization_filter.html:64 apps/user/models.py:460
 #: defivelo/roles.py:113
-#, fuzzy
-#| msgid "Administra·teur·trice"
 msgid "Coordina·teur·trice"
-msgstr "AdministratorIn"
+msgstr "Kontaktperson"
 
 #: apps/orga/export.py:50 apps/orga/templates/orga/organization_detail.html:63
 #: apps/user/models.py:186 apps/user/templates/auth/user_detail.html:97
@@ -1747,15 +1729,14 @@ msgid "Établissement créé"
 msgstr "Schule erstellt"
 
 #: apps/salary/forms.py:37
-#, fuzzy, python-format
-#| msgid "Heures moni·teur·trice"
+#, python-format
 msgid "Heures moni·teur·trice (%(price)s.-/h)"
-msgstr "Stunden LeiterInnen"
+msgstr "Stunden LeiterInnen  (%(price)s.-/h)"
 
 #: apps/salary/forms.py:39
 #, python-format
 msgid "Intervention(s) (%(price)s.-/Qualif')"
-msgstr ""
+msgstr "Einsatz/Einsätze (%(price)s.-/Qualif')"
 
 #: apps/salary/forms.py:42
 #, fuzzy, python-format
@@ -1764,16 +1745,13 @@ msgid "Participation(s) comme moni·teur·trice 2 (%(price)s.-/Qualif')"
 msgstr "Teilnahme(n) als LeiterIn 2"
 
 #: apps/salary/forms.py:45
-#, fuzzy, python-format
-#| msgid "Heures supplémentaires"
+#, python-format
 msgid "Heures supplémentaires (%(price)s.-/h)"
-msgstr "Zusätzliche Stunden"
+msgstr "Zusätzliche Stunden (%(price)s.-/h)"
 
 #: apps/salary/forms.py:47
-#, fuzzy
-#| msgid "Heures de trajet"
 msgid "Heures de trajet (cf. règlement)"
-msgstr "Reisezeit"
+msgstr "Reisezeit (siehe Reglement)"
 
 #: apps/salary/forms.py:112
 #, python-brace-format
@@ -1790,10 +1768,8 @@ msgstr "Bestätigen"
 
 #: apps/salary/forms.py:195
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:39
-#, fuzzy
-#| msgid "Contrôle des heures"
 msgid "Contrôle des heures effectué"
-msgstr "Kontrolle der Stunden"
+msgstr "Kontrolle der Stunden abgeschlossen"
 
 #: apps/salary/forms.py:204 defivelo/templates/header.html:117
 msgid "Contrôle des heures"
@@ -1801,11 +1777,11 @@ msgstr "Kontrolle der Stunden"
 
 #: apps/salary/forms.py:243
 msgid "Toutes les URLs doivent être vérifiées"
-msgstr ""
+msgstr "Alle URLs müssen überprüft werden."
 
 #: apps/salary/forms.py:250
 msgid "Les heures doivent être vérifiées"
-msgstr ""
+msgstr "Die Stunden müssen überprüft werden."
 
 #: apps/salary/models/timesheets.py:14
 msgid "Heures moni·teur·trice"
@@ -1829,28 +1805,28 @@ msgstr "Reisezeit"
 
 #: apps/salary/models/validations.py:12
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: apps/salary/models/validations.py:15
 msgid "URL pour validation mensuelle"
-msgstr ""
+msgstr "URL für monatliche Validierung"
 
 #: apps/salary/models/validations.py:16
 msgid "URLs pour validation mensuelle"
-msgstr ""
+msgstr "URLs für monatliche Validierung"
 
 #: apps/salary/models/validations.py:42
 msgid "Validation mensuelle cantonale"
-msgstr ""
+msgstr "Monatliche kantonale Validierung"
 
 #: apps/salary/models/validations.py:43
 msgid "Validations mensuelles cantonales"
-msgstr ""
+msgstr "Monatliche kantonale Validierungen"
 
 #: apps/salary/models/validations.py:47
 #, python-brace-format
 msgid "{year}/{month}: Validation du canton {canton}"
-msgstr ""
+msgstr "{year}/{month}: Validierung vom Kanton {canton}"
 
 #: apps/salary/templates/salary/email_send_timesheets_reminder.txt:1
 #, python-format
@@ -1903,10 +1879,8 @@ msgid "Heures de %(name)s pour %(month)s %(year)s"
 msgstr "Stunden von %(name)s für %(month)s %(year)s"
 
 #: apps/salary/templates/salary/month_timesheets.html:69
-#, fuzzy
-#| msgid "Contrôle des heures"
 msgid "Total heures"
-msgstr "Kontrolle der Stunden"
+msgstr "Total der Stunden"
 
 #: apps/salary/templates/salary/month_timesheets.html:78
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:87
@@ -1918,6 +1892,8 @@ msgid ""
 "Attention : Ceci n'est pas le salaire net mais le décompte des heures et des "
 "indemmnités"
 msgstr ""
+"Achtung: Dies ist nicht der Nettolohn, sondern die Stundenabrechnung und "
+"Entschädigungen"
 
 #: apps/salary/templates/salary/month_timesheets.html:103
 msgid "Vous ne pouvez pas entrer des heures dans le futur."
@@ -1937,19 +1913,17 @@ msgstr "Alles markieren"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:5
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:8
-#, fuzzy, python-format
+#, python-format
 msgid "Validations cantonales mensuelles pour %(month)s"
-msgstr "Kantonale Konfigurationen für %(year)s"
+msgstr "Monatliche kantonale Validierung für %(month)s"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:19
-#, fuzzy
-#| msgid "Semaine courante"
 msgid "Mois courant"
-msgstr "Aktuelle Woche"
+msgstr "Aktueller Monat"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:32
 msgid "Rien à valider"
-msgstr ""
+msgstr "Nichts zu bestätigen"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:43
 #, fuzzy
@@ -1958,29 +1932,26 @@ msgid "Validé"
 msgstr "Bestätigt"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:64
-#, fuzzy, python-format
-#| msgid "Lausanne, le %(date)s"
+#, python-format
 msgid "par %(by)s, le %(at)s"
-msgstr "Lausanne, %(date)s"
+msgstr "durch %(by)s, den %(at)s"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:76
-#, fuzzy, python-format
-#| msgid "Saisons %(year)s"
+#, python-format
 msgid "Année %(year)s"
-msgstr "Saisons %(year)s"
+msgstr "Jahr %(year)s"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_year.html:5
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_year.html:8
-#, fuzzy, python-format
+#, python-format
 msgid "Validations cantonales mensuelles pour %(year)s"
-msgstr "Kantonale Konfigurationen für %(year)s"
+msgstr "Monatliche kantonale Validierungen für %(year)s"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:5
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:12
-#, fuzzy, python-format
-#| msgid "%(season)s: factures pour %(orga)s"
+#, python-format
 msgid "%(canton)s: Validation pour %(monthyear)s"
-msgstr "%(season)s: Rechnungen für %(orga)s"
+msgstr "%(canton)s: Validierung für %(monthyear)s"
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:5
 #, python-format
@@ -2060,9 +2031,8 @@ msgid "Rappel de soumission des heures expédié."
 msgstr "Erinnerung zur Einreichung der Stunden verschickt."
 
 #: apps/salary/views/validations.py:165
-#, fuzzy
 msgid "Validation cantonale mise à jour"
-msgstr "Kantonale Konfiguration pro Jahr aktualisiert"
+msgstr "Kantonale Validierung aktualisiert"
 
 #: apps/user/export.py:38
 msgid "Yes"
@@ -2183,28 +2153,25 @@ msgstr "Ein/e BenutzerIn mit dieser E-Mailadresse existiert bereits."
 #: apps/user/forms.py:125
 msgid "Moniteurs/intervenants ont besoin d'un canton d'affiliation."
 msgstr ""
+"LeiterInnen / ReferentInnen brauchen eine Zugehörigkeit zu einem Kanton."
 
 #: apps/user/forms.py:160
 msgid "… si pas suisse"
-msgstr ""
+msgstr "...falls nicht Schweiz"
 
 #: apps/user/forms.py:162
-#, fuzzy
-#| msgid "Lieu d'imposition (si pas en Suisse)"
 msgid "… si pas en Suisse"
-msgstr "Ort der Besteuerung (falls nicht SchweizerIn)"
+msgstr "…falls nicht in der Schweiz"
 
 #: apps/user/forms.py:203
-#, fuzzy
-#| msgid "Établissement créé"
 msgid "Établissements gérés"
-msgstr "Schule erstellt"
+msgstr "Verwaltete Schulen"
 
 #: apps/user/migrations/0055_data_remove_email_from_deleted_users.py:12
 #: apps/user/models.py:302
 #, python-format
 msgid "Email avant suppression: %s"
-msgstr ""
+msgstr "E-Mail vor dem Löschen: %s"
 
 #: apps/user/models.py:70
 msgid "Réserve"
@@ -2500,17 +2467,15 @@ msgid "Supprimer %(name)s ?"
 msgstr "%(name)s löschen?"
 
 #: apps/user/templates/delete/user_delete.html:12
-#, fuzzy, python-format
-#| msgid ""
-#| "Cette action va <b>marquer %(name)s comme supprimé</b>. Il ne pourra plus "
-#| "se connecter ni être sélectionné pour une Qualif' !"
+#, python-format
 msgid ""
 "Cette action va <b>marquer %(name)s comme supprimé</b>. Il ne pourra plus se "
 "connecter ni être sélectionné pour une Qualif' ! Son adresse email sera "
 "effacée de son profil."
 msgstr ""
-"<b>%(name)swird gelöscht</b>. Er/sie kann sich nicht mehr anmelden und kann "
-"nicht mehr für eine Quali ausgewählt werden!"
+"Diese Aktion wird <b> %(name)s als gelöscht markieren</b>. Er/sie kann sich "
+"nicht mehr anmelden und kann nicht mehr für eine Quali ausgewählt werden! "
+"Seine Mailadresse wird von seinem Profil gelöscht werden."
 
 #: apps/user/templates/roles/assign.html:4
 #: apps/user/templates/roles/assign.html:8
@@ -2850,11 +2815,11 @@ msgstr "Saison erstellen"
 
 #: defivelo/templates/header.html:71
 msgid "Tous"
-msgstr ""
+msgstr "Alle"
 
 #: defivelo/templates/header.html:81
 msgid "Base de données"
-msgstr ""
+msgstr "Datenbank"
 
 #: defivelo/templates/header.html:84
 msgid "Personnes"
@@ -2878,11 +2843,11 @@ msgstr "Nächste Qualis (öffentlich)"
 
 #: defivelo/templates/header.html:110
 msgid "Finances"
-msgstr ""
+msgstr "Finanzen"
 
 #: defivelo/templates/header.html:113
 msgid "Validations mensuelles"
-msgstr ""
+msgstr "Monatliche Validierung"
 
 #: defivelo/templates/header.html:129
 msgid "Admin"
