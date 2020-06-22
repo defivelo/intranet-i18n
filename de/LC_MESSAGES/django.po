@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-11 14:52+0200\n"
-"PO-Revision-Date: 2020-06-18 10:03+0000\n"
+"PO-Revision-Date: 2020-06-24 14:26+0000\n"
 "Last-Translator: Laura Mosimann <laura.mosimann@label-vert.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
@@ -591,30 +591,26 @@ msgid "Coût par participant"
 msgstr "Kosten pro TeilnehmerInnen"
 
 #: apps/challenge/models/settings.py:50
-#, fuzzy
 msgid "Configuration cantonale par année"
 msgstr "Kantonale Konfiguration pro Jahr"
 
 #: apps/challenge/models/settings.py:51
-#, fuzzy
 msgid "Configurations cantonales par année"
 msgstr "Kantonale Konfigurationen pro Jahr"
 
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:4
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:15
-#, fuzzy
 msgid "Édition de la configuration cantonale annuelle"
 msgstr "Bearbeitung der jährlichen kantonalen Konfiguration"
 
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:4
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:15
-#, fuzzy
 msgid "Nouvelle configuration cantonale annuelle"
 msgstr "Neue jährliche kantonale Konfiguration"
 
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:5
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:8
-#, fuzzy, python-format
+#, python-format
 msgid "Configurations cantonales pour %(year)s"
 msgstr "Kantonale Konfigurationen für %(year)s"
 
@@ -1057,8 +1053,6 @@ msgstr "Neue Saison"
 #: apps/challenge/templates/challenge/season_form_tostate.html:4
 #: apps/challenge/templates/challenge/season_form_tostate.html:10
 #: apps/challenge/templates/challenge/season_form_tostate.html:46
-#, fuzzy
-#| msgid "Intervenants de la saison"
 msgid "Changer l'état de la saison"
 msgstr "Zustand der Saison ändern"
 
@@ -1131,7 +1125,7 @@ msgstr "Kalender"
 
 #: apps/challenge/templates/challenge/season_planning.html:39
 msgid "ics"
-msgstr ""
+msgstr "ics"
 
 #: apps/challenge/templates/challenge/season_staff_update.html:8
 msgid "Attributions dans les sessions"
@@ -1407,12 +1401,10 @@ msgid "Session supprimée"
 msgstr "Halbtag gelöscht"
 
 #: apps/challenge/views/settings.py:73
-#, fuzzy
 msgid "Configuration cantonale par année créée"
 msgstr "Kantonale Konfiguration pro Jahr erstellt"
 
 #: apps/challenge/views/settings.py:77
-#, fuzzy
 msgid "Configuration cantonale par année mise à jour"
 msgstr "Kantonale Konfiguration pro Jahr aktualisiert"
 
@@ -1731,7 +1723,7 @@ msgstr "Schule erstellt"
 #: apps/salary/forms.py:37
 #, python-format
 msgid "Heures moni·teur·trice (%(price)s.-/h)"
-msgstr "Stunden LeiterInnen  (%(price)s.-/h)"
+msgstr "Stunden LeiterInnen (%(price)s.-/h)"
 
 #: apps/salary/forms.py:39
 #, python-format
@@ -1739,10 +1731,9 @@ msgid "Intervention(s) (%(price)s.-/Qualif')"
 msgstr "Einsatz/Einsätze (%(price)s.-/Qualif')"
 
 #: apps/salary/forms.py:42
-#, fuzzy, python-format
-#| msgid "Participation(s) comme moniteur 2"
+#, python-format
 msgid "Participation(s) comme moni·teur·trice 2 (%(price)s.-/Qualif')"
-msgstr "Teilnahme(n) als LeiterIn 2"
+msgstr "Teilnahme(n) als LeiterIn 2 (%(price)s.-/Quali)"
 
 #: apps/salary/forms.py:45
 #, python-format
@@ -1926,8 +1917,6 @@ msgid "Rien à valider"
 msgstr "Nichts zu bestätigen"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:43
-#, fuzzy
-#| msgid "Validée"
 msgid "Validé"
 msgstr "Bestätigt"
 
@@ -2804,10 +2793,8 @@ msgid "Saison pas ouverte"
 msgstr "Nicht verfügbare Saison"
 
 #: defivelo/templates/header.html:53
-#, fuzzy
-#| msgid "Formation"
 msgid "Facturation"
-msgstr "Rechnungsstellung"
+msgstr "Abrechnung"
 
 #: defivelo/templates/header.html:59
 msgid "Créer une saison"
@@ -2854,7 +2841,6 @@ msgid "Admin"
 msgstr "Admin"
 
 #: defivelo/templates/header.html:132
-#, fuzzy
 msgid "Configurations cantonales annuelles"
 msgstr "Jährliche kantonale Konfigurationen"
 
