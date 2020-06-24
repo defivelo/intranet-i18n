@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-11 14:52+0200\n"
-"PO-Revision-Date: 2020-06-24 14:26+0000\n"
+"PO-Revision-Date: 2020-06-28 15:00+0000\n"
 "Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
@@ -1491,10 +1491,8 @@ msgid "Télécharger au format %(format)s"
 msgstr "Im %(format)s Format herunterladen"
 
 #: apps/common/templates/ko.html:1
-#, fuzzy
-#| msgid "OK"
 msgid "NOK"
-msgstr "OK"
+msgstr "Not OK"
 
 #: apps/common/templates/ok.html:1
 msgid "OK"
@@ -2586,7 +2584,7 @@ msgid "Do you really want to remove the selected e-mail address?"
 msgstr "Wollen Sie wirklich Ihre E-Mail-Adresse entfernen?"
 
 #: defivelo/templates/account/email/email_confirmation_message.txt:1
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Hello from %(site_name)s!\n"
 "\n"
@@ -2601,8 +2599,8 @@ msgstr ""
 "Du erhältst dieses E-Mail, weil %(user_display)s der Seite %(site_domain)s "
 "deine E-Mail-Adresse angegeben hat, um den Account zu verbinden.\n"
 "\n"
-"Um zu bestätigen, dass du der/die BesitzerIn bist, klicke auf "
-"%(activate_url)s\n"
+"Um zu bestätigen, dass du der/die BesitzerIn bist, klicke auf %(activate_url)"
+"s\n"
 
 #: defivelo/templates/account/email/email_confirmation_message.txt:7
 #, python-format
