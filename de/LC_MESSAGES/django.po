@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-11 14:52+0200\n"
+"POT-Creation-Date: 2020-08-17 17:57+0200\n"
 "PO-Revision-Date: 2020-06-28 15:00+0000\n"
 "Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -252,7 +252,7 @@ msgstr "Anfang"
 #: apps/challenge/forms/session.py:65 apps/challenge/forms/settings.py:38
 #: apps/challenge/models/settings.py:29
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:32
-#: apps/common/models.py:35 apps/orga/forms.py:44
+#: apps/common/models.py:35 apps/orga/forms.py:46
 #: apps/orga/templates/orga/organization_filter.html:63
 #: apps/salary/models/validations.py:25
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:38
@@ -1024,8 +1024,8 @@ msgid ""
 "chargé de projet régional si tu as des questions.\n"
 msgstr ""
 "\n"
-"PS: Du erhälst diese Mail, weil du mindesten eine Verfügbarkeit unter \""
-"falls nötig\" eingetragen hast. Falls kein Datum in deinem Einsatzplan "
+"PS: Du erhälst diese Mail, weil du mindesten eine Verfügbarkeit unter "
+"\"falls nötig\" eingetragen hast. Falls kein Datum in deinem Einsatzplan "
 "erscheint, wurdest du nicht eingeteilt. Kontaktiere deine regionale "
 "Projektleitung, falls du Fragen hast.\n"
 
@@ -1468,7 +1468,7 @@ msgstr "Nr."
 msgid "Complément d'adresse"
 msgstr "Adresszusatz"
 
-#: apps/common/models.py:32 apps/orga/export.py:40 apps/orga/forms.py:49
+#: apps/common/models.py:32 apps/orga/export.py:40 apps/orga/forms.py:51
 #: apps/user/export.py:88
 msgid "NPA"
 msgstr "PLZ"
@@ -1609,7 +1609,7 @@ msgstr "Zugehörigkeit Kanton"
 msgid "Site web"
 msgstr "Webseite"
 
-#: apps/orga/export.py:47 apps/orga/forms.py:52 apps/orga/models.py:56
+#: apps/orga/export.py:47 apps/orga/forms.py:54 apps/orga/models.py:56
 #: apps/orga/templates/orga/organization_detail.html:46
 #: apps/orga/templates/orga/organization_filter.html:64 apps/user/models.py:460
 #: defivelo/roles.py:113
@@ -2017,7 +2017,7 @@ msgstr ""
 msgid "Rappel de soumission des heures expédié."
 msgstr "Erinnerung zur Einreichung der Stunden verschickt."
 
-#: apps/salary/views/validations.py:165
+#: apps/salary/views/validations.py:162
 msgid "Validation cantonale mise à jour"
 msgstr "Kantonale Validierung aktualisiert"
 
@@ -2123,12 +2123,12 @@ msgstr "Mitarbeiternummer Crésus"
 msgid "Nom de la banque"
 msgstr "Name der Bank"
 
-#: apps/user/export.py:178 apps/user/forms.py:197
+#: apps/user/export.py:178 apps/user/forms.py:199
 #: apps/user/templates/auth/user_detail.html:202
 msgid "Niveau d'accès"
 msgstr "Zugangsberechtigung"
 
-#: apps/user/export.py:183 apps/user/forms.py:200 apps/user/models.py:579
+#: apps/user/export.py:183 apps/user/forms.py:202 apps/user/models.py:579
 #: apps/user/templates/auth/user_detail.html:206
 msgid "Cantons gérés"
 msgstr "Geführte Kantone"
@@ -2150,7 +2150,7 @@ msgstr "...falls nicht Schweiz"
 msgid "… si pas en Suisse"
 msgstr "…falls nicht in der Schweiz"
 
-#: apps/user/forms.py:203
+#: apps/user/forms.py:205
 msgid "Établissements gérés"
 msgstr "Verwaltete Schulen"
 
@@ -2518,7 +2518,7 @@ msgstr "Liste der ReferentInnen"
 msgid "Aucun rôle"
 msgstr "Keine Rolle"
 
-#: defivelo/settings/base.py:297
+#: defivelo/settings/base.py:331
 msgid "DÉFI VÉLO: "
 msgstr "DEFI VELO: "
 
@@ -2599,8 +2599,8 @@ msgstr ""
 "Du erhältst dieses E-Mail, weil %(user_display)s der Seite %(site_domain)s "
 "deine E-Mail-Adresse angegeben hat, um den Account zu verbinden.\n"
 "\n"
-"Um zu bestätigen, dass du der/die BesitzerIn bist, klicke auf %(activate_url)"
-"s\n"
+"Um zu bestätigen, dass du der/die BesitzerIn bist, klicke auf "
+"%(activate_url)s\n"
 
 #: defivelo/templates/account/email/email_confirmation_message.txt:7
 #, python-format
