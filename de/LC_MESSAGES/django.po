@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 11:55+0200\n"
-"PO-Revision-Date: 2020-06-28 15:00+0000\n"
-"Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
+"POT-Creation-Date: 2020-08-17 17:57+0200\n"
+"PO-Revision-Date: 2020-08-18 09:56+0000\n"
+"Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
 "Language: de\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: apps/article/forms.py:28
 msgid "Publié"
@@ -43,7 +43,7 @@ msgstr "Bild"
 
 #: apps/article/models.py:47
 msgid "Modified"
-msgstr ""
+msgstr "Verändert"
 
 #: apps/article/models.py:49
 msgid "Body"
