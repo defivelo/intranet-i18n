@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-17 17:57+0200\n"
+"POT-Creation-Date: 2020-08-18 11:55+0200\n"
 "PO-Revision-Date: 2020-06-28 15:00+0000\n"
 "Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -96,7 +96,7 @@ msgstr "Neuer Artikel"
 #: apps/challenge/templates/challenge/season_staff_update.html:32
 #: apps/challenge/templates/challenge/session_form.html:73
 #: apps/orga/templates/orga/organization_form.html:38
-#: apps/salary/templates/salary/month_timesheets.html:96
+#: apps/salary/templates/salary/month_timesheets.html:106
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:17
 msgid "Enregistrer"
 msgstr "Speichern"
@@ -113,7 +113,7 @@ msgstr "Speichern"
 #: apps/challenge/templates/challenge/session_form.html:77
 #: apps/orga/templates/orga/organization_form.html:40
 #: apps/orga/templates/orga/organization_form.html:42
-#: apps/salary/templates/salary/month_timesheets.html:98
+#: apps/salary/templates/salary/month_timesheets.html:108
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:18
 #: apps/salary/templates/salary/send_timesheets_reminder.html:36
 #: apps/user/templates/actions/mark_inactive.html:22
@@ -545,6 +545,7 @@ msgstr "Logistik Velos"
 
 #: apps/challenge/models/session.py:104
 #: apps/challenge/templates/challenge/invoice_detail.html:62
+#: apps/salary/templates/salary/month_timesheets.html:53
 msgid "Sessions"
 msgstr "Halbtage"
 
@@ -931,10 +932,28 @@ msgid "Par semaine"
 msgstr "pro Woche"
 
 #: apps/challenge/templates/challenge/season_email_to_state_open.txt:1
+#: apps/challenge/templates/challenge/season_email_to_state_running.txt:1
+#: apps/salary/templates/salary/email_send_timesheets_reminder.txt:1
 #, python-format
+msgid "Salut %(full_name)s,"
+msgstr ""
+
+#: apps/challenge/templates/challenge/season_email_to_state_open.txt:3
+#, fuzzy, python-format
+#| msgid ""
+#| "Bonjour %(full_name)s,\n"
+#| "\n"
+#| "Le planning DÉFI VÉLO du canton %(season_desc)s est désormais disponible "
+#| "sur intranet. Merci de remplir tes disponibilités au plus vite afin qu’on "
+#| "puisse préparer la saison au mieux. En cas de questions, tu peux "
+#| "t’adresser à ton chargé de projet.\n"
+#| "\n"
+#| "Tu peux accéder au planning directement ici ou via ton compte personnel "
+#| "intranet.\n"
+#| "\n"
+#| "    %(planning_link)s\n"
+#| "\n"
 msgid ""
-"Bonjour %(full_name)s,\n"
-"\n"
 "Le planning DÉFI VÉLO du canton %(season_desc)s est désormais disponible sur "
 "intranet. Merci de remplir tes disponibilités au plus vite afin qu’on puisse "
 "préparer la saison au mieux. En cas de questions, tu peux t’adresser à ton "
@@ -961,10 +980,15 @@ msgstr ""
 
 #: apps/challenge/templates/challenge/season_email_to_state_open.txt:9
 #: apps/challenge/templates/challenge/season_email_to_state_running.txt:9
+#: apps/salary/templates/salary/email_send_timesheets_reminder.txt:7
 #: apps/user/templates/auth/email_user_send_credentials.txt:13
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Salutations,\n"
+#| "\n"
+#| "L’équipe DÉFI VÉLO - %(site_domain)s"
 msgid ""
-"Salutations,\n"
+"Avec nos meilleures salutations,\n"
 "\n"
 "L’équipe DÉFI VÉLO - %(site_domain)s"
 msgstr ""
@@ -972,10 +996,16 @@ msgstr ""
 "\n"
 "Dein DEFI VELO-Team - %(site_domain)s"
 
-#: apps/challenge/templates/challenge/season_email_to_state_open.txt:12
+#: apps/challenge/templates/challenge/season_email_to_state_open.txt:13
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "PS : Tu reçois ce mail parce que tu es affilié à ce canton ou parce que "
+#| "tu l’as sélectionné comme canton mobile. Si tu ne souhaites plus "
+#| "travailler dans ce canton, tu peux aller modifier ton profil intranet ou "
+#| "contacter ton chargé de projet régional\n"
 msgid ""
-"\n"
-"PS : Tu reçois ce mail parce que tu es affilié à ce canton ou parce que tu "
+"PS : Tu reçois ce mail parce que tu es affilié à ce canton ou parce que tu "
 "l’as sélectionné comme canton mobile. Si tu ne souhaites plus travailler "
 "dans ce canton, tu peux aller modifier ton profil intranet ou contacter ton "
 "chargé de projet régional\n"
@@ -986,15 +1016,28 @@ msgstr ""
 "Kanton arbeiten möchtest, kannst du dies in deinem Intranet-Profil anpassen "
 "oder deine regionale Projektleitung kontaktieren.\n"
 
-#: apps/challenge/templates/challenge/season_email_to_state_running.txt:1
-#, python-format
+#: apps/challenge/templates/challenge/season_email_to_state_running.txt:3
+#, fuzzy, python-format
+#| msgid ""
+#| "Bonjour %(full_name)s,\n"
+#| "\n"
+#| "Le planning DÉFI VÉLO définitif %(season_desc)s est maintenant disponible "
+#| "sur l'Intranet. Merci d’aller le consulter et de prendre note des dates "
+#| "des Qualifs où tu dois être présent. En cas de questions, tu peux "
+#| "t’adresser à ton chargé de projet.\n"
+#| "\n"
+#| "Tu peux accéder au planning directement ici ou via ton compte personnel "
+#| "Intranet.\n"
+#| "\n"
+#| "    %(planning_link)s\n"
+#| "\n"
 msgid ""
-"Bonjour %(full_name)s,\n"
-"\n"
 "Le planning DÉFI VÉLO définitif %(season_desc)s est maintenant disponible "
 "sur l'Intranet. Merci d’aller le consulter et de prendre note des dates des "
-"Qualifs où tu dois être présent. En cas de questions, tu peux t’adresser à "
-"ton chargé de projet.\n"
+"Qualifs où tu dois être présent. Dès à présent, tu es tenu·e d'être "
+"présent·e aux Qualifs auxquelles tu t'es engagé·e ou de trouver un·e "
+"remplaçant·e parmi les autres moniteurs·trices. En cas de questions, tu peux "
+"t’adresser à ton chargé de projet.\n"
 "\n"
 "Tu peux accéder au planning directement ici ou via ton compte personnel "
 "Intranet.\n"
@@ -1015,9 +1058,15 @@ msgstr ""
 "    %(planning_link)s\n"
 "\n"
 
-#: apps/challenge/templates/challenge/season_email_to_state_running.txt:12
+#: apps/challenge/templates/challenge/season_email_to_state_running.txt:13
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "PS : Tu reçois ce mail parce que tu as rempli au minimum une "
+#| "disponibilité en tant que « si besoin ». Si aucune date n’apparait dans "
+#| "le planning c’est que nous n’avons finalement pas besoin de toi. N'hésite "
+#| "pas à contacter ton chargé de projet régional si tu as des questions.\n"
 msgid ""
-"\n"
 "PS : Tu reçois ce mail parce que tu as rempli au minimum une disponibilité "
 "en tant que « si besoin ». Si aucune date n’apparait dans le planning c’est "
 "que nous n’avons finalement pas besoin de toi. N'hésite pas à contacter ton "
@@ -1062,8 +1111,10 @@ msgid "Vers \"%(tostate)s\""
 msgstr "Zu \"%(tostate)s\""
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:14
-#, python-format
-msgid "Envoyer le courriel suivant et passer la saison vers '%(tostate)s'' ?"
+#, fuzzy, python-format
+#| msgid ""
+#| "Envoyer le courriel suivant et passer la saison vers '%(tostate)s'' ?"
+msgid "Envoyer le courriel suivant et passer la saison vers \"%(tostate)s\" ?"
 msgstr "Nächste Nachricht verschicken und die Saison zu '%(tostate)s' ändern ?"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:16
@@ -1479,7 +1530,7 @@ msgid "Ville"
 msgstr "Stadt"
 
 #: apps/common/templates/export_buttons.html:4
-#: apps/salary/templates/salary/month_timesheets.html:92
+#: apps/salary/templates/salary/month_timesheets.html:102
 msgid "Imprimer"
 msgstr "Drucken"
 
@@ -1739,36 +1790,47 @@ msgid "Heures supplémentaires (%(price)s.-/h)"
 msgstr "Zusätzliche Stunden (%(price)s.-/h)"
 
 #: apps/salary/forms.py:47
-msgid "Heures de trajet (cf. règlement)"
+#, fuzzy
+#| msgid "Heures de trajet (cf. règlement)"
+msgid "Heures de trajet (aller-retour)"
 msgstr "Reisezeit (siehe Reglement)"
 
 #: apps/salary/forms.py:112
-#, python-brace-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Vous ne pouvez pas rentrer des heures pour le {day}: aucune qualif ce "
+#| "jour-ci."
 msgid ""
-"Vous ne pouvez pas rentrer des heures pour le {day}: aucune qualif ce jour-"
+"Vous ne pouvez pas rentrer des heures pour le %(day)s: aucune qualif ce jour-"
 "ci."
 msgstr ""
 "Für den {day}: können keine Stunden eingetragen werden: keine Quali an "
 "diesem Tag."
 
-#: apps/salary/forms.py:146 apps/salary/forms.py:177
+#: apps/salary/forms.py:122
+msgid ""
+"Les remarques doivent être renseignées pour tout prétention d'heures "
+"supplémentaires"
+msgstr ""
+
+#: apps/salary/forms.py:157 apps/salary/forms.py:188
 msgid "Valider"
 msgstr "Bestätigen"
 
-#: apps/salary/forms.py:195
+#: apps/salary/forms.py:206
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:39
 msgid "Contrôle des heures effectué"
 msgstr "Kontrolle der Stunden abgeschlossen"
 
-#: apps/salary/forms.py:204 defivelo/templates/header.html:117
+#: apps/salary/forms.py:215 defivelo/templates/header.html:117
 msgid "Contrôle des heures"
 msgstr "Kontrolle der Stunden"
 
-#: apps/salary/forms.py:243
+#: apps/salary/forms.py:254
 msgid "Toutes les URLs doivent être vérifiées"
 msgstr "Alle URLs müssen überprüft werden."
 
-#: apps/salary/forms.py:250
+#: apps/salary/forms.py:261
 msgid "Les heures doivent être vérifiées"
 msgstr "Die Stunden müssen überprüft werden."
 
@@ -1817,11 +1879,28 @@ msgstr "Monatliche kantonale Validierungen"
 msgid "{year}/{month}: Validation du canton {canton}"
 msgstr "{year}/{month}: Validierung vom Kanton {canton}"
 
-#: apps/salary/templates/salary/email_send_timesheets_reminder.txt:1
-#, python-format
+#: apps/salary/templates/salary/email_send_timesheets_reminder.txt:3
+#, fuzzy, python-format
+#| msgid ""
+#| "Salut,\n"
+#| "\n"
+#| "Nous avons remarqué que tu n’as pas encore rempli tes heures "
+#| "supplémentaires et tes heures de trajet dans ton décompte d’heures DÉFI "
+#| "VÉLO. Merci de le remplir au plus vite afin qu’on puisse procéder au "
+#| "paiement des salaires. En cas de questions, tu peux t’adresser à ton "
+#| "chargé de projet.\n"
+#| "\n"
+#| "Tu peux accéder au décompte d’heures via le lien ci-dessous:\n"
+#| "%(timesheets_url)s\n"
+#| "\n"
+#| "Salutations,\n"
+#| "\n"
+#| "L’équipe DÉFI VÉLO - %(site_domain)s\n"
+#| "\n"
+#| "PS : même si tu n’as aucune heures supplémentaires ni aucune heures de "
+#| "trajet, tu dois tout de même valider mensuellement ton décompte d’heures. "
+#| "Par défaut, ton chargé de projet le validera en l’état actuel.\n"
 msgid ""
-"Salut,\n"
-"\n"
 "Nous avons remarqué que tu n’as pas encore rempli tes heures supplémentaires "
 "et tes heures de trajet dans ton décompte d’heures DÉFI VÉLO. Merci de le "
 "remplir au plus vite afin qu’on puisse procéder au paiement des salaires. En "
@@ -1829,14 +1908,6 @@ msgid ""
 "\n"
 "Tu peux accéder au décompte d’heures via le lien ci-dessous:\n"
 "%(timesheets_url)s\n"
-"\n"
-"Salutations,\n"
-"\n"
-"L’équipe DÉFI VÉLO - %(site_domain)s\n"
-"\n"
-"PS : même si tu n’as aucune heures supplémentaires ni aucune heures de "
-"trajet, tu dois tout de même valider mensuellement ton décompte d’heures. "
-"Par défaut, ton chargé de projet le validera en l’état actuel.\n"
 msgstr ""
 "Hallo\n"
 "\n"
@@ -1856,6 +1927,13 @@ msgstr ""
 "deine Stundenabrechnung jeden Monat bestätigen. Ansonsten validiert deine "
 "Projektleitung deine Stundenabrechnung im aktuellen Zustand.\n"
 
+#: apps/salary/templates/salary/email_send_timesheets_reminder.txt:11
+msgid ""
+"PS : même si tu n’as aucune heures supplémentaires ni aucune heures de "
+"trajet, tu dois tout de même valider mensuellement ton décompte d’heures. "
+"Par défaut, ton chargé de projet le validera en l’état actuel.\n"
+msgstr ""
+
 #: apps/salary/templates/salary/month_timesheets.html:5
 #: apps/salary/templates/salary/month_timesheets.html:22
 #, python-format
@@ -1867,16 +1945,16 @@ msgstr "Stunden für %(month)s%(year)s"
 msgid "Heures de %(name)s pour %(month)s %(year)s"
 msgstr "Stunden von %(name)s für %(month)s %(year)s"
 
-#: apps/salary/templates/salary/month_timesheets.html:69
+#: apps/salary/templates/salary/month_timesheets.html:79
 msgid "Total heures"
 msgstr "Total der Stunden"
 
-#: apps/salary/templates/salary/month_timesheets.html:78
+#: apps/salary/templates/salary/month_timesheets.html:88
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:87
 msgid "Total CHF"
 msgstr "Total CHF"
 
-#: apps/salary/templates/salary/month_timesheets.html:79
+#: apps/salary/templates/salary/month_timesheets.html:89
 msgid ""
 "Attention : Ceci n'est pas le salaire net mais le décompte des heures et des "
 "indemmnités"
@@ -1884,20 +1962,24 @@ msgstr ""
 "Achtung: Dies ist nicht der Nettolohn, sondern die Stundenabrechnung und "
 "Entschädigungen"
 
-#: apps/salary/templates/salary/month_timesheets.html:103
+#: apps/salary/templates/salary/month_timesheets.html:113
 msgid "Vous ne pouvez pas entrer des heures dans le futur."
 msgstr "Du kannst keine Stunden in der Zukunft eintragen."
 
-#: apps/salary/templates/salary/month_timesheets.html:105
-msgid "Vous n'avez pas encore d'heures a rentrer ce mois."
+#: apps/salary/templates/salary/month_timesheets.html:115
+#, fuzzy
+#| msgid "Vous n'avez pas encore d'heures a rentrer ce mois."
+msgid "Vous n'avez pas encore d'heures à rentrer ce mois."
 msgstr "Du hast noch keine Stunden zum Eintragen in diesem Monat."
 
-#: apps/salary/templates/salary/month_timesheets.html:107
+#: apps/salary/templates/salary/month_timesheets.html:117
 msgid "Vous n'avez pas travaillé ce mois."
 msgstr "Du hast nicht gearbeitet in diesem Monat."
 
-#: apps/salary/templates/salary/month_timesheets.html:119
-msgid "Tout Sélectionner"
+#: apps/salary/templates/salary/month_timesheets.html:129
+#, fuzzy
+#| msgid "Tout Sélectionner"
+msgid "Tout sélectionner"
 msgstr "Alles markieren"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:5
@@ -2002,18 +2084,18 @@ msgstr ""
 msgid "Aucun résultat."
 msgstr "Keine Resultat."
 
-#: apps/salary/views/timesheets.py:267
+#: apps/salary/views/timesheets.py:281
 #, python-brace-format
 msgid "Export Crésus {month} {year}"
 msgstr "Export Cresus {month} {year}"
 
-#: apps/salary/views/timesheets.py:345
+#: apps/salary/views/timesheets.py:365
 msgid "Aucun rappel à envoyer: les heures de ce mois sont déjà remplies."
 msgstr ""
 "Keine Erinnerung verschicken: die Stunden von diesem Monat wurden bereits "
 "angegeben."
 
-#: apps/salary/views/timesheets.py:366
+#: apps/salary/views/timesheets.py:386
 msgid "Rappel de soumission des heures expédié."
 msgstr "Erinnerung zur Einreichung der Stunden verschickt."
 
@@ -2271,13 +2353,30 @@ msgstr "Bestätigen"
 
 #: apps/user/templates/auth/email_user_send_credentials.txt:1
 #, python-format
+msgid "Bonjour %(full_name)s,"
+msgstr ""
+
+#: apps/user/templates/auth/email_user_send_credentials.txt:3
+#, fuzzy, python-format
+#| msgid ""
+#| "Bonjour %(full_name)s,\n"
+#| "\n"
+#| "%(from_full_name)s (%(from_email)s) t'a créé un login sur le site "
+#| "'%(site_name)s'.\n"
+#| "\n"
+#| "Voilà tes données de connexion :\n"
+#| "\n"
+#| "  Nom d'utilisateur : %(email)s\n"
+#| "  Mot de passe : %(password)s\n"
+#| "  URL de connexion : %(login_uri)s\n"
+#| "\n"
+#| "Merci de compléter votre profil avec vos données personnelles.\n"
+#| "\n"
 msgid ""
-"Bonjour %(full_name)s,\n"
-"\n"
-"%(from_full_name)s (%(from_email)s) t'a créé un login sur le site "
+"%(from_full_name)s (%(from_email)s) vous a créé un login sur le site "
 "'%(site_name)s'.\n"
 "\n"
-"Voilà tes données de connexion :\n"
+"Voilà vos données de connexion :\n"
 "\n"
 "  Nom d'utilisateur : %(email)s\n"
 "  Mot de passe : %(password)s\n"
