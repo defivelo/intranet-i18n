@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 11:27+0200\n"
+"POT-Creation-Date: 2020-08-20 12:10+0200\n"
 "PO-Revision-Date: 2020-08-20 09:34+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -158,7 +158,7 @@ msgstr "LeiterIn 1"
 #: apps/challenge/__init__.py:47 apps/challenge/forms/qualification.py:80
 #: apps/challenge/models/availability.py:124
 #: apps/challenge/models/qualification.py:115
-#: apps/challenge/templates/challenge/session_detail.html:152
+#: apps/challenge/templates/challenge/session_detail.html:155
 #: apps/user/__init__.py:38 defivelo/templatetags/dv_filters.py:218
 msgid "Moniteur 2"
 msgstr "LeiterIn 2"
@@ -186,7 +186,7 @@ msgstr "Natelnr. Lehrperson"
 
 #: apps/challenge/forms/qualification.py:88
 #: apps/challenge/models/qualification.py:124
-#: apps/challenge/templates/challenge/session_detail.html:154
+#: apps/challenge/templates/challenge/session_detail.html:157
 #: apps/challenge/views/season.py:235
 msgid "Moniteurs 1"
 msgstr "LeiterIn 1"
@@ -339,7 +339,7 @@ msgstr "Nein"
 #: apps/challenge/models/availability.py:77 apps/challenge/models/session.py:99
 #: apps/challenge/templates/challenge/season_errors.html:12
 #: apps/challenge/templates/challenge/session_detail.html:5
-#: apps/challenge/views/session.py:212
+#: apps/challenge/views/session.py:249
 msgid "Session"
 msgstr "Halbtag"
 
@@ -409,19 +409,19 @@ msgid "Titre"
 msgstr "Titel"
 
 #: apps/challenge/models/qualification.py:36
-#: apps/challenge/templates/challenge/session_detail.html:156
+#: apps/challenge/templates/challenge/session_detail.html:159
 #, fuzzy
 #| msgid "Visibilité"
 msgid "Agilité"
 msgstr "Sichtbarkeit"
 
 #: apps/challenge/models/qualification.py:37
-#: apps/challenge/templates/challenge/session_detail.html:158
+#: apps/challenge/templates/challenge/session_detail.html:161
 msgid "Mécanique"
 msgstr "Mechanik"
 
 #: apps/challenge/models/qualification.py:38
-#: apps/challenge/templates/challenge/session_detail.html:160
+#: apps/challenge/templates/challenge/session_detail.html:163
 msgid "Rencontre"
 msgstr "Begegnung"
 
@@ -469,7 +469,7 @@ msgstr "Anzahl Helme"
 #: apps/challenge/models/qualification.py:138
 #: apps/challenge/models/session.py:95
 #: apps/challenge/templates/challenge/session_detail.html:120
-#: apps/challenge/templates/challenge/session_detail.html:181
+#: apps/challenge/templates/challenge/session_detail.html:184
 #: apps/orga/export.py:57 apps/orga/models.py:47
 #: apps/orga/templates/orga/organization_detail.html:70
 #: apps/salary/models/timesheets.py:22 apps/user/models.py:225
@@ -481,7 +481,7 @@ msgid "Qualif'"
 msgstr "Quali"
 
 #: apps/challenge/models/qualification.py:246
-#: apps/challenge/templates/challenge/session_detail.html:128
+#: apps/challenge/templates/challenge/session_detail.html:131
 msgid "Qualifs"
 msgstr "Qualis"
 
@@ -643,7 +643,7 @@ msgstr "Laufendes Jahr"
 #: apps/challenge/templates/challenge/invoice_list.html:40
 #: apps/challenge/templates/challenge/invoice_yearly_list.html:53
 #: apps/challenge/templates/challenge/session_detail.html:34
-#: apps/challenge/templates/challenge/session_detail.html:189
+#: apps/challenge/templates/challenge/session_detail.html:192
 #: apps/orga/templates/orga/organization_detail.html:80
 #: apps/orga/templates/orga/organization_filter.html:94
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:66
@@ -721,7 +721,7 @@ msgstr "TeilnehmerInnen"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:64
 #: apps/challenge/templates/challenge/session_detail.html:76
-#: apps/challenge/templates/challenge/session_detail.html:170
+#: apps/challenge/templates/challenge/session_detail.html:173
 msgid "Vélos"
 msgstr "Velos"
 
@@ -997,6 +997,7 @@ msgstr ""
 
 #: apps/challenge/templates/challenge/season_email_to_state_open.txt:9
 #: apps/challenge/templates/challenge/season_email_to_state_running.txt:9
+#: apps/challenge/templates/challenge/session_email_to_helpers.txt:9
 #: apps/salary/templates/salary/email_send_timesheets_reminder.txt:7
 #: apps/user/templates/auth/email_user_send_credentials.txt:13
 #, fuzzy, python-format
@@ -1074,10 +1075,10 @@ msgid ""
 "que nous n’avons finalement pas besoin de toi. N'hésite pas à contacter ton "
 "chargé de projet régional si tu as des questions.\n"
 msgstr ""
-"PS: Du erhälst diese Mail, weil du mindesten eine Verfügbarkeit unter \"falls"
-" nötig\" eingetragen hast. Falls kein Datum in deinem Einsatzplan erscheint, "
-"wurdest du nicht eingeteilt. Kontaktiere deine regionale Projektleitung, "
-"falls du Fragen hast.\n"
+"PS: Du erhälst diese Mail, weil du mindesten eine Verfügbarkeit unter "
+"\"falls nötig\" eingetragen hast. Falls kein Datum in deinem Einsatzplan "
+"erscheint, wurdest du nicht eingeteilt. Kontaktiere deine regionale "
+"Projektleitung, falls du Fragen hast.\n"
 
 #: apps/challenge/templates/challenge/season_errors.html:7
 msgid "Toutes les sessions avec des Qualif's incohérentes"
@@ -1225,7 +1226,7 @@ msgid "Qualifs qui seront supprimées"
 msgstr "Qualis, die gelöscht werden"
 
 #: apps/challenge/templates/challenge/session_confirm_delete.html:23
-#: apps/challenge/templates/challenge/session_detail.html:220
+#: apps/challenge/templates/challenge/session_detail.html:223
 msgid "Retour à la liste des sessions"
 msgstr "Zurück zur Liste der Halbtage"
 
@@ -1234,7 +1235,7 @@ msgid "Emplacement de la session"
 msgstr "Austragungsort des Halbtages"
 
 #: apps/challenge/templates/challenge/session_detail.html:78
-#: apps/challenge/templates/challenge/session_detail.html:173
+#: apps/challenge/templates/challenge/session_detail.html:176
 #, python-format
 msgid "1 vélo"
 msgid_plural "%(n)s vélos"
@@ -1242,7 +1243,7 @@ msgstr[0] "1 Velos"
 msgstr[1] "%(n)s Velos"
 
 #: apps/challenge/templates/challenge/session_detail.html:81
-#: apps/challenge/templates/challenge/session_detail.html:176
+#: apps/challenge/templates/challenge/session_detail.html:179
 #, python-format
 msgid "1 casque"
 msgid_plural "%(n)s casques"
@@ -1266,30 +1267,51 @@ msgstr "Treffpunkt"
 msgid "Erreurs"
 msgstr "Fehler"
 
-#: apps/challenge/templates/challenge/session_detail.html:131
+#: apps/challenge/templates/challenge/session_detail.html:127
+#, fuzzy
+#| msgid "Retour à la liste des Qualifs"
+msgid "Email à l'équipe des Qualif"
+msgstr "Zurück zur Liste der Qualis"
+
+#: apps/challenge/templates/challenge/session_detail.html:134
 msgid "Classe"
 msgstr "Klasse"
 
-#: apps/challenge/templates/challenge/session_detail.html:147
+#: apps/challenge/templates/challenge/session_detail.html:150
 #, python-format
 msgid "%(n)s participants"
 msgstr "%(n)s TeilnehmerInnen"
 
-#: apps/challenge/templates/challenge/session_detail.html:168
+#: apps/challenge/templates/challenge/session_detail.html:171
 msgid "Parcours"
 msgstr "Ausfahrt"
 
-#: apps/challenge/templates/challenge/session_detail.html:192
-#: apps/challenge/templates/challenge/session_detail.html:215
+#: apps/challenge/templates/challenge/session_detail.html:195
+#: apps/challenge/templates/challenge/session_detail.html:218
 #: apps/user/templates/auth/user_detail.html:36
 #: apps/user/templates/auth/user_detail.html:37
 #: apps/user/templates/delete/user_delete.html:23
 msgid "Supprimer"
 msgstr "Löschen"
 
-#: apps/challenge/templates/challenge/session_detail.html:206
+#: apps/challenge/templates/challenge/session_detail.html:209
 msgid "Créer une Qualif'"
 msgstr "Quali erstellen"
+
+#: apps/challenge/templates/challenge/session_email_to_helpers.txt:1
+msgid "Salut,"
+msgstr ""
+
+#: apps/challenge/templates/challenge/session_email_to_helpers.txt:3
+#, python-format
+msgid ""
+"Concernant les qualifs %(session)s, …\n"
+"\n"
+"Retrouvez la version à jour de la Qualif sur\n"
+"\n"
+"    %(session_url)s\n"
+"\n"
+msgstr ""
 
 #: apps/challenge/templates/challenge/session_form.html:4
 #: apps/challenge/templates/challenge/session_form.html:41
@@ -1423,20 +1445,26 @@ msgstr "ReferentInnen der Saison"
 msgid "Erreurs dans les qualifs de la saison"
 msgstr "Fehler in den Qualis der Saison"
 
-#: apps/challenge/views/session.py:161
+#: apps/challenge/views/session.py:164
 #, python-format
 msgid "Classe %s"
 msgstr "Klasse %s"
 
-#: apps/challenge/views/session.py:187
+#: apps/challenge/views/session.py:177
+#, fuzzy, python-brace-format
+#| msgid "Qualif' {name}"
+msgid "Qualifs {session}"
+msgstr "Quali {name}"
+
+#: apps/challenge/views/session.py:224
 msgid "Session mise à jour"
 msgstr "Halbtag aktualisiert"
 
-#: apps/challenge/views/session.py:191
+#: apps/challenge/views/session.py:228
 msgid "Session créée"
 msgstr "Halbtag erstellt"
 
-#: apps/challenge/views/session.py:195
+#: apps/challenge/views/session.py:232
 msgid "Session supprimée"
 msgstr "Halbtag gelöscht"
 
@@ -2946,18 +2974,8 @@ msgstr "Hauptseite"
 msgid "Intranet DÉFI VÉLO"
 msgstr "DEFI VELO Intranet"
 
-#, fuzzy
-#~| msgid "Retour à la liste des Qualifs"
-#~ msgid "Email à l'équipe des Qualif"
-#~ msgstr "Zurück zur Liste der Qualis"
-
 #~ msgid "Vélo urbain"
 #~ msgstr "Geschicklichkeit"
-
-#, fuzzy
-#~| msgid "Qualif' {name}"
-#~ msgid "Qualifs {session}"
-#~ msgstr "Quali {name}"
 
 #~ msgid "Exports pour %(month)s %(year)s"
 #~ msgstr "Exporte für %(month)s%(year)s"
