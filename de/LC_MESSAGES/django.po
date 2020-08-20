@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-20 11:22+0200\n"
-"PO-Revision-Date: 2020-08-18 09:56+0000\n"
+"PO-Revision-Date: 2020-08-20 09:26+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
@@ -1013,20 +1013,12 @@ msgstr ""
 "Dein DEFI VELO-Team - %(site_domain)s"
 
 #: apps/challenge/templates/challenge/season_email_to_state_open.txt:13
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "PS : Tu reçois ce mail parce que tu es affilié à ce canton ou parce que "
-#| "tu l’as sélectionné comme canton mobile. Si tu ne souhaites plus "
-#| "travailler dans ce canton, tu peux aller modifier ton profil intranet ou "
-#| "contacter ton chargé de projet régional\n"
 msgid ""
 "PS : Tu reçois ce mail parce que tu es affilié à ce canton ou parce que tu "
 "l’as sélectionné comme canton mobile. Si tu ne souhaites plus travailler "
 "dans ce canton, tu peux aller modifier ton profil intranet ou contacter ton "
 "chargé de projet régional\n"
 msgstr ""
-"\n"
 "PS: Du erhältst diese E-Mail, weil du diesem Kanton zugeteilt bist oder weil "
 "du ihn als mobilen Kanton ausgewählt hast. Falls du nicht mehr in diesem "
 "Kanton arbeiten möchtest, kannst du dies in deinem Intranet-Profil anpassen "
@@ -1756,28 +1748,24 @@ msgid "Établissement créé"
 msgstr "Schule erstellt"
 
 #: apps/salary/forms.py:39
-#, fuzzy, python-brace-format
-#| msgid "Heures moni·teur·trice (%(price)s.-/h)"
+#, python-brace-format
 msgid "Heures moni·teur·trice ({price}.-/h)"
-msgstr "Stunden LeiterInnen (%(price)s.-/h)"
+msgstr "Stunden LeiterInnen ({price}.-/h)"
 
 #: apps/salary/forms.py:42
-#, fuzzy, python-brace-format
-#| msgid "Intervention(s) (%(price)s.-/Qualif')"
+#, python-brace-format
 msgid "Intervention(s) ({price}.-/Qualif')"
-msgstr "Einsatz/Einsätze (%(price)s.-/Qualif')"
+msgstr "Einsatz/Einsätze ({price}.-/Qualif')"
 
 #: apps/salary/forms.py:45
-#, fuzzy, python-brace-format
-#| msgid "Participation(s) comme moni·teur·trice 2 (%(price)s.-/Qualif')"
+#, python-brace-format
 msgid "Participation(s) comme moni·teur·trice 2 ({price}.-/Qualif')"
-msgstr "Teilnahme(n) als LeiterIn 2 (%(price)s.-/Quali)"
+msgstr "Teilnahme(n) als LeiterIn 2 ({price}.-/Quali)"
 
 #: apps/salary/forms.py:49
-#, fuzzy, python-brace-format
-#| msgid "Heures supplémentaires (%(price)s.-/h)"
+#, python-brace-format
 msgid "Heures supplémentaires ({price}.-/h)"
-msgstr "Zusätzliche Stunden (%(price)s.-/h)"
+msgstr "Zusätzliche Stunden ({price}.-/h)"
 
 #: apps/salary/forms.py:51
 #, fuzzy
