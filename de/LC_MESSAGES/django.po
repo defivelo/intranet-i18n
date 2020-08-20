@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-20 11:27+0200\n"
-"PO-Revision-Date: 2020-08-20 09:26+0000\n"
+"PO-Revision-Date: 2020-08-20 09:34+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
@@ -1068,24 +1068,16 @@ msgstr ""
 "\n"
 
 #: apps/challenge/templates/challenge/season_email_to_state_running.txt:13
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "PS : Tu reçois ce mail parce que tu as rempli au minimum une "
-#| "disponibilité en tant que « si besoin ». Si aucune date n’apparait dans "
-#| "le planning c’est que nous n’avons finalement pas besoin de toi. N'hésite "
-#| "pas à contacter ton chargé de projet régional si tu as des questions.\n"
 msgid ""
 "PS : Tu reçois ce mail parce que tu as rempli au minimum une disponibilité "
 "en tant que « si besoin ». Si aucune date n’apparait dans le planning c’est "
 "que nous n’avons finalement pas besoin de toi. N'hésite pas à contacter ton "
 "chargé de projet régional si tu as des questions.\n"
 msgstr ""
-"\n"
-"PS: Du erhälst diese Mail, weil du mindesten eine Verfügbarkeit unter "
-"\"falls nötig\" eingetragen hast. Falls kein Datum in deinem Einsatzplan "
-"erscheint, wurdest du nicht eingeteilt. Kontaktiere deine regionale "
-"Projektleitung, falls du Fragen hast.\n"
+"PS: Du erhälst diese Mail, weil du mindesten eine Verfügbarkeit unter \"falls"
+" nötig\" eingetragen hast. Falls kein Datum in deinem Einsatzplan erscheint, "
+"wurdest du nicht eingeteilt. Kontaktiere deine regionale Projektleitung, "
+"falls du Fragen hast.\n"
 
 #: apps/challenge/templates/challenge/season_errors.html:7
 msgid "Toutes les sessions avec des Qualif's incohérentes"
@@ -1120,11 +1112,10 @@ msgid "Vers \"%(tostate)s\""
 msgstr "Zu \"%(tostate)s\""
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:14
-#, fuzzy, python-format
-#| msgid ""
-#| "Envoyer le courriel suivant et passer la saison vers '%(tostate)s'' ?"
+#, python-format
 msgid "Envoyer le courriel suivant et passer la saison vers \"%(tostate)s\" ?"
-msgstr "Nächste Nachricht verschicken und die Saison zu '%(tostate)s' ändern ?"
+msgstr ""
+"Nächste Nachricht verschicken und die Saison zu \"%(tostate)s\" ändern ?"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:16
 #: apps/salary/templates/salary/send_timesheets_reminder.html:18
@@ -1775,15 +1766,12 @@ msgid "Heures de trajet (aller-retour)"
 msgstr "Reisezeit (siehe Reglement)"
 
 #: apps/salary/forms.py:116
-#, fuzzy, python-format
-#| msgid ""
-#| "Vous ne pouvez pas rentrer des heures pour le {day}: aucune qualif ce "
-#| "jour-ci."
+#, python-format
 msgid ""
 "Vous ne pouvez pas rentrer des heures pour le %(day)s: aucune qualif ce jour-"
 "ci."
 msgstr ""
-"Für den {day}: können keine Stunden eingetragen werden: keine Quali an "
+"Für den %(day)s: können keine Stunden eingetragen werden: keine Quali an "
 "diesem Tag."
 
 #: apps/salary/forms.py:126
@@ -1956,8 +1944,6 @@ msgid "Vous n'avez pas travaillé ce mois."
 msgstr "Du hast nicht gearbeitet in diesem Monat."
 
 #: apps/salary/templates/salary/month_timesheets.html:129
-#, fuzzy
-#| msgid "Tout Sélectionner"
 msgid "Tout sélectionner"
 msgstr "Alles markieren"
 
