@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 12:10+0200\n"
+"POT-Creation-Date: 2020-08-20 13:51+0200\n"
 "PO-Revision-Date: 2020-08-20 09:34+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -194,9 +194,9 @@ msgstr "LeiterIn 1"
 #: apps/challenge/forms/qualification.py:96
 #: apps/challenge/models/availability.py:115
 #: apps/challenge/models/availability.py:128
-#: apps/challenge/models/qualification.py:131 apps/user/export.py:128
-#: apps/user/models.py:204 apps/user/templates/auth/user_detail.html:157
-#: apps/user/views/standard.py:198 defivelo/templatetags/dv_filters.py:224
+#: apps/challenge/models/qualification.py:131 apps/user/export.py:132
+#: apps/user/models.py:214 apps/user/templates/auth/user_detail.html:157
+#: apps/user/views/standard.py:196 defivelo/templatetags/dv_filters.py:224
 msgid "Intervenant"
 msgstr "ReferentIn"
 
@@ -230,8 +230,8 @@ msgstr "Zu viele Helme eingeplant!"
 msgid "Année"
 msgstr "Jahr"
 
-#: apps/challenge/forms/season.py:74 apps/user/models.py:454
-#: defivelo/roles.py:110
+#: apps/challenge/forms/season.py:74 apps/user/models.py:477
+#: defivelo/roles.py:139
 msgid "Chargé·e de projet"
 msgstr "ProjektleiterIn"
 
@@ -257,7 +257,7 @@ msgstr "Anfang"
 #: apps/salary/models/validations.py:25
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:38
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_year.html:33
-#: apps/user/models.py:562
+#: apps/user/models.py:588
 msgid "Canton"
 msgstr "Kanton"
 
@@ -339,7 +339,7 @@ msgstr "Nein"
 #: apps/challenge/models/availability.py:77 apps/challenge/models/session.py:99
 #: apps/challenge/templates/challenge/season_errors.html:12
 #: apps/challenge/templates/challenge/session_detail.html:5
-#: apps/challenge/views/session.py:249
+#: apps/challenge/views/session.py:250
 msgid "Session"
 msgstr "Halbtag"
 
@@ -393,8 +393,8 @@ msgstr "Bestätigt"
 #: apps/challenge/templates/challenge/invoice_detail.html:24
 #: apps/orga/export.py:56 apps/orga/models.py:45
 #: apps/orga/templates/orga/organization_filter.html:59 apps/orga/views.py:74
-#: apps/user/export.py:133 apps/user/models.py:213
-#: apps/user/templates/auth/user_filter.html:55 apps/user/views/standard.py:190
+#: apps/user/export.py:137 apps/user/models.py:223
+#: apps/user/templates/auth/user_filter.html:55 apps/user/views/standard.py:188
 msgid "Statut"
 msgstr "Status"
 
@@ -427,7 +427,7 @@ msgstr "Begegnung"
 
 #: apps/challenge/models/qualification.py:49 apps/orga/export.py:32
 #: apps/orga/models.py:42 apps/orga/templates/orga/organization_filter.html:61
-#: apps/salary/models/validations.py:11 apps/user/export.py:68
+#: apps/salary/models/validations.py:11 apps/user/export.py:72
 #: apps/user/templates/auth/user_detail.html:66
 #: apps/user/templates/auth/user_detailed_list.html:15
 #: apps/user/templates/auth/user_filter.html:52
@@ -472,7 +472,7 @@ msgstr "Anzahl Helme"
 #: apps/challenge/templates/challenge/session_detail.html:184
 #: apps/orga/export.py:57 apps/orga/models.py:47
 #: apps/orga/templates/orga/organization_detail.html:70
-#: apps/salary/models/timesheets.py:22 apps/user/models.py:225
+#: apps/salary/models/timesheets.py:22 apps/user/models.py:235
 msgid "Remarques"
 msgstr "Bemerkungen"
 
@@ -487,7 +487,7 @@ msgstr "Qualis"
 
 #: apps/challenge/models/season.py:55 apps/info/forms.py:26
 #: apps/orga/views.py:70 apps/user/templates/auth/user_filter.html:56
-#: apps/user/views/standard.py:187
+#: apps/user/views/standard.py:185
 msgid "Cantons"
 msgstr "Kantone"
 
@@ -769,7 +769,7 @@ msgid "30-106-9"
 msgstr "30-106-9"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:113
-#: apps/user/export.py:171
+#: apps/user/export.py:175
 msgid "IBAN"
 msgstr "IBAN"
 
@@ -1445,26 +1445,26 @@ msgstr "ReferentInnen der Saison"
 msgid "Erreurs dans les qualifs de la saison"
 msgstr "Fehler in den Qualis der Saison"
 
-#: apps/challenge/views/session.py:164
+#: apps/challenge/views/session.py:165
 #, python-format
 msgid "Classe %s"
 msgstr "Klasse %s"
 
-#: apps/challenge/views/session.py:177
+#: apps/challenge/views/session.py:178
 #, fuzzy, python-brace-format
 #| msgid "Qualif' {name}"
 msgid "Qualifs {session}"
 msgstr "Quali {name}"
 
-#: apps/challenge/views/session.py:224
+#: apps/challenge/views/session.py:225
 msgid "Session mise à jour"
 msgstr "Halbtag aktualisiert"
 
-#: apps/challenge/views/session.py:228
+#: apps/challenge/views/session.py:229
 msgid "Session créée"
 msgstr "Halbtag erstellt"
 
-#: apps/challenge/views/session.py:232
+#: apps/challenge/views/session.py:233
 msgid "Session supprimée"
 msgstr "Halbtag gelöscht"
 
@@ -1524,11 +1524,11 @@ msgstr "Abgeschlossen"
 msgid "Archivée"
 msgstr "Archiviert"
 
-#: apps/common/models.py:25 apps/orga/export.py:33 apps/user/export.py:80
+#: apps/common/models.py:25 apps/orga/export.py:33 apps/user/export.py:84
 msgid "Rue"
 msgstr "Strasse"
 
-#: apps/common/models.py:26 apps/orga/export.py:34 apps/user/export.py:83
+#: apps/common/models.py:26 apps/orga/export.py:34 apps/user/export.py:87
 msgid "N°"
 msgstr "Nr."
 
@@ -1537,12 +1537,12 @@ msgid "Complément d'adresse"
 msgstr "Adresszusatz"
 
 #: apps/common/models.py:30 apps/orga/export.py:38 apps/orga/forms.py:49
-#: apps/user/export.py:86
+#: apps/user/export.py:90
 msgid "NPA"
 msgstr "PLZ"
 
 #: apps/common/models.py:31 apps/orga/export.py:39
-#: apps/orga/templates/orga/organization_filter.html:62 apps/user/export.py:89
+#: apps/orga/templates/orga/organization_filter.html:62 apps/user/export.py:93
 msgid "Ville"
 msgstr "Stadt"
 
@@ -1647,9 +1647,9 @@ msgid "Abréviation"
 msgstr "Abkürzung"
 
 #: apps/orga/export.py:41 apps/orga/templates/orga/organization_detail.html:42
-#: apps/user/export.py:157 apps/user/models.py:185
+#: apps/user/export.py:161 apps/user/models.py:195
 #: apps/user/templates/auth/user_detail.html:192
-#: apps/user/views/standard.py:181
+#: apps/user/views/standard.py:179
 msgid "Canton d'affiliation"
 msgstr "Zugehörigkeit Kanton"
 
@@ -1660,18 +1660,18 @@ msgstr "Webseite"
 
 #: apps/orga/export.py:45 apps/orga/forms.py:52 apps/orga/models.py:52
 #: apps/orga/templates/orga/organization_detail.html:46
-#: apps/orga/templates/orga/organization_filter.html:64 apps/user/models.py:457
-#: defivelo/roles.py:111
+#: apps/orga/templates/orga/organization_filter.html:64 apps/user/models.py:480
+#: defivelo/roles.py:140
 msgid "Coordina·teur·trice"
 msgstr "Kontaktperson"
 
 #: apps/orga/export.py:48 apps/orga/templates/orga/organization_detail.html:63
-#: apps/user/models.py:183 apps/user/templates/auth/user_detail.html:97
+#: apps/user/models.py:193 apps/user/templates/auth/user_detail.html:97
 msgid "Téléphone"
 msgstr "Telefon"
 
 #: apps/orga/export.py:51 apps/orga/templates/orga/organization_detail.html:59
-#: apps/orga/templates/orga/organization_filter.html:65 apps/user/export.py:78
+#: apps/orga/templates/orga/organization_filter.html:65 apps/user/export.py:82
 #: apps/user/templates/auth/user_detail.html:93
 #: apps/user/templates/auth/user_detailed_list.html:16
 #: apps/user/templates/auth/user_filter.html:54
@@ -1679,7 +1679,7 @@ msgid "Natel"
 msgstr "Natelnr."
 
 #: apps/orga/export.py:54 apps/orga/templates/orga/organization_filter.html:66
-#: apps/user/export.py:77 apps/user/templates/auth/user_detail.html:89
+#: apps/user/export.py:81 apps/user/templates/auth/user_detail.html:89
 #: apps/user/templates/auth/user_detailed_list.html:17
 #: apps/user/templates/auth/user_filter.html:53
 msgid "Email"
@@ -1755,7 +1755,7 @@ msgid "Nouvel établissement"
 msgstr "Neue Schule"
 
 #: apps/orga/views.py:77 apps/user/templates/user_search_form.html:8
-#: apps/user/templates/user_search_form.html:10 apps/user/views/standard.py:208
+#: apps/user/templates/user_search_form.html:10 apps/user/views/standard.py:206
 msgid "Recherche"
 msgstr "Suchen"
 
@@ -2108,106 +2108,106 @@ msgstr "Ja"
 msgid "No"
 msgstr "Nein"
 
-#: apps/user/export.py:67 apps/user/templates/auth/user_detailed_list.html:14
+#: apps/user/export.py:71 apps/user/templates/auth/user_detailed_list.html:14
 #: apps/user/templates/auth/user_filter.html:51
 msgid "Prénom"
 msgstr "Vorname"
 
-#: apps/user/export.py:70 apps/user/models.py:164
+#: apps/user/export.py:74 apps/user/models.py:174
 #: apps/user/templates/auth/user_detail.html:222
-#: apps/user/views/standard.py:169
+#: apps/user/views/standard.py:167
 msgid "Langue"
 msgstr "Sprache"
 
-#: apps/user/export.py:73 apps/user/models.py:167
+#: apps/user/export.py:77 apps/user/models.py:177
 #: apps/user/templates/auth/user_detail.html:226
 msgid "Prêt à animer en"
 msgstr "Ich leite auch auf..."
 
-#: apps/user/export.py:92
+#: apps/user/export.py:96
 msgid "Canton de domicile"
 msgstr "Kanton des Wohnorts"
 
-#: apps/user/export.py:95 apps/user/models.py:169
+#: apps/user/export.py:99 apps/user/models.py:179
 #: apps/user/templates/auth/user_detail.html:85
 msgid "Date de naissance"
 msgstr "Geburtsdatum"
 
-#: apps/user/export.py:100 apps/user/models.py:170
+#: apps/user/export.py:104 apps/user/models.py:180
 #: apps/user/templates/auth/user_detail.html:106
 msgid "Nationalité"
 msgstr "Nationalität"
 
-#: apps/user/export.py:103 apps/user/models.py:171
+#: apps/user/export.py:107 apps/user/models.py:181
 #: apps/user/templates/auth/user_detail.html:114
 msgid "Permis de travail"
 msgstr "Arbeitsbewilligung"
 
-#: apps/user/export.py:106 apps/user/models.py:173
+#: apps/user/export.py:110 apps/user/models.py:183
 #: apps/user/templates/auth/user_detail.html:118
 msgid "Lieu d'imposition"
 msgstr "Ort der Besteuerung"
 
-#: apps/user/export.py:109 apps/user/models.py:181
+#: apps/user/export.py:113 apps/user/models.py:191
 #: apps/user/templates/auth/user_detail.html:134
 msgid "N° AVS"
 msgstr "AHV-Nr."
 
-#: apps/user/export.py:112 apps/user/models.py:210
+#: apps/user/export.py:116 apps/user/models.py:220
 #: apps/user/templates/auth/user_detail.html:138
 msgid "État civil"
 msgstr "Zivilstand"
 
-#: apps/user/export.py:117 apps/user/models.py:216
+#: apps/user/export.py:121 apps/user/models.py:226
 msgid "Expérience pédagogique"
 msgstr "Pädagogische Erfahrung"
 
-#: apps/user/export.py:121
+#: apps/user/export.py:125
 msgid "Commentaires"
 msgstr "Bemerkungen"
 
-#: apps/user/export.py:125 apps/user/models.py:217
+#: apps/user/export.py:129 apps/user/models.py:227
 msgid "Cours samaritains"
 msgstr "Erste-Hilfe-Kurs"
 
-#: apps/user/export.py:138 apps/user/models.py:222
+#: apps/user/export.py:142 apps/user/models.py:232
 #: apps/user/templates/auth/user_detail.html:172
 msgid "Sac Défi Vélo"
 msgstr "DEFI VELO-Tasche"
 
-#: apps/user/export.py:143 apps/user/models.py:194
+#: apps/user/export.py:147 apps/user/models.py:204
 #: apps/user/templates/auth/user_detail.html:148
-#: apps/user/views/standard.py:195
+#: apps/user/views/standard.py:193
 msgid "Formation"
 msgstr "Ausbildung"
 
-#: apps/user/export.py:148 apps/user/models.py:197
+#: apps/user/export.py:152 apps/user/models.py:207
 msgid "Date de la première formation"
 msgstr "Datum der ersten Ausbildung"
 
-#: apps/user/export.py:153 apps/user/models.py:200
+#: apps/user/export.py:157 apps/user/models.py:210
 msgid "Date de la dernière formation"
 msgstr "Datum der letzten Ausbildung"
 
-#: apps/user/export.py:159 apps/user/templates/auth/user_detail.html:196
+#: apps/user/export.py:163 apps/user/templates/auth/user_detail.html:196
 msgid "Défi Vélo Mobile"
 msgstr "DEFI VELO mobil"
 
-#: apps/user/export.py:164 apps/user/models.py:161
+#: apps/user/export.py:168 apps/user/models.py:171
 msgid "Numéro d'employé Crésus"
 msgstr "Mitarbeiternummer Crésus"
 
-#: apps/user/export.py:168 apps/user/models.py:175
+#: apps/user/export.py:172 apps/user/models.py:185
 #: apps/user/templates/auth/user_detail.html:122
 msgid "Nom de la banque"
 msgstr "Name der Bank"
 
-#: apps/user/export.py:176 apps/user/forms.py:197
+#: apps/user/export.py:180 apps/user/forms.py:197
 #: apps/user/templates/auth/user_detail.html:202
 msgid "Niveau d'accès"
 msgstr "Zugangsberechtigung"
 
-#: apps/user/export.py:181 apps/user/forms.py:200 apps/user/models.py:575
+#: apps/user/export.py:185 apps/user/forms.py:200 apps/user/models.py:601
 #: apps/user/templates/auth/user_detail.html:206
 msgid "Cantons gérés"
 msgstr "Geführte Kantone"
@@ -2234,7 +2234,7 @@ msgid "Établissements gérés"
 msgstr "Verwaltete Schulen"
 
 #: apps/user/migrations/0055_data_remove_email_from_deleted_users.py:12
-#: apps/user/models.py:299
+#: apps/user/models.py:322
 #, python-format
 msgid "Email avant suppression: %s"
 msgstr "E-Mail vor dem Löschen: %s"
@@ -2283,49 +2283,55 @@ msgstr "Bezahlt"
 msgid "Offert"
 msgstr "Geschenkt"
 
-#: apps/user/models.py:177
+#: apps/user/models.py:187
 msgid "Coordonnées bancaires (IBAN)"
 msgstr "Bankdaten (IBAN)"
 
-#: apps/user/models.py:191
+#: apps/user/models.py:201
 msgid "Défi Vélo mobile"
 msgstr "DEFI VELO mobil"
 
-#: apps/user/models.py:219
+#: apps/user/models.py:229
 msgid "Cours samaritains (spécifier)"
 msgstr "Erste-Hilfe-Kurse (präzisieren)"
 
-#: apps/user/models.py:274
+#: apps/user/models.py:297
 msgid "A déjà des données de connexion"
 msgstr "Hat bereits Zugangsdaten"
 
-#: apps/user/models.py:443
+#: apps/user/models.py:466
 msgid "A accès"
 msgstr "hat Zugang"
 
-#: apps/user/models.py:447
+#: apps/user/models.py:470
 msgid "Administra·teur·trice"
 msgstr "AdministratorIn"
 
-#: apps/user/models.py:451 defivelo/roles.py:112
+#: apps/user/models.py:474 defivelo/roles.py:141
 msgid "Super-utilisa·teur·trice"
 msgstr "Super-NutzerIn"
 
-#: apps/user/models.py:543 apps/user/templates/auth/user_form.html:7
+#: apps/user/models.py:483
+#, fuzzy
+#| msgid "Coordina·teur·trice"
+msgid "Collabora·teur·trice"
+msgstr "Kontaktperson"
+
+#: apps/user/models.py:569 apps/user/templates/auth/user_form.html:7
 #: defivelo/templates/header.html:148
 msgid "Profil"
 msgstr "Profil"
 
-#: apps/user/models.py:544
+#: apps/user/models.py:570
 msgid "Profils"
 msgstr "Profile"
 
-#: apps/user/models.py:569
+#: apps/user/models.py:595
 #, python-brace-format
 msgid "{name} est chargé·e de projet pour le canton {canton}"
 msgstr "{name} ist ProjektleiterIn für den Kanton {canton}"
 
-#: apps/user/models.py:574
+#: apps/user/models.py:600
 msgid "Canton géré"
 msgstr "Geführter Kanton"
 
@@ -2472,7 +2478,7 @@ msgstr "Zurück zur Benutzerliste"
 msgid "Nouvel utilisateur"
 msgstr "Neuer Benutzer"
 
-#: apps/user/templates/auth/user_filter.html:6 apps/user/views/standard.py:228
+#: apps/user/templates/auth/user_filter.html:6 apps/user/views/standard.py:226
 msgid "Utilisateurs"
 msgstr "NutzerInnen"
 
@@ -2484,7 +2490,7 @@ msgstr "Benutzerliste filtern"
 msgid "Langues"
 msgstr "Sprachen"
 
-#: apps/user/templates/auth/user_filter.html:58 apps/user/views/standard.py:206
+#: apps/user/templates/auth/user_filter.html:58 apps/user/views/standard.py:204
 msgid "Rôle"
 msgstr "Rolle"
 
@@ -2586,31 +2592,31 @@ msgstr "Der/dem Benutzer/in zugeteilte Rolle"
 msgid "Utilisateur supprimé"
 msgstr "Benutzer gelöscht"
 
-#: apps/user/views/standard.py:79
+#: apps/user/views/standard.py:77
 msgid "Profil mis à jour"
 msgstr "Profil aktualisiert"
 
-#: apps/user/views/standard.py:99
+#: apps/user/views/standard.py:97
 msgid "Utilisateur créé"
 msgstr "Benutzer erstellt"
 
-#: apps/user/views/standard.py:175
+#: apps/user/views/standard.py:173
 msgid "Langues d'animation"
 msgstr "Leitet auch auf..."
 
-#: apps/user/views/standard.py:235
+#: apps/user/views/standard.py:242
 msgid "Liste des utilisateurs"
 msgstr "Benutzerliste"
 
-#: apps/user/views/standard.py:245 defivelo/templates/header.html:23
+#: apps/user/views/standard.py:252 defivelo/templates/header.html:23
 msgid "Liste des moniteurs"
 msgstr "Liste der LeiterInnen"
 
-#: apps/user/views/standard.py:256 defivelo/templates/header.html:24
+#: apps/user/views/standard.py:263 defivelo/templates/header.html:24
 msgid "Liste des intervenants"
 msgstr "Liste der ReferentInnen"
 
-#: defivelo/roles.py:109
+#: defivelo/roles.py:137
 msgid "Aucun rôle"
 msgstr "Keine Rolle"
 
