@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-20 11:22+0200\n"
+"POT-Creation-Date: 2020-08-20 11:27+0200\n"
 "PO-Revision-Date: 2020-02-25 10:30+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -94,7 +94,7 @@ msgstr ""
 #: apps/challenge/templates/challenge/session_form.html:73
 #: apps/orga/templates/orga/organization_form.html:38
 #: apps/salary/templates/salary/month_timesheets.html:106
-#: apps/salary/templates/salary/monthlycantonalvalidation_form.html:17
+#: apps/salary/templates/salary/monthlycantonalvalidation_form.html:28
 msgid "Enregistrer"
 msgstr ""
 
@@ -111,7 +111,7 @@ msgstr ""
 #: apps/orga/templates/orga/organization_form.html:40
 #: apps/orga/templates/orga/organization_form.html:42
 #: apps/salary/templates/salary/month_timesheets.html:108
-#: apps/salary/templates/salary/monthlycantonalvalidation_form.html:18
+#: apps/salary/templates/salary/monthlycantonalvalidation_form.html:29
 #: apps/salary/templates/salary/send_timesheets_reminder.html:36
 #: apps/user/templates/actions/mark_inactive.html:22
 #: apps/user/templates/auth/user_form.html:149
@@ -808,6 +808,7 @@ msgstr ""
 
 #: apps/challenge/templates/challenge/invoice_yearly_list.html:5
 #: apps/challenge/templates/challenge/invoice_yearly_list.html:8
+#: apps/salary/templates/salary/monthlycantonalvalidation_form.html:23
 #, python-format
 msgid "Factures %(year)s"
 msgstr ""
@@ -1848,6 +1849,10 @@ msgstr ""
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:12
 #, python-format
 msgid "%(canton)s: Validation pour %(monthyear)s"
+msgstr ""
+
+#: apps/salary/templates/salary/monthlycantonalvalidation_form.html:21
+msgid "N'oubliez pas de valider vos factures d'établissement"
 msgstr ""
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:5
