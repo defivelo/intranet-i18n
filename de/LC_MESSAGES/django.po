@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-20 13:51+0200\n"
-"PO-Revision-Date: 2020-08-21 15:29+0000\n"
-"Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
+"PO-Revision-Date: 2020-09-01 15:29+0000\n"
+"Last-Translator: Laura Mosimann <laura.mosimann@label-vert.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
 "Language: de\n"
@@ -410,10 +410,8 @@ msgstr "Titel"
 
 #: apps/challenge/models/qualification.py:36
 #: apps/challenge/templates/challenge/session_detail.html:159
-#, fuzzy
-#| msgid "Visibilité"
 msgid "Agilité"
-msgstr "Sichtbarkeit"
+msgstr "Geschicklichkeit"
 
 #: apps/challenge/models/qualification.py:37
 #: apps/challenge/templates/challenge/session_detail.html:161
@@ -953,7 +951,7 @@ msgstr "pro Woche"
 #: apps/salary/templates/salary/email_send_timesheets_reminder.txt:1
 #, python-format
 msgid "Salut %(full_name)s,"
-msgstr ""
+msgstr "Hallo %(full_name)s"
 
 #: apps/challenge/templates/challenge/season_email_to_state_open.txt:3
 #, python-format
@@ -985,11 +983,7 @@ msgstr ""
 #: apps/challenge/templates/challenge/session_email_to_helpers.txt:9
 #: apps/salary/templates/salary/email_send_timesheets_reminder.txt:7
 #: apps/user/templates/auth/email_user_send_credentials.txt:13
-#, fuzzy, python-format
-#| msgid ""
-#| "Salutations,\n"
-#| "\n"
-#| "L’équipe DÉFI VÉLO - %(site_domain)s"
+#, python-format
 msgid ""
 "Avec nos meilleures salutations,\n"
 "\n"
@@ -1012,20 +1006,7 @@ msgstr ""
 "oder deine regionale Projektleitung kontaktieren.\n"
 
 #: apps/challenge/templates/challenge/season_email_to_state_running.txt:3
-#, fuzzy, python-format
-#| msgid ""
-#| "Bonjour %(full_name)s,\n"
-#| "\n"
-#| "Le planning DÉFI VÉLO définitif %(season_desc)s est maintenant disponible "
-#| "sur l'Intranet. Merci d’aller le consulter et de prendre note des dates "
-#| "des Qualifs où tu dois être présent. En cas de questions, tu peux "
-#| "t’adresser à ton chargé de projet.\n"
-#| "\n"
-#| "Tu peux accéder au planning directement ici ou via ton compte personnel "
-#| "Intranet.\n"
-#| "\n"
-#| "    %(planning_link)s\n"
-#| "\n"
+#, python-format
 msgid ""
 "Le planning DÉFI VÉLO définitif %(season_desc)s est maintenant disponible "
 "sur l'Intranet. Merci d’aller le consulter et de prendre note des dates des "
@@ -1069,10 +1050,8 @@ msgstr ""
 
 #: apps/challenge/templates/challenge/season_errors.html:13
 #: apps/challenge/templates/challenge/session_item_in_list.html:24
-#, fuzzy
-#| msgid "Qualif' créée"
 msgid "Qualif' incohérente"
-msgstr "Quali erstellt"
+msgstr ""
 
 #: apps/challenge/templates/challenge/season_form.html:4
 #: apps/challenge/templates/challenge/season_form.html:15
@@ -1251,10 +1230,8 @@ msgid "Erreurs"
 msgstr "Fehler"
 
 #: apps/challenge/templates/challenge/session_detail.html:127
-#, fuzzy
-#| msgid "Retour à la liste des Qualifs"
 msgid "Email à l'équipe des Qualif"
-msgstr "Zurück zur Liste der Qualis"
+msgstr "E-Mail an das Quali-Team"
 
 #: apps/challenge/templates/challenge/session_detail.html:134
 msgid "Classe"
@@ -1283,7 +1260,7 @@ msgstr "Quali erstellen"
 
 #: apps/challenge/templates/challenge/session_email_to_helpers.txt:1
 msgid "Salut,"
-msgstr ""
+msgstr "Hallo"
 
 #: apps/challenge/templates/challenge/session_email_to_helpers.txt:3
 #, python-format
@@ -1295,6 +1272,12 @@ msgid ""
 "    %(session_url)s\n"
 "\n"
 msgstr ""
+"Betreffend der Qualis vom %(session)s, …\n"
+"\n"
+"Ihr findet die aktuelle Version der Quali hier:\n"
+"\n"
+"    %(session_url)s\n"
+"\n"
 
 #: apps/challenge/templates/challenge/session_form.html:4
 #: apps/challenge/templates/challenge/session_form.html:41
@@ -1434,10 +1417,9 @@ msgid "Classe %s"
 msgstr "Klasse %s"
 
 #: apps/challenge/views/session.py:178
-#, fuzzy, python-brace-format
-#| msgid "Qualif' {name}"
+#, python-brace-format
 msgid "Qualifs {session}"
-msgstr "Quali {name}"
+msgstr "Qualis {session}"
 
 #: apps/challenge/views/session.py:225
 msgid "Session mise à jour"
@@ -1771,10 +1753,8 @@ msgid "Heures supplémentaires ({price}.-/h)"
 msgstr "Zusätzliche Stunden ({price}.-/h)"
 
 #: apps/salary/forms.py:51
-#, fuzzy
-#| msgid "Heures de trajet (cf. règlement)"
 msgid "Heures de trajet (aller-retour)"
-msgstr "Reisezeit (siehe Reglement)"
+msgstr "Reisezeit (Hin- & Rückreise)"
 
 #: apps/salary/forms.py:116
 #, python-format
@@ -1790,6 +1770,7 @@ msgid ""
 "Les remarques doivent être renseignées pour tout prétention d'heures "
 "supplémentaires"
 msgstr ""
+"Beim Anspruch auf Überstunden müssen diese unter Bemerkungen erklärt werden"
 
 #: apps/salary/forms.py:161 apps/salary/forms.py:192
 msgid "Valider"
@@ -1919,8 +1900,6 @@ msgid "Vous ne pouvez pas entrer des heures dans le futur."
 msgstr "Du kannst keine Stunden in der Zukunft eintragen."
 
 #: apps/salary/templates/salary/month_timesheets.html:115
-#, fuzzy
-#| msgid "Vous n'avez pas encore d'heures a rentrer ce mois."
 msgid "Vous n'avez pas encore d'heures à rentrer ce mois."
 msgstr "Du hast noch keine Stunden zum Eintragen in diesem Monat."
 
@@ -1974,7 +1953,7 @@ msgstr "%(canton)s: Validierung für %(monthyear)s"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:21
 msgid "N'oubliez pas de valider vos factures d'établissement"
-msgstr ""
+msgstr "Vergesst nicht, eure Rechnungen an die Schulen zu bestätigen"
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:5
 #, python-format
@@ -2269,10 +2248,8 @@ msgid "Super-utilisa·teur·trice"
 msgstr "Super-NutzerIn"
 
 #: apps/user/models.py:483
-#, fuzzy
-#| msgid "Coordina·teur·trice"
 msgid "Collabora·teur·trice"
-msgstr "Kontaktperson"
+msgstr "Mitarbeiter_innen"
 
 #: apps/user/models.py:569 apps/user/templates/auth/user_form.html:7
 #: defivelo/templates/header.html:148
@@ -2314,24 +2291,10 @@ msgstr "Bestätigen"
 #: apps/user/templates/auth/email_user_send_credentials.txt:1
 #, python-format
 msgid "Bonjour %(full_name)s,"
-msgstr ""
+msgstr "Guten Tag %(full_name)s"
 
 #: apps/user/templates/auth/email_user_send_credentials.txt:3
-#, fuzzy, python-format
-#| msgid ""
-#| "Bonjour %(full_name)s,\n"
-#| "\n"
-#| "%(from_full_name)s (%(from_email)s) t'a créé un login sur le site "
-#| "'%(site_name)s'.\n"
-#| "\n"
-#| "Voilà tes données de connexion :\n"
-#| "\n"
-#| "  Nom d'utilisateur : %(email)s\n"
-#| "  Mot de passe : %(password)s\n"
-#| "  URL de connexion : %(login_uri)s\n"
-#| "\n"
-#| "Merci de compléter votre profil avec vos données personnelles.\n"
-#| "\n"
+#, python-format
 msgid ""
 "%(from_full_name)s (%(from_email)s) vous a créé un login sur le site "
 "'%(site_name)s'.\n"
@@ -2345,18 +2308,16 @@ msgid ""
 "Merci de compléter votre profil avec vos données personnelles.\n"
 "\n"
 msgstr ""
-"Hallo %(full_name)s,\n"
+"%(from_full_name)s (%(from_email)s) hat Ihnen ein Login für das '%(site_name)"
+"s' erstellt.\n"
 "\n"
-"%(from_full_name)s(%(from_email)s) hat dir ein Login erstellt für "
-"'%(site_name)s'.\n"
-"\n"
-"Hier sind deine Login-Daten:\n"
+"Ihre Zugangsdaten:\n"
 "\n"
 "Benutzername: %(email)s\n"
 "Passwort: %(password)s\n"
-"URL für die Verbindung: %(login_uri)s\n"
+"URL Login: %(login_uri)s\n"
 "\n"
-"Bitte ergänze dein Profil mit deinen persönlichen Daten. Danke!\n"
+"Vielen Dank, dass Sie Ihr Profil mit Ihren persönlichen Angaben ergänzen.\n"
 "\n"
 
 #: apps/user/templates/auth/user_detail.html:24
