@@ -2,18 +2,16 @@
 # This file is distributed under the same license as the Défi Vélo DBpackage.
 #
 # Translators:
-# Didier Raboud <me+defivelo@odyx.org>, 2015
-# Didier Raboud <me+transifex@odyx.org>, 2017
-# Laura Mosimann <laura.mosimann@label-vert.ch>, 2015-2017
+# Didier Raboud <me+defivelo@odyx.org>, 2015, 2017, 2020.
+# Laura Mosimann <laura.mosimann@label-vert.ch>, 2015-2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-02 18:30+0100\n"
-"PO-Revision-Date: 2020-10-27 08:44+0000\n"
+"POT-Creation-Date: 2020-11-03 16:36+0100\n"
+"PO-Revision-Date: 2020-11-03 16:27+0100\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
-"de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,17 +49,17 @@ msgstr ""
 
 #: apps/article/templates/article/article_confirm_delete.html:4
 #, python-format
-msgid "Suppression de l'article %(title)s?"
+msgid "Suppression de l’article %(title)s?"
 msgstr "Artikel %(title)s löschen?"
 
 #: apps/article/templates/article/article_confirm_delete.html:7
 #, python-format
-msgid "Suppression de l'article <em>%(title)s</em> ?"
+msgid "Suppression de l’article <em>%(title)s</em> ?"
 msgstr "Artikel <em>%(title)s</em> löschen?"
 
 #: apps/article/templates/article/article_confirm_delete.html:10
 #, python-format
-msgid "Supprimer l'article <em>%(title)s</em> définitivement ?"
+msgid "Supprimer l’article <em>%(title)s</em> définitivement ?"
 msgstr "Artikel <em>%(title)s</em> definitiv löschen?"
 
 #: apps/article/templates/article/article_confirm_delete.html:12
@@ -73,12 +71,12 @@ msgid "Supprimer vraiment"
 msgstr "Wirklich löschen"
 
 #: apps/article/templates/article/article_confirm_delete.html:13
-msgid "Retour à l'accueil"
+msgid "Retour à l’accueil"
 msgstr "Zurück zur Startseite"
 
 #: apps/article/templates/article/article_form.html:4
 #: apps/article/templates/article/article_form.html:14
-msgid "Édition de l'article"
+msgid "Édition de l’article"
 msgstr "Artikel bearbeiten"
 
 #: apps/article/templates/article/article_form.html:4
@@ -173,8 +171,8 @@ msgstr "N"
 #: apps/challenge/forms/invoices.py:64
 #, python-brace-format
 msgid ""
-"L'espace des factures établissements pour l'année {season.year} est épuisé "
-"avec l'identifiant {ref}."
+"L’espace des factures établissements pour l’année {season.year} est épuisé "
+"avec l’identifiant {ref}."
 msgstr ""
 "Der Platz für die Rechnungen der Schulen für das Jahr {season.year} ist "
 "aufgebraucht mit dem Identifikator {ref}."
@@ -210,11 +208,11 @@ msgid "Il y a des moniteurs à double !"
 msgstr "Achtung, doppelt eingetragene Leiter!"
 
 #: apps/challenge/forms/qualification.py:138
-msgid "L'intervenant n'est pas qualifié pour la rencontre prévue !"
+msgid "L’intervenant n’est pas qualifié pour la rencontre prévue !"
 msgstr "Der Referent ist nicht für den geplanten Posten qualifiziert!"
 
 #: apps/challenge/forms/qualification.py:146
-msgid "L'intervenant ne peut pas aussi être moniteur !"
+msgid "L’intervenant ne peut pas aussi être moniteur !"
 msgstr "Der Referent kann nicht auch Leiter sein!"
 
 #: apps/challenge/forms/qualification.py:159
@@ -310,7 +308,7 @@ msgid "Moniteur"
 msgstr "LeiterIn"
 
 #: apps/challenge/models/availability.py:57
-msgid "Quantité d'engagements souhaités"
+msgid "Quantité d’engagements souhaités"
 msgstr "Anzahl gewünschter Einsätze (max.)"
 
 #: apps/challenge/models/availability.py:62
@@ -475,7 +473,7 @@ msgid "Remarques"
 msgstr "Bemerkungen"
 
 #: apps/challenge/models/qualification.py:244
-msgid "Qualif'"
+msgid "Qualif’"
 msgstr "Quali"
 
 #: apps/challenge/models/qualification.py:245
@@ -523,7 +521,7 @@ msgid "Visible pour les moniteurs"
 msgstr "Sichtbar für die LeiterInnen"
 
 #: apps/challenge/models/session.py:67
-msgid "Lieu de la Qualif'"
+msgid "Lieu de la Qualif’"
 msgstr "Ort der Quali"
 
 #: apps/challenge/models/session.py:77
@@ -579,7 +577,7 @@ msgstr "Standort"
 
 #: apps/challenge/models/session.py:129
 #, python-brace-format
-msgid "Qualif' {name}"
+msgid "Qualif’ {name}"
 msgstr "Quali {name}"
 
 #: apps/challenge/models/session.py:131
@@ -678,7 +676,7 @@ msgid "1004 Lausanne"
 msgstr "1004 Lausanne"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:32
-msgid "La facture n'est pas à jour."
+msgid "La facture n’est pas à jour."
 msgstr "Die Rechnung ist nicht aktuell."
 
 #: apps/challenge/templates/challenge/invoice_detail.html:37
@@ -731,7 +729,7 @@ msgstr "Total"
 #: apps/challenge/templates/challenge/invoice_detail.html:103
 msgid ""
 "La facture est établie selon les listes fournies par le·la "
-"coordinateur·trice de l'établissement."
+"coordinateur·trice de l’établissement."
 msgstr ""
 "Die Rechnung wurde aufgrund der von der Kontaktperson der Schule vorgelegten "
 "Listen erstellt."
@@ -834,12 +832,12 @@ msgstr "Rechnungen %(year)s"
 #: apps/challenge/templates/challenge/qualification_confirm_delete.html:4
 #: apps/challenge/templates/challenge/qualification_confirm_delete.html:7
 #, python-format
-msgid "Suppression de la Qualif' %(qualification)s ?"
+msgid "Suppression de la Qualif’ %(qualification)s ?"
 msgstr "Quali %(qualification)s löschen?"
 
 #: apps/challenge/templates/challenge/qualification_confirm_delete.html:11
 #, python-format
-msgid "Supprimer la Qualif' %(qualification)s (%(session)s) définitivement ?"
+msgid "Supprimer la Qualif’ %(qualification)s (%(session)s) définitivement ?"
 msgstr "Quali %(qualification)s(%(session)s) definitiv löschen?"
 
 #: apps/challenge/templates/challenge/qualification_confirm_delete.html:15
@@ -848,12 +846,12 @@ msgstr "Zurück zur Liste der Qualis"
 
 #: apps/challenge/templates/challenge/qualification_form.html:4
 #: apps/challenge/templates/challenge/qualification_form.html:11
-msgid "Édition de la Qualif'"
+msgid "Édition de la Qualif’"
 msgstr "Quali bearbeiten"
 
 #: apps/challenge/templates/challenge/qualification_form.html:4
 #: apps/challenge/templates/challenge/qualification_form.html:11
-msgid "Nouvelle Qualif'"
+msgid "Nouvelle Qualif’"
 msgstr "Neue Quali"
 
 #: apps/challenge/templates/challenge/season_availability.html:12
@@ -898,7 +896,7 @@ msgstr "Zum Halbtag"
 
 #: apps/challenge/templates/challenge/season_availability_thead.html:28
 #, python-format
-msgid "1 Qualif'"
+msgid "1 Qualif’"
 msgid_plural "%(n)s Qualifs"
 msgstr[0] "1 Quali"
 msgstr[1] "%(n)s Qualis"
@@ -1009,8 +1007,8 @@ msgstr ""
 #, python-format
 msgid ""
 "Le planning DÉFI VÉLO définitif %(season_desc)s est maintenant disponible "
-"sur l'Intranet. Merci d’aller le consulter et de prendre note des dates des "
-"Qualifs où tu dois être présent. Dès à présent, tu es tenu·e d'être "
+"sur l’Intranet. Merci d’aller le consulter et de prendre note des dates des "
+"Qualifs où tu dois être présent. Dès à présent, tu es tenu·e d’être "
 "présent·e aux Qualifs auxquelles tu t'es engagé·e ou de trouver un·e "
 "remplaçant·e parmi les autres moniteurs·trices. En cas de questions, tu peux "
 "t’adresser à ton chargé de projet.\n"
@@ -1036,7 +1034,7 @@ msgstr ""
 msgid ""
 "PS : Tu reçois ce mail parce que tu as rempli au minimum une disponibilité "
 "en tant que « si besoin ». Si aucune date n’apparait dans le planning c’est "
-"que nous n’avons finalement pas besoin de toi. N'hésite pas à contacter ton "
+"que nous n’avons finalement pas besoin de toi. N’hésite pas à contacter ton "
 "chargé de projet régional si tu as des questions.\n"
 msgstr ""
 "PS: Du erhälst diese Mail, weil du mindesten eine Verfügbarkeit unter "
@@ -1045,12 +1043,12 @@ msgstr ""
 "Projektleitung, falls du Fragen hast.\n"
 
 #: apps/challenge/templates/challenge/season_errors.html:7
-msgid "Toutes les sessions avec des Qualif's incohérentes"
+msgid "Toutes les sessions avec des Qualif’s incohérentes"
 msgstr ""
 
 #: apps/challenge/templates/challenge/season_errors.html:13
 #: apps/challenge/templates/challenge/session_item_in_list.html:24
-msgid "Qualif' incohérente"
+msgid "Qualif’ incohérente"
 msgstr ""
 
 #: apps/challenge/templates/challenge/season_form.html:4
@@ -1066,7 +1064,7 @@ msgstr "Neue Saison"
 #: apps/challenge/templates/challenge/season_form_tostate.html:4
 #: apps/challenge/templates/challenge/season_form_tostate.html:10
 #: apps/challenge/templates/challenge/season_form_tostate.html:46
-msgid "Changer l'état de la saison"
+msgid "Changer l’état de la saison"
 msgstr "Zustand der Saison ändern"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:12
@@ -1092,7 +1090,7 @@ msgstr "Diese Nachricht wird verschickt an:"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:26
 msgid ""
-"Cet utilisateur ne peut pas se connecter à l’intranet (il n'a pas de mot de "
+"Cet utilisateur ne peut pas se connecter à l’intranet (il n’a pas de mot de "
 "passe)."
 msgstr ""
 "Dieser Nutzer/diese Nutzerin kann sich nicht ins Intranet einloggen (kein "
@@ -1230,7 +1228,8 @@ msgid "Erreurs"
 msgstr "Fehler"
 
 #: apps/challenge/templates/challenge/session_detail.html:127
-msgid "Email à l'équipe des Qualif"
+#| msgid "Email à l'équipe des Qualif"
+msgid "Email à l’équipe des Qualifs"
 msgstr "E-Mail an das Quali-Team"
 
 #: apps/challenge/templates/challenge/session_detail.html:134
@@ -1255,7 +1254,7 @@ msgid "Supprimer"
 msgstr "Löschen"
 
 #: apps/challenge/templates/challenge/session_detail.html:209
-msgid "Créer une Qualif'"
+msgid "Créer une Qualif’"
 msgstr "Quali erstellen"
 
 #: apps/challenge/templates/challenge/session_email_to_helpers.txt:1
@@ -1267,7 +1266,7 @@ msgstr "Hallo"
 msgid ""
 "Concernant les qualifs %(session)s, …\n"
 "\n"
-"Retrouvez la version à jour de la Qualif sur\n"
+"Retrouvez la version à jour de la Qualif’ sur\n"
 "\n"
 "    %(session_url)s\n"
 "\n"
@@ -1294,7 +1293,7 @@ msgid "Session invisible"
 msgstr "Halbtag unsichtbar"
 
 #: apps/challenge/templates/challenge/session_item_in_list.html:22
-msgid "Aucune Qualif'"
+msgid "Aucune Qualif’"
 msgstr "Keine Quali"
 
 #: apps/challenge/templates/challenge/session_item_in_list.html:26
@@ -1318,7 +1317,7 @@ msgid "Finaliser le planning"
 msgstr "Einsatzplan fertigstellen"
 
 #: apps/challenge/templates/challenge/session_list_links.html:21
-msgid "Sessions avec Qualif' incohérente"
+msgid "Sessions avec Qualif’ incohérente"
 msgstr ""
 
 #: apps/challenge/templates/challenge/session_list_links.html:31
@@ -1346,15 +1345,15 @@ msgid "Sélectionné pour une quali, impossible"
 msgstr "Für eine Quali ausgewählt, unmöglich"
 
 #: apps/challenge/views/quali.py:73
-msgid "Qualif' créée"
+msgid "Qualif’ créée"
 msgstr "Quali erstellt"
 
 #: apps/challenge/views/quali.py:80
-msgid "Qualif' mise à jour"
+msgid "Qualif’ mise à jour"
 msgstr "Quali aktualisiert"
 
 #: apps/challenge/views/quali.py:84
-msgid "Qualif' supprimée"
+msgid "Qualif’ supprimée"
 msgstr "Quali gelöscht"
 
 #: apps/challenge/views/season.py:182
@@ -1498,7 +1497,7 @@ msgid "N°"
 msgstr "Nr."
 
 #: apps/common/models.py:27 apps/orga/export.py:35
-msgid "Complément d'adresse"
+msgid "Complément d’adresse"
 msgstr "Adresszusatz"
 
 #: apps/common/models.py:29 apps/orga/export.py:37 apps/orga/forms.py:48
@@ -1593,7 +1592,7 @@ msgid "Filtrer"
 msgstr "Filtern"
 
 #: apps/info/templates/info/qualifs_calendar.html:89
-msgid "Aucune Qualif n'est planifiée pour l'instant!"
+msgid "Aucune Qualif’ n’est planifiée pour l’instant!"
 msgstr "Zurzeit ist keine Quali geplant!"
 
 #: apps/info/templates/info/season_exports.html:4
@@ -1615,7 +1614,7 @@ msgstr "Abkürzung"
 #: apps/user/export.py:160 apps/user/models.py:194
 #: apps/user/templates/auth/user_detail.html:192
 #: apps/user/views/standard.py:203
-msgid "Canton d'affiliation"
+msgid "Canton d’affiliation"
 msgstr "Zugehörigkeit Kanton"
 
 #: apps/orga/export.py:42 apps/orga/models.py:42
@@ -1668,13 +1667,13 @@ msgstr "Schulen"
 #: apps/orga/templates/orga/organization_confirm_delete.html:4
 #: apps/orga/templates/orga/organization_confirm_delete.html:7
 #, python-format
-msgid "Suppression de l'établissement %(organization)s?"
+msgid "Suppression de l’établissement %(organization)s?"
 msgstr "Schule %(organization)s löschen?"
 
 #: apps/orga/templates/orga/organization_confirm_delete.html:11
 #, python-format
 msgid ""
-"Supprimer l'établissement %(organization)s définitivement (y compris toutes "
+"Supprimer l’établissement %(organization)s définitivement (y compris toutes "
 "les données y-relatives)?"
 msgstr "Schule %(organization)s definitiv löschen (mit allen Informationen)?"
 
@@ -1711,7 +1710,7 @@ msgstr "Neue Schule erstellen"
 
 #: apps/orga/templates/orga/organization_form.html:4
 #: apps/orga/templates/orga/organization_form.html:14
-msgid "Édition de l'établissement"
+msgid "Édition de l’établissement"
 msgstr "Bearbeitung der Schule"
 
 #: apps/orga/templates/orga/organization_form.html:4
@@ -1739,12 +1738,12 @@ msgstr "Stunden LeiterInnen ({price}.-/h)"
 
 #: apps/salary/forms.py:43
 #, python-brace-format
-msgid "Intervention(s) ({price}.-/Qualif')"
+msgid "Intervention(s) ({price}.-/Qualif’)"
 msgstr "Einsatz/Einsätze ({price}.-/Qualif')"
 
 #: apps/salary/forms.py:46
 #, python-brace-format
-msgid "Participation(s) comme moni·teur·trice 2 ({price}.-/Qualif')"
+msgid "Participation(s) comme moni·teur·trice 2 ({price}.-/Qualif’)"
 msgstr "Teilnahme(n) als LeiterIn 2 ({price}.-/Quali)"
 
 #: apps/salary/forms.py:50
@@ -1771,7 +1770,7 @@ msgstr ""
 
 #: apps/salary/forms.py:136
 msgid ""
-"Les remarques doivent être renseignées pour tout prétention d'heures "
+"Les remarques doivent être renseignées pour tout prétention d’heures "
 "supplémentaires"
 msgstr ""
 "Beim Anspruch auf Überstunden müssen diese unter Bemerkungen erklärt werden"
@@ -1897,7 +1896,7 @@ msgstr "Total CHF"
 
 #: apps/salary/templates/salary/month_timesheets.html:89
 msgid ""
-"Attention : Ceci n'est pas le salaire net mais le décompte des heures et des "
+"Attention : Ceci n’est pas le salaire net mais le décompte des heures et des "
 "indemmnités"
 msgstr ""
 "Achtung: Dies ist nicht der Nettolohn, sondern die Stundenabrechnung und "
@@ -1908,11 +1907,11 @@ msgid "Vous ne pouvez pas entrer des heures dans le futur."
 msgstr "Du kannst keine Stunden in der Zukunft eintragen."
 
 #: apps/salary/templates/salary/month_timesheets.html:115
-msgid "Vous n'avez pas encore d'heures à rentrer ce mois."
+msgid "Vous n’avez pas encore d’heures à rentrer ce mois."
 msgstr "Du hast noch keine Stunden zum Eintragen in diesem Monat."
 
 #: apps/salary/templates/salary/month_timesheets.html:117
-msgid "Vous n'avez pas travaillé ce mois."
+msgid "Vous n’avez pas travaillé ce mois."
 msgstr "Du hast nicht gearbeitet in diesem Monat."
 
 #: apps/salary/templates/salary/month_timesheets.html:129
@@ -1960,7 +1959,7 @@ msgid "%(canton)s: Validation pour %(monthyear)s"
 msgstr "%(canton)s: Validierung für %(monthyear)s"
 
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:21
-msgid "N'oubliez pas de valider vos factures d'établissement"
+msgid "N’oubliez pas de valider vos factures d’établissement"
 msgstr "Vergesst nicht, eure Rechnungen an die Schulen zu bestätigen"
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:5
@@ -2022,7 +2021,7 @@ msgstr "Eine Erinnerung verschicken"
 #, fuzzy
 #| msgid "Envoyer un rappel aux moniteurs qui n'ont pas remplis leurs heures"
 msgid ""
-"Envoyer un rappel aux collabora·teur·trices qui n'ont pas rempli leurs heures"
+"Envoyer un rappel aux collabora·teur·trices qui n’ont pas rempli leurs heures"
 msgstr ""
 "Eine Erinnerung an die LeiterInnen schicken, welche ihre Stunden noch nicht "
 "angegeben haben"
@@ -2095,7 +2094,7 @@ msgstr "Arbeitsbewilligung"
 
 #: apps/user/export.py:109 apps/user/models.py:182
 #: apps/user/templates/auth/user_detail.html:118
-msgid "Lieu d'imposition"
+msgid "Lieu d’imposition"
 msgstr "Ort der Besteuerung"
 
 #: apps/user/export.py:112 apps/user/models.py:190
@@ -2144,7 +2143,7 @@ msgid "Défi Vélo Mobile"
 msgstr "DEFI VELO mobil"
 
 #: apps/user/export.py:167 apps/user/models.py:170
-msgid "Numéro d'employé Crésus"
+msgid "Numéro d’employé Crésus"
 msgstr "Mitarbeiternummer Crésus"
 
 #: apps/user/export.py:171 apps/user/models.py:184
@@ -2154,7 +2153,7 @@ msgstr "Name der Bank"
 
 #: apps/user/export.py:180 apps/user/forms.py:197
 #: apps/user/templates/auth/user_detail.html:202
-msgid "Niveau d'accès"
+msgid "Niveau d’accès"
 msgstr "Zugangsberechtigung"
 
 #: apps/user/export.py:185 apps/user/forms.py:200 apps/user/models.py:609
@@ -2167,7 +2166,7 @@ msgid "Un utilisateur avec cette adresse e-mail existe déjà."
 msgstr "Ein/e BenutzerIn mit dieser E-Mailadresse existiert bereits."
 
 #: apps/user/forms.py:122
-msgid "Moniteurs/intervenants ont besoin d'un canton d'affiliation."
+msgid "Moniteurs/intervenants ont besoin d’un canton d’affiliation."
 msgstr ""
 "LeiterInnen / ReferentInnen brauchen eine Zugehörigkeit zu einem Kanton."
 
@@ -2291,7 +2290,7 @@ msgstr "Alle LeiterInnen als inaktiv markieren?"
 #: apps/user/templates/actions/mark_inactive.html:8
 #, python-format
 msgid ""
-"<b>Tous</b> les moniteurs M1 et M2 (%(count)s profils) de l'Intranet qui "
+"<b>Tous</b> les moniteurs M1 et M2 (%(count)s profils) de l’Intranet qui "
 "sont actifs ou inactifs vont être <strong>marqués comme inactifs</strong> !"
 msgstr ""
 "<b>Alle</b> LeiterInnen L1 und L2 (%(count)s Profile), welche aktiv, Reserve "
@@ -2315,7 +2314,7 @@ msgid ""
 "\n"
 "Voilà vos données de connexion :\n"
 "\n"
-"  Nom d'utilisateur : %(email)s\n"
+"  Nom d’utilisateur : %(email)s\n"
 "  Mot de passe : %(password)s\n"
 "  URL de connexion : %(login_uri)s\n"
 "\n"
@@ -2364,7 +2363,7 @@ msgid "N° IBAN"
 msgstr "IBAN-Nr."
 
 #: apps/user/templates/auth/user_detail.html:130
-msgid "N° d'employé Crésus"
+msgid "N° d’employé Crésus"
 msgstr "Mitarbeiternummer Crésus"
 
 #: apps/user/templates/auth/user_detail.html:150
@@ -2397,7 +2396,7 @@ msgstr "Persönliche Bemerkungen"
 
 #: apps/user/templates/auth/user_detail.html:252
 #: apps/user/templates/auth/user_detail.html:253
-msgid "Modifier le niveau d'accès"
+msgid "Modifier le niveau d’accès"
 msgstr "Zugangsberechtigung ändern"
 
 #: apps/user/templates/auth/user_detail.html:257
@@ -2432,7 +2431,7 @@ msgstr "Alle LeiterInnen als inaktiv markieren"
 
 #: apps/user/templates/auth/user_form.html:15
 msgid ""
-"Est-il certain que ce nouvel utilisateur n'existe pas déjà dans la base de "
+"Est-il certain que ce nouvel utilisateur n’existe pas déjà dans la base de "
 "données ?"
 msgstr ""
 "Sicher, dass diese/r neue Nutzer/in nicht bereits in der Datenbank ist?"
@@ -2451,11 +2450,11 @@ msgstr "Erstellen"
 
 #: apps/user/templates/auth/user_form.html:147
 #, python-format
-msgid "Changer d'email (%(email)s)"
+msgid "Changer d’email (%(email)s)"
 msgstr "E-Mail ändern (%(email)s)"
 
 #: apps/user/templates/auth/user_form.html:205
-msgid "Vers le calculateur d'IBAN"
+msgid "Vers le calculateur d’IBAN"
 msgstr "Zum IBAN-Rechner"
 
 #: apps/user/templates/auth/user_form.html:207
@@ -2491,7 +2490,7 @@ msgstr "%(name)s löschen?"
 #, python-format
 msgid ""
 "Cette action va <b>marquer %(name)s comme supprimé</b>. Il ne pourra plus se "
-"connecter ni être sélectionné pour une Qualif' ! Son adresse email sera "
+"connecter ni être sélectionné pour une Qualif’ ! Son adresse email sera "
 "effacée de son profil."
 msgstr ""
 "Diese Aktion wird <b> %(name)s als gelöscht markieren</b>. Er/sie kann sich "
@@ -2501,7 +2500,7 @@ msgstr ""
 #: apps/user/templates/roles/assign.html:4
 #: apps/user/templates/roles/assign.html:8
 #, python-format
-msgid "Modifier le niveau d'accès de %(name)s ?"
+msgid "Modifier le niveau d’accès de %(name)s ?"
 msgstr "Zugangsberechtigung von %(name)s ändern?"
 
 #: apps/user/views/actions.py:36
@@ -2517,7 +2516,7 @@ msgid "Données de connexion ré-expédiées."
 msgstr "Zugangsdaten erneut verschickt."
 
 #: apps/user/views/credentials.py:100
-msgid "Rôle assigné à l'utilisa·teur·trice"
+msgid "Rôle assigné à l’utilisa·teur·trice"
 msgstr "Der/dem Benutzer/in zugeteilte Rolle"
 
 #: apps/user/views/deletes.py:30
@@ -2533,7 +2532,7 @@ msgid "Utilisateur créé"
 msgstr "Benutzer erstellt"
 
 #: apps/user/views/standard.py:197
-msgid "Langues d'animation"
+msgid "Langues d’animation"
 msgstr "Leitet auch auf..."
 
 #: apps/user/views/standard.py:271
@@ -2891,15 +2890,15 @@ msgid "Log in"
 msgstr "Abmelden"
 
 #: defivelo/templates/home.html:27
-msgid "Éditer l'article"
+msgid "Éditer l’article"
 msgstr "Artikel bearbeiten"
 
 #: defivelo/templates/home.html:30
-msgid "Supprimer l'article"
+msgid "Supprimer l’article"
 msgstr "Artikel löschen"
 
 #: defivelo/templates/home.html:41
-msgid "Aucun article publié pour l'instant."
+msgid "Aucun article publié pour l’instant."
 msgstr "Zurzeit ist kein Artikel veröffentlicht."
 
 #: defivelo/templates/license.html:5
