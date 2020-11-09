@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-05 15:01+0100\n"
+"POT-Creation-Date: 2020-11-09 16:34+0100\n"
 "PO-Revision-Date: 2020-11-09 15:34+0000\n"
 "Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -93,7 +93,7 @@ msgstr "Neuer Artikel"
 #: apps/challenge/templates/challenge/season_availability_update.html:32
 #: apps/challenge/templates/challenge/season_form.html:22
 #: apps/challenge/templates/challenge/season_staff_update.html:32
-#: apps/challenge/templates/challenge/session_form.html:73
+#: apps/challenge/templates/challenge/session_form.html:72
 #: apps/orga/templates/orga/organization_form.html:38
 #: apps/salary/templates/salary/month_timesheets.html:106
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:28
@@ -108,11 +108,11 @@ msgstr "Speichern"
 #: apps/challenge/templates/challenge/season_form.html:24
 #: apps/challenge/templates/challenge/season_form.html:26
 #: apps/challenge/templates/challenge/season_form_tostate.html:18
-#: apps/challenge/templates/challenge/session_form.html:75
-#: apps/challenge/templates/challenge/session_form.html:77
+#: apps/challenge/templates/challenge/session_form.html:74
+#: apps/challenge/templates/challenge/session_form.html:76
 #: apps/orga/templates/orga/organization_form.html:40
 #: apps/orga/templates/orga/organization_form.html:42
-#: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:52
+#: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:56
 #: apps/salary/templates/salary/month_timesheets.html:108
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:29
 #: apps/salary/templates/salary/send_timesheets_reminder.html:36
@@ -225,35 +225,41 @@ msgstr "Zu viele Velos eingeplant!"
 msgid "Il y a trop de casques prévus !"
 msgstr "Zu viele Helme eingeplant!"
 
-#: apps/challenge/forms/season.py:69 apps/challenge/forms/settings.py:31
+#: apps/challenge/forms/season.py:84 apps/challenge/forms/settings.py:31
 #: apps/challenge/models/season.py:53 apps/challenge/models/settings.py:28
 msgid "Année"
 msgstr "Jahr"
 
-#: apps/challenge/forms/season.py:73 apps/user/models.py:476
+#: apps/challenge/forms/season.py:88 apps/user/models.py:476
 #: defivelo/roles.py:138
 msgid "Chargé·e de projet"
 msgstr "ProjektleiterIn"
 
-#: apps/challenge/forms/season.py:94
+#: apps/challenge/forms/season.py:109
 msgid "Envoyer le courriel suivant"
 msgstr ""
 
-#: apps/challenge/forms/season.py:127
+#: apps/challenge/forms/season.py:142
 msgid "Disponibilités pour :"
 msgstr "Verfügbarkeiten für:"
 
-#: apps/challenge/forms/session.py:62 apps/challenge/models/session.py:51
+#: apps/challenge/forms/session.py:37
+msgid ""
+"La date ne peut plus être modifiée, car des heures ont déjà été saisies dans "
+"au moins une des Qualifs de cette session."
+msgstr ""
+
+#: apps/challenge/forms/session.py:68 apps/challenge/models/session.py:51
 #: apps/challenge/templates/challenge/session_detail.html:65
 #: apps/salary/models/timesheets.py:14
 msgid "Date"
 msgstr "Datum"
 
-#: apps/challenge/forms/session.py:63 apps/challenge/models/session.py:52
+#: apps/challenge/forms/session.py:69 apps/challenge/models/session.py:52
 msgid "Début"
 msgstr "Anfang"
 
-#: apps/challenge/forms/session.py:65 apps/challenge/forms/settings.py:36
+#: apps/challenge/forms/session.py:71 apps/challenge/forms/settings.py:36
 #: apps/challenge/models/settings.py:27
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:32
 #: apps/common/models.py:32 apps/orga/forms.py:43
@@ -265,43 +271,37 @@ msgstr "Anfang"
 msgid "Canton"
 msgstr "Kanton"
 
-#: apps/challenge/forms/session.py:71 apps/challenge/models/session.py:91
+#: apps/challenge/forms/session.py:77 apps/challenge/models/session.py:91
 #: apps/challenge/models/session.py:132
 #: apps/challenge/templates/challenge/session_detail.html:90
 msgid "Pommes"
 msgstr "Äpfel"
 
-#: apps/challenge/forms/session.py:76
+#: apps/challenge/forms/session.py:82
 msgid "Organisation de la livraison de pommes (quantité & logistique)"
 msgstr "Lieferung der Äpfel (Menge, Organisation & Logistik)"
 
-#: apps/challenge/forms/session.py:82 apps/challenge/models/session.py:86
+#: apps/challenge/forms/session.py:88 apps/challenge/models/session.py:86
 msgid "Heure rendez-vous moniteurs"
 msgstr "Zeit Treffpunkt Leiter"
 
-#: apps/challenge/forms/session.py:85 apps/challenge/models/session.py:70
+#: apps/challenge/forms/session.py:91 apps/challenge/models/session.py:70
 #: apps/challenge/templates/challenge/session_detail.html:70
 #: defivelo/templatetags/dv_filters.py:261
 msgid "Moniteur + / Photographe"
 msgstr "LeiterIn + / Fotos"
 
-#: apps/challenge/forms/session.py:90 apps/challenge/models/session.py:93
+#: apps/challenge/forms/session.py:96 apps/challenge/models/session.py:93
 msgid "N° de contact vélos"
 msgstr "Kontakt + Tel. für Velos"
 
-#: apps/challenge/forms/session.py:98
-msgid ""
-"La date ne peut plus être modifiée, car des heures ont déjà été saisies dans "
-"au moins une des qualifications de cette session."
-msgstr ""
-
-#: apps/challenge/forms/session.py:106
+#: apps/challenge/forms/session.py:107
 #, fuzzy, python-brace-format
 #| msgid "La session doit être dans la saison (entre {begin} et {end})"
 msgid "La session doit être dans le mois (entre {begin} et {end})"
 msgstr "Der Halbtag muss in der Saison sein (zwischen {begin} und {end})"
 
-#: apps/challenge/forms/session.py:115 apps/challenge/models/invoices.py:57
+#: apps/challenge/forms/session.py:116 apps/challenge/models/invoices.py:57
 #: apps/challenge/models/session.py:59
 #: apps/challenge/templates/challenge/session_detail.html:38
 #: apps/challenge/templates/orga/organization_list.html:15
@@ -487,6 +487,7 @@ msgstr "Quali"
 
 #: apps/challenge/models/qualification.py:275
 #: apps/challenge/templates/challenge/session_detail.html:131
+#: defivelo/templates/header.html:29
 msgid "Qualifs"
 msgstr "Qualis"
 
@@ -517,29 +518,29 @@ msgstr "ProjektleiterIn"
 msgid "État"
 msgstr "Stand"
 
-#: apps/challenge/models/season.py:166
+#: apps/challenge/models/season.py:168
 #, fuzzy, python-brace-format
 #| msgid "{saison} {annee}"
 msgid "{season} {year}"
 msgstr "{saison} {annee}"
 
-#: apps/challenge/models/season.py:172
+#: apps/challenge/models/season.py:174
 #, fuzzy, python-brace-format
 #| msgid "Export Crésus {month} {year}"
 msgid "{month} {year}"
 msgstr "Export Cresus {month} {year}"
 
-#: apps/challenge/models/season.py:175
+#: apps/challenge/models/season.py:177
 #, python-brace-format
 msgid "{month_begin} - {month_end} {year}"
 msgstr ""
 
-#: apps/challenge/models/season.py:180
+#: apps/challenge/models/season.py:182
 #, python-brace-format
 msgid "{month_begin} {year_begin} - {month_end} {year_end}"
 msgstr ""
 
-#: apps/challenge/models/season.py:270
+#: apps/challenge/models/season.py:272
 #, fuzzy, python-brace-format
 #| msgid "{cantons} - {moment}"
 msgid "{cantons} - {season_full}"
@@ -604,7 +605,7 @@ msgid "Horaire"
 msgstr "Zeit"
 
 #: apps/challenge/models/session.py:136
-#: apps/challenge/templates/challenge/session_form.html:45
+#: apps/challenge/templates/challenge/session_form.html:44
 msgid "Emplacement"
 msgstr "Standort"
 
@@ -651,8 +652,8 @@ msgid ""
 "            <b>Attention:</b>\n"
 "            Si vous retirez un·e <b>%(actor)s</b>, <b>%(helpers)s</b>, ou <b>"
 "%(leader)s</b>,\n"
-"            ses fiches d'heures seront définitevement supprimées. Fiches "
-"concernées:\n"
+"            ses fiches d'heures seront définitivement supprimées. Fiches "
+"concernées :\n"
 "        "
 msgstr ""
 
@@ -1295,7 +1296,7 @@ msgstr[0] "1 Helme"
 msgstr[1] "%(n)s Helme"
 
 #: apps/challenge/templates/challenge/session_detail.html:87
-#: apps/challenge/templates/challenge/session_form.html:51
+#: apps/challenge/templates/challenge/session_form.html:50
 msgid "Logistique"
 msgstr "Logistik"
 
@@ -1362,12 +1363,12 @@ msgstr ""
 "\n"
 
 #: apps/challenge/templates/challenge/session_form.html:4
-#: apps/challenge/templates/challenge/session_form.html:41
+#: apps/challenge/templates/challenge/session_form.html:40
 msgid "Édition de la session"
 msgstr "Halbtag bearbeiten"
 
 #: apps/challenge/templates/challenge/session_form.html:4
-#: apps/challenge/templates/challenge/session_form.html:41
+#: apps/challenge/templates/challenge/session_form.html:40
 msgid "Nouvelle session"
 msgstr "Neuer Halbtag"
 
@@ -1438,7 +1439,7 @@ msgstr "Quali erstellt"
 msgid "Qualif’ mise à jour"
 msgstr "Quali aktualisiert"
 
-#: apps/challenge/views/quali.py:92
+#: apps/challenge/views/quali.py:89
 msgid "Qualif’ supprimée"
 msgstr "Quali gelöscht"
 
@@ -1996,7 +1997,7 @@ msgstr "Ja"
 msgid "Quand"
 msgstr ""
 
-#: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:51
+#: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:55
 msgid "Supprimer toutes les feuilles d'heures"
 msgstr ""
 
@@ -2074,11 +2075,11 @@ msgstr "Du hast nicht gearbeitet in diesem Monat."
 msgid "Il y a %(n)s feuilles d'heure orphelines ce mois."
 msgstr ""
 
-#: apps/salary/templates/salary/month_timesheets.html:154
+#: apps/salary/templates/salary/month_timesheets.html:158
 msgid "Examiner les entrées orphelines"
 msgstr ""
 
-#: apps/salary/templates/salary/month_timesheets.html:168
+#: apps/salary/templates/salary/month_timesheets.html:172
 msgid "Tout sélectionner"
 msgstr "Alles markieren"
 
@@ -2180,7 +2181,7 @@ msgstr "Alle Kantone"
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:95
 #, python-format
 msgid "1 entrée orpheline"
-msgid_plural "%()s entrées orphelines"
+msgid_plural "%(count)s entrées orphelines"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -2996,10 +2997,6 @@ msgstr "Alle Kantone"
 #: defivelo/templates/header.html:19
 msgid "Facturation établissements"
 msgstr "Abrechnung Schulen"
-
-#: defivelo/templates/header.html:29
-msgid "Mois"
-msgstr ""
 
 #: defivelo/templates/header.html:42
 #, fuzzy
