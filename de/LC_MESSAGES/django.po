@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-09 16:34+0100\n"
-"PO-Revision-Date: 2020-11-09 15:34+0000\n"
-"Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
+"PO-Revision-Date: 2020-11-11 14:45+0000\n"
+"Last-Translator: Laura Mosimann <laura.mosimann@label-vert.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #: apps/article/forms.py:25
 msgid "Publié"
@@ -237,7 +237,7 @@ msgstr "ProjektleiterIn"
 
 #: apps/challenge/forms/season.py:109
 msgid "Envoyer le courriel suivant"
-msgstr ""
+msgstr "Nächstes Mail verschicken"
 
 #: apps/challenge/forms/season.py:142
 msgid "Disponibilités pour :"
@@ -248,6 +248,8 @@ msgid ""
 "La date ne peut plus être modifiée, car des heures ont déjà été saisies dans "
 "au moins une des Qualifs de cette session."
 msgstr ""
+"Das Datum kann nicht mehr geändert werden, weil bereits in mindestens einer "
+"Quali an diesem Halbtag Stunden eingetragen wurden."
 
 #: apps/challenge/forms/session.py:68 apps/challenge/models/session.py:51
 #: apps/challenge/templates/challenge/session_detail.html:65
@@ -296,10 +298,9 @@ msgid "N° de contact vélos"
 msgstr "Kontakt + Tel. für Velos"
 
 #: apps/challenge/forms/session.py:107
-#, fuzzy, python-brace-format
-#| msgid "La session doit être dans la saison (entre {begin} et {end})"
+#, python-brace-format
 msgid "La session doit être dans le mois (entre {begin} et {end})"
-msgstr "Der Halbtag muss in der Saison sein (zwischen {begin} und {end})"
+msgstr "Der Halbtag muss im Monat sein (zwischen {begin} und {end})"
 
 #: apps/challenge/forms/session.py:116 apps/challenge/models/invoices.py:57
 #: apps/challenge/models/session.py:59
@@ -493,13 +494,11 @@ msgstr "Qualis"
 
 #: apps/challenge/models/season.py:55
 msgid "Mois de début"
-msgstr ""
+msgstr "Startmonat"
 
 #: apps/challenge/models/season.py:58
-#, fuzzy
-#| msgid "Nombre de vélos"
 msgid "Nombre de mois"
-msgstr "Anzahl Velos"
+msgstr "Anzahl Monate"
 
 #: apps/challenge/models/season.py:62 apps/info/forms.py:25
 #: apps/orga/views.py:69 apps/user/templates/auth/user_filter.html:56
@@ -519,32 +518,29 @@ msgid "État"
 msgstr "Stand"
 
 #: apps/challenge/models/season.py:168
-#, fuzzy, python-brace-format
-#| msgid "{saison} {annee}"
+#, python-brace-format
 msgid "{season} {year}"
-msgstr "{saison} {annee}"
+msgstr "{season} {year}"
 
 #: apps/challenge/models/season.py:174
-#, fuzzy, python-brace-format
-#| msgid "Export Crésus {month} {year}"
+#, python-brace-format
 msgid "{month} {year}"
-msgstr "Export Cresus {month} {year}"
+msgstr "{month} {year}"
 
 #: apps/challenge/models/season.py:177
 #, python-brace-format
 msgid "{month_begin} - {month_end} {year}"
-msgstr ""
+msgstr "{month_begin} - {month_end} {year}"
 
 #: apps/challenge/models/season.py:182
 #, python-brace-format
 msgid "{month_begin} {year_begin} - {month_end} {year_end}"
-msgstr ""
+msgstr "{month_begin} {year_begin} - {month_end} {year_end}"
 
 #: apps/challenge/models/season.py:272
-#, fuzzy, python-brace-format
-#| msgid "{cantons} - {moment}"
+#, python-brace-format
 msgid "{cantons} - {season_full}"
-msgstr "{cantons} - {moment}"
+msgstr "{cantons} - {season_full}"
 
 #: apps/challenge/models/session.py:54
 msgid "Durée"
@@ -656,6 +652,13 @@ msgid ""
 "concernées :\n"
 "        "
 msgstr ""
+"\n"
+"            <b>Achtung:</b>\n"
+"            Wenn ihr eine*n <b>%(actor)s</b>, <b>%(helpers)s</b>, oder "
+"<b>%(leader)s</b> entfernt,\n"
+"            werden ihre/seine Stundenabrechnungen definitiv gelöscht. "
+"Betroffene Abrechnungen:\n"
+"        "
 
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:4
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:15
@@ -918,10 +921,8 @@ msgid "Planning"
 msgstr "Einsatzplan"
 
 #: apps/challenge/templates/challenge/season_availability.html:35
-#, fuzzy
-#| msgid "Retour à la saison"
 msgid "Retour au mois"
-msgstr "Zurück zur Saison"
+msgstr "Zurück zum Monat"
 
 #: apps/challenge/templates/challenge/season_availability.html:45
 #: apps/challenge/templates/challenge/season_availability_update.html:9
@@ -975,23 +976,19 @@ msgstr "Ref."
 
 #: apps/challenge/templates/challenge/season_confirm_delete.html:4
 #: apps/challenge/templates/challenge/season_confirm_delete.html:7
-#, fuzzy, python-format
-#| msgid "Suppression de la saison %(season)s ?"
+#, python-format
 msgid "Suppression du mois %(season)s ?"
-msgstr "Saison %(season)s löschen?"
+msgstr "Monat %(season)s löschen?"
 
 #: apps/challenge/templates/challenge/season_confirm_delete.html:11
-#, fuzzy, python-format
-#| msgid "Supprimer la saison %(season)s définitivement ?"
+#, python-format
 msgid "Supprimer le mois %(season)s définitivement ?"
-msgstr "Saison %(season)s definitiv löschen?"
+msgstr "Monat %(season)s definitiv löschen?"
 
 #: apps/challenge/templates/challenge/season_confirm_delete.html:15
 #: apps/challenge/templates/challenge/session_list_links.html:3
-#, fuzzy
-#| msgid "Retour à la liste des Qualifs"
 msgid "Retour à la liste des mois"
-msgstr "Zurück zur Liste der Qualis"
+msgstr "Zurück zur Liste der Monate"
 
 #: apps/challenge/templates/challenge/season_detail.html:7
 #: apps/challenge/templates/challenge/session_archive_week.html:22
@@ -1008,18 +1005,7 @@ msgid "Salut %(full_name)s,"
 msgstr "Hallo %(full_name)s"
 
 #: apps/challenge/templates/challenge/season_email_to_state_open.txt:3
-#, fuzzy, python-format
-#| msgid ""
-#| "Le planning DÉFI VÉLO du canton %(season_desc)s est désormais disponible "
-#| "sur intranet. Merci de remplir tes disponibilités au plus vite afin qu’on "
-#| "puisse préparer la saison au mieux. En cas de questions, tu peux "
-#| "t’adresser à ton chargé de projet.\n"
-#| "\n"
-#| "Tu peux accéder au planning directement ici ou via ton compte personnel "
-#| "intranet.\n"
-#| "\n"
-#| "    %(planning_link)s\n"
-#| "\n"
+#, python-format
 msgid ""
 "Le planning DÉFI VÉLO du canton %(season_desc)s est désormais disponible sur "
 "intranet. Merci de remplir tes disponibilités au plus vite afin qu’on puisse "
@@ -1034,7 +1020,7 @@ msgid ""
 msgstr ""
 "Der Einsatzplan von DEFI VELO %(season_desc)s ist nun auf dem Intranet "
 "bereit. Bitte fülle so rasch wie möglich deine Verfügbarkeiten aus, damit "
-"wir die Saison vorbereiten können. Bei Fragen wende dich an deine "
+"wir den Monat vorbereiten können. Bei Fragen wende dich an deine "
 "Projektleitung.\n"
 "\n"
 "Du kannst direkt hier auf den Einsatzplan zugreifen oder über dein "
@@ -1120,34 +1106,28 @@ msgstr ""
 
 #: apps/challenge/templates/challenge/season_form.html:4
 #: apps/challenge/templates/challenge/season_form.html:15
-#, fuzzy
-#| msgid "Édition de la saison"
 msgid "Édition du mois"
-msgstr "Bearbeitung der Saison"
+msgstr "Bearbeitung des Monates"
 
 #: apps/challenge/templates/challenge/season_form.html:4
 #: apps/challenge/templates/challenge/season_form.html:15
 msgid "Nouveau mois"
-msgstr ""
+msgstr "Neuer Monat"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:4
 #: apps/challenge/templates/challenge/season_form_tostate.html:10
-#, fuzzy
-#| msgid "Changer l’état de la saison"
 msgid "Changer l’état du mois"
-msgstr "Zustand der Saison ändern"
+msgstr "Zustand des Monats ändern"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:12
-#, fuzzy, python-format
-#| msgid "Vers \"%(tostate)s\""
+#, python-format
 msgid "Passer le mois vers \"%(tostate)s\" ?"
-msgstr "Zu \"%(tostate)s\""
+msgstr "Den Monat zu \"%(tostate)s\" hinzufügen?"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:17
-#, fuzzy, python-format
-#| msgid "Vers \"%(tostate)s\""
+#, python-format
 msgid "Passer le mois vers \"%(tostate)s\""
-msgstr "Zu \"%(tostate)s\""
+msgstr "Den Monat zu \"%(tostate)s\" hinzufügen"
 
 #: apps/challenge/templates/challenge/season_form_tostate.html:23
 #: apps/salary/templates/salary/send_timesheets_reminder.html:18
@@ -1178,10 +1158,9 @@ msgstr ""
 #: apps/challenge/templates/challenge/season_list.html:5
 #: apps/challenge/templates/challenge/season_list.html:8
 #: apps/challenge/templates/challenge/season_planning.html:33
-#, fuzzy, python-format
-#| msgid "Saisons %(year)s"
+#, python-format
 msgid "Mois de %(year)s"
-msgstr "Saisons %(year)s"
+msgstr "Monate %(year)s"
 
 #: apps/challenge/templates/challenge/season_list.html:39
 msgid "Liste des sessions"
@@ -1199,10 +1178,8 @@ msgid "Mon planning"
 msgstr "Mein Einsatzplan"
 
 #: apps/challenge/templates/challenge/season_list.html:67
-#, fuzzy
-#| msgid "Créer une nouvelle saison"
 msgid "Créer un nouveau mois"
-msgstr "Neue Saison erstellen"
+msgstr "Neuen Monat erstellen"
 
 #: apps/challenge/templates/challenge/season_planning.html:37
 #: defivelo/templates/header.html:51
@@ -1249,26 +1226,25 @@ msgid "Suppression de la session %(session)s ?"
 msgstr "Halbtag %(session)s löschen?"
 
 #: apps/challenge/templates/challenge/session_confirm_delete.html:18
-#, fuzzy, python-format
-#| msgid ""
-#| "Supprimer la session %(session)s définitivement (y compris toutes ses "
-#| "Qualifs) ?"
+#, python-format
 msgid ""
 "\n"
 "                    Supprimer la session %(session)s définitivement\n"
 "                    (y compris toutes ses Qualifs et saisies d'heures) ?\n"
 "                "
-msgstr "Halbtag %(session)s definitiv löschen (inkl. aller Qualis)?"
+msgstr ""
+"\n"
+"                    Halbtag %(session)s definitiv löschen\n"
+"                    (inkl. aller Qualis)?\n"
+"                "
 
 #: apps/challenge/templates/challenge/session_confirm_delete.html:27
 msgid "Qualifs qui seront supprimées"
 msgstr "Qualis, die gelöscht werden"
 
 #: apps/challenge/templates/challenge/session_confirm_delete.html:38
-#, fuzzy
-#| msgid "Qualifs qui seront supprimées"
 msgid "Saisies d'heures qui seront supprimées"
-msgstr "Qualis, die gelöscht werden"
+msgstr "Zeiteinträge, die gelöscht werden"
 
 #: apps/challenge/templates/challenge/session_confirm_delete.html:51
 #: apps/challenge/templates/challenge/session_detail.html:223
@@ -1389,10 +1365,8 @@ msgid "Présences"
 msgstr "Anwesenheiten"
 
 #: apps/challenge/templates/challenge/session_list_links.html:6
-#, fuzzy
-#| msgid "Éditer la saison"
 msgid "Éditer le mois"
-msgstr "Saison bearbeiten"
+msgstr "Monat bearbeiten"
 
 #: apps/challenge/templates/challenge/session_list_links.html:9
 msgid "Diffuser le planning"
@@ -1412,10 +1386,9 @@ msgstr "Neuen Halbtag erstellen"
 
 #: apps/challenge/templates/orga/organization_list.html:5
 #: apps/challenge/templates/orga/organization_list.html:8
-#, fuzzy, python-format
-#| msgid "Établissements pour la saison %(season)s"
+#, python-format
 msgid "Établissements pour le mois %(season)s"
-msgstr "Schulen der Saison %(season)s"
+msgstr "Schulen für den Monat %(season)s"
 
 #: apps/challenge/templates/orga/organization_list.html:16
 msgid "Factures"
@@ -1444,10 +1417,8 @@ msgid "Qualif’ supprimée"
 msgstr "Quali gelöscht"
 
 #: apps/challenge/views/season.py:183
-#, fuzzy
-#| msgid "Profil mis à jour"
 msgid "Mois mis à jour"
-msgstr "Profil aktualisiert"
+msgstr "Monat aktualisiert"
 
 #: apps/challenge/views/season.py:236
 msgid "Moniteurs 2"
@@ -1468,10 +1439,8 @@ msgid "M+"
 msgstr "L+"
 
 #: apps/challenge/views/season.py:769
-#, fuzzy
-#| msgid "Planning_Saison"
 msgid "Planning_Mois"
-msgstr "Einsatzplan_Saison"
+msgstr "Einsatzplan_Monat"
 
 #: apps/challenge/views/season.py:892
 msgid "Disponibilités mises à jour"
@@ -1482,34 +1451,24 @@ msgid "Choix du personnel mises à jour"
 msgstr "Auswahl der LeiterInnen aktualisiert"
 
 #: apps/challenge/views/season.py:1039
-#, fuzzy
-#| msgid "Saison créée"
 msgid "Mois créé"
-msgstr "Saison erstellt"
+msgstr "Monat erstellt"
 
 #: apps/challenge/views/season.py:1045
-#, fuzzy
-#| msgid "Saison supprimée"
 msgid "Mois supprimé"
-msgstr "Saison gelöscht"
+msgstr "Monat gelöscht"
 
 #: apps/challenge/views/season.py:1051
-#, fuzzy
-#| msgid "Moniteur de Secours"
 msgid "Moniteurs du mois"
-msgstr "Notfall-LeiterIn"
+msgstr "LeiterInnen des Monats"
 
 #: apps/challenge/views/season.py:1073
-#, fuzzy
-#| msgid "Intervenants de la saison"
 msgid "Intervenants du mois"
-msgstr "ReferentInnen der Saison"
+msgstr "ReferentInnen des Monats"
 
 #: apps/challenge/views/season.py:1093
-#, fuzzy
-#| msgid "Erreurs dans les qualifs de la saison"
 msgid "Erreurs dans les qualifs du mois"
-msgstr "Fehler in den Qualis der Saison"
+msgstr "Fehler in den Qualis des Monats"
 
 #: apps/challenge/views/session.py:165
 #, python-format
@@ -1574,8 +1533,6 @@ msgid "Planification (invisible)"
 msgstr "In Planung (versteckt)"
 
 #: apps/common/__init__.py:149
-#, fuzzy
-#| msgid "Annoncée (rentrée des disponibilités)"
 msgid "Annoncé (rentrée des disponibilités)"
 msgstr "Veröffentlicht (Verfügbarkeiten eingeben)"
 
@@ -1584,14 +1541,10 @@ msgid "En cours (corrections que par chargé·e·s de projet)"
 msgstr "Im Gang (Änderungen nur durch Projektleitung)"
 
 #: apps/common/__init__.py:151
-#, fuzzy
-#| msgid "Terminée"
 msgid "Terminé"
 msgstr "Abgeschlossen"
 
 #: apps/common/__init__.py:152
-#, fuzzy
-#| msgid "Archivée"
 msgid "Archivé"
 msgstr "Archiviert"
 
@@ -1649,16 +1602,13 @@ msgid "DV-{exportfilename}-{YMD_date}.{extension}"
 msgstr "DV-{exportfilename}-{YMD_date}.{extension}"
 
 #: apps/info/exports.py:68
-#, fuzzy, python-brace-format
-#| msgid "Statistiques de la saison {season} {year}"
+#, python-brace-format
 msgid "Statistiques du mois {season} {year}"
-msgstr "Zahlen der Saison {season} {year}"
+msgstr "Zahlen des Monats {season} {year}"
 
 #: apps/info/exports.py:75
-#, fuzzy
-#| msgid "Stats_Saison"
 msgid "Stats_Mois"
-msgstr "Zahlen_Saison"
+msgstr "Zahlen_Monat"
 
 #: apps/info/templates/info/next_qualifs.html:3
 #: apps/info/templates/info/next_qualifs.html:5
@@ -1707,16 +1657,13 @@ msgstr "Zurzeit ist keine Quali geplant!"
 
 #: apps/info/templates/info/season_exports.html:4
 #: apps/info/templates/info/season_exports.html:27
-#, fuzzy, python-format
-#| msgid "Exports pour la saison %(season)s %(year)s"
+#, python-format
 msgid "Exports pour le mois %(season)s %(year)s"
-msgstr "Exporte der Saison%(season)s%(year)s"
+msgstr "Exporte des Monats%(season)s%(year)s"
 
 #: apps/info/templates/info/season_exports.html:30
-#, fuzzy
-#| msgid "Statistiques de la saison"
 msgid "Statistiques du mois"
-msgstr "Zahlen der Saison"
+msgstr "Zahlen des Monats"
 
 #: apps/orga/export.py:30 apps/orga/models.py:40
 #: apps/orga/templates/orga/organization_filter.html:60
@@ -1870,7 +1817,7 @@ msgstr "Reisezeit (Hin- & Rückreise)"
 
 #: apps/salary/forms.py:53
 msgid "Ne compter aucune heure de travail"
-msgstr ""
+msgstr "Keine Arbeitsstunden zählen"
 
 #: apps/salary/forms.py:126
 #, python-format
@@ -1941,7 +1888,7 @@ msgstr "Reisezeit"
 
 #: apps/salary/models/timesheets.py:33
 msgid "Ignorer"
-msgstr ""
+msgstr "Ignorieren"
 
 #: apps/salary/models/validations.py:12
 msgid "URL"
@@ -1969,37 +1916,35 @@ msgid "{year}/{month}: Validation du canton {canton}"
 msgstr "{year}/{month}: Validierung vom Kanton {canton}"
 
 #: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:5
-#, fuzzy, python-format
-#| msgid "Rappel de soumission des heures pour %(month_year)s\n"
+#, python-format
 msgid "Nettoyage des feuilles d'heures orphelines de %(month_year)s\n"
-msgstr "Erinnerung zur Einreichung der Stunden für den %(month_year)s\n"
+msgstr "Überarbeitung der leeren Stundenabrechnungen für den %(month_year)s\n"
 
 #: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:9
-#, fuzzy, python-format
-#| msgid "Rappel de soumission des heures pour %(month_year)s"
+#, python-format
 msgid "Nettoyage des feuilles d'heures orphelines de %(month_year)s"
-msgstr "Erinnerung zur Einreichung der Stunden vom %(month_year)s"
+msgstr "Überarbeitung der leeren Stundenabrechnungen von %(month_year)s"
 
 #: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:13
 msgid ""
 "Les feuilles d'heures suivantes ne correspondent plus à aucune session et "
 "devraient être supprimées."
 msgstr ""
+"Folgende Stundenabrechnungen entsprechen keinem Halbtag mehr und müssen "
+"gelöscht werden."
 
 #: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:19
-#, fuzzy
-#| msgid "Oui"
 msgid "Qui"
-msgstr "Ja"
+msgstr "Wer"
 
 #: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:20
 #: apps/salary/templates/salary/month_timesheets.html:128
 msgid "Quand"
-msgstr ""
+msgstr "Wann"
 
 #: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:55
 msgid "Supprimer toutes les feuilles d'heures"
-msgstr ""
+msgstr "Alle Stundenabrechnungen löschen"
 
 #: apps/salary/templates/salary/email_send_timesheets_reminder.txt:3
 #, python-format
@@ -2073,11 +2018,11 @@ msgstr "Du hast nicht gearbeitet in diesem Monat."
 #: apps/salary/templates/salary/month_timesheets.html:123
 #, python-format
 msgid "Il y a %(n)s feuilles d'heure orphelines ce mois."
-msgstr ""
+msgstr "Es hat %(n)s leere Stundenabrechnungen für diesen Monat."
 
 #: apps/salary/templates/salary/month_timesheets.html:158
 msgid "Examiner les entrées orphelines"
-msgstr ""
+msgstr "Die leeren Einträge überprüfen"
 
 #: apps/salary/templates/salary/month_timesheets.html:172
 msgid "Tout sélectionner"
@@ -2138,15 +2083,12 @@ msgid "Rappel de soumission des heures pour %(month_year)s"
 msgstr "Erinnerung zur Einreichung der Stunden vom %(month_year)s"
 
 #: apps/salary/templates/salary/send_timesheets_reminder.html:11
-#, fuzzy, python-format
-#| msgid ""
-#| "Ce rappel sera envoyé aux moniteurs qui ont participé à une session "
-#| "durant %(month_year)s et qui n’ont pas encore soumis leurs heures."
+#, python-format
 msgid ""
 "Ce rappel sera envoyé aux collabora·teurs·trices qui ont participé à une "
 "session durant %(month_year)s et qui n’ont pas encore soumis leurs heures."
 msgstr ""
-"Diese Erinnerung wird an alle LeiterInnen verschickt, welche an einem "
+"Diese Erinnerung wird an alle Mitarbeitenden verschickt, welche an einem "
 "Halbtag im %(month_year)s teilgenommen und ihre Stunden noch nicht "
 "eingereicht haben."
 
@@ -2182,21 +2124,19 @@ msgstr "Alle Kantone"
 #, python-format
 msgid "1 entrée orpheline"
 msgid_plural "%(count)s entrées orphelines"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "1 leerer Eintrag"
+msgstr[1] "%(count)s leere Einträge"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:113
 msgid "Envoyer un rappel"
 msgstr "Eine Erinnerung verschicken"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:118
-#, fuzzy
-#| msgid "Envoyer un rappel aux moniteurs qui n'ont pas remplis leurs heures"
 msgid ""
 "Envoyer un rappel aux collabora·teur·trices qui n’ont pas rempli leurs heures"
 msgstr ""
-"Eine Erinnerung an die LeiterInnen schicken, welche ihre Stunden noch nicht "
-"angegeben haben"
+"Eine Erinnerung an die Mitarbeitenden schicken, welche ihre Stunden noch "
+"nicht angegeben haben"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:153
 msgid "Aucun résultat."
@@ -2209,7 +2149,7 @@ msgstr "Export Cresus {month} {year}"
 
 #: apps/salary/views/timesheets.py:402
 msgid "Aucune feuille d'heure orpheline à supprimer; tout va bien."
-msgstr ""
+msgstr "Keine leere Stundenabrechnung zum Löschen, alles in Ordnung."
 
 #: apps/salary/views/timesheets.py:452
 msgid "Aucun rappel à envoyer: les heures de ce mois sont déjà remplies."
@@ -2989,30 +2929,24 @@ msgid "Your password is now changed."
 msgstr "Dein Passwort wurde geändert."
 
 #: defivelo/templates/header.html:9 defivelo/templates/header.html:50
-#, fuzzy
-#| msgid "Tous les cantons"
 msgid "Tous les mois"
-msgstr "Alle Kantone"
+msgstr "Alle Monate"
 
 #: defivelo/templates/header.html:19
 msgid "Facturation établissements"
 msgstr "Abrechnung Schulen"
 
 #: defivelo/templates/header.html:42
-#, fuzzy
-#| msgid "Saison pas ouverte"
 msgid "Mois pas ouvert"
-msgstr "Nicht verfügbare Saison"
+msgstr "Monat nicht eröffnet"
 
 #: defivelo/templates/header.html:53
 msgid "Facturation"
 msgstr "Abrechnung"
 
 #: defivelo/templates/header.html:59
-#, fuzzy
-#| msgid "Créer une saison"
 msgid "Créer un mois"
-msgstr "Saison erstellen"
+msgstr "Monat erstellen"
 
 #: defivelo/templates/header.html:71
 msgid "Tous"
