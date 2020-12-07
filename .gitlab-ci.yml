@@ -14,6 +14,7 @@ Update parent repository:
             - master
     script:
         - 'RETURN=`mktemp`;
+           echo "Set path ${SUBMODULE_PATH} to commit ${CI_COMMIT_SHA} on branch ${PARENT_REPOSITORY_BRANCH} from repo ${PARENT_REPOSITORY_ID}";
            STATUS_CODE=`curl --silent --request PUT --header "PRIVATE-TOKEN: ${WEBLATE_PRIVATE_TOKEN}" "https://gitlab.liip.ch/api/v4/projects/${PARENT_REPOSITORY_ID}/repository/submodules/${SUBMODULE_PATH}" --data "branch=${PARENT_REPOSITORY_BRANCH}&commit_sha=${CI_COMMIT_SHA}&commit_message=${SUBMODULE_UPDATE_COMMIT_MESSAGE}" --output $RETURN --write-out "%{http_code}"`;
            cat $RETURN;
            echo "";
