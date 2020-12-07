@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-09 16:34+0100\n"
-"PO-Revision-Date: 2020-12-07 14:05+0000\n"
+"PO-Revision-Date: 2020-12-07 17:29+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
 "fr/>\n"
@@ -24,7 +24,7 @@ msgstr "Ouvert"
 
 #: apps/article/models.py:41
 msgid "Title"
-msgstr ""
+msgstr "Titre"
 
 #: apps/article/models.py:42
 msgid "Slug"
