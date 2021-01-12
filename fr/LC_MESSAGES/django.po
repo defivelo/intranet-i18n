@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 11:33+0100\n"
+"POT-Creation-Date: 2021-01-12 16:29+0100\n"
 "PO-Revision-Date: 2020-12-07 17:29+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -155,7 +155,7 @@ msgstr ""
 
 #: apps/challenge/__init__.py:46 apps/challenge/forms/qualification.py:81
 #: apps/challenge/models/availability.py:124
-#: apps/challenge/models/qualification.py:115
+#: apps/challenge/models/qualification.py:131
 #: apps/challenge/templates/challenge/session_detail.html:155
 #: apps/user/__init__.py:43 defivelo/templatetags/dv_filters.py:219
 msgid "Moniteur 2"
@@ -176,12 +176,12 @@ msgid ""
 msgstr ""
 
 #: apps/challenge/forms/qualification.py:52
-#: apps/challenge/models/qualification.py:75
+#: apps/challenge/models/qualification.py:76
 msgid "Natel enseignant"
 msgstr ""
 
 #: apps/challenge/forms/qualification.py:90
-#: apps/challenge/models/qualification.py:124
+#: apps/challenge/models/qualification.py:140
 #: apps/challenge/templates/challenge/session_detail.html:157
 #: apps/challenge/views/season.py:281
 msgid "Moniteurs 1"
@@ -190,7 +190,7 @@ msgstr ""
 #: apps/challenge/forms/qualification.py:98
 #: apps/challenge/models/availability.py:115
 #: apps/challenge/models/availability.py:128
-#: apps/challenge/models/qualification.py:131 apps/user/export.py:131
+#: apps/challenge/models/qualification.py:147 apps/user/export.py:131
 #: apps/user/models.py:213 apps/user/templates/auth/user_detail.html:157
 #: apps/user/views/standard.py:223 defivelo/templatetags/dv_filters.py:225
 msgid "Intervenant"
@@ -245,7 +245,11 @@ msgstr ""
 msgid "J'accepte les conditions générales"
 msgstr ""
 
-#: apps/challenge/forms/registration.py:145 apps/challenge/views/session.py:165
+#: apps/challenge/forms/registration.py:124
+msgid "Cette inscription n'a pas été validée."
+msgstr ""
+
+#: apps/challenge/forms/registration.py:148 apps/challenge/views/session.py:165
 #, python-format
 msgid "Classe %s"
 msgstr ""
@@ -445,22 +449,22 @@ msgstr ""
 msgid "Titre"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:36
+#: apps/challenge/models/qualification.py:37
 #: apps/challenge/templates/challenge/session_detail.html:159
 msgid "Agilité"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:37
+#: apps/challenge/models/qualification.py:38
 #: apps/challenge/templates/challenge/session_detail.html:161
 msgid "Mécanique"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:38
+#: apps/challenge/models/qualification.py:39
 #: apps/challenge/templates/challenge/session_detail.html:163
 msgid "Rencontre"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:49 apps/orga/export.py:31
+#: apps/challenge/models/qualification.py:50 apps/orga/export.py:31
 #: apps/orga/models.py:49 apps/orga/templates/orga/organization_filter.html:61
 #: apps/salary/models/validations.py:11 apps/user/export.py:71
 #: apps/user/templates/auth/user_detail.html:66
@@ -469,39 +473,39 @@ msgstr ""
 msgid "Nom"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:51
+#: apps/challenge/models/qualification.py:52
 msgid "Catégorie"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:56
+#: apps/challenge/models/qualification.py:57
 msgid "Poste"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:57
+#: apps/challenge/models/qualification.py:58
 msgid "Postes"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:67
+#: apps/challenge/models/qualification.py:68
 msgid "Nom de la classe"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:72
+#: apps/challenge/models/qualification.py:73
 msgid "Enseignant"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:78
+#: apps/challenge/models/qualification.py:79
 msgid "Nombre de participants"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:81
+#: apps/challenge/models/qualification.py:87
 msgid "Nombre de vélos"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:84
+#: apps/challenge/models/qualification.py:95
 msgid "Nombre de casques"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:138
+#: apps/challenge/models/qualification.py:154
 #: apps/challenge/models/session.py:96
 #: apps/challenge/templates/challenge/session_detail.html:120
 #: apps/challenge/templates/challenge/session_detail.html:184
@@ -511,11 +515,11 @@ msgstr ""
 msgid "Remarques"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:278
+#: apps/challenge/models/qualification.py:294
 msgid "Qualif’"
 msgstr ""
 
-#: apps/challenge/models/qualification.py:279
+#: apps/challenge/models/qualification.py:295
 #: apps/challenge/templates/challenge/session_detail.html:131
 #: defivelo/templates/header.html:43
 msgid "Qualifs"
@@ -924,7 +928,7 @@ msgid "Suppression de la Qualif’ %(qualification)s ?"
 msgstr ""
 
 #: apps/challenge/templates/challenge/qualification_confirm_delete.html:13
-#: apps/challenge/templates/challenge/registration_validate.html:193
+#: apps/challenge/templates/challenge/registration_validate.html:201
 #: apps/challenge/templates/challenge/session_confirm_delete.html:15
 #: apps/user/templates/actions/mark_inactive.html:21
 #: apps/user/templates/roles/assign.html:15
@@ -968,7 +972,7 @@ msgstr ""
 
 #: apps/challenge/templates/challenge/registration.html:150
 #: apps/challenge/templates/challenge/registration.html:163
-#: apps/challenge/templates/challenge/registration_validate.html:175
+#: apps/challenge/templates/challenge/registration_validate.html:183
 #: apps/challenge/templates/challenge/session_detail.html:197
 #: apps/challenge/templates/challenge/session_detail.html:221
 #: apps/user/templates/auth/user_detail.html:36
@@ -1051,7 +1055,7 @@ msgid "Soumettre la pré-inscription"
 msgstr ""
 
 #: apps/challenge/templates/challenge/registration_confirm.html:87
-#: apps/challenge/templates/challenge/registration_validate.html:170
+#: apps/challenge/templates/challenge/registration_validate.html:178
 #, fuzzy
 #| msgid "Modified"
 msgid "Modifier"
@@ -1121,22 +1125,22 @@ msgstr ""
 msgid ""
 "Pour confirmer les pré-inscriptions de l'établissement, vous devez donner un "
 "statut (<strong>supprimé</strong> ou <strong>accepté</strong>) à "
-"<strong>toutes</strong> sessions de la liste."
+"<strong>toutes</strong> les sessions de la liste."
 msgstr ""
 
 #: apps/challenge/templates/challenge/registration_validate.html:140
 msgid "Actions"
 msgstr ""
 
-#: apps/challenge/templates/challenge/registration_validate.html:180
+#: apps/challenge/templates/challenge/registration_validate.html:188
 msgid "Accepter"
 msgstr ""
 
-#: apps/challenge/templates/challenge/registration_validate.html:201
+#: apps/challenge/templates/challenge/registration_validate.html:209
 msgid "Validation des pré-inscriptions"
 msgstr ""
 
-#: apps/challenge/templates/challenge/registration_validate.html:204
+#: apps/challenge/templates/challenge/registration_validate.html:212
 msgid ""
 "Il n'y a actuellement aucune pré-inscription à valider pour les cantons que "
 "vous gérez."
