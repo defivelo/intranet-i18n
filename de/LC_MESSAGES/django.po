@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-12 16:29+0100\n"
+"POT-Creation-Date: 2021-01-27 15:19+0100\n"
 "PO-Revision-Date: 2020-12-17 09:46+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -266,7 +266,7 @@ msgid "Année"
 msgstr "Jahr"
 
 #: apps/challenge/forms/season.py:68 apps/user/models.py:476
-#: defivelo/roles.py:149
+#: defivelo/roles.py:150
 msgid "Chargé·e de projet"
 msgstr "ProjektleiterIn"
 
@@ -1949,7 +1949,7 @@ msgstr "Webseite"
 #: apps/orga/export.py:44 apps/orga/forms.py:51 apps/orga/models.py:59
 #: apps/orga/templates/orga/_organization_detail.html:43
 #: apps/orga/templates/orga/organization_filter.html:64 apps/user/models.py:479
-#: defivelo/roles.py:150
+#: defivelo/roles.py:151
 msgid "Coordina·teur·trice"
 msgstr "Kontaktperson"
 
@@ -2649,11 +2649,11 @@ msgstr "hat Zugang"
 msgid "Administra·teur·trice"
 msgstr "AdministratorIn"
 
-#: apps/user/models.py:473 defivelo/roles.py:151
+#: apps/user/models.py:473 defivelo/roles.py:152
 msgid "Bureau de coordination"
 msgstr ""
 
-#: apps/user/models.py:482 defivelo/roles.py:148
+#: apps/user/models.py:482 defivelo/roles.py:149
 msgid "Collabora·teur·trice"
 msgstr "Mitarbeiter_innen"
 
@@ -2930,7 +2930,7 @@ msgstr "Liste der LeiterInnen"
 msgid "Liste des intervenants"
 msgstr "Liste der ReferentInnen"
 
-#: defivelo/roles.py:147
+#: defivelo/roles.py:148
 msgid "Aucun rôle"
 msgstr "Keine Rolle"
 
@@ -3297,6 +3297,18 @@ msgstr "Artikel löschen"
 #: defivelo/templates/home.html:41
 msgid "Aucun article publié pour l’instant."
 msgstr "Zurzeit ist kein Artikel veröffentlicht."
+
+#: defivelo/templates/home_without_articles.html:5
+#, fuzzy
+#| msgid "Intranet DÉFI VÉLO"
+msgid "Bienvenue sur l'intranet DÉFI VÉLO"
+msgstr "DEFI VELO Intranet"
+
+#: defivelo/templates/home_without_articles.html:6
+msgid ""
+"Photo de 11 moniteurs Défi Vélo représentant les mots 'Défi Vélo' avec leurs "
+"corps, au soleil du gymnase de Burier"
+msgstr ""
 
 #: defivelo/templates/license.html:5
 msgid "Télécharger le projet"
