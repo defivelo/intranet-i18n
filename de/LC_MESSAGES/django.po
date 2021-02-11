@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-27 15:19+0100\n"
-"PO-Revision-Date: 2020-12-17 09:46+0000\n"
-"Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
+"PO-Revision-Date: 2021-02-12 20:14+0000\n"
+"Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
 "Language: de\n"
@@ -238,16 +238,20 @@ msgid ""
 "Il n'est pas encore possible d'inscrire de session à cette date, merci de "
 "contacter le ou la chargé·e de projet régional·e"
 msgstr ""
+"Zu diesem Zeitpunkt ist eine Anmeldung noch nicht möglich. Bitte wenden Sie "
+"sich an den regionalen Projektverantwortlichen."
 
 #: apps/challenge/forms/registration.py:80
 msgid ""
 "Il est impossible de créer 2 sessions pour la même demi-journée pour le même "
 "établissement."
 msgstr ""
+"Es ist nicht möglich, 2 Sitzungen für denselben Halbtag für dieselbe Schule "
+"zu erstellen."
 
 #: apps/challenge/forms/registration.py:112
 msgid "J'accepte les conditions générales"
-msgstr ""
+msgstr "Ich bin mit den Allgemeinen Geschäftsbedingungen einverstanden"
 
 #: apps/challenge/forms/registration.py:124
 #, fuzzy
@@ -275,16 +279,17 @@ msgid "Envoyer le courriel suivant"
 msgstr "Nächstes Mail verschicken"
 
 #: apps/challenge/forms/season.py:92
-#, fuzzy
-#| msgid "Prochaines sessions"
 msgid "Précisions"
-msgstr "Nächste Halbtage"
+msgstr "Zusätzliche Angaben"
 
 #: apps/challenge/forms/season.py:94
 msgid ""
 "Attention: Le courriel est envoyé à chaque destinataire dans sa langue, mais "
 "ce texte est envoyé tel quel, il ne sera pas traduit."
 msgstr ""
+"Achtung: Der vorgegebene Text der E-Mail wird jeder*m Empfänger*in in seiner "
+"eigenen Sprache gesendet. Der selbst formulierte Text  wird nicht "
+"automatisch übersetzt."
 
 #: apps/challenge/forms/season.py:131
 msgid "Disponibilités pour :"
@@ -537,38 +542,34 @@ msgstr "Qualis"
 
 #: apps/challenge/models/registration.py:18
 msgid "Matin"
-msgstr ""
+msgstr "Vormittags"
 
 #: apps/challenge/models/registration.py:19
 msgid "Après-midi"
-msgstr ""
+msgstr "Nachmittags"
 
 #: apps/challenge/models/registration.py:28
 #: apps/challenge/templates/challenge/registration_confirm.html:25
 #: apps/challenge/templates/challenge/registration_validate.html:138
-#, fuzzy
-#| msgid "Moniteurs de la saison"
 msgid "Moment de la journée"
-msgstr "LeiterInnen der Saison"
+msgstr "Uhrzeit"
 
 #: apps/challenge/models/registration.py:34
 msgid "Nb de classes (1 à 6)"
-msgstr ""
+msgstr "Anzahl Klassen (1 bis 6)"
 
 #: apps/challenge/models/registration.py:39
-#, fuzzy
-#| msgid "Archivé"
 msgid "Archivée"
 msgstr "Archiviert"
 
 #: apps/challenge/models/registration.py:48
 msgid "L'établissement choisi n'est pas géré par cet utilisateur."
-msgstr ""
+msgstr "Die ausgewählte Schule wird nicht von diesem Benutzer verwaltet."
 
 #: apps/challenge/models/registration.py:57
 #: apps/challenge/models/session.py:322
 msgid "Il y a déjà une session inscrite pour cet établissement à cette date."
-msgstr ""
+msgstr "Es ist bereits eine Quali für diese Schule an diesem Datum registriert."
 
 #: apps/challenge/models/season.py:55
 msgid "Mois de début"
@@ -992,19 +993,19 @@ msgstr "Neue Quali"
 #: apps/challenge/templates/challenge/registration.html:116
 #: apps/challenge/templates/challenge/registration_validate.html:4
 msgid "Pré-inscription sans engagement"
-msgstr ""
+msgstr "Unverbindliche Voranmeldung"
 
 #: apps/challenge/templates/challenge/registration.html:127
 #: apps/challenge/templates/challenge/registration_confirm.html:26
 #: apps/challenge/templates/challenge/registration_validate.html:139
-#, fuzzy
-#| msgid "Nombre de casques"
 msgid "Nombre de classes"
-msgstr "Anzahl Helme"
+msgstr "Anzahl Klassen"
 
 #: apps/challenge/templates/challenge/registration.html:131
 msgid "Au sens de DÉFI VÉLO, une classe comprend entre 15 et 25 participants."
 msgstr ""
+"DEFI VELO versteht unter einer Klasse einen Verbund von 15 bis 25 "
+"Schüler*innen."
 
 #: apps/challenge/templates/challenge/registration.html:150
 #: apps/challenge/templates/challenge/registration.html:163
@@ -1018,10 +1019,8 @@ msgid "Supprimer"
 msgstr "Löschen"
 
 #: apps/challenge/templates/challenge/registration.html:173
-#, fuzzy
-#| msgid "Toutes les sessions"
 msgid "Ajouter une session"
-msgstr "Alle Halbtage"
+msgstr "Eine Quali hinzufügen"
 
 #: apps/challenge/templates/challenge/registration.html:177
 msgid "Suivant"
@@ -1030,23 +1029,19 @@ msgstr ""
 #: apps/challenge/templates/challenge/registration_confirm.html:3
 #: apps/challenge/templates/challenge/registration_confirm.html:14
 msgid "Confirmer la pré-inscription"
-msgstr ""
+msgstr "Voranmeldung bestätigen"
 
 #: apps/challenge/templates/challenge/registration_confirm.html:20
 msgid "Pré-inscription"
-msgstr ""
+msgstr "Voranmeldung"
 
 #: apps/challenge/templates/challenge/registration_confirm.html:36
-#, fuzzy
-#| msgid "Nom de la classe"
 msgid "Total de classes"
-msgstr "Name der Klasse"
+msgstr "Totale Anzahl Klassen"
 
 #: apps/challenge/templates/challenge/registration_confirm.html:44
-#, fuzzy
-#| msgid "Cantons gérés"
 msgid "Conditions générales"
-msgstr "Geführte Kantone"
+msgstr "Allgemeine Bedingungen"
 
 #: apps/challenge/templates/challenge/registration_confirm.html:47
 #, python-format
@@ -1094,14 +1089,12 @@ msgstr ""
 
 #: apps/challenge/templates/challenge/registration_confirm.html:84
 msgid "Soumettre la pré-inscription"
-msgstr ""
+msgstr "Voranmeldung einreichen"
 
 #: apps/challenge/templates/challenge/registration_confirm.html:87
 #: apps/challenge/templates/challenge/registration_validate.html:178
-#, fuzzy
-#| msgid "Modified"
 msgid "Modifier"
-msgstr "Verändert"
+msgstr "Verändern"
 
 #: apps/challenge/templates/challenge/registration_email_to_coordinator.txt:1
 #: apps/user/templates/auth/email_user_send_credentials.txt:1
