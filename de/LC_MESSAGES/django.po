@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-27 15:19+0100\n"
-"PO-Revision-Date: 2021-02-12 20:14+0000\n"
+"PO-Revision-Date: 2021-02-18 16:14+0000\n"
 "Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
@@ -254,10 +254,8 @@ msgid "J'accepte les conditions générales"
 msgstr "Ich bin mit den Allgemeinen Geschäftsbedingungen einverstanden"
 
 #: apps/challenge/forms/registration.py:124
-#, fuzzy
-#| msgid "Rien à valider"
 msgid "Cette inscription n'a pas été validée."
-msgstr "Nichts zu bestätigen"
+msgstr "Noch nicht bestätigt"
 
 #: apps/challenge/forms/registration.py:148 apps/challenge/views/session.py:165
 #, python-format
@@ -1024,7 +1022,7 @@ msgstr "Eine Quali hinzufügen"
 
 #: apps/challenge/templates/challenge/registration.html:177
 msgid "Suivant"
-msgstr ""
+msgstr "Weiter"
 
 #: apps/challenge/templates/challenge/registration_confirm.html:3
 #: apps/challenge/templates/challenge/registration_confirm.html:14
@@ -1086,6 +1084,47 @@ msgid ""
 "en sécurité, en particulier lors des sorties dans le trafic</li> "
 "<li>Organiser la Finale</li> </ul>"
 msgstr ""
+"<h3>Allgemeine Geschäftsbedingungen DEFI VELO</h3> <p>Mit der Bestätigung "
+"der Anmeldung Ihrer Schule bei DEFI VELO verpflichten Sie sich: :</p> <ul> "
+"<li>Spätestens 3 Wochen vor dem ersten Tag der Quali, die für eine "
+"reibungslose Organisation notwendigen Informationen (Datum, Uhrzeit, Ort, "
+"Teilnehmerzahl, Name und Telefonnummer der Lehrperson vor Ort und "
+"Bestellungen von Mietvelos und Helmen) bereitzustellen.</li> <li>Einen "
+"Aussenplatz fürs Schönwetterprogramm und Räume fürs Schlechtwetterprogramm "
+"zu reservieren.</li> <li>Die Informationen an die Teilnehmerinnen und "
+"Teilnehmer weiterzuleiten.</li> <li>Sicherzustellen, dass eine Lehrkraft der "
+"Schule bei den einzelnen Quali's (3h) anwesend ist. Diese Person muss nicht "
+"Velo fahren, aber übernimmt nötigenfalls die Rolle der Autoritätsperson "
+"gegenüber der Teilnehmenden, kümmert sich um Teilnehmende, die aus "
+"Sicherheitsgründen nicht mit in den Verkehr können und ist, falls nötig, "
+"verantwortlich für\n"
+"das Wertsachendepot.</li><li>Im Voraus die Teilnahmegebühr von CHF 5.- pro "
+"Teilnehmer*in und ggf. CHF 16.- pro Velo pro Tag (gleiche Gebühr für einen "
+"halben oder ganzen Tag) zu bezahlen. Rabatt für aufeinanderfolgende Tage: 2 "
+"Tage = 5%; 3 Tage = 10%; 4 Tage = 20%; 5 Tage = 30%). In einigen Kantonen "
+"werden die Anmeldegebühren und/oder die Velomiete vom Kanton übernommen, "
+"respektive können keine Velos gemietet werden.</li><li>Im Falle des "
+"Schlechtwetterprogramms bleiben die Velomietgebühren fällig.</li> <li>Bei "
+"einer Stornierung bis zu einer Woche vor der ersten Quali wird keine Gebühr "
+"fällig. Weniger als eine Woche vor der ersten Quali werden 50% der Kosten "
+"verrechnet. Bei einer Absage 3 Tage oder weniger vor der ersten Quali werden "
+"100% der Gebühren fällig.</li> <li>Die Teilnehmerinnen und Teilnehmer an das "
+"Datum des Finals zu erinnern und sie zu motivieren, daran teilzunehmen. Sie "
+"bestätigen zudem die Anmeldungen der eingeschriebenen Teams.</li> "
+"<li>Festgestellte allfällige Beschädigungen an den Velos werden ebenfalls in "
+"Rechnung gestellt. Im Falle eines Diebstahls eines Mietvelos behält sich "
+"DEFI VELO das Recht vor, nach Klärung des Sachverhaltes der Schule die "
+"Kosten des Velos in Rechnung zu stellen. </li> </ul> <p>DEFI VELO "
+"verpflichtet sich: </p> <ul> <li>Für all Ihre Fragen zur Verfügung zu "
+"stehen.</li><li>eine reibungslose Organisation (Bestellungen von Mietvelos "
+"und Helmen, Informationsmaterial, Kommunikation zu garantieren.</li> "
+"<li>ausgebildete Leiterinnen und Leiter (in Übereinstimmung mit den "
+"Anforderungen des Schweizerischen Verkehrssicherheitsrates VSR): drei "
+"Leitende pro Klasse (bei 15 bis 24 Teilnehmenden) bzw. eine Leitperson pro "
+"Team (mit 5 bis 8 Teilnehmenden) zu engagieren. </li> <li>die Sicherheit und "
+"übernehmen die Verantwortung gegenüber den Teilnehmer*innen, insbesondere "
+"bei Fahrten im Strassenverkehr zu gewährleisten.</li> <li>Das Final zu "
+"organisieren.</li> </ul>"
 
 #: apps/challenge/templates/challenge/registration_confirm.html:84
 msgid "Soumettre la pré-inscription"
@@ -1110,6 +1149,10 @@ msgid ""
 "\n"
 "    %(url)s\n"
 msgstr ""
+"Die Voranmeldung wurde bestätigt\n"
+"Die Qualis an Ihrer Schule finden Sie unter:\n"
+"\n"
+"    %(url)s\n"
 
 #: apps/challenge/templates/challenge/registration_email_to_coordinator.txt:10
 #: apps/challenge/templates/challenge/registration_email_to_state_manager.txt:10
@@ -1144,24 +1187,24 @@ msgid ""
 "\n"
 "    %(url)s\n"
 msgstr ""
+"Eine neue Voranmeldung ist für Ihren Kanton verfügbar.\n"
+"Vielen Dank, dass Sie die Voranmeldung bestätigen unter:\n"
+"\n"
+"    %(url)s\n"
 
 #: apps/challenge/templates/challenge/registration_validate.html:109
-#, fuzzy
-#| msgid "Rien à valider"
 msgid "Inscriptions à valider"
-msgstr "Nichts zu bestätigen"
+msgstr "Anmeldung zu bestätigen"
 
 #: apps/challenge/templates/challenge/registration_validate.html:116
-#, fuzzy, python-format
-#| msgid "Suppression de l’établissement %(organization)s?"
+#, python-format
 msgid "Établissement : %(organization)s"
-msgstr "Schule %(organization)s löschen?"
+msgstr "Schule: %(Organisation)?"
 
 #: apps/challenge/templates/challenge/registration_validate.html:117
-#, fuzzy, python-format
-#| msgid "Coordina·teur·trice"
+#, python-format
 msgid "Coordina·teur·trice : %(full_name)s"
-msgstr "Kontaktperson"
+msgstr "Kontaktperson : %(full_name)s"
 
 #: apps/challenge/templates/challenge/registration_validate.html:121
 msgid ""
@@ -1169,26 +1212,27 @@ msgid ""
 "statut (<strong>supprimé</strong> ou <strong>accepté</strong>) à "
 "<strong>toutes</strong> les sessions de la liste."
 msgstr ""
+"Um die Voranmeldung ihrer Schule zu bestätigen, müssen Sie "
+"(<strong>supprimé</strong> ou <strong>accepté</strong>) à <strong>toutes</"
+"strong> alle Qualis in der Liste mit einem Status versehen."
 
 #: apps/challenge/templates/challenge/registration_validate.html:140
-#, fuzzy
-#| msgid "Actif"
 msgid "Actions"
-msgstr "Aktiv"
+msgstr "Handlung"
 
 #: apps/challenge/templates/challenge/registration_validate.html:188
 msgid "Accepter"
-msgstr ""
+msgstr "Akzeptieren"
 
 #: apps/challenge/templates/challenge/registration_validate.html:209
 msgid "Validation des pré-inscriptions"
-msgstr ""
+msgstr "Voranmeldung bestätigen"
 
 #: apps/challenge/templates/challenge/registration_validate.html:212
 msgid ""
 "Il n'y a actuellement aucune pré-inscription à valider pour les cantons que "
 "vous gérez."
-msgstr ""
+msgstr "Momentan gibt es in diesem Kanton keine Voranmeldung zu bestätigen."
 
 #: apps/challenge/templates/challenge/season_availability.html:12
 #: apps/challenge/templates/challenge/season_list.html:56
@@ -1267,10 +1311,8 @@ msgstr "Monat %(season)s definitiv löschen?"
 
 #: apps/challenge/templates/challenge/season_confirm_delete.html:16
 #: apps/challenge/templates/challenge/session_list_links.html:3
-#, fuzzy
-#| msgid "Retour à la session"
 msgid "Retour à la saison"
-msgstr "Zurück zum Halbtag"
+msgstr "Zurück zur Quali"
 
 #: apps/challenge/templates/challenge/season_detail.html:7
 #: apps/challenge/templates/challenge/session_archive_week.html:22
@@ -1353,12 +1395,12 @@ msgstr ""
 
 #: apps/challenge/templates/challenge/season_errors.html:7
 msgid "Toutes les sessions avec des Qualif’s incohérentes"
-msgstr ""
+msgstr "Alle Qualis mit fehlenden Angaben"
 
 #: apps/challenge/templates/challenge/season_errors.html:13
 #: apps/challenge/templates/challenge/session_item_in_list.html:24
 msgid "Qualif’ incohérente"
-msgstr ""
+msgstr "Quali mit fehlenden Angaben"
 
 #: apps/challenge/templates/challenge/season_form.html:5
 #: apps/challenge/templates/challenge/season_form.html:16
@@ -1412,24 +1454,20 @@ msgstr ""
 "kein Passwort)."
 
 #: apps/challenge/templates/challenge/season_list.html:5
-#, fuzzy, python-format
-#| msgid "Exports pour le mois %(season)s %(year)s"
+#, python-format
 msgid "%(season)s %(year)s\n"
-msgstr "Exporte des Monats%(season)s%(year)s"
+msgstr "%(season)s%(year)s\n"
 
 #: apps/challenge/templates/challenge/season_list.html:9
 #: apps/challenge/templates/challenge/season_list.html:17
 #: apps/challenge/templates/challenge/season_list.html:29
-#, fuzzy, python-format
-#| msgid "{season} {year}"
+#, python-format
 msgid "%(season)s %(year)s"
-msgstr "{season} {year}"
+msgstr "%{season}%{year}"
 
 #: apps/challenge/templates/challenge/season_list.html:23
-#, fuzzy
-#| msgid "Semaine courante"
 msgid "Saison courante"
-msgstr "Aktuelle Woche"
+msgstr "Laufende Saison"
 
 #: apps/challenge/templates/challenge/season_list.html:42
 msgid "Liste des sessions"
@@ -1643,7 +1681,7 @@ msgstr "Einsatzplan fertigstellen"
 
 #: apps/challenge/templates/challenge/session_list_links.html:21
 msgid "Sessions avec Qualif’ incohérente"
-msgstr ""
+msgstr "Saison mit fehlenden Angaben"
 
 #: apps/challenge/templates/challenge/session_list_links.html:31
 msgid "Créer une nouvelle session"
@@ -1683,7 +1721,7 @@ msgstr "Quali gelöscht"
 
 #: apps/challenge/views/registration.py:79
 msgid "Aucune inscription à valider"
-msgstr ""
+msgstr "Keine Anmeldung zu bestätigen"
 
 #: apps/challenge/views/season.py:227
 msgid "Mois mis à jour"
@@ -1911,16 +1949,13 @@ msgstr "Zurzeit ist keine Quali geplant!"
 
 #: apps/info/templates/info/season_exports.html:4
 #: apps/info/templates/info/season_exports.html:27
-#, fuzzy, python-format
-#| msgid "Heures de %(name)s pour %(month)s %(year)s"
+#, python-format
 msgid "Statistiques des mois %(month_start)s à %(month_end)s %(year)s"
-msgstr "Stunden von %(name)s für %(month)s %(year)s"
+msgstr "Statistik des Monats %(month_start)s à %(month_end)s %(year)s"
 
 #: apps/info/templates/info/season_exports.html:30
-#, fuzzy
-#| msgid "Statistiques du mois"
 msgid "Statistiques de la saison"
-msgstr "Zahlen des Monats"
+msgstr "Statistik der Saison"
 
 #: apps/orga/export.py:30 apps/orga/models.py:48
 #: apps/orga/templates/orga/organization_filter.html:60
@@ -1986,6 +2021,8 @@ msgid ""
 "Votre préinscription a été enregistrée et le/la chargé·e de projet de votre "
 "canton a été notifié·e!"
 msgstr ""
+"Die Voranmeldung wurde registriert und der*die Projektleitende Ihres Kantons "
+"benachrichtigt!"
 
 #: apps/orga/models.py:170
 #, python-format
@@ -1993,6 +2030,8 @@ msgid ""
 "L'inscription pour l'établissement %s est enregistrée, et un email a été "
 "envoyé à la personne coordinatrice."
 msgstr ""
+"Die Anmeldung für die Schule %s ist registriert und der Kontaktperson wurde "
+"eine Mail versendet."
 
 #: apps/orga/templates/orga/_organization_detail.html:50
 msgid "Courriel"
@@ -2644,7 +2683,7 @@ msgstr "AdministratorIn"
 
 #: apps/user/models.py:473 defivelo/roles.py:152
 msgid "Bureau de coordination"
-msgstr ""
+msgstr "Koordinationsstelle"
 
 #: apps/user/models.py:482 defivelo/roles.py:149
 msgid "Collabora·teur·trice"
@@ -3210,16 +3249,12 @@ msgid "Créer un mois"
 msgstr "Monat erstellen"
 
 #: defivelo/templates/header.html:71
-#, fuzzy
-#| msgid "Nouvelle saison"
 msgid "Nouvelle inscription"
-msgstr "Neue Saison"
+msgstr "Neue Anmeldung"
 
 #: defivelo/templates/header.html:74
-#, fuzzy
-#| msgid "Rien à valider"
 msgid "Pré-inscriptions à valider"
-msgstr "Nichts zu bestätigen"
+msgstr "Voranmeldung zu bestätigen"
 
 #: defivelo/templates/header.html:86
 msgid "Tous"
@@ -3230,22 +3265,16 @@ msgid "Base de données"
 msgstr "Datenbank"
 
 #: defivelo/templates/header.html:101
-#, fuzzy
-#| msgid "Collabora·teur·trice"
 msgid "Collabora·teurs·trices"
-msgstr "Mitarbeiter_innen"
+msgstr "Mitarbeiter*innen"
 
 #: defivelo/templates/header.html:117
-#, fuzzy
-#| msgid "Statistiques du mois"
 msgid "Statistiques"
-msgstr "Zahlen des Monats"
+msgstr "Statistik"
 
 #: defivelo/templates/header.html:120
-#, fuzzy
-#| msgid "Statistiques du mois"
 msgid "Statistiques par mois"
-msgstr "Zahlen des Monats"
+msgstr "Statistik des Monats"
 
 #: defivelo/templates/header.html:129
 msgid "Finances"
@@ -3292,16 +3321,16 @@ msgid "Aucun article publié pour l’instant."
 msgstr "Zurzeit ist kein Artikel veröffentlicht."
 
 #: defivelo/templates/home_without_articles.html:5
-#, fuzzy
-#| msgid "Intranet DÉFI VÉLO"
 msgid "Bienvenue sur l'intranet DÉFI VÉLO"
-msgstr "DEFI VELO Intranet"
+msgstr "Willkommen auf dem DEFI VELO Intranet"
 
 #: defivelo/templates/home_without_articles.html:6
 msgid ""
 "Photo de 11 moniteurs Défi Vélo représentant les mots 'Défi Vélo' avec leurs "
 "corps, au soleil du gymnase de Burier"
 msgstr ""
+"Foto von 11 DEFI VELO Leitenden, die unter der Sonne des Gymnasiums Burier "
+"mit ihren Körpern DEFI VELO schreiben"
 
 #: defivelo/templates/license.html:5
 msgid "Télécharger le projet"
