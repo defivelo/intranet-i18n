@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-17 14:52+0200\n"
+"POT-Creation-Date: 2021-08-17 16:20+0200\n"
 "PO-Revision-Date: 2021-02-24 13:49+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -187,7 +187,7 @@ msgstr "Natelnr. Lehrperson"
 #: apps/challenge/forms/qualification.py:90
 #: apps/challenge/models/qualification.py:140
 #: apps/challenge/templates/challenge/session_detail.html:157
-#: apps/challenge/views/season.py:283
+#: apps/challenge/views/season.py:286
 msgid "Moniteurs 1"
 msgstr "LeiterIn 1"
 
@@ -1295,7 +1295,7 @@ msgstr "L1"
 
 #. Translators: Intervenant
 #: apps/challenge/templates/challenge/season_availability_thead.html:64
-#: apps/challenge/views/season.py:716
+#: apps/challenge/views/season.py:719
 msgid "Int."
 msgstr "Ref."
 
@@ -1724,68 +1724,68 @@ msgstr "Quali gelöscht"
 msgid "Aucune inscription à valider"
 msgstr "Keine Anmeldung zu bestätigen"
 
-#: apps/challenge/views/season.py:229
+#: apps/challenge/views/season.py:232
 msgid "Mois mis à jour"
 msgstr "Monat aktualisiert"
 
-#: apps/challenge/views/season.py:282
+#: apps/challenge/views/season.py:285
 msgid "Moniteurs 2"
 msgstr "LeiterInnen 2"
 
-#: apps/challenge/views/season.py:285
+#: apps/challenge/views/season.py:288
 msgid "Intervenants"
 msgstr "ReferentInnen"
 
-#: apps/challenge/views/season.py:536 apps/challenge/views/season.py:618
+#: apps/challenge/views/season.py:539 apps/challenge/views/season.py:621
 #: apps/salary/views/timesheets.py:502
 msgid "{Prénom} {Nom}"
 msgstr "{Vorname} {Name}"
 
 #. Translators: Moniteur + / Photographe
-#: apps/challenge/views/season.py:718 defivelo/templatetags/dv_filters.py:264
+#: apps/challenge/views/season.py:721 defivelo/templatetags/dv_filters.py:264
 msgid "M+"
 msgstr "L+"
 
-#: apps/challenge/views/season.py:852
+#: apps/challenge/views/season.py:855
 msgid "Planning_Mois"
 msgstr "Einsatzplan_Monat"
 
-#: apps/challenge/views/season.py:1003
+#: apps/challenge/views/season.py:1006
 msgid ""
 "Le planning n'est pas encore disponible; mets plutôt à jour tes "
 "disponibilités."
 msgstr ""
 
-#: apps/challenge/views/season.py:1030
+#: apps/challenge/views/season.py:1033
 msgid "Disponibilités mises à jour"
 msgstr "Verfügbarkeiten aktualisiert"
 
-#: apps/challenge/views/season.py:1077
+#: apps/challenge/views/season.py:1080
 msgid ""
 "Il n'est pas possible de mettre à jour tes disponibilités; voici le planning."
 msgstr ""
 
-#: apps/challenge/views/season.py:1171
+#: apps/challenge/views/season.py:1174
 msgid "Choix du personnel mises à jour"
 msgstr "Auswahl der LeiterInnen aktualisiert"
 
-#: apps/challenge/views/season.py:1234
+#: apps/challenge/views/season.py:1237
 msgid "Mois créé"
 msgstr "Monat erstellt"
 
-#: apps/challenge/views/season.py:1240
+#: apps/challenge/views/season.py:1243
 msgid "Mois supprimé"
 msgstr "Monat gelöscht"
 
-#: apps/challenge/views/season.py:1246
+#: apps/challenge/views/season.py:1249
 msgid "Moniteurs du mois"
 msgstr "LeiterInnen des Monats"
 
-#: apps/challenge/views/season.py:1268
+#: apps/challenge/views/season.py:1271
 msgid "Intervenants du mois"
 msgstr "ReferentInnen des Monats"
 
-#: apps/challenge/views/season.py:1288
+#: apps/challenge/views/season.py:1291
 msgid "Erreurs dans les qualifs du mois"
 msgstr "Fehler in den Qualis des Monats"
 
@@ -2989,6 +2989,20 @@ msgstr "Keine Rolle"
 msgid "DÉFI VÉLO: "
 msgstr "DEFI VELO: "
 
+#: defivelo/templates/403.html:3 defivelo/templates/403.html:5
+#, fuzzy
+#| msgid "Accès à l'Intranet"
+msgid "Accès interdit"
+msgstr "Zugang zum Intranet"
+
+#: defivelo/templates/404.html:3 defivelo/templates/404.html:5
+msgid "Pas trouvé"
+msgstr ""
+
+#: defivelo/templates/500.html:3 defivelo/templates/500.html:5
+msgid "Erreur interne du serveur"
+msgstr ""
+
 #: defivelo/templates/account/base.html:11 defivelo/templates/base.html:11
 msgid "Dérouler la navigation"
 msgstr "Herunterscrollen"
@@ -3453,9 +3467,6 @@ msgstr "DEFI VELO Intranet"
 
 #~ msgid "Permis de travail (si pas suisse)"
 #~ msgstr "Arbeitsbewilligung (falls nicht SchweizerIn)"
-
-#~ msgid "Accès à l'Intranet"
-#~ msgstr "Zugang zum Intranet"
 
 #~ msgid "Accès au site '{site_name}'"
 #~ msgstr "Zugang zur Webseite '{site_name}'"
