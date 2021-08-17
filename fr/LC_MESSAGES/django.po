@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-17 16:20+0200\n"
+"POT-Creation-Date: 2021-08-17 17:08+0200\n"
 "PO-Revision-Date: 2020-12-07 17:29+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -3085,6 +3085,27 @@ msgstr ""
 msgid "Your password is now changed."
 msgstr "Votre mot de passe a été modifié."
 
+#: defivelo/templates/coordinator_home.html:5
+msgid "Bienvenue sur l'intranet DÉFI VÉLO"
+msgstr ""
+
+#: defivelo/templates/coordinator_home.html:7
+#: defivelo/templates/coordinator_home.html:9
+msgid "Tutoriel Intranet DÉFI VÉLO - Inscription Qualifs"
+msgstr ""
+
+#: defivelo/templates/coordinator_home.html:9
+msgid ""
+"https://player.vimeo.com/video/588319676?"
+"badge=0&autopause=0&player_id=0&app_id=58479&h=6c8330a8bf"
+msgstr ""
+
+#: defivelo/templates/coordinator_home.html:13
+msgid ""
+"Photo de 11 moniteurs Défi Vélo représentant les mots 'Défi Vélo' avec leurs "
+"corps, au soleil du gymnase de Burier"
+msgstr ""
+
 #: defivelo/templates/header.html:9 defivelo/templates/header.html:64
 msgid "Tous les mois"
 msgstr ""
@@ -3171,16 +3192,6 @@ msgstr ""
 
 #: defivelo/templates/home.html:41
 msgid "Aucun article publié pour l’instant."
-msgstr ""
-
-#: defivelo/templates/home_without_articles.html:5
-msgid "Bienvenue sur l'intranet DÉFI VÉLO"
-msgstr ""
-
-#: defivelo/templates/home_without_articles.html:6
-msgid ""
-"Photo de 11 moniteurs Défi Vélo représentant les mots 'Défi Vélo' avec leurs "
-"corps, au soleil du gymnase de Burier"
 msgstr ""
 
 #: defivelo/templates/license.html:5
