@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-17 16:20+0200\n"
-"PO-Revision-Date: 2021-02-24 13:49+0000\n"
-"Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
+"PO-Revision-Date: 2021-08-17 15:07+0000\n"
+"Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #: apps/article/forms.py:25
 msgid "Publié"
@@ -26,15 +26,15 @@ msgstr "Veröffentlicht"
 
 #: apps/article/models.py:41
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: apps/article/models.py:42
 msgid "Slug"
-msgstr ""
+msgstr "Slug"
 
 #: apps/article/models.py:43
 msgid "Summary"
-msgstr ""
+msgstr "Zusammenfassung"
 
 #: apps/article/models.py:45
 msgid "Image"
@@ -46,7 +46,7 @@ msgstr "Verändert"
 
 #: apps/article/models.py:49
 msgid "Body"
-msgstr ""
+msgstr "Zeichen"
 
 #: apps/article/templates/article/article_confirm_delete.html:4
 #, python-format
@@ -286,8 +286,8 @@ msgid ""
 "ce texte est envoyé tel quel, il ne sera pas traduit."
 msgstr ""
 "Achtung: Der vorgegebene Text der E-Mail wird jeder*m Empfänger*in in seiner "
-"eigenen Sprache gesendet. Der selbst formulierte Text  wird nicht "
-"automatisch übersetzt."
+"eigenen Sprache gesendet. Der selbst formulierte Text wird nicht automatisch "
+"übersetzt."
 
 #: apps/challenge/forms/season.py:131
 msgid "Disponibilités pour :"
@@ -1755,6 +1755,8 @@ msgid ""
 "Le planning n'est pas encore disponible; mets plutôt à jour tes "
 "disponibilités."
 msgstr ""
+"Der Einsatzplan ist noch nicht verfügbar; bitte aktualisiere dennoch Deine "
+"Verfügbarkeit."
 
 #: apps/challenge/views/season.py:1033
 msgid "Disponibilités mises à jour"
@@ -1764,6 +1766,8 @@ msgstr "Verfügbarkeiten aktualisiert"
 msgid ""
 "Il n'est pas possible de mettre à jour tes disponibilités; voici le planning."
 msgstr ""
+"Es ist nicht möglich, Deine Verfügbarkeit zu aktualisieren; hier ist der "
+"Einsatzplan."
 
 #: apps/challenge/views/season.py:1174
 msgid "Choix du personnel mises à jour"
@@ -2464,10 +2468,9 @@ msgid "Aucun résultat."
 msgstr "Keine Resultat."
 
 #: apps/salary/views/timesheets.py:322
-#, fuzzy, python-brace-format
-#| msgid "Export Crésus {month} {year}"
+#, python-brace-format
 msgid "Export Winbiz {month} {year}"
-msgstr "Export Cresus {month} {year}"
+msgstr "Export Winbiz {month} {year}"
 
 #: apps/salary/views/timesheets.py:412
 msgid "Aucune feuille d'heure orpheline à supprimer; tout va bien."
@@ -2671,10 +2674,8 @@ msgid "Offert"
 msgstr "Geschenkt"
 
 #: apps/user/models.py:169
-#, fuzzy
-#| msgid "Marié·e"
 msgid "Code salarié·e"
-msgstr "Verheiratet"
+msgstr "Mitarbeiter-Code"
 
 #: apps/user/models.py:184
 msgid "Coordonnées bancaires (IBAN)"
@@ -2990,18 +2991,16 @@ msgid "DÉFI VÉLO: "
 msgstr "DEFI VELO: "
 
 #: defivelo/templates/403.html:3 defivelo/templates/403.html:5
-#, fuzzy
-#| msgid "Accès à l'Intranet"
 msgid "Accès interdit"
-msgstr "Zugang zum Intranet"
+msgstr "Zugang verboten"
 
 #: defivelo/templates/404.html:3 defivelo/templates/404.html:5
 msgid "Pas trouvé"
-msgstr ""
+msgstr "Nicht gefunden"
 
 #: defivelo/templates/500.html:3 defivelo/templates/500.html:5
 msgid "Erreur interne du serveur"
-msgstr ""
+msgstr "Interner Serverfehler"
 
 #: defivelo/templates/account/base.html:11 defivelo/templates/base.html:11
 msgid "Dérouler la navigation"
