@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-17 17:08+0200\n"
+"POT-Creation-Date: 2021-08-19 16:38+0200\n"
 "PO-Revision-Date: 2020-12-07 17:29+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -260,7 +260,7 @@ msgid "Année"
 msgstr ""
 
 #: apps/challenge/forms/season.py:68 apps/user/models.py:474
-#: defivelo/roles.py:151
+#: defivelo/roles.py:152
 msgid "Chargé·e de projet"
 msgstr ""
 
@@ -645,7 +645,7 @@ msgstr ""
 
 #: apps/challenge/models/session.py:94 apps/challenge/models/session.py:136
 #: apps/challenge/templates/challenge/session_detail.html:94
-#: apps/info/templates/info/season_exports.html:31
+#: apps/info/templates/info/season_exports.html:38
 msgid "Logistique vélos"
 msgstr ""
 
@@ -1608,7 +1608,7 @@ msgid "Intervenants"
 msgstr ""
 
 #: apps/challenge/views/season.py:539 apps/challenge/views/season.py:621
-#: apps/salary/views/timesheets.py:502
+#: apps/salary/views/timesheets.py:564
 msgid "{Prénom} {Nom}"
 msgstr ""
 
@@ -1758,6 +1758,7 @@ msgstr ""
 
 #: apps/common/templates/export_buttons.html:12
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:139
+#: apps/salary/templates/salary/timesheets_yearly_overview.html:156
 #: defivelo/templates/license.html:10
 #, python-format
 msgid "Télécharger au format %(format)s"
@@ -1831,12 +1832,12 @@ msgid "Aucune Qualif’ n’est planifiée pour l’instant!"
 msgstr ""
 
 #: apps/info/templates/info/season_exports.html:4
-#: apps/info/templates/info/season_exports.html:27
+#: apps/info/templates/info/season_exports.html:34
 #, python-format
 msgid "Statistiques des mois %(month_start)s à %(month_end)s %(year)s"
 msgstr ""
 
-#: apps/info/templates/info/season_exports.html:30
+#: apps/info/templates/info/season_exports.html:37
 msgid "Statistiques de la saison"
 msgstr ""
 
@@ -1860,7 +1861,7 @@ msgstr ""
 #: apps/orga/export.py:44 apps/orga/forms.py:51 apps/orga/models.py:59
 #: apps/orga/templates/orga/_organization_detail.html:43
 #: apps/orga/templates/orga/organization_filter.html:64 apps/user/models.py:477
-#: defivelo/roles.py:152
+#: defivelo/roles.py:153
 msgid "Coordina·teur·trice"
 msgstr ""
 
@@ -2304,24 +2305,33 @@ msgid ""
 "Envoyer un rappel aux collabora·teur·trices qui n’ont pas rempli leurs heures"
 msgstr ""
 
-#: apps/salary/templates/salary/timesheets_yearly_overview.html:153
+#: apps/salary/templates/salary/timesheets_yearly_overview.html:151
+msgid "Exports de contrôle"
+msgstr ""
+
+#: apps/salary/templates/salary/timesheets_yearly_overview.html:170
 msgid "Aucun résultat."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:322
+#: apps/salary/views/timesheets.py:323
 #, python-brace-format
 msgid "Export Winbiz {month} {year}"
 msgstr ""
 
-#: apps/salary/views/timesheets.py:412
+#: apps/salary/views/timesheets.py:388
+#, python-brace-format
+msgid "Export de contrôle {month} {year}"
+msgstr ""
+
+#: apps/salary/views/timesheets.py:474
 msgid "Aucune feuille d'heure orpheline à supprimer; tout va bien."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:462
+#: apps/salary/views/timesheets.py:524
 msgid "Aucun rappel à envoyer: les heures de ce mois sont déjà remplies."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:483
+#: apps/salary/views/timesheets.py:545
 msgid "Rappel de soumission des heures expédié."
 msgstr ""
 
@@ -2539,11 +2549,11 @@ msgstr ""
 msgid "Administra·teur·trice"
 msgstr ""
 
-#: apps/user/models.py:471 defivelo/roles.py:153
+#: apps/user/models.py:471 defivelo/roles.py:154
 msgid "Bureau de coordination"
 msgstr ""
 
-#: apps/user/models.py:480 defivelo/roles.py:150
+#: apps/user/models.py:480 defivelo/roles.py:151
 msgid "Collabora·teur·trice"
 msgstr ""
 
@@ -2802,7 +2812,7 @@ msgstr ""
 msgid "Liste des intervenants"
 msgstr ""
 
-#: defivelo/roles.py:149
+#: defivelo/roles.py:150
 msgid "Aucun rôle"
 msgstr ""
 
@@ -3089,21 +3099,25 @@ msgstr "Votre mot de passe a été modifié."
 msgid "Bienvenue sur l'intranet DÉFI VÉLO"
 msgstr ""
 
-#: defivelo/templates/coordinator_home.html:7
-#: defivelo/templates/coordinator_home.html:9
+#: defivelo/templates/coordinator_home.html:6
+#: defivelo/templates/coordinator_home.html:11
 msgid "Tutoriel Intranet DÉFI VÉLO - Inscription Qualifs"
 msgstr ""
 
-#: defivelo/templates/coordinator_home.html:9
-msgid ""
-"https://player.vimeo.com/video/588319676?"
-"badge=0&autopause=0&player_id=0&app_id=58479&h=6c8330a8bf"
+#: defivelo/templates/coordinator_home.html:6
+msgid "(ci-dessous)"
 msgstr ""
 
-#: defivelo/templates/coordinator_home.html:13
+#: defivelo/templates/coordinator_home.html:8
 msgid ""
 "Photo de 11 moniteurs Défi Vélo représentant les mots 'Défi Vélo' avec leurs "
 "corps, au soleil du gymnase de Burier"
+msgstr ""
+
+#: defivelo/templates/coordinator_home.html:11
+msgid ""
+"https://player.vimeo.com/video/588319676?"
+"badge=0&autopause=0&player_id=0&app_id=58479&h=6c8330a8bf"
 msgstr ""
 
 #: defivelo/templates/header.html:9 defivelo/templates/header.html:64
