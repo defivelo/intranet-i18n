@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-18 20:34+0100\n"
+"POT-Creation-Date: 2022-01-18 20:42+0100\n"
 "PO-Revision-Date: 2020-12-07 17:29+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -471,6 +471,14 @@ msgstr ""
 msgid "Facture {self.ref} pour {self.organization} / {self.season}"
 msgstr ""
 
+#: apps/challenge/models/invoices.py:177
+#, python-brace-format
+msgid ""
+"{self.invoice.ref}: {self.historical_session} - Vélos: {self.nb_bikes} "
+"({self.cost_bikes} CHF) - Participants: {self.nb_participants} ({self."
+"cost_participants} CHF)"
+msgstr ""
+
 #: apps/challenge/models/qualification.py:37
 #: apps/challenge/templates/challenge/session_detail.html:159
 msgid "Agilité"
@@ -488,8 +496,8 @@ msgstr ""
 
 #: apps/challenge/models/qualification.py:50 apps/orga/export.py:31
 #: apps/orga/models.py:49 apps/orga/templates/orga/organization_filter.html:61
-#: apps/salary/models/validations.py:11 apps/user/export.py:71
-#: apps/user/templates/auth/user_detail.html:66
+#: apps/salary/models/validations.py:11 apps/salary/views/timesheets.py:401
+#: apps/user/export.py:71 apps/user/templates/auth/user_detail.html:66
 #: apps/user/templates/auth/user_detailed_list.html:15
 #: apps/user/templates/auth/user_filter.html:52
 msgid "Nom"
@@ -1658,6 +1666,11 @@ msgstr ""
 msgid "Aucune inscription à valider"
 msgstr ""
 
+#: apps/challenge/views/season.py:95 apps/challenge/views/session.py:49
+#, python-brace-format
+msgid "{name} - {tel}"
+msgstr ""
+
 #: apps/challenge/views/season.py:232
 msgid "Mois mis à jour"
 msgstr ""
@@ -1744,11 +1757,6 @@ msgstr ""
 
 #: apps/challenge/views/season.py:1291
 msgid "Erreurs dans les qualifs du mois"
-msgstr ""
-
-#: apps/challenge/views/session.py:49
-#, python-brace-format
-msgid "{name} - {tel}"
 msgstr ""
 
 #: apps/challenge/views/session.py:190
@@ -2136,27 +2144,27 @@ msgstr ""
 msgid "Établissement créé"
 msgstr ""
 
-#: apps/salary/forms.py:40
+#: apps/salary/forms.py:40 apps/salary/views/timesheets.py:403
 #, python-brace-format
 msgid "Heures moni·teur·trice ({price}.-/h)"
 msgstr ""
 
-#: apps/salary/forms.py:43
+#: apps/salary/forms.py:43 apps/salary/views/timesheets.py:405
 #, python-brace-format
 msgid "Intervention(s) ({price}.-/Qualif’)"
 msgstr ""
 
-#: apps/salary/forms.py:46
+#: apps/salary/forms.py:46 apps/salary/views/timesheets.py:407
 #, python-brace-format
 msgid "Participation(s) comme moni·teur·trice 2 ({price}.-/Qualif’)"
 msgstr ""
 
-#: apps/salary/forms.py:50
+#: apps/salary/forms.py:50 apps/salary/views/timesheets.py:411
 #, python-brace-format
 msgid "Heures supplémentaires ({price}.-/h)"
 msgstr ""
 
-#: apps/salary/forms.py:52
+#: apps/salary/forms.py:52 apps/salary/views/timesheets.py:413
 msgid "Heures de trajet (aller-retour)"
 msgstr ""
 
@@ -2317,11 +2325,13 @@ msgid "Heures de %(name)s pour %(month)s %(year)s"
 msgstr ""
 
 #: apps/salary/templates/salary/month_timesheets.html:79
+#: apps/salary/views/timesheets.py:414
 msgid "Total heures"
 msgstr ""
 
 #: apps/salary/templates/salary/month_timesheets.html:88
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:87
+#: apps/salary/views/timesheets.py:415
 msgid "Total CHF"
 msgstr ""
 
@@ -2479,6 +2489,16 @@ msgstr ""
 msgid "Export de contrôle {month} {year}"
 msgstr ""
 
+#: apps/salary/views/timesheets.py:399 apps/user/export.py:167
+msgid "Numéro d’employé Crésus"
+msgstr ""
+
+#: apps/salary/views/timesheets.py:400 apps/user/export.py:70
+#: apps/user/templates/auth/user_detailed_list.html:14
+#: apps/user/templates/auth/user_filter.html:51
+msgid "Prénom"
+msgstr ""
+
 #: apps/salary/views/timesheets.py:474
 msgid "Aucune feuille d'heure orpheline à supprimer; tout va bien."
 msgstr ""
@@ -2505,11 +2525,6 @@ msgstr ""
 
 #: apps/user/export.py:35
 msgid "No"
-msgstr ""
-
-#: apps/user/export.py:70 apps/user/templates/auth/user_detailed_list.html:14
-#: apps/user/templates/auth/user_filter.html:51
-msgid "Prénom"
 msgstr ""
 
 #: apps/user/export.py:73 apps/user/models.py:171
@@ -2590,10 +2605,6 @@ msgstr ""
 
 #: apps/user/export.py:162 apps/user/templates/auth/user_detail.html:196
 msgid "Défi Vélo Mobile"
-msgstr ""
-
-#: apps/user/export.py:167
-msgid "Numéro d’employé Crésus"
 msgstr ""
 
 #: apps/user/export.py:171 apps/user/models.py:182

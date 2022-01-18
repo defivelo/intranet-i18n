@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-01-18 20:34+0100\n"
+"POT-Creation-Date: 2022-01-18 20:42+0100\n"
 "PO-Revision-Date: 2022-01-18 14:01+0000\n"
 "Last-Translator: Laura Mosimann <laura.mosimann@label-vert.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -484,6 +484,13 @@ msgstr "Titel"
 msgid "Facture {self.ref} pour {self.organization} / {self.season}"
 msgstr "Rechnung {self.ref} für {self.organization} / {self.season}"
 
+#: apps/challenge/models/invoices.py:177
+msgid ""
+"{self.invoice.ref}: {self.historical_session} - Vélos: {self.nb_bikes} "
+"({self.cost_bikes} CHF) - Participants: {self.nb_participants} ({self."
+"cost_participants} CHF)"
+msgstr ""
+
 #: apps/challenge/models/qualification.py:37
 #: apps/challenge/templates/challenge/session_detail.html:159
 msgid "Agilité"
@@ -501,8 +508,8 @@ msgstr "Begegnung"
 
 #: apps/challenge/models/qualification.py:50 apps/orga/export.py:31
 #: apps/orga/models.py:49 apps/orga/templates/orga/organization_filter.html:61
-#: apps/salary/models/validations.py:11 apps/user/export.py:71
-#: apps/user/templates/auth/user_detail.html:66
+#: apps/salary/models/validations.py:11 apps/salary/views/timesheets.py:401
+#: apps/user/export.py:71 apps/user/templates/auth/user_detail.html:66
 #: apps/user/templates/auth/user_detailed_list.html:15
 #: apps/user/templates/auth/user_filter.html:52
 msgid "Nom"
@@ -1791,6 +1798,11 @@ msgstr "Quali gelöscht"
 msgid "Aucune inscription à valider"
 msgstr "Keine Anmeldung zu bestätigen"
 
+#: apps/challenge/views/season.py:95 apps/challenge/views/session.py:49
+#, python-brace-format
+msgid "{name} - {tel}"
+msgstr "{name} - {tel}"
+
 #: apps/challenge/views/season.py:232
 msgid "Mois mis à jour"
 msgstr "Monat aktualisiert"
@@ -1882,11 +1894,6 @@ msgstr "ReferentInnen des Monats"
 #: apps/challenge/views/season.py:1291
 msgid "Erreurs dans les qualifs du mois"
 msgstr "Fehler in den Qualis des Monats"
-
-#: apps/challenge/views/session.py:49
-#, python-brace-format
-msgid "{name} - {tel}"
-msgstr "{name} - {tel}"
 
 #: apps/challenge/views/session.py:190
 #, python-brace-format
@@ -2277,27 +2284,27 @@ msgstr "Schule aktualisiert"
 msgid "Établissement créé"
 msgstr "Schule erstellt"
 
-#: apps/salary/forms.py:40
+#: apps/salary/forms.py:40 apps/salary/views/timesheets.py:403
 #, python-brace-format
 msgid "Heures moni·teur·trice ({price}.-/h)"
 msgstr "Stunden LeiterInnen ({price}.-/h)"
 
-#: apps/salary/forms.py:43
+#: apps/salary/forms.py:43 apps/salary/views/timesheets.py:405
 #, python-brace-format
 msgid "Intervention(s) ({price}.-/Qualif’)"
 msgstr "Einsatz/Einsätze ({price}.-/Qualif')"
 
-#: apps/salary/forms.py:46
+#: apps/salary/forms.py:46 apps/salary/views/timesheets.py:407
 #, python-brace-format
 msgid "Participation(s) comme moni·teur·trice 2 ({price}.-/Qualif’)"
 msgstr "Teilnahme(n) als LeiterIn 2 ({price}.-/Quali)"
 
-#: apps/salary/forms.py:50
+#: apps/salary/forms.py:50 apps/salary/views/timesheets.py:411
 #, python-brace-format
 msgid "Heures supplémentaires ({price}.-/h)"
 msgstr "Zusätzliche Stunden ({price}.-/h)"
 
-#: apps/salary/forms.py:52
+#: apps/salary/forms.py:52 apps/salary/views/timesheets.py:413
 msgid "Heures de trajet (aller-retour)"
 msgstr "Reisezeit (Hin- & Rückreise)"
 
@@ -2473,11 +2480,13 @@ msgid "Heures de %(name)s pour %(month)s %(year)s"
 msgstr "Stunden von %(name)s für %(month)s %(year)s"
 
 #: apps/salary/templates/salary/month_timesheets.html:79
+#: apps/salary/views/timesheets.py:414
 msgid "Total heures"
 msgstr "Total der Stunden"
 
 #: apps/salary/templates/salary/month_timesheets.html:88
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:87
+#: apps/salary/views/timesheets.py:415
 msgid "Total CHF"
 msgstr "Total CHF"
 
@@ -2642,6 +2651,16 @@ msgstr "Export Winbiz {month} {year}"
 msgid "Export de contrôle {month} {year}"
 msgstr ""
 
+#: apps/salary/views/timesheets.py:399 apps/user/export.py:167
+msgid "Numéro d’employé Crésus"
+msgstr "Mitarbeiternummer Crésus"
+
+#: apps/salary/views/timesheets.py:400 apps/user/export.py:70
+#: apps/user/templates/auth/user_detailed_list.html:14
+#: apps/user/templates/auth/user_filter.html:51
+msgid "Prénom"
+msgstr "Vorname"
+
 #: apps/salary/views/timesheets.py:474
 msgid "Aucune feuille d'heure orpheline à supprimer; tout va bien."
 msgstr "Keine leere Stundenabrechnung zum Löschen, alles in Ordnung."
@@ -2671,11 +2690,6 @@ msgstr "Ja"
 #: apps/user/export.py:35
 msgid "No"
 msgstr "Nein"
-
-#: apps/user/export.py:70 apps/user/templates/auth/user_detailed_list.html:14
-#: apps/user/templates/auth/user_filter.html:51
-msgid "Prénom"
-msgstr "Vorname"
 
 #: apps/user/export.py:73 apps/user/models.py:171
 #: apps/user/templates/auth/user_detail.html:222
@@ -2756,10 +2770,6 @@ msgstr "Datum der letzten Ausbildung"
 #: apps/user/export.py:162 apps/user/templates/auth/user_detail.html:196
 msgid "Défi Vélo Mobile"
 msgstr "DEFI VELO mobil"
-
-#: apps/user/export.py:167
-msgid "Numéro d’employé Crésus"
-msgstr "Mitarbeiternummer Crésus"
 
 #: apps/user/export.py:171 apps/user/models.py:182
 #: apps/user/templates/auth/user_detail.html:122
