@@ -6,15 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< Updated upstream
-"POT-Creation-Date: 2022-01-18 20:42+0100\n"
-"PO-Revision-Date: 2023-04-26 14:32+0000\n"
-"Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
-=======
 "POT-Creation-Date: 2023-04-26 17:07+0200\n"
 "PO-Revision-Date: 2020-12-07 17:29+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
->>>>>>> Stashed changes
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
 "fr/>\n"
 "Language: fr\n"
