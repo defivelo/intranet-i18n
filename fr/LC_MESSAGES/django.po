@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-18 20:42+0100\n"
-"PO-Revision-Date: 2020-12-07 17:29+0000\n"
-"Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
+"PO-Revision-Date: 2023-04-26 14:32+0000\n"
+"Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
 "fr/>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.16.2\n"
 
 #: apps/article/forms.py:25
 msgid "Publié"
@@ -96,7 +96,7 @@ msgstr ""
 #: apps/salary/templates/salary/month_timesheets.html:106
 #: apps/salary/templates/salary/monthlycantonalvalidation_form.html:28
 msgid "Enregistrer"
-msgstr ""
+msgstr "Speichern"
 
 #: apps/article/templates/article/article_form.html:23
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:22
@@ -120,7 +120,7 @@ msgstr ""
 #: apps/user/templates/delete/user_delete.html:24
 #: apps/user/templates/roles/assign.html:16
 msgid "Annuler"
-msgstr ""
+msgstr "Löschen"
 
 #: apps/article/views.py:39
 msgid "Article créé"
@@ -153,7 +153,7 @@ msgstr ""
 #: apps/challenge/views/session.py:368 apps/challenge/views/session.py:369
 #: apps/user/__init__.py:42 defivelo/templatetags/dv_filters.py:222
 msgid "Moniteur 1"
-msgstr ""
+msgstr "Leitende 1"
 
 #: apps/challenge/__init__.py:46 apps/challenge/forms/qualification.py:81
 #: apps/challenge/models/availability.py:124
@@ -162,7 +162,7 @@ msgstr ""
 #: apps/challenge/views/season.py:747 apps/challenge/views/session.py:367
 #: apps/user/__init__.py:43 defivelo/templatetags/dv_filters.py:219
 msgid "Moniteur 2"
-msgstr ""
+msgstr "Leitende 2"
 
 #. Translators: Moniteur de secours
 #. Translators: Nom court pour 'Moniteur de secours'
@@ -170,7 +170,7 @@ msgstr ""
 #: apps/challenge/models/availability.py:112 apps/challenge/utils.py:56
 #: defivelo/templatetags/dv_filters.py:229
 msgid "S"
-msgstr ""
+msgstr "S"
 
 #: apps/challenge/forms/invoices.py:64
 #, python-brace-format
@@ -189,7 +189,7 @@ msgstr ""
 #: apps/challenge/templates/challenge/session_detail.html:157
 #: apps/challenge/views/season.py:286
 msgid "Moniteurs 1"
-msgstr ""
+msgstr "Leitende 1"
 
 #: apps/challenge/forms/qualification.py:98
 #: apps/challenge/models/availability.py:115
@@ -236,27 +236,31 @@ msgstr ""
 #: apps/challenge/views/session.py:351 apps/info/exports.py:171
 #: apps/orga/models.py:106
 msgid "Établissement"
-msgstr ""
+msgstr "Schule"
 
 #: apps/challenge/forms/registration.py:49
 msgid ""
 "Il n'est pas encore possible d'inscrire de session à cette date, merci de "
 "contacter le ou la chargé·e de projet régional·e"
 msgstr ""
+"Es ist nicht mehr möglich, dich an diesem Datum einzuschreiben. Bitte "
+"kontaktiere den Projektleitenden deiner Region"
 
 #: apps/challenge/forms/registration.py:80
 msgid ""
 "Il est impossible de créer 2 sessions pour la même demi-journée pour le même "
 "établissement."
 msgstr ""
+"Es ist nicht möglich 2 Qualis für den selben Halbtag für die selbe Schule zu "
+"erstellen."
 
 #: apps/challenge/forms/registration.py:112
 msgid "J'accepte les conditions générales"
-msgstr ""
+msgstr "Ich akzeptiere die allgemeinen Geschäftsbedingungen"
 
 #: apps/challenge/forms/registration.py:124
 msgid "Cette inscription n'a pas été validée."
-msgstr ""
+msgstr "Dieser Eintrag wurde nicht validiert."
 
 #: apps/challenge/forms/registration.py:148 apps/challenge/views/session.py:165
 #, python-format
@@ -266,16 +270,16 @@ msgstr ""
 #: apps/challenge/forms/season.py:64 apps/challenge/forms/settings.py:31
 #: apps/challenge/models/season.py:53 apps/challenge/models/settings.py:28
 msgid "Année"
-msgstr ""
+msgstr "Jahr"
 
 #: apps/challenge/forms/season.py:68 apps/user/models.py:474
 #: defivelo/roles.py:152
 msgid "Chargé·e de projet"
-msgstr ""
+msgstr "Projektleitende"
 
 #: apps/challenge/forms/season.py:89
 msgid "Envoyer le courriel suivant"
-msgstr ""
+msgstr "Das nachfolgende Mail verschicken"
 
 #: apps/challenge/forms/season.py:92
 msgid "Précisions"
@@ -286,16 +290,20 @@ msgid ""
 "Attention: Le courriel est envoyé à chaque destinataire dans sa langue, mais "
 "ce texte est envoyé tel quel, il ne sera pas traduit."
 msgstr ""
+"Achtung: Die E-Mail wird an jeden Empfänger in seiner Sprache gesendet, aber "
+"dieser Text wird unverändert gesendet, er wird nicht übersetzt."
 
 #: apps/challenge/forms/season.py:131
 msgid "Disponibilités pour :"
-msgstr ""
+msgstr "Verfügbar für:"
 
 #: apps/challenge/forms/session.py:37
 msgid ""
 "La date ne peut plus être modifiée, car des heures ont déjà été saisies dans "
 "au moins une des Qualifs de cette session."
 msgstr ""
+"Das Datum kann nicht mehr geändert werden, da in mindestens einem der Qualis "
+"bereits gearbeitete Stunden eingetragen wurden."
 
 #: apps/challenge/forms/session.py:92 apps/challenge/models/registration.py:26
 #: apps/challenge/models/session.py:53
@@ -306,11 +314,11 @@ msgstr ""
 #: apps/challenge/views/session.py:349 apps/info/exports.py:173
 #: apps/salary/models/timesheets.py:14
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: apps/challenge/forms/session.py:93 apps/challenge/models/session.py:54
 msgid "Début"
-msgstr ""
+msgstr "Anfang"
 
 #: apps/challenge/forms/session.py:95 apps/challenge/forms/settings.py:36
 #: apps/challenge/models/settings.py:27
@@ -324,7 +332,7 @@ msgstr ""
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_year.html:33
 #: apps/user/models.py:599
 msgid "Canton"
-msgstr ""
+msgstr "Kanton"
 
 #: apps/challenge/forms/session.py:101 apps/challenge/models/session.py:93
 #: apps/challenge/models/session.py:134
