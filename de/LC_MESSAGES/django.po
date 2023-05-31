@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-26 17:07+0200\n"
-"PO-Revision-Date: 2023-02-14 13:09+0000\n"
-"Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
+"PO-Revision-Date: 2023-06-01 08:42+0000\n"
+"Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #: apps/article/forms.py:25
 msgid "Publié"
@@ -167,34 +167,24 @@ msgid "Moniteur 2"
 msgstr "LeiterIn 2"
 
 #: apps/challenge/export.py:10
-#, fuzzy
-#| msgid "Création de facture"
 msgid "Canton de la facture"
-msgstr "Rechnung erstellen"
+msgstr "Rechnungskanton"
 
 #: apps/challenge/export.py:13
-#, fuzzy
-#| msgid "Nouvelle facture"
 msgid "Mois de la facture"
-msgstr "Neue Rechnung"
+msgstr "Monat der Rechnung"
 
 #: apps/challenge/export.py:15
-#, fuzzy
-#| msgid "Nouvelle facture"
 msgid "N° de la facture"
-msgstr "Neue Rechnung"
+msgstr "Rechnungsnummer"
 
 #: apps/challenge/export.py:17
-#, fuzzy
-#| msgid "Nouvel établissement"
 msgid "Nom de l'établissement"
-msgstr "Neue Schule"
+msgstr "Name der Schule"
 
 #: apps/challenge/export.py:20
-#, fuzzy
-#| msgid "Coût par participant"
 msgid "Total participants"
-msgstr "Kosten pro TeilnehmerInnen"
+msgstr "Total Teilnehmende"
 
 #: apps/challenge/export.py:23 apps/challenge/models/settings.py:38
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:34
@@ -202,10 +192,8 @@ msgid "Coût par participant"
 msgstr "Kosten pro TeilnehmerInnen"
 
 #: apps/challenge/export.py:27
-#, fuzzy
-#| msgid "Coût par participant"
 msgid "Total coût participants"
-msgstr "Kosten pro TeilnehmerInnen"
+msgstr "Kostentotal pro TeilnehmerInnen"
 
 #: apps/challenge/export.py:30 apps/challenge/views/season.py:739
 #: apps/challenge/views/session.py:361
@@ -218,14 +206,12 @@ msgid "Coût par vélo"
 msgstr "Kosten pro Velo"
 
 #: apps/challenge/export.py:36
-#, fuzzy
-#| msgid "Total vélos"
 msgid "Total coût vélos"
-msgstr "Total Velos"
+msgstr "Total Kosten Velos"
 
 #: apps/challenge/export.py:39
 msgid "Montant total de la facture"
-msgstr ""
+msgstr "Rechnungstotal"
 
 #. Translators: Moniteur de secours
 #. Translators: Nom court pour 'Moniteur de secours'
@@ -906,7 +892,7 @@ msgstr "Koordinationsstelle DEFI VELO"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:10
 msgid "c/o IDEE 21"
-msgstr ""
+msgstr "c/o IDEE 21"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:11
 msgid "Rue Sébeillon 9a"
@@ -930,18 +916,7 @@ msgid "Lausanne, le %(date)s"
 msgstr "Lausanne, %(date)s"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:58
-#, fuzzy, python-format
-#| msgid ""
-#| "Prochainement, %(nb_participants)s étudiant·e·s de votre établissement "
-#| "vont participer à « DÉFI VÉLO », compétition inter-cantonale pour la "
-#| "promotion du vélo. Par la participation de votre établissement, vous "
-#| "contribuez au succès d’une action innovante de promotion du vélo, de "
-#| "l’activité physique et de la sécurité routière, qui place le plaisir et "
-#| "l’apprentissage par l’action au premier plan. DÉFI VÉLO est largement "
-#| "reconnu pour ces qualités: il est notamment soutenu par Promotion Santé "
-#| "Suisse, le Fonds suisse de sécurité routière et l’Office fédéral de "
-#| "l’énergie (OFEN). Nous nous réjouissons de votre confiance et vous "
-#| "remercions par avance de votre collaboration."
+#, python-format
 msgid ""
 "Prochainement, %(nb_participants)s étudiant·e·s\n"
 "      de votre établissement vont participer à « DÉFI VÉLO », compétition "
@@ -956,15 +931,15 @@ msgid ""
 "(OFEN). Nous nous réjouissons de votre\n"
 "      confiance et vous remercions par avance de votre collaboration."
 msgstr ""
-"Demnächst nehmen %(nb_participants)s SchülerInnen aus Ihrer Schule bei DEFI "
-"VELO, der interkantonalen Velo-Challenge, teil. Durch die Teilnahme Ihrer "
-"Schule leisten Sie einen Beitrag für den Erfolg einer innovativen "
-"Veloförderaktion, mit dem Ziel der Bewegungsförderung und der Förderung der "
-"Verkehrssicherheit. DEFI VELO stellt die Freude und das Lernen durch "
-"Erfahrung in den Vordergrund und ist als Projekt bekannt für seine gute "
-"Qualität: die Aktion wird unter anderem unterstützt von Gesundheitsförderung "
-"Schweiz, dem Fonds für Verkehrssicherheit und dem Bundesamt für Energie. Wir "
-"freuen uns über das Vertrauen und danken für die Zusammenarbeit."
+"Demnächst werden %(nb_participants)s Schülerinnen und Schüler aus Ihrer "
+"Schule bei DEFI VELO teilnehmen, einem interkantonalen Wettbewerb zur "
+"Veloförderung. Durch die Teilnahme Ihrer Schule tragen Sie zum Erfolg einer "
+"innovativen Aktion zur Veloförderung, der körperlichen Aktivität und der "
+"Verkehrssicherheit bei, bei der der Spass und das Lernen durch Handeln im "
+"Vordergrund stehen. DEFI VELO ist für diese Qualitäten weithin anerkannt und "
+"wird unter anderem von der Stiftung Gesundheitsförderung Schweiz, dem Fonds "
+"für Verkehrssicherheit und dem Bundesamt für Energie (BFE) unterstützt. Wir "
+"freuen uns über Ihr Vertrauen und danken Ihnen im Voraus für Ihre Mitarbeit."
 
 #: apps/challenge/templates/challenge/invoice_detail.html:73
 #, python-format
@@ -973,6 +948,9 @@ msgid ""
 "          Participant.e.s (coût: CHF %(cost_per_participant)s.-/part.)\n"
 "          "
 msgstr ""
+"\n"
+"          Teilnehmende (Kosten: CHF %(cost_per_participant)s./TN)\n"
+"          "
 
 #: apps/challenge/templates/challenge/invoice_detail.html:78
 #, python-format
@@ -982,38 +960,32 @@ msgid ""
 "jour)\n"
 "          "
 msgstr ""
+"\n"
+"          Velos (Tagesabrechnung: Kosten: CHF %(cost_per_bike)s.-/Velo/Tag)\n"
+"          "
 
 #: apps/challenge/templates/challenge/invoice_detail.html:82
-#, fuzzy
-#| msgid "Total CHF"
 msgid "Total (CHF)"
-msgstr "Total CHF"
+msgstr "Total (CHF)"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:121
-#, fuzzy
-#| msgid ""
-#| "La facture est établie selon les listes fournies par le·la "
-#| "coordinateur·trice de l’établissement."
 msgid ""
 "La facture est établie selon les listes fournies par le·la "
 "coordinateur·trice de\n"
 "      l’établissement."
 msgstr ""
-"Die Rechnung wurde aufgrund der von der Kontaktperson der Schule vorgelegten "
-"Listen erstellt."
+"Die Rechnung wird anhand der Teilnehmendenlisten erstellt, die von der "
+"Kontaktperson Ihrer Schule angemeldet wurden."
 
 #: apps/challenge/templates/challenge/invoice_detail.html:123
-#, fuzzy, python-format
-#| msgid ""
-#| "Paiement à 30 jours sur le compte de notre mandataire, avec la mention "
-#| "« DÉFI VÉLO %(ref)s »"
+#, python-format
 msgid ""
 "Paiement à 30 jours sur le compte de notre mandataire, avec la mention "
 "« DÉFI\n"
 "      VÉLO %(ref)s »"
 msgstr ""
 "Wir möchten Sie bitten, den angegebenen Betrag innert 30 Tagen mit dem "
-"Verweis \"DEFI VELO %(ref)s \" auf folgendes Konto zu überwiesen"
+"Verweis \"DEFI VELO %(ref)s \" auf folgendes Konto zu überweisen"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:128
 msgid "Banque Cantonale Bernoise SA"
@@ -1874,7 +1846,7 @@ msgstr "L+"
 
 #: apps/challenge/views/invoice.py:238
 msgid "Invoices"
-msgstr ""
+msgstr "Rechnung"
 
 #: apps/challenge/views/quali.py:82
 msgid "Qualif’ créée"
@@ -2115,38 +2087,36 @@ msgid "Calendar"
 msgstr "Kalender"
 
 #: apps/info/exports.py:85
-#, fuzzy
-#| msgid "Par semaine"
 msgid "Semaine"
-msgstr "pro Woche"
+msgstr "Woche"
 
 #: apps/info/exports.py:86
 msgid "Lundi"
-msgstr ""
+msgstr "Montag"
 
 #: apps/info/exports.py:87
 msgid "Mardi"
-msgstr ""
+msgstr "Dienstag"
 
 #: apps/info/exports.py:88
 msgid "Mercredi"
-msgstr ""
+msgstr "Mittwoch"
 
 #: apps/info/exports.py:89
 msgid "Jeudi"
-msgstr ""
+msgstr "Donnerstag"
 
 #: apps/info/exports.py:90
 msgid "Vendredi"
-msgstr ""
+msgstr "Freitag"
 
 #: apps/info/exports.py:91
 msgid "Samedi"
-msgstr ""
+msgstr "Samstag"
 
 #: apps/info/exports.py:92
 msgid "Dimanche"
-msgstr ""
+msgstr "Sonntag"
 
 #: apps/info/exports.py:124 defivelo/templates/header.html:117
 msgid "Statistiques"
@@ -2154,7 +2124,7 @@ msgstr "Statistik"
 
 #: apps/info/exports.py:133
 msgid "Stats_Mois"
-msgstr "Zahlen_Monat"
+msgstr "Statistik_Monat"
 
 #: apps/info/exports.py:142 apps/orga/models.py:107
 #: apps/orga/templates/orga/organization_filter.html:5 apps/orga/views.py:115
@@ -2523,7 +2493,7 @@ msgstr "URL"
 
 #: apps/salary/models/validations.py:14
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
 #: apps/salary/models/validations.py:18
 msgid "URL pour validation mensuelle"
@@ -2929,10 +2899,8 @@ msgid "Cantons gérés"
 msgstr "Geführte Kantone"
 
 #: apps/user/export.py:190
-#, fuzzy
-#| msgid "Dernière mise à jour: "
 msgid "Dernière mise à jour"
-msgstr "Letzte Aktualisierung: "
+msgstr "Letzte Aktualisierung"
 
 #: apps/user/forms.py:104
 msgid "Un utilisateur avec cette adresse e-mail existe déjà."
@@ -3281,14 +3249,13 @@ msgid "Modifier le niveau d’accès de %(name)s ?"
 msgstr "Zugangsberechtigung von %(name)s ändern?"
 
 #: apps/user/templates/roles/assign.html:10
-#, fuzzy, python-format
-#| msgid "Modifier le niveau d’accès de %(name)s ?"
+#, python-format
 msgid "Modifier les établissements gérés de %(name)s ?"
-msgstr "Zugangsberechtigung von %(name)s ändern?"
+msgstr "Zugangsberechtigung der Schule %(name)s ändern?"
 
 #: apps/user/views/actions.py:36
 msgid "Tous les moniteurs ont été marqués inactifs."
-msgstr "Alle LeiterInnen wurden als inaktiv markiert."
+msgstr "Alle Leitenden wurden als inaktiv markiert."
 
 #: apps/user/views/credentials.py:33
 msgid "Données de connexion expédiées."
@@ -3304,7 +3271,7 @@ msgstr "Der/dem Benutzer/in zugeteilte Rolle"
 
 #: apps/user/views/credentials.py:140
 msgid "vous ne pouvez pas annuler l'attribution du rôle"
-msgstr ""
+msgstr "Die Zuweisung der Rolle kann nicht rückgängig gemacht werden"
 
 #: apps/user/views/deletes.py:30
 msgid "Utilisateur supprimé"
@@ -3323,10 +3290,8 @@ msgid "Langues d’animation"
 msgstr "Leitet auch auf..."
 
 #: apps/user/views/standard.py:235
-#, fuzzy
-#| msgid "Dernière formation : "
 msgid "Dernière modification après le"
-msgstr "Letzte Ausbildung: "
+msgstr "Letzte Ausbildung nach dem"
 
 #: apps/user/views/standard.py:281
 msgid "Liste des utilisateurs"
