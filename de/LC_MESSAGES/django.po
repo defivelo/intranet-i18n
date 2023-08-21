@@ -886,6 +886,10 @@ msgstr "Neue Konfiguration erstellen"
 msgid "Facture %(ref)s"
 msgstr "Rechnung %(ref)s"
 
+#: apps/challenge/views/invoice.py:193
+msgid "Facture"
+msgstr "Rechnung"
+
 #: apps/challenge/templates/challenge/invoice_detail.html:9
 msgid "Coordination DÉFI VÉLO"
 msgstr "Koordinationsstelle DEFI VELO"
