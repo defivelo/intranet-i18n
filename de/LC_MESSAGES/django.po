@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-26 17:07+0200\n"
-"PO-Revision-Date: 2023-06-01 08:42+0000\n"
+"PO-Revision-Date: 2023-11-10 11:30+0000\n"
 "Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.16.4\n"
+"X-Generator: Weblate 5.1\n"
 
 #: apps/article/forms.py:25
 msgid "Publié"
@@ -3143,10 +3143,8 @@ msgid "Modifier le niveau d’accès"
 msgstr "Zugangsberechtigung ändern"
 
 #: apps/user/templates/auth/user_detail.html:253
-#, fuzzy
-#| msgid "Établissements gérés"
 msgid "Modifier les établissements gérés"
-msgstr "Verwaltete Schulen"
+msgstr "Schule hinzufügen"
 
 #: apps/user/templates/auth/user_detail.html:258
 msgid "Retour à la liste des utilisateurs"
