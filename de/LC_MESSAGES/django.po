@@ -3457,6 +3457,15 @@ msgstr ""
 msgid "Please Confirm Your E-mail Address"
 msgstr "E-Mail-Adresse bestätigen"
 
+#: defivelo/templates/account/password_reset_done.html:14
+msgid ""
+"We have sent you an email. If you have not received it please check your "
+"spam folder. Otherwise contact us if you do not receive it in a few minutes."
+msgstr ""
+"Wir haben Dir eine E-Mail geschickt. Wenn du die E-Mail nicht in deinem "
+"Posteingang siehst, überprüfe bitte deinen Spam-Ordner. Wenn die E-Mail "
+"ansonsten nicht in ein paar Minuten angekommen ist, gib uns bitte Bescheid."
+
 #: defivelo/templates/account/email/password_reset_key_message.txt:1
 #, python-format
 msgid ""
