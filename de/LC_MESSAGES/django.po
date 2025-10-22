@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-06 15:28+0200\n"
 "PO-Revision-Date: 2025-10-23 10:24+0000\n"
-"Last-Translator: Benoît Perrenoud <benoit@defi-velo.ch>\n"
+"Last-Translator: Norina Bürkler <norina@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
 "Language: de\n"
@@ -612,15 +612,15 @@ msgstr "keine"
 
 #: apps/challenge/models/qualification.py:68
 msgid "un"
-msgstr ""
+msgstr "ein*e"
 
 #: apps/challenge/models/qualification.py:69
 msgid "deux"
-msgstr ""
+msgstr "zwei"
 
 #: apps/challenge/models/qualification.py:70
 msgid "trois"
-msgstr ""
+msgstr "drei"
 
 #: apps/challenge/models/qualification.py:99
 msgid "Nom de la classe"
@@ -639,10 +639,8 @@ msgstr "Anzahl TeilnehmerInnen"
 
 #: apps/challenge/models/qualification.py:118
 #: apps/challenge/templates/challenge/session_detail.html:158
-#, fuzzy
-#| msgid "Nombre de mois"
 msgid "Nombre de moniteurs"
-msgstr "Anzahl Monate"
+msgstr "Anzahl Leitende"
 
 #: apps/challenge/models/qualification.py:124
 #: apps/challenge/views/season.py:846 apps/challenge/views/session.py:420
@@ -737,10 +735,8 @@ msgid "État"
 msgstr "Stand"
 
 #: apps/challenge/models/season.py:81
-#, fuzzy
-#| msgid "Éditer les disponibilités"
 msgid "Date d’envoi du rappel de disponibilités"
-msgstr "Verfügbarkeiten bearbeiten"
+msgstr "Datum Versand Erinnerung Verfügbarkeiten"
 
 #: apps/challenge/models/season.py:187
 #, python-brace-format
@@ -938,7 +934,7 @@ msgstr "Rechnung %(ref)s"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:8
 msgid "Devis"
-msgstr ""
+msgstr "Offerte"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:10
 msgid "Coordination DÉFI VÉLO"
@@ -957,10 +953,8 @@ msgid "1004 Lausanne"
 msgstr "1004 Lausanne"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:29
-#, fuzzy
-#| msgid "Imprimer"
 msgid "Imprimer le devis"
-msgstr "Drucken"
+msgstr "Offerte drucken"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:38
 msgid "La facture n’est pas à jour."
@@ -1008,10 +1002,7 @@ msgstr ""
 #| "          Participant.e.s (coût: CHF %(cost_per_participant)s.-/part.)\n"
 #| "          "
 msgid "Participant.e.s (coût: CHF %(cost_per_participant)s.-/part.)"
-msgstr ""
-"\n"
-"          Teilnehmende (Kosten: CHF %(cost_per_participant)s./TN)\n"
-"          "
+msgstr "Teilnehmende (Kosten: CHF %(cost_per_participant)s./TN)"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:84
 #, fuzzy, python-format
@@ -1022,10 +1013,7 @@ msgstr ""
 #| "          "
 msgid ""
 "Vélos (facturation journalière: coût: CHF %(cost_per_bike)s.-/vélo/jour)"
-msgstr ""
-"\n"
-"          Velos (Tagesabrechnung: Kosten: CHF %(cost_per_bike)s.-/Velo/Tag)\n"
-"          "
+msgstr "Velos (Tagesabrechnung: Kosten: CHF %(cost_per_bike)s.-/Velo/Tag)"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:88
 msgid "Total (CHF)"
@@ -1432,10 +1420,8 @@ msgid "Retour au mois"
 msgstr "Zurück zum Monat"
 
 #: apps/challenge/templates/challenge/season_availability.html:53
-#, fuzzy
-#| msgid "Envoyer un rappel"
 msgid "Renvoyer un  rappel"
-msgstr "Eine Erinnerung verschicken"
+msgstr "Nochmals eine Erinnerung verschicken"
 
 #: apps/challenge/templates/challenge/season_availability.html:53
 #: apps/challenge/templates/challenge/season_availability_reminder.html:4
@@ -1459,26 +1445,20 @@ msgid "Éditer les disponibilités"
 msgstr "Verfügbarkeiten bearbeiten"
 
 #: apps/challenge/templates/challenge/season_availability_partial_helper_columns.html:11
-#, fuzzy
-#| msgid "Retour au mois"
 msgid "Retour au planning"
-msgstr "Zurück zum Monat"
+msgstr "Zurück zum Einsatzplan"
 
 #: apps/challenge/templates/challenge/season_availability_partial_helper_columns.html:12
 msgid "Voir le profil"
-msgstr ""
+msgstr "Zum Profil"
 
 #: apps/challenge/templates/challenge/season_availability_reminder.html:11
-#, fuzzy
-#| msgid "Éditer les disponibilités"
 msgid "Envoyer un rappel de disponibilités"
-msgstr "Verfügbarkeiten bearbeiten"
+msgstr "Erinnerung schicken Verfügbarkeiten"
 
 #: apps/challenge/templates/challenge/season_availability_reminder.html:16
-#, fuzzy
-#| msgid "Envoyer le courriel suivant"
 msgid "Envoyer le courriel"
-msgstr "Nächstes Mail verschicken"
+msgstr "Mail abschicken"
 
 #: apps/challenge/templates/challenge/season_availability_reminder.html:23
 #: apps/challenge/templates/challenge/season_form_tostate.html:27
