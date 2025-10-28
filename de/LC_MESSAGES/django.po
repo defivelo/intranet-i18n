@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-06 15:28+0200\n"
-"PO-Revision-Date: 2025-10-23 10:24+0000\n"
+"PO-Revision-Date: 2025-10-29 06:24+0000\n"
 "Last-Translator: Norina Bürkler <norina@defi-velo.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
@@ -996,21 +996,12 @@ msgstr ""
 "freuen uns über Ihr Vertrauen und danken Ihnen im Voraus für Ihre Mitarbeit."
 
 #: apps/challenge/templates/challenge/invoice_detail.html:79
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "          Participant.e.s (coût: CHF %(cost_per_participant)s.-/part.)\n"
-#| "          "
+#, python-format
 msgid "Participant.e.s (coût: CHF %(cost_per_participant)s.-/part.)"
 msgstr "Teilnehmende (Kosten: CHF %(cost_per_participant)s./TN)"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:84
-#, fuzzy, python-format
-#| msgid ""
-#| "\n"
-#| "          Vélos (facturation journalière: coût: CHF %(cost_per_bike)s.-/"
-#| "vélo/jour)\n"
-#| "          "
+#, python-format
 msgid ""
 "Vélos (facturation journalière: coût: CHF %(cost_per_bike)s.-/vélo/jour)"
 msgstr "Velos (Tagesabrechnung: Kosten: CHF %(cost_per_bike)s.-/Velo/Tag)"
@@ -1573,6 +1564,22 @@ msgid ""
 "\n"
 "    %(planning_link)s"
 msgstr ""
+"Hallo%(full_name)s,\n"
+"\n"
+"Du hast den Einsatzplan bei DEFI VELO  %(season_desc)s nicht oder nur "
+"teilweise ausgefüllt.  Bitte kontrolliere deine Verfügbarkeiten so schnell "
+"wie möglich, damit wir eine optimale Planung machen können. Danke! \n"
+"\n"
+"Fülle den Einsatzplan bitte auch aus, wenn du keine freien Verfügbarkeiten "
+"hast. Das erleichtert uns die Planung und vermeidet unnötige "
+"Erinnerungsmails. \n"
+"\n"
+"Melde dich bei Fragen bei deiner zuständigen Projektleitung. \n"
+"\n"
+"Den Zugang zum Einsatzplan findest du direkt hier oder via deinem "
+"persönlichen Intranetzugang. \n"
+"\n"
+"    %(planning_link)s"
 
 #: apps/challenge/templates/challenge/season_email_to_state_open_post.txt:6
 msgid ""
@@ -1714,10 +1721,8 @@ msgstr "Mein Einsatzplan"
 
 #: apps/challenge/templates/challenge/season_list.html:72
 #: apps/challenge/utils.py:110
-#, fuzzy
-#| msgid "Conditions générales"
 msgid "Planning général"
-msgstr "Allgemeine Bedingungen"
+msgstr "Allgemeiner Einsatzplan"
 
 #: apps/challenge/templates/challenge/season_list.html:84
 msgid "Créer un nouveau mois"
@@ -1808,7 +1813,7 @@ msgstr "Zurück zur Liste der Halbtage"
 #: apps/challenge/templates/challenge/session_form.html:81
 #: apps/challenge/templates/challenge/session_item_in_list.html:35
 msgid "Dupliquer"
-msgstr ""
+msgstr "Duplizieren"
 
 #: apps/challenge/templates/challenge/session_detail.html:62
 msgid "Emplacement de la session"
@@ -1970,20 +1975,18 @@ msgid "M+"
 msgstr "L+"
 
 #: apps/challenge/utils.py:96
-#, fuzzy, python-brace-format
-#| msgid "Printemps"
+#, python-brace-format
 msgid "Printemps {year}"
-msgstr "Frühling"
+msgstr "Frühling {year}"
 
 #: apps/challenge/utils.py:100
-#, fuzzy, python-brace-format
-#| msgid "Automne"
+#, python-brace-format
 msgid "Automne {year}"
-msgstr "Herbst"
+msgstr "Herbst {year}"
 
 #: apps/challenge/utils.py:102
 msgid "Pas de saison valide pour cette période"
-msgstr ""
+msgstr "In diesem Zeitraum keine Saison verfügbar"
 
 #: apps/challenge/views/invoice.py:193
 msgid "Facture"
@@ -2065,16 +2068,12 @@ msgstr ""
 "Verfügbarkeit."
 
 #: apps/challenge/views/season.py:1295
-#, fuzzy
-#| msgid ""
-#| "Le planning n'est pas encore disponible; mets plutôt à jour tes "
-#| "disponibilités."
 msgid ""
 "Le planning n'est pas encore disponible. En attendant, vous pouvez mettre à "
 "jour vos disponibilités."
 msgstr ""
-"Der Einsatzplan ist noch nicht verfügbar; bitte aktualisiere dennoch Deine "
-"Verfügbarkeit."
+"Der Einsatzplan ist noch nicht verfügbar. Bitte aktualisiere in der "
+"Zwischenzeit deine Verfügbarkeiten."
 
 #: apps/challenge/views/season.py:1421
 msgid "Disponibilités mises à jour"
@@ -2113,10 +2112,9 @@ msgid "Qualifs {session}"
 msgstr "Qualis {session}"
 
 #: apps/challenge/views/session.py:219
-#, fuzzy, python-brace-format
-#| msgid "DV-{exportfilename}-{YMD_date}.{extension}"
+#, python-brace-format
 msgid "DV-{print_filename}_{YMD_date}"
-msgstr "DV-{exportfilename}-{YMD_date}.{extension}"
+msgstr "DV-{print_filename}_{YMD_date}"
 
 #: apps/challenge/views/session.py:305
 msgid "Session mise à jour"
@@ -2232,14 +2230,11 @@ msgid "Page %(number)s"
 msgstr "Seite %(number)s"
 
 #: apps/common/views.py:43
-#, fuzzy, python-brace-format
-#| msgid "DV-{exportfilename}-{YMD_date}.{extension}"
+#, python-brace-format
 msgid "DV-{exportfilename}_{YMD_date}.{extension}"
-msgstr "DV-{exportfilename}-{YMD_date}.{extension}"
+msgstr "DV-{exportfilename}_{YMD_date}.{extension}"
 
 #: apps/info/exports.py:77
-#, fuzzy
-#| msgid "Calendrier"
 msgid "Calendar"
 msgstr "Kalender"
 
@@ -3169,11 +3164,11 @@ msgstr "Geführter Kanton"
 
 #: apps/user/signals.py:147
 msgid "Notification de modification de données utilisateur"
-msgstr ""
+msgstr "Hinweis Änderung Profil Nutzer*innen"
 
 #: apps/user/signals.py:151
 msgid "Bonjour,"
-msgstr ""
+msgstr "Guten Tag,"
 
 #: apps/user/signals.py:154
 #, python-brace-format
@@ -3181,18 +3176,19 @@ msgid ""
 "Les informations suivantes pour l’utilisateur {user} / {user_id} ont été "
 "modifiées:"
 msgstr ""
+"Für den*die Nutzer*in {user} / {user_id} wurden folgende Daten geändert:"
 
 #: apps/user/signals.py:162 apps/user/signals.py:163
 msgid "(vide)"
-msgstr ""
+msgstr "(leer)"
 
 #: apps/user/signals.py:169
 msgid "Ceci est un message automatique."
-msgstr ""
+msgstr "Dies ist eine automatische Nachricht."
 
 #: apps/user/signals.py:170
 msgid "Merci de mette à jour la base de données des salaires en conséquences"
-msgstr ""
+msgstr "Bitte die Datenbank für die Löhne entsprechend anpassen"
 
 #: apps/user/templates/actions/mark_inactive.html:4
 #: apps/user/templates/actions/mark_inactive.html:6
