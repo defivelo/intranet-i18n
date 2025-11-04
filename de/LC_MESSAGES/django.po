@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-04 09:08+0100\n"
-"PO-Revision-Date: 2025-10-29 06:24+0000\n"
-"Last-Translator: Norina Bürkler <norina@defi-velo.ch>\n"
+"PO-Revision-Date: 2025-11-04 08:20+0000\n"
+"Last-Translator: Laurent Constantin <laurent.constantin@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
 "de/>\n"
 "Language: de\n"
@@ -2238,75 +2238,70 @@ msgstr "DV-{exportfilename}_{YMD_date}.{extension}"
 
 #: apps/email_outbox/templates/admin/base_site.html:7
 #: apps/email_outbox/views.py:358
-#, fuzzy
-#| msgid "Email"
 msgid "Emails"
-msgstr "E-Mail"
+msgstr "E-Mails"
 
 #: apps/email_outbox/templates/admin/outbox_detail.html:11
 #: apps/email_outbox/templates/admin/outbox_list.html:11
 msgid "Sent at"
-msgstr ""
+msgstr "Gesendet am"
 
 #: apps/email_outbox/templates/admin/outbox_detail.html:15
 #: apps/email_outbox/templates/admin/outbox_list.html:13
 msgid "From"
-msgstr ""
+msgstr "Von"
 
 #: apps/email_outbox/templates/admin/outbox_detail.html:19
 #: apps/email_outbox/templates/admin/outbox_list.html:14
-#, fuzzy
-#| msgid "Tous"
 msgid "To"
-msgstr "Alle"
+msgstr "An"
 
 #: apps/email_outbox/templates/admin/outbox_detail.html:35
 #: apps/email_outbox/templates/admin/outbox_list.html:17
 msgid "Attachments"
-msgstr ""
+msgstr "Anhänge"
 
 #: apps/email_outbox/templates/admin/outbox_detail.html:49
 msgid "Back to list"
-msgstr ""
+msgstr "Zurück zur Liste"
 
 #: apps/email_outbox/templates/admin/outbox_list.html:12
 msgid "Subject"
-msgstr ""
+msgstr "Betreff"
 
 #: apps/email_outbox/templates/admin/outbox_list.html:33
 msgid "The outbox is empty."
-msgstr ""
+msgstr "Der Postausgang ist leer."
 
 #: apps/email_outbox/templates/admin/outbox_list.html:41
 #: apps/email_outbox/templates/admin/outbox_list.html:44
 msgid "first"
-msgstr ""
+msgstr "Erste"
 
 #: apps/email_outbox/templates/admin/outbox_list.html:42
 #: apps/email_outbox/templates/admin/outbox_list.html:45
 msgid "previous"
-msgstr ""
+msgstr "Zurück"
 
 #: apps/email_outbox/templates/admin/outbox_list.html:57
 #: apps/email_outbox/templates/admin/outbox_list.html:60
 msgid "next"
-msgstr ""
+msgstr "Weiter"
 
 #: apps/email_outbox/templates/admin/outbox_list.html:58
 #: apps/email_outbox/templates/admin/outbox_list.html:61
 msgid "last"
-msgstr ""
+msgstr "Letzte"
 
 #: apps/email_outbox/templates/admin/outbox_list.html:64
 #, python-format
 msgid "Page %(page)s of %(num_pages)s (%(count)s emails)"
-msgstr ""
+msgstr "Seite %(page)s von %(num_pages)s (%(count)s E-Mails)“"
 
 #: apps/email_outbox/views.py:378
-#, fuzzy, python-format
-#| msgid "Page %(number)s"
+#, python-format
 msgid "Email #%(num)s"
-msgstr "Seite %(number)s"
+msgstr "E-Mail Nr. %(num)s"
 
 #: apps/info/exports.py:77
 msgid "Calendar"
