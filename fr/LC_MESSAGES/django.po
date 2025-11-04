@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-06 15:28+0200\n"
+"POT-Creation-Date: 2025-11-04 09:00+0100\n"
 "PO-Revision-Date: 2020-12-07 17:29+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -43,6 +43,7 @@ msgid "Modified"
 msgstr "Modifié"
 
 #: apps/article/models.py:49
+#: apps/email_outbox/templates/admin/outbox_detail.html:46
 msgid "Body"
 msgstr ""
 
@@ -153,7 +154,7 @@ msgstr ""
 #: apps/challenge/__init__.py:45 apps/challenge/models/availability.py:122
 #: apps/challenge/views/season.py:843 apps/challenge/views/season.py:844
 #: apps/challenge/views/session.py:417 apps/challenge/views/session.py:418
-#: apps/user/__init__.py:42 defivelo/templatetags/dv_filters.py:222
+#: apps/user/__init__.py:45 defivelo/templatetags/dv_filters.py:222
 msgid "Moniteur 1"
 msgstr ""
 
@@ -162,7 +163,7 @@ msgstr ""
 #: apps/challenge/models/qualification.py:168
 #: apps/challenge/templates/challenge/session_detail.html:159
 #: apps/challenge/views/season.py:842 apps/challenge/views/session.py:416
-#: apps/user/__init__.py:43 defivelo/templatetags/dv_filters.py:219
+#: apps/user/__init__.py:46 defivelo/templatetags/dv_filters.py:219
 msgid "Moniteur 2"
 msgstr ""
 
@@ -246,7 +247,7 @@ msgstr ""
 #: apps/challenge/models/qualification.py:184
 #: apps/challenge/models/qualification.py:262
 #: apps/challenge/views/season.py:851 apps/challenge/views/session.py:425
-#: apps/user/export.py:131 apps/user/models.py:226
+#: apps/user/export.py:131 apps/user/models.py:225
 #: apps/user/templates/auth/user_detail.html:157
 #: apps/user/views/standard.py:310 defivelo/templatetags/dv_filters.py:225
 msgid "Intervenant"
@@ -317,7 +318,7 @@ msgstr ""
 msgid "Année"
 msgstr ""
 
-#: apps/challenge/forms/season.py:74 apps/user/models.py:537
+#: apps/challenge/forms/season.py:74 apps/user/models.py:490
 #: defivelo/roles.py:154
 msgid "Chargé·e de projet"
 msgstr ""
@@ -394,7 +395,7 @@ msgstr ""
 #: apps/salary/models/validations.py:28
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_month.html:38
 #: apps/salary/templates/salary/monthlycantonalvalidation_archive_year.html:33
-#: apps/user/models.py:664
+#: apps/user/models.py:617
 msgid "Canton"
 msgstr ""
 
@@ -525,7 +526,7 @@ msgstr ""
 #: apps/challenge/templates/challenge/invoice_detail.html:25
 #: apps/orga/export.py:55 apps/orga/models.py:52
 #: apps/orga/templates/orga/organization_filter.html:59 apps/orga/views.py:74
-#: apps/user/export.py:136 apps/user/models.py:235
+#: apps/user/export.py:136 apps/user/models.py:234
 #: apps/user/templates/auth/user_filter.html:59 apps/user/views/standard.py:299
 msgid "Statut"
 msgstr ""
@@ -570,7 +571,7 @@ msgstr ""
 
 #: apps/challenge/models/qualification.py:50 apps/orga/export.py:31
 #: apps/orga/models.py:49 apps/orga/templates/orga/organization_filter.html:61
-#: apps/salary/models/validations.py:12 apps/salary/views/timesheets.py:410
+#: apps/salary/models/validations.py:12 apps/salary/views/timesheets.py:406
 #: apps/user/export.py:71 apps/user/templates/auth/user_detail.html:66
 #: apps/user/templates/auth/user_detailed_list.html:15
 #: apps/user/templates/auth/user_filter.html:56
@@ -644,7 +645,7 @@ msgstr ""
 #: apps/challenge/views/session.py:412 apps/challenge/views/session.py:426
 #: apps/orga/export.py:56 apps/orga/models.py:54
 #: apps/orga/templates/orga/_organization_detail.html:67
-#: apps/salary/models/timesheets.py:24 apps/user/models.py:247
+#: apps/salary/models/timesheets.py:24 apps/user/models.py:246
 msgid "Remarques"
 msgstr ""
 
@@ -1402,13 +1403,13 @@ msgstr[1] ""
 
 #. Translators: FORMATION_M2 - Moniteur 2
 #: apps/challenge/templates/challenge/season_availability_thead.html:40
-#: apps/user/__init__.py:58
+#: apps/user/__init__.py:61
 msgid "M2"
 msgstr ""
 
 #. Translators: FORMATION_M1 - Moniteur 1
 #: apps/challenge/templates/challenge/season_availability_thead.html:50
-#: apps/user/__init__.py:53
+#: apps/user/__init__.py:56
 msgid "M1"
 msgstr ""
 
@@ -1465,12 +1466,20 @@ msgid ""
 "    %(planning_link)s"
 msgstr ""
 
+#: apps/challenge/templates/challenge/season_email_availability_reminder.txt:17
+msgid ""
+"PS : Tu reçois ce message parce que tu es affilié·e à ce canton, ou parce "
+"que tu l’as sélectionné comme canton mobile. Si tu ne souhaites plus "
+"travailler dans ce canton, tu peux modifier ton profil intranet ou contacter "
+"ton·ta chargé·e de projet régional·e."
+msgstr ""
+
 #: apps/challenge/templates/challenge/season_email_to_state_open_post.txt:6
 msgid ""
-"PS : Tu reçois ce mail parce que tu es affilié à ce canton ou parce que tu "
-"l’as sélectionné comme canton mobile. Si tu ne souhaites plus travailler "
-"dans ce canton, tu peux aller modifier ton profil intranet ou contacter ton "
-"chargé de projet régional\n"
+"PS : Tu reçois ce message parce que tu es affilié·e à ce canton, ou parce "
+"que tu l’as sélectionné comme canton mobile. Si tu ne souhaites plus "
+"travailler dans ce canton, tu peux modifier ton profil intranet ou contacter "
+"ton·ta chargé·e de projet régional·e.\n"
 msgstr ""
 
 #: apps/challenge/templates/challenge/season_email_to_state_open_pre.txt:3
@@ -1878,7 +1887,7 @@ msgid "Intervenants"
 msgstr ""
 
 #: apps/challenge/views/season.py:549 apps/challenge/views/season.py:631
-#: apps/challenge/views/season.py:727 apps/salary/views/timesheets.py:575
+#: apps/challenge/views/season.py:727 apps/salary/views/timesheets.py:571
 msgid "{Prénom} {Nom}"
 msgstr ""
 
@@ -2076,6 +2085,75 @@ msgstr ""
 msgid "DV-{exportfilename}_{YMD_date}.{extension}"
 msgstr ""
 
+#: apps/email_outbox/templates/admin/base_site.html:7
+#: apps/email_outbox/views.py:358
+#, fuzzy
+#| msgid "Add E-mail"
+msgid "Emails"
+msgstr "Ajouter E-mail"
+
+#: apps/email_outbox/templates/admin/outbox_detail.html:11
+#: apps/email_outbox/templates/admin/outbox_list.html:11
+msgid "Sent at"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_detail.html:15
+#: apps/email_outbox/templates/admin/outbox_list.html:13
+msgid "From"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_detail.html:19
+#: apps/email_outbox/templates/admin/outbox_list.html:14
+msgid "To"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_detail.html:35
+#: apps/email_outbox/templates/admin/outbox_list.html:17
+msgid "Attachments"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_detail.html:49
+msgid "Back to list"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_list.html:12
+msgid "Subject"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_list.html:33
+msgid "The outbox is empty."
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_list.html:41
+#: apps/email_outbox/templates/admin/outbox_list.html:44
+msgid "first"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_list.html:42
+#: apps/email_outbox/templates/admin/outbox_list.html:45
+msgid "previous"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_list.html:57
+#: apps/email_outbox/templates/admin/outbox_list.html:60
+msgid "next"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_list.html:58
+#: apps/email_outbox/templates/admin/outbox_list.html:61
+msgid "last"
+msgstr ""
+
+#: apps/email_outbox/templates/admin/outbox_list.html:64
+#, python-format
+msgid "Page %(page)s of %(num_pages)s (%(count)s emails)"
+msgstr ""
+
+#: apps/email_outbox/views.py:378
+#, python-format
+msgid "Email #%(num)s"
+msgstr ""
+
 #: apps/info/exports.py:77
 msgid "Calendar"
 msgstr ""
@@ -2236,7 +2314,7 @@ msgid "Abréviation"
 msgstr ""
 
 #: apps/orga/export.py:40 apps/orga/templates/orga/_organization_detail.html:39
-#: apps/user/export.py:160 apps/user/models.py:199
+#: apps/user/export.py:160 apps/user/models.py:198
 #: apps/user/templates/auth/user_detail.html:192
 #: apps/user/views/standard.py:290
 msgid "Canton d’affiliation"
@@ -2249,13 +2327,13 @@ msgstr ""
 
 #: apps/orga/export.py:44 apps/orga/forms.py:51 apps/orga/models.py:59
 #: apps/orga/templates/orga/_organization_detail.html:43
-#: apps/orga/templates/orga/organization_filter.html:64 apps/user/models.py:540
+#: apps/orga/templates/orga/organization_filter.html:64 apps/user/models.py:493
 #: defivelo/roles.py:155
 msgid "Coordina·teur·trice"
 msgstr ""
 
 #: apps/orga/export.py:47 apps/orga/templates/orga/_organization_detail.html:60
-#: apps/user/models.py:197 apps/user/templates/auth/user_detail.html:97
+#: apps/user/models.py:196 apps/user/templates/auth/user_detail.html:97
 msgid "Téléphone"
 msgstr ""
 
@@ -2274,11 +2352,11 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: apps/orga/models.py:41 apps/user/models.py:65
+#: apps/orga/models.py:41 apps/user/models.py:64
 msgid "Actif"
 msgstr ""
 
-#: apps/orga/models.py:42 apps/user/models.py:67
+#: apps/orga/models.py:42 apps/user/models.py:66
 msgid "Inactif"
 msgstr ""
 
@@ -2365,27 +2443,27 @@ msgstr ""
 msgid "Établissement créé"
 msgstr ""
 
-#: apps/salary/forms.py:40 apps/salary/views/timesheets.py:411
+#: apps/salary/forms.py:40 apps/salary/views/timesheets.py:407
 #, python-brace-format
 msgid "Heures moni·teur·trice ({price}.-/h)"
 msgstr ""
 
-#: apps/salary/forms.py:43 apps/salary/views/timesheets.py:414
+#: apps/salary/forms.py:43 apps/salary/views/timesheets.py:410
 #, python-brace-format
 msgid "Intervention(s) ({price}.-/Qualif’)"
 msgstr ""
 
-#: apps/salary/forms.py:46 apps/salary/views/timesheets.py:416
+#: apps/salary/forms.py:46 apps/salary/views/timesheets.py:412
 #, python-brace-format
 msgid "Participation(s) comme moni·teur·trice 2 ({price}.-/Qualif’)"
 msgstr ""
 
-#: apps/salary/forms.py:50 apps/salary/views/timesheets.py:418
+#: apps/salary/forms.py:50 apps/salary/views/timesheets.py:414
 #, python-brace-format
 msgid "Heures supplémentaires ({price}.-/h)"
 msgstr ""
 
-#: apps/salary/forms.py:52 apps/salary/views/timesheets.py:421
+#: apps/salary/forms.py:52 apps/salary/views/timesheets.py:417
 msgid "Heures de trajet (aller-retour)"
 msgstr ""
 
@@ -2554,13 +2632,13 @@ msgid "Total"
 msgstr ""
 
 #: apps/salary/templates/salary/month_timesheets.html:79
-#: apps/salary/views/timesheets.py:422
+#: apps/salary/views/timesheets.py:418
 msgid "Total heures"
 msgstr ""
 
 #: apps/salary/templates/salary/month_timesheets.html:88
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:87
-#: apps/salary/views/timesheets.py:423
+#: apps/salary/views/timesheets.py:419
 msgid "Total CHF"
 msgstr ""
 
@@ -2700,39 +2778,39 @@ msgstr ""
 msgid "Aucun résultat."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:330
+#: apps/salary/views/timesheets.py:326
 #, python-brace-format
 msgid "Export Winbiz {month} {year}"
 msgstr ""
 
-#: apps/salary/views/timesheets.py:397
+#: apps/salary/views/timesheets.py:393
 #, python-brace-format
 msgid "Export de contrôle {month} {year}"
 msgstr ""
 
-#: apps/salary/views/timesheets.py:408 apps/user/export.py:167
+#: apps/salary/views/timesheets.py:404 apps/user/export.py:167
 msgid "Numéro d’employé Crésus"
 msgstr ""
 
-#: apps/salary/views/timesheets.py:409 apps/user/export.py:70
+#: apps/salary/views/timesheets.py:405 apps/user/export.py:70
 #: apps/user/templates/auth/user_detailed_list.html:14
 #: apps/user/templates/auth/user_filter.html:55
 msgid "Prénom"
 msgstr ""
 
-#: apps/salary/views/timesheets.py:482
+#: apps/salary/views/timesheets.py:478
 msgid "Aucune feuille d'heure orpheline à supprimer; tout va bien."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:532
+#: apps/salary/views/timesheets.py:528
 msgid "Aucun rappel à envoyer: les heures de ce mois sont déjà remplies."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:553
+#: apps/salary/views/timesheets.py:549
 msgid "Rappel de soumission des heures expédié."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:583
+#: apps/salary/views/timesheets.py:579
 msgid "Soumission des heures"
 msgstr ""
 
@@ -2748,13 +2826,13 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: apps/user/export.py:73 apps/user/models.py:170
+#: apps/user/export.py:73 apps/user/models.py:169
 #: apps/user/templates/auth/user_detail.html:222
 #: apps/user/views/standard.py:278
 msgid "Langue"
 msgstr ""
 
-#: apps/user/export.py:76 apps/user/models.py:178
+#: apps/user/export.py:76 apps/user/models.py:177
 #: apps/user/templates/auth/user_detail.html:226
 msgid "Prêt à animer en"
 msgstr ""
@@ -2763,37 +2841,37 @@ msgstr ""
 msgid "Canton de domicile"
 msgstr ""
 
-#: apps/user/export.py:98 apps/user/models.py:183
+#: apps/user/export.py:98 apps/user/models.py:182
 #: apps/user/templates/auth/user_detail.html:85
 msgid "Date de naissance"
 msgstr ""
 
-#: apps/user/export.py:103 apps/user/models.py:184
+#: apps/user/export.py:103 apps/user/models.py:183
 #: apps/user/templates/auth/user_detail.html:106
 msgid "Nationalité"
 msgstr ""
 
-#: apps/user/export.py:106 apps/user/models.py:185
+#: apps/user/export.py:106 apps/user/models.py:184
 #: apps/user/templates/auth/user_detail.html:114
 msgid "Permis de travail"
 msgstr ""
 
-#: apps/user/export.py:109 apps/user/models.py:187
+#: apps/user/export.py:109 apps/user/models.py:186
 #: apps/user/templates/auth/user_detail.html:118
 msgid "Lieu d’imposition"
 msgstr ""
 
-#: apps/user/export.py:112 apps/user/models.py:195
+#: apps/user/export.py:112 apps/user/models.py:194
 #: apps/user/templates/auth/user_detail.html:134
 msgid "N° AVS"
 msgstr ""
 
-#: apps/user/export.py:115 apps/user/models.py:232
+#: apps/user/export.py:115 apps/user/models.py:231
 #: apps/user/templates/auth/user_detail.html:138
 msgid "État civil"
 msgstr ""
 
-#: apps/user/export.py:120 apps/user/models.py:238
+#: apps/user/export.py:120 apps/user/models.py:237
 msgid "Expérience pédagogique"
 msgstr ""
 
@@ -2801,26 +2879,26 @@ msgstr ""
 msgid "Commentaires"
 msgstr ""
 
-#: apps/user/export.py:128 apps/user/models.py:239
+#: apps/user/export.py:128 apps/user/models.py:238
 msgid "Cours samaritains"
 msgstr ""
 
-#: apps/user/export.py:141 apps/user/models.py:244
+#: apps/user/export.py:141 apps/user/models.py:243
 #: apps/user/templates/auth/user_detail.html:172
 msgid "Sac Défi Vélo"
 msgstr ""
 
-#: apps/user/export.py:146 apps/user/models.py:216
+#: apps/user/export.py:146 apps/user/models.py:215
 #: apps/user/templates/auth/user_detail.html:148
 #: apps/user/views/standard.py:307
 msgid "Formation"
 msgstr ""
 
-#: apps/user/export.py:151 apps/user/models.py:219
+#: apps/user/export.py:151 apps/user/models.py:218
 msgid "Date de la première formation"
 msgstr ""
 
-#: apps/user/export.py:156 apps/user/models.py:222
+#: apps/user/export.py:156 apps/user/models.py:221
 msgid "Date de la dernière formation"
 msgstr ""
 
@@ -2828,7 +2906,7 @@ msgstr ""
 msgid "Défi Vélo Mobile"
 msgstr ""
 
-#: apps/user/export.py:171 apps/user/models.py:189
+#: apps/user/export.py:171 apps/user/models.py:188
 #: apps/user/templates/auth/user_detail.html:122
 msgid "Nom de la banque"
 msgstr ""
@@ -2838,7 +2916,7 @@ msgstr ""
 msgid "Niveau d’accès"
 msgstr ""
 
-#: apps/user/export.py:184 apps/user/forms.py:216 apps/user/models.py:677
+#: apps/user/export.py:184 apps/user/forms.py:216 apps/user/models.py:630
 #: apps/user/templates/auth/user_detail.html:206
 msgid "Cantons gérés"
 msgstr ""
@@ -2868,110 +2946,110 @@ msgid "Établissements gérés"
 msgstr ""
 
 #: apps/user/migrations/0055_data_remove_email_from_deleted_users.py:11
-#: apps/user/models.py:382
+#: apps/user/models.py:335
 #, python-format
 msgid "Email avant suppression: %s"
 msgstr ""
 
-#: apps/user/models.py:66
+#: apps/user/models.py:65
 msgid "Réserve"
 msgstr ""
 
-#: apps/user/models.py:68
+#: apps/user/models.py:67
 msgid "Archive"
 msgstr ""
 
-#: apps/user/models.py:69
+#: apps/user/models.py:68
 msgid "Supprimé"
 msgstr ""
 
-#: apps/user/models.py:83
+#: apps/user/models.py:82
 msgid "Célibataire"
 msgstr ""
 
-#: apps/user/models.py:84
+#: apps/user/models.py:83
 msgid "Marié·e"
 msgstr ""
 
-#: apps/user/models.py:85
+#: apps/user/models.py:84
 msgid "Divorcé·e"
 msgstr ""
 
-#: apps/user/models.py:86
+#: apps/user/models.py:85
 msgid "Veu·f·ve"
 msgstr ""
 
-#: apps/user/models.py:87
+#: apps/user/models.py:86
 msgid "En partenariat enregistré"
 msgstr ""
 
-#: apps/user/models.py:97
+#: apps/user/models.py:96
 msgid "En prêt"
 msgstr ""
 
-#: apps/user/models.py:98
+#: apps/user/models.py:97
 msgid "Payé"
 msgstr ""
 
-#: apps/user/models.py:99
+#: apps/user/models.py:98
 msgid "Offert"
 msgstr ""
 
-#: apps/user/models.py:168
+#: apps/user/models.py:167
 msgid "Code salarié·e"
 msgstr ""
 
-#: apps/user/models.py:191
+#: apps/user/models.py:190
 msgid "Coordonnées bancaires (IBAN)"
 msgstr ""
 
-#: apps/user/models.py:210
+#: apps/user/models.py:209
 msgid "Défi Vélo mobile"
 msgstr ""
 
-#: apps/user/models.py:241
+#: apps/user/models.py:240
 msgid "Cours samaritains (spécifier)"
 msgstr ""
 
-#: apps/user/models.py:357
+#: apps/user/models.py:310
 msgid "A déjà des données de connexion"
 msgstr ""
 
-#: apps/user/models.py:370
+#: apps/user/models.py:323
 msgid "Accès à l’Intranet"
 msgstr ""
 
-#: apps/user/models.py:526
+#: apps/user/models.py:479
 msgid "A accès"
 msgstr ""
 
-#: apps/user/models.py:530
+#: apps/user/models.py:483
 msgid "Administra·teur·trice"
 msgstr ""
 
-#: apps/user/models.py:534 defivelo/roles.py:156
+#: apps/user/models.py:487 defivelo/roles.py:156
 msgid "Bureau de coordination"
 msgstr ""
 
-#: apps/user/models.py:543 defivelo/roles.py:153
+#: apps/user/models.py:496 defivelo/roles.py:153
 msgid "Collabora·teur·trice"
 msgstr ""
 
-#: apps/user/models.py:645 apps/user/templates/auth/user_form.html:7
+#: apps/user/models.py:598 apps/user/templates/auth/user_form.html:7
 #: defivelo/templates/header.html:177
 msgid "Profil"
 msgstr ""
 
-#: apps/user/models.py:646
+#: apps/user/models.py:599
 msgid "Profils"
 msgstr ""
 
-#: apps/user/models.py:671
+#: apps/user/models.py:624
 #, python-brace-format
 msgid "{name} est chargé·e de projet pour le canton {canton}"
 msgstr ""
 
-#: apps/user/models.py:676
+#: apps/user/models.py:629
 msgid "Canton géré"
 msgstr ""
 
@@ -2999,7 +3077,7 @@ msgid "Ceci est un message automatique."
 msgstr ""
 
 #: apps/user/signals.py:170
-msgid "Merci de mette à jour la base de données des salaires en conséquences"
+msgid "Merci de mettre à jour la base de données des salaires en conséquences"
 msgstr ""
 
 #: apps/user/templates/actions/mark_inactive.html:4
