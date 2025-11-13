@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-04 09:08+0100\n"
+"POT-Creation-Date: 2025-11-13 15:12+0100\n"
 "PO-Revision-Date: 2025-11-04 08:20+0000\n"
 "Last-Translator: Laurent Constantin <laurent.constantin@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -145,28 +145,31 @@ msgid "Choisi"
 msgstr "Ausgewählt"
 
 #: apps/challenge/__init__.py:43
-msgid "Comme intervenant"
+#, fuzzy
+#| msgid "Comme intervenant"
+msgid "Comme intervenant·e"
 msgstr "Als Referent"
 
-#: apps/challenge/__init__.py:44
+#: apps/challenge/__init__.py:44 apps/challenge/models/availability.py:126
 #: apps/challenge/templates/challenge/session_detail.html:112
-msgid "Moniteur de Secours"
+#: defivelo/templatetags/dv_filters.py:228
+msgid "Moniteur·trice de secours"
 msgstr "Notfall-LeiterIn"
 
 #: apps/challenge/__init__.py:45 apps/challenge/models/availability.py:122
-#: apps/challenge/views/season.py:843 apps/challenge/views/season.py:844
+#: apps/challenge/views/season.py:849 apps/challenge/views/season.py:850
 #: apps/challenge/views/session.py:417 apps/challenge/views/session.py:418
 #: apps/user/__init__.py:45 defivelo/templatetags/dv_filters.py:222
-msgid "Moniteur 1"
+msgid "Moniteur·trice 1"
 msgstr "LeiterIn 1"
 
 #: apps/challenge/__init__.py:46 apps/challenge/forms/qualification.py:88
 #: apps/challenge/models/availability.py:124
 #: apps/challenge/models/qualification.py:168
 #: apps/challenge/templates/challenge/session_detail.html:159
-#: apps/challenge/views/season.py:842 apps/challenge/views/session.py:416
+#: apps/challenge/views/season.py:848 apps/challenge/views/session.py:416
 #: apps/user/__init__.py:46 defivelo/templatetags/dv_filters.py:219
-msgid "Moniteur 2"
+msgid "Moniteur·trice 2"
 msgstr "LeiterIn 2"
 
 #: apps/challenge/export.py:10
@@ -186,19 +189,19 @@ msgid "Nom de l'établissement"
 msgstr "Name der Schule"
 
 #: apps/challenge/export.py:20
-msgid "Total participants"
+msgid "Total participant·e·s"
 msgstr "Total Teilnehmende"
 
 #: apps/challenge/export.py:23 apps/challenge/models/settings.py:38
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:34
-msgid "Coût par participant"
+msgid "Coût par participant·e·s"
 msgstr "Kosten pro TeilnehmerInnen"
 
 #: apps/challenge/export.py:27
-msgid "Total coût participants"
+msgid "Total coût participant·e·s"
 msgstr "Kostentotal pro TeilnehmerInnen"
 
-#: apps/challenge/export.py:30 apps/challenge/views/season.py:836
+#: apps/challenge/export.py:30 apps/challenge/views/season.py:842
 #: apps/challenge/views/session.py:410
 msgid "Total vélos"
 msgstr "Total Velos"
@@ -216,8 +219,8 @@ msgstr "Total Kosten Velos"
 msgid "Montant total de la facture"
 msgstr "Rechnungstotal"
 
-#. Translators: Moniteur de secours
-#. Translators: Nom court pour 'Moniteur de secours'
+#. Translators: Moniteur·trice de secours
+#. Translators: Nom court pour 'Moniteur·trice de secours'
 #: apps/challenge/fields.py:60 apps/challenge/fields.py:104
 #: apps/challenge/models/availability.py:112 apps/challenge/utils.py:61
 #: defivelo/templatetags/dv_filters.py:229
@@ -235,14 +238,15 @@ msgstr ""
 
 #: apps/challenge/forms/qualification.py:59
 #: apps/challenge/models/qualification.py:107
-msgid "Natel enseignant"
+msgid "Natel enseignant·e"
 msgstr "Natelnr. Lehrperson"
 
 #: apps/challenge/forms/qualification.py:97
 #: apps/challenge/models/qualification.py:177
-#: apps/challenge/templates/challenge/session_detail.html:161
-#: apps/challenge/views/season.py:293
-msgid "Moniteurs 1"
+#: apps/challenge/views/season.py:297
+#, fuzzy
+#| msgid "Moniteur·trice 1"
+msgid "Moniteur·rice·s 1"
 msgstr "LeiterIn 1"
 
 #: apps/challenge/forms/qualification.py:105
@@ -250,11 +254,13 @@ msgstr "LeiterIn 1"
 #: apps/challenge/models/availability.py:128
 #: apps/challenge/models/qualification.py:184
 #: apps/challenge/models/qualification.py:262
-#: apps/challenge/views/season.py:851 apps/challenge/views/session.py:425
+#: apps/challenge/views/season.py:857 apps/challenge/views/session.py:425
 #: apps/user/export.py:131 apps/user/models.py:225
 #: apps/user/templates/auth/user_detail.html:157
 #: apps/user/views/standard.py:310 defivelo/templatetags/dv_filters.py:225
-msgid "Intervenant"
+#, fuzzy
+#| msgid "Intervenant"
+msgid "Intervenant·e"
 msgstr "ReferentIn"
 
 #: apps/challenge/forms/qualification.py:137
@@ -263,15 +269,17 @@ msgid "Pas plus de %s moniteurs 1 !"
 msgstr "Nicht mehr als %s Leiter 1!"
 
 #: apps/challenge/forms/qualification.py:152
-msgid "Il y a des moniteurs à double !"
+msgid "Il y a des moniteur·trice·s à double !"
 msgstr "Achtung, doppelt eingetragene Leiter!"
 
 #: apps/challenge/forms/qualification.py:165
-msgid "L’intervenant n’est pas qualifié pour la rencontre prévue !"
+#, fuzzy
+#| msgid "L’intervenant·e n’est pas qualifié pour la rencontre prévue !"
+msgid "L’intervenant·e n’est pas qualifié·e pour la rencontre prévue !"
 msgstr "Der Referent ist nicht für den geplanten Posten qualifiziert!"
 
 #: apps/challenge/forms/qualification.py:173
-msgid "L’intervenant ne peut pas aussi être moniteur !"
+msgid "L’intervenant·e ne peut pas aussi être moniteur·trice !"
 msgstr "Der Referent kann nicht auch Leiter sein!"
 
 #: apps/challenge/forms/qualification.py:186
@@ -286,7 +294,7 @@ msgstr "Zu viele Helme eingeplant!"
 #: apps/challenge/models/invoices.py:57 apps/challenge/models/session.py:60
 #: apps/challenge/templates/challenge/session_detail.html:41
 #: apps/challenge/templates/orga/organization_list.html:15
-#: apps/challenge/views/season.py:826 apps/challenge/views/season.py:1034
+#: apps/challenge/views/season.py:832 apps/challenge/views/season.py:1040
 #: apps/challenge/views/session.py:400 apps/info/exports.py:222
 #: apps/orga/models.py:112
 msgid "Établissement"
@@ -326,8 +334,8 @@ msgstr "Klasse %s"
 msgid "Année"
 msgstr "Jahr"
 
-#: apps/challenge/forms/season.py:74 apps/user/models.py:490
-#: defivelo/roles.py:154
+#: apps/challenge/forms/season.py:74 apps/challenge/models/season.py:73
+#: apps/user/models.py:490 defivelo/roles.py:154
 msgid "Chargé·e de projet"
 msgstr "ProjektleiterIn"
 
@@ -388,7 +396,7 @@ msgstr ""
 #: apps/challenge/templates/challenge/registration_confirm.html:24
 #: apps/challenge/templates/challenge/registration_validate.html:137
 #: apps/challenge/templates/challenge/session_detail.html:68
-#: apps/challenge/views/season.py:824 apps/challenge/views/season.py:1032
+#: apps/challenge/views/season.py:830 apps/challenge/views/season.py:1038
 #: apps/challenge/views/session.py:398 apps/info/exports.py:224
 #: apps/salary/models/timesheets.py:14
 msgid "Date"
@@ -401,7 +409,7 @@ msgstr "Anfang"
 #: apps/challenge/forms/session.py:95 apps/challenge/forms/settings.py:35
 #: apps/challenge/models/settings.py:27
 #: apps/challenge/templates/challenge/annualstatesetting_list.html:32
-#: apps/challenge/views/season.py:825 apps/challenge/views/season.py:1033
+#: apps/challenge/views/season.py:831 apps/challenge/views/season.py:1039
 #: apps/challenge/views/session.py:399 apps/common/models.py:31
 #: apps/info/exports.py:141 apps/info/exports.py:221 apps/orga/forms.py:43
 #: apps/orga/templates/orga/organization_filter.html:63
@@ -415,7 +423,7 @@ msgstr "Kanton"
 #: apps/challenge/forms/session.py:101 apps/challenge/models/session.py:92
 #: apps/challenge/models/session.py:135
 #: apps/challenge/templates/challenge/session_detail.html:93
-#: apps/challenge/views/season.py:835 apps/challenge/views/session.py:409
+#: apps/challenge/views/season.py:841 apps/challenge/views/session.py:409
 msgid "Pommes"
 msgstr "Äpfel"
 
@@ -424,18 +432,18 @@ msgid "Organisation de la livraison de pommes (quantité & logistique)"
 msgstr "Lieferung der Äpfel (Menge, Organisation & Logistik)"
 
 #: apps/challenge/forms/session.py:112 apps/challenge/models/session.py:87
-msgid "Heure rendez-vous moniteurs"
+msgid "Heure de rendez-vous des moniteur·rice·s"
 msgstr "Zeit Treffpunkt Leiter"
 
 #: apps/challenge/forms/session.py:115 apps/challenge/models/session.py:71
 #: apps/challenge/templates/challenge/session_detail.html:73
-#: apps/challenge/views/season.py:831 apps/challenge/views/session.py:405
+#: apps/challenge/views/season.py:837 apps/challenge/views/session.py:405
 #: defivelo/templatetags/dv_filters.py:270
-msgid "Moniteur + / Photographe"
+msgid "Moniteur·trice + / Photographe"
 msgstr "LeiterIn + / Fotos"
 
 #: apps/challenge/forms/session.py:120 apps/challenge/models/session.py:94
-#: apps/challenge/views/season.py:834 apps/challenge/views/session.py:408
+#: apps/challenge/views/season.py:840 apps/challenge/views/session.py:408
 #: apps/info/exports.py:231
 msgid "N° de contact vélos"
 msgstr "Kontakt + Tel. für Velos"
@@ -447,8 +455,10 @@ msgstr "Der Halbtag muss im Monat sein (zwischen {begin} und {end})"
 
 #: apps/challenge/models/availability.py:52
 #: apps/challenge/models/availability.py:83
+#, fuzzy
+#| msgid "Moniteurs"
 msgid "Moniteur"
-msgstr "LeiterIn"
+msgstr "LeiterInnen"
 
 #: apps/challenge/models/availability.py:58
 msgid "Quantité d’engagements souhaités"
@@ -494,11 +504,6 @@ msgstr "Verfügbar"
 #: apps/challenge/models/availability.py:92
 msgid "Sélectionné pour la session comme"
 msgstr "Für den Halbtag eingeteilt als"
-
-#: apps/challenge/models/availability.py:126
-#: defivelo/templatetags/dv_filters.py:228
-msgid "Moniteur de secours"
-msgstr "Notfall-Leiter"
 
 #: apps/challenge/models/availability.py:147
 msgid "Disponibilité par session"
@@ -629,8 +634,8 @@ msgstr "Name der Klasse"
 
 #: apps/challenge/models/qualification.py:104
 #: apps/challenge/models/qualification.py:255
-#: apps/challenge/views/season.py:841 apps/challenge/views/session.py:415
-msgid "Enseignant"
+#: apps/challenge/views/season.py:847 apps/challenge/views/session.py:415
+msgid "Enseignant·e"
 msgstr "Lehrperson"
 
 #: apps/challenge/models/qualification.py:110
@@ -640,16 +645,16 @@ msgstr "Anzahl TeilnehmerInnen"
 
 #: apps/challenge/models/qualification.py:118
 #: apps/challenge/templates/challenge/session_detail.html:158
-msgid "Nombre de moniteurs"
+msgid "Nombre de moniteur·trice·s"
 msgstr "Anzahl Leitende"
 
 #: apps/challenge/models/qualification.py:124
-#: apps/challenge/views/season.py:846 apps/challenge/views/session.py:420
+#: apps/challenge/views/season.py:852 apps/challenge/views/session.py:420
 msgid "Nombre de vélos"
 msgstr "Anzahl Velos"
 
 #: apps/challenge/models/qualification.py:132
-#: apps/challenge/views/season.py:847 apps/challenge/views/session.py:421
+#: apps/challenge/views/season.py:853 apps/challenge/views/session.py:421
 msgid "Nombre de casques"
 msgstr "Anzahl Helme"
 
@@ -657,7 +662,7 @@ msgstr "Anzahl Helme"
 #: apps/challenge/models/session.py:95
 #: apps/challenge/templates/challenge/session_detail.html:123
 #: apps/challenge/templates/challenge/session_detail.html:188
-#: apps/challenge/views/season.py:838 apps/challenge/views/season.py:852
+#: apps/challenge/views/season.py:844 apps/challenge/views/season.py:858
 #: apps/challenge/views/session.py:412 apps/challenge/views/session.py:426
 #: apps/orga/export.py:56 apps/orga/models.py:54
 #: apps/orga/templates/orga/_organization_detail.html:67
@@ -666,9 +671,10 @@ msgid "Remarques"
 msgstr "Bemerkungen"
 
 #: apps/challenge/models/qualification.py:260
-#: apps/challenge/templates/challenge/session_detail.html:107
-msgid "Moniteurs"
-msgstr "LeiterInnen"
+#, fuzzy
+#| msgid "Moniteur·trice"
+msgid "Moniteur·rice·s"
+msgstr "LeiterIn"
 
 #: apps/challenge/models/qualification.py:266
 msgid "Incohérences de dispos"
@@ -707,7 +713,7 @@ msgid "Archivée"
 msgstr "Archiviert"
 
 #: apps/challenge/models/registration.py:48
-msgid "L'établissement choisi n'est pas géré par cet utilisateur."
+msgid "L'établissement choisi n'est pas géré par cet utilisateur·rice."
 msgstr "Die ausgewählte Schule wird nicht von diesem Benutzer verwaltet."
 
 #: apps/challenge/models/registration.py:59
@@ -723,10 +729,6 @@ msgstr "Startmonat"
 #: apps/challenge/models/season.py:58
 msgid "Nombre de mois"
 msgstr "Anzahl Monate"
-
-#: apps/challenge/models/season.py:73
-msgid "Chargé de projet"
-msgstr "ProjektleiterIn"
 
 #: apps/challenge/models/season.py:78
 #: apps/challenge/templates/challenge/invoice_list.html:15
@@ -769,7 +771,7 @@ msgid "Durée"
 msgstr "Dauer"
 
 #: apps/challenge/models/session.py:57
-msgid "Visible pour les moniteurs"
+msgid "Visible pour les moniteur·trice·s"
 msgstr "Sichtbar für die LeiterInnen"
 
 #: apps/challenge/models/session.py:68
@@ -794,17 +796,17 @@ msgstr "Anderes …"
 
 #: apps/challenge/models/session.py:84 apps/challenge/models/session.py:133
 #: apps/challenge/templates/challenge/session_detail.html:76
-#: apps/challenge/views/season.py:832 apps/challenge/views/session.py:406
+#: apps/challenge/views/season.py:838 apps/challenge/views/session.py:406
 msgid "Mauvais temps"
 msgstr "Schlechtes Wetter"
 
 #: apps/challenge/models/session.py:90
-msgid "Lieu rendez-vous moniteurs"
+msgid "Lieu rendez-vous moniteur·trice·s"
 msgstr "Ort Treffpunkt Leiter"
 
 #: apps/challenge/models/session.py:93 apps/challenge/models/session.py:137
 #: apps/challenge/templates/challenge/session_detail.html:97
-#: apps/challenge/views/season.py:833 apps/challenge/views/session.py:407
+#: apps/challenge/views/season.py:839 apps/challenge/views/session.py:407
 #: apps/info/exports.py:230 apps/info/templates/info/season_exports.html:38
 msgid "Logistique vélos"
 msgstr "Logistik Velos"
@@ -827,7 +829,7 @@ msgstr "Zeit"
 
 #: apps/challenge/models/session.py:139
 #: apps/challenge/templates/challenge/session_form.html:47
-#: apps/challenge/views/season.py:827 apps/challenge/views/season.py:1035
+#: apps/challenge/views/season.py:833 apps/challenge/views/season.py:1041
 #: apps/challenge/views/session.py:401
 msgid "Emplacement"
 msgstr "Standort"
@@ -1162,7 +1164,8 @@ msgid "Nombre de classes"
 msgstr "Anzahl Klassen"
 
 #: apps/challenge/templates/challenge/registration.html:131
-msgid "Au sens de DÉFI VÉLO, une classe comprend entre 15 et 25 participants."
+msgid ""
+"Au sens de DÉFI VÉLO, une classe comprend entre 15 et 25 participant·e·s."
 msgstr ""
 "DEFI VELO versteht unter einer Klasse einen Verbund von 15 bis 25 "
 "Schüler*innen."
@@ -1209,8 +1212,8 @@ msgid ""
 "<h3>Conditions générales DÉFI VÉLO</h3> <p>En validant l’inscription de "
 "votre établissement à DÉFI VÉLO, vous vous engagez à :</p> <ul> <li>Fournir "
 "les informations nécessaires à la bonne organisation (dates, horaires, lieu, "
-"nombre de participants, nom et n° de téléphone de l’enseignant sur place et "
-"commandes des vélos et casques en prêt) au plus tard 3 semaines avant le "
+"nombre de participants, nom et n° de téléphone de l’enseignant·e sur place "
+"et commandes des vélos et casques en prêt) au plus tard 3 semaines avant le "
 "premier jour de Qualifs.</li> <li>Mettre à disposition un espace extérieur "
 "pour le déroulement des Qualifs et intérieur en cas de choix de la variante "
 "programme déluge en cas de mauvais temps.</li> <li>Transmettre les "
@@ -1429,7 +1432,7 @@ msgid "Disponibilités"
 msgstr "Verfügbarkeiten"
 
 #: apps/challenge/templates/challenge/season_availability.html:59
-msgid "Attribuer les moniteurs"
+msgid "Attribuer les moniteur·trice·s"
 msgstr "LeiterInnen zuteilen"
 
 #: apps/challenge/templates/challenge/season_availability_partial_helper_columns.html:4
@@ -1466,8 +1469,12 @@ msgstr "Diese Nachricht wird verschickt an:"
 
 #: apps/challenge/templates/challenge/season_availability_reminder.html:34
 #: apps/challenge/templates/challenge/season_form_tostate.html:41
+#, fuzzy
+#| msgid ""
+#| "Cet utilisateur·rice·s ne peut pas se connecter à l’intranet (il n’a pas "
+#| "de mot de passe)."
 msgid ""
-"Cet utilisateur ne peut pas se connecter à l’intranet (il n’a pas de mot de "
+"Cet utilisateur·rice·s ne peut pas se connecter à l’intranet (pas de mot de "
 "passe)."
 msgstr ""
 "Dieser Nutzer/diese Nutzerin kann sich nicht ins Intranet einloggen (kein "
@@ -1475,9 +1482,13 @@ msgstr ""
 
 #: apps/challenge/templates/challenge/season_availability_reminder.html:47
 #: apps/challenge/templates/challenge/season_form_tostate.html:54
+#, fuzzy
+#| msgid ""
+#| "Certain·e·s destinataires ne peuvent pas se connecter à l’intranet (ils "
+#| "n’ont pas de mot de passe)."
 msgid ""
-"Certains destinataires ne peuvent pas se connecter à l’intranet (ils n’ont "
-"pas de mot de passe)."
+"Certain·e·s destinataires ne peuvent pas se connecter à l’intranet (pas de "
+"mot de passe)."
 msgstr ""
 "Einige EmpfängerInnen können sich nicht ins Intranet einloggen (sie haben "
 "kein Passwort)."
@@ -1501,13 +1512,13 @@ msgid_plural "%(n)s Qualifs"
 msgstr[0] "1 Quali"
 msgstr[1] "%(n)s Qualis"
 
-#. Translators: FORMATION_M2 - Moniteur 2
+#. Translators: FORMATION_M2 - Moniteur·trice 2
 #: apps/challenge/templates/challenge/season_availability_thead.html:40
 #: apps/user/__init__.py:61
 msgid "M2"
 msgstr "L2"
 
-#. Translators: FORMATION_M1 - Moniteur 1
+#. Translators: FORMATION_M1 - Moniteur·trice 1
 #: apps/challenge/templates/challenge/season_availability_thead.html:50
 #: apps/user/__init__.py:56
 msgid "M1"
@@ -1517,7 +1528,7 @@ msgstr "L1"
 #. Translators: Intervenant
 #: apps/challenge/templates/challenge/season_availability_thead.html:61
 #: apps/challenge/utils.py:48 apps/challenge/utils.py:58
-#: apps/challenge/views/season.py:814
+#: apps/challenge/views/season.py:820
 msgid "Int."
 msgstr "Ref."
 
@@ -1596,12 +1607,22 @@ msgstr ""
 "oder deine regionale Projektleitung kontaktieren.\n"
 
 #: apps/challenge/templates/challenge/season_email_to_state_open_pre.txt:3
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "Le planning DÉFI VÉLO du canton %(season_desc)s est désormais disponible "
+#| "sur intranet. Merci de remplir tes disponibilités au plus vite afin qu’on "
+#| "puisse préparer le mois au mieux. En cas de questions, tu peux t’adresser "
+#| "à ton chargé de projet.\n"
+#| "\n"
+#| "Tu peux accéder au planning directement ici ou via ton compte personnel "
+#| "intranet.\n"
+#| "\n"
+#| "    %(planning_link)s"
 msgid ""
 "Le planning DÉFI VÉLO du canton %(season_desc)s est désormais disponible sur "
 "intranet. Merci de remplir tes disponibilités au plus vite afin qu’on puisse "
-"préparer le mois au mieux. En cas de questions, tu peux t’adresser à ton "
-"chargé de projet.\n"
+"préparer le mois au mieux. En cas de questions, tu peux t’adresser à ton·ta "
+"chargé·e de projet.\n"
 "\n"
 "Tu peux accéder au planning directement ici ou via ton compte personnel "
 "intranet.\n"
@@ -1635,10 +1656,10 @@ msgstr ""
 msgid ""
 "Le planning DÉFI VÉLO définitif %(season_desc)s est maintenant disponible "
 "sur l’Intranet. Merci d’aller le consulter et de prendre note des dates des "
-"Qualifs où tu dois être présent. Dès à présent, tu es tenu·e d’être "
+"Qualifs où tu dois être présent·e. Dès à présent, tu es tenu·e d’être "
 "présent·e aux Qualifs auxquelles tu t'es engagé·e ou de trouver un·e "
 "remplaçant·e parmi les autres moniteurs·trices. En cas de questions, tu peux "
-"t’adresser à ton chargé de projet.\n"
+"t’adresser à ton·ta chargé·e de projet.\n"
 "\n"
 "Tu peux accéder au planning directement ici ou via ton compte personnel "
 "Intranet.\n"
@@ -1848,6 +1869,10 @@ msgstr[1] "%(n)s Helme"
 msgid "Logistique"
 msgstr "Logistik"
 
+#: apps/challenge/templates/challenge/session_detail.html:107
+msgid "Moniteurs"
+msgstr "LeiterInnen"
+
 #: apps/challenge/templates/challenge/session_detail.html:109
 msgid "Rendez-vous"
 msgstr "Treffpunkt"
@@ -1861,14 +1886,19 @@ msgid "Email à l’équipe des Qualifs"
 msgstr "E-Mail an das Quali-Team"
 
 #: apps/challenge/templates/challenge/session_detail.html:137
-#: apps/challenge/views/season.py:840 apps/challenge/views/session.py:414
+#: apps/challenge/views/season.py:846 apps/challenge/views/session.py:414
 msgid "Classe"
 msgstr "Klasse"
 
 #: apps/challenge/templates/challenge/session_detail.html:153
-#, python-format
+#, fuzzy, python-format
+#| msgid "%(n)s participant·e·s"
 msgid "%(n)s participants"
 msgstr "%(n)s TeilnehmerInnen"
+
+#: apps/challenge/templates/challenge/session_detail.html:161
+msgid "Moniteurs 1"
+msgstr "LeiterIn 1"
 
 #: apps/challenge/templates/challenge/session_detail.html:175
 msgid "Parcours"
@@ -1970,8 +2000,8 @@ msgid "×"
 msgstr "x"
 
 #. Translators: Nom court pour 'Moniteur +'
-#. Translators: Moniteur + / Photographe
-#: apps/challenge/utils.py:67 apps/challenge/views/season.py:816
+#. Translators: Moniteur·trice + / Photographe
+#: apps/challenge/utils.py:67 apps/challenge/views/season.py:822
 #: defivelo/templatetags/dv_filters.py:270
 msgid "M+"
 msgstr "L+"
@@ -2023,45 +2053,49 @@ msgstr "{name} - {tel}"
 msgid "Mois mis à jour"
 msgstr "Monat aktualisiert"
 
-#: apps/challenge/views/season.py:292
-msgid "Moniteurs 2"
-msgstr "LeiterInnen 2"
+#: apps/challenge/views/season.py:293
+#, fuzzy
+#| msgid "Moniteur·trice 2"
+msgid "Moniteur·rice·s 2"
+msgstr "LeiterIn 2"
 
-#: apps/challenge/views/season.py:295
-msgid "Intervenants"
+#: apps/challenge/views/season.py:301
+#, fuzzy
+#| msgid "Intervenants"
+msgid "Intervenant·e·s"
 msgstr "ReferentInnen"
 
-#: apps/challenge/views/season.py:549 apps/challenge/views/season.py:631
-#: apps/challenge/views/season.py:727 apps/salary/views/timesheets.py:571
+#: apps/challenge/views/season.py:555 apps/challenge/views/season.py:637
+#: apps/challenge/views/season.py:733 apps/salary/views/timesheets.py:571
 msgid "{Prénom} {Nom}"
 msgstr "{Vorname} {Name}"
 
-#: apps/challenge/views/season.py:561 apps/challenge/views/season.py:643
-#: apps/challenge/views/season.py:749
+#: apps/challenge/views/season.py:567 apps/challenge/views/season.py:649
+#: apps/challenge/views/season.py:755
 #, python-brace-format
 msgid "Planning {season}"
 msgstr "Einsatzplan {season}"
 
-#: apps/challenge/views/season.py:828 apps/challenge/views/season.py:1036
+#: apps/challenge/views/season.py:834 apps/challenge/views/season.py:1042
 #: apps/challenge/views/session.py:402
 msgid "Heures"
 msgstr "Stunden"
 
-#: apps/challenge/views/season.py:829 apps/challenge/views/season.py:1037
+#: apps/challenge/views/season.py:835 apps/challenge/views/season.py:1043
 #: apps/challenge/views/session.py:403
 msgid "Nombre de qualifs"
 msgstr "Anzahl Qualis"
 
-#: apps/challenge/views/season.py:837 apps/challenge/views/session.py:411
+#: apps/challenge/views/season.py:843 apps/challenge/views/session.py:411
 msgid "Total casques"
 msgstr "Total Helme"
 
-#: apps/challenge/views/season.py:845 apps/challenge/views/session.py:419
+#: apps/challenge/views/season.py:851 apps/challenge/views/session.py:419
 #: apps/info/exports.py:145
 msgid "Nombre d’élèves"
 msgstr "Anzahl Schüler*innen"
 
-#: apps/challenge/views/season.py:1206
+#: apps/challenge/views/season.py:1212
 msgid ""
 "Le planning n'est pas encore disponible; mets plutôt à jour tes "
 "disponibilités."
@@ -2069,7 +2103,7 @@ msgstr ""
 "Der Einsatzplan ist noch nicht verfügbar; bitte aktualisiere dennoch Deine "
 "Verfügbarkeit."
 
-#: apps/challenge/views/season.py:1295
+#: apps/challenge/views/season.py:1301
 msgid ""
 "Le planning n'est pas encore disponible. En attendant, vous pouvez mettre à "
 "jour vos disponibilités."
@@ -2077,34 +2111,34 @@ msgstr ""
 "Der Einsatzplan ist noch nicht verfügbar. Bitte aktualisiere in der "
 "Zwischenzeit deine Verfügbarkeiten."
 
-#: apps/challenge/views/season.py:1421
+#: apps/challenge/views/season.py:1427
 msgid "Disponibilités mises à jour"
 msgstr "Verfügbarkeiten aktualisiert"
 
-#: apps/challenge/views/season.py:1468
+#: apps/challenge/views/season.py:1474
 msgid ""
 "Il n'est pas possible de mettre à jour tes disponibilités; voici le planning."
 msgstr ""
 "Es ist nicht möglich, Deine Verfügbarkeit zu aktualisieren; hier ist der "
 "Einsatzplan."
 
-#: apps/challenge/views/season.py:1562
+#: apps/challenge/views/season.py:1568
 msgid "Choix du personnel mises à jour"
 msgstr "Auswahl der LeiterInnen aktualisiert"
 
-#: apps/challenge/views/season.py:1639
+#: apps/challenge/views/season.py:1645
 msgid "Mois créé"
 msgstr "Monat erstellt"
 
-#: apps/challenge/views/season.py:1644
-msgid "Moniteurs du mois"
+#: apps/challenge/views/season.py:1650
+msgid "Moniteur·rice·s du mois"
 msgstr "LeiterInnen des Monats"
 
-#: apps/challenge/views/season.py:1666
-msgid "Intervenants du mois"
+#: apps/challenge/views/season.py:1672
+msgid "Intervenant·e·s du mois"
 msgstr "ReferentInnen des Monats"
 
-#: apps/challenge/views/season.py:1686
+#: apps/challenge/views/season.py:1692
 msgid "Erreurs dans les qualifs du mois"
 msgstr "Fehler in den Qualis des Monats"
 
@@ -2167,19 +2201,23 @@ msgid "Planification (invisible)"
 msgstr "In Planung (versteckt)"
 
 #: apps/common/__init__.py:150
-msgid "Annoncé (rentrée des disponibilités)"
+#, fuzzy
+#| msgid "Annoncé (rentrée des disponibilités)"
+msgid "Annoncé·e (rentrée des disponibilités)"
 msgstr "Veröffentlicht (Verfügbarkeiten eingeben)"
 
-#: apps/common/__init__.py:151
-msgid "En cours (corrections que par chargé·e·s de projet)"
+#: apps/common/__init__.py:153
+msgid "En cours (corrections que par les chargé·e·s de projet)"
 msgstr "Im Gang (Änderungen nur durch Projektleitung)"
 
-#: apps/common/__init__.py:152
-msgid "Terminé"
+#: apps/common/__init__.py:155
+#, fuzzy
+#| msgid "Terminé·e"
+msgid "Terminé·e"
 msgstr "Abgeschlossen"
 
-#: apps/common/__init__.py:153
-msgid "Archivé"
+#: apps/common/__init__.py:156 apps/user/models.py:67
+msgid "Archivé·e"
 msgstr "Archiviert"
 
 #: apps/common/models.py:24 apps/orga/export.py:32 apps/user/export.py:83
@@ -2360,15 +2398,17 @@ msgid "Nombre de personnes ayant exercé"
 msgstr "Anzahl Personen, die gearbeitet haben"
 
 #: apps/info/exports.py:149
-msgid "… comme moniteurs 2"
+#, fuzzy
+#| msgid "… comme moniteur·rice·s 1"
+msgid "… comme moniteur·rice·s 2"
 msgstr "...als Leiter*in 2"
 
 #: apps/info/exports.py:150
-msgid "… comme moniteurs 1"
-msgstr "...als Leiter*in 1"
+msgid "… comme moniteur·rice·s 1"
+msgstr "...als Leiter*in 2"
 
 #: apps/info/exports.py:151
-msgid "… comme intervenants"
+msgid "… comme intervenant·e·s"
 msgstr "...als Referent*in"
 
 #: apps/info/exports.py:203
@@ -2392,7 +2432,7 @@ msgid "Classes"
 msgstr "Klassen"
 
 #: apps/info/exports.py:227
-msgid "Participants"
+msgid "Participant·e·s"
 msgstr "TeilnehmerInnen"
 
 #: apps/info/exports.py:228
@@ -2502,11 +2542,11 @@ msgid "Email"
 msgstr "E-Mail"
 
 #: apps/orga/models.py:41 apps/user/models.py:64
-msgid "Actif"
+msgid "Actif·ve"
 msgstr "Aktiv"
 
 #: apps/orga/models.py:42 apps/user/models.py:66
-msgid "Inactif"
+msgid "Inactif·ve"
 msgstr "Inaktiv"
 
 #: apps/orga/models.py:134
@@ -2676,7 +2716,7 @@ msgstr "Einsatz/Einsätze"
 #: apps/salary/models/timesheets.py:19
 #: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:23
 #: apps/salary/templates/salary/month_timesheets.html:131
-msgid "Participation(s) comme moniteur 2"
+msgid "Participation(s) comme Moniteur·trice 2"
 msgstr "Teilnahme(n) als LeiterIn 2"
 
 #: apps/salary/models/timesheets.py:22
@@ -2761,7 +2801,7 @@ msgid ""
 "Nous avons remarqué que tu n’as pas encore rempli tes heures supplémentaires "
 "et tes heures de trajet dans ton décompte d’heures DÉFI VÉLO. Merci de le "
 "remplir au plus vite afin qu’on puisse procéder au paiement des salaires. En "
-"cas de questions, tu peux t’adresser à ton chargé de projet.\n"
+"cas de questions, tu peux t’adresser à ton·ta chargé·e de projet.\n"
 "\n"
 "Tu peux accéder au décompte d’heures via le lien ci-dessous:\n"
 "%(timesheets_url)s\n"
@@ -3088,12 +3128,12 @@ msgstr "DEFI VELO mobil"
 msgid "Nom de la banque"
 msgstr "Name der Bank"
 
-#: apps/user/export.py:179 apps/user/forms.py:207
+#: apps/user/export.py:179 apps/user/forms.py:209
 #: apps/user/templates/auth/user_detail.html:202
 msgid "Niveau d’accès"
 msgstr "Zugangsberechtigung"
 
-#: apps/user/export.py:184 apps/user/forms.py:216 apps/user/models.py:630
+#: apps/user/export.py:184 apps/user/forms.py:218 apps/user/models.py:630
 #: apps/user/templates/auth/user_detail.html:206
 msgid "Cantons gérés"
 msgstr "Geführte Kantone"
@@ -3103,23 +3143,26 @@ msgid "Dernière mise à jour"
 msgstr "Letzte Aktualisierung"
 
 #: apps/user/forms.py:104
-msgid "Un utilisateur avec cette adresse e-mail existe déjà."
+msgid "Un·e utilisateur·rice avec cette adresse e-mail existe déjà."
 msgstr "Ein/e BenutzerIn mit dieser E-Mailadresse existiert bereits."
 
-#: apps/user/forms.py:132
-msgid "Moniteurs/intervenants ont besoin d’un canton d’affiliation."
+#: apps/user/forms.py:133
+#, fuzzy
+#| msgid "Moniteurs/intervenants ont besoin d’un canton d’affiliation."
+msgid ""
+"Les moniteur·rice·s / intervenant·e·s ont besoin d’un canton d’affiliation."
 msgstr ""
 "LeiterInnen / ReferentInnen brauchen eine Zugehörigkeit zu einem Kanton."
 
-#: apps/user/forms.py:168
+#: apps/user/forms.py:170
 msgid "… si pas suisse"
 msgstr "...falls nicht Schweiz"
 
-#: apps/user/forms.py:170
+#: apps/user/forms.py:172
 msgid "… si pas en Suisse"
 msgstr "…falls nicht in der Schweiz"
 
-#: apps/user/forms.py:219
+#: apps/user/forms.py:221
 msgid "Établissements gérés"
 msgstr "Verwaltete Schulen"
 
@@ -3133,12 +3176,8 @@ msgstr "E-Mail vor dem Löschen: %s"
 msgid "Réserve"
 msgstr "Reserve"
 
-#: apps/user/models.py:67
-msgid "Archive"
-msgstr "Archiv"
-
 #: apps/user/models.py:68
-msgid "Supprimé"
+msgid "Supprimé·e"
 msgstr "Gelöscht"
 
 #: apps/user/models.py:82
@@ -3232,7 +3271,7 @@ msgid "Canton géré"
 msgstr "Geführter Kanton"
 
 #: apps/user/signals.py:147
-msgid "Notification de modification de données utilisateur"
+msgid "Notification de modification de données utilisateur·trice"
 msgstr "Hinweis Änderung Profil Nutzer*innen"
 
 #: apps/user/signals.py:151
@@ -3242,8 +3281,8 @@ msgstr "Guten Tag,"
 #: apps/user/signals.py:154
 #, python-brace-format
 msgid ""
-"Les informations suivantes pour l’utilisateur {user} / {user_id} ont été "
-"modifiées:"
+"Les informations suivantes pour l’utilisateur·trice {user} / {user_id} ont "
+"été modifiées:"
 msgstr ""
 "Für den*die Nutzer*in {user} / {user_id} wurden folgende Daten geändert:"
 
@@ -3284,7 +3323,7 @@ msgid ""
 "\n"
 "Voilà vos données de connexion :\n"
 "\n"
-"  Nom d’utilisateur : %(email)s\n"
+"  Nom d’utilisateur·ice : %(email)s\n"
 "  Mot de passe : %(password)s\n"
 "  URL de connexion : %(login_uri)s\n"
 "\n"
@@ -3374,21 +3413,21 @@ msgid "Modifier les établissements gérés"
 msgstr "Schule hinzufügen"
 
 #: apps/user/templates/auth/user_detail.html:258
-msgid "Retour à la liste des utilisateurs"
+msgid "Retour à la liste des utilisateur·rice·s"
 msgstr "Zurück zur Benutzerliste"
 
 #: apps/user/templates/auth/user_detail.html:267
 #: apps/user/templates/auth/user_filter.html:117
 #: apps/user/templates/auth/user_form.html:10
-msgid "Nouvel utilisateur"
+msgid "Nouvel utilisateur·trice"
 msgstr "Neuer Benutzer"
 
 #: apps/user/templates/auth/user_filter.html:6 apps/user/views/standard.py:349
-msgid "Utilisateurs"
+msgid "Utilisateur·rice·s"
 msgstr "NutzerInnen"
 
 #: apps/user/templates/auth/user_filter.html:19
-msgid "Filtrer la liste des utilisateurs"
+msgid "Filtrer la liste des utilisateur·rice·s"
 msgstr "Benutzerliste filtern"
 
 #: apps/user/templates/auth/user_filter.html:61
@@ -3503,7 +3542,7 @@ msgid "vous ne pouvez pas annuler l'attribution du rôle"
 msgstr "Die Zuweisung der Rolle kann nicht rückgängig gemacht werden"
 
 #: apps/user/views/deletes.py:30
-msgid "Utilisateur supprimé"
+msgid "Utilisateur·rice supprimé·e"
 msgstr "Benutzer gelöscht"
 
 #: apps/user/views/standard.py:148
@@ -3511,7 +3550,7 @@ msgid "Profil mis à jour"
 msgstr "Profil aktualisiert"
 
 #: apps/user/views/standard.py:186
-msgid "Utilisateur créé"
+msgid "Utilisateur·rice créé·e"
 msgstr "Benutzer erstellt"
 
 #: apps/user/views/standard.py:284
@@ -3523,15 +3562,17 @@ msgid "Dernière modification après le"
 msgstr "Letzte Ausbildung nach dem"
 
 #: apps/user/views/standard.py:365
-msgid "Liste des utilisateurs"
+msgid "Liste des utilisateur·rice·s"
 msgstr "Benutzerliste"
 
 #: apps/user/views/standard.py:375 defivelo/templates/header.html:35
-msgid "Liste des moniteurs"
+msgid "Liste des moniteur·rice·s"
 msgstr "Liste der LeiterInnen"
 
 #: apps/user/views/standard.py:386 defivelo/templates/header.html:37
-msgid "Liste des intervenants"
+#, fuzzy
+#| msgid "Liste des intervenants"
+msgid "Liste des intervenant·e·s"
 msgstr "Liste der ReferentInnen"
 
 #: defivelo/roles.py:152
@@ -3951,6 +3992,9 @@ msgstr "Hauptseite"
 #: defivelo/urls.py:54
 msgid "Intranet DÉFI VÉLO"
 msgstr "DEFI VELO Intranet"
+
+#~ msgid "Moniteurs 2"
+#~ msgstr "LeiterInnen 2"
 
 #~ msgid "Planning_Mois"
 #~ msgstr "Einsatzplan_Monat"
