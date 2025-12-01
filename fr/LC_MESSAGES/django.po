@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-13 15:12+0100\n"
+"POT-Creation-Date: 2025-12-01 13:05+0100\n"
 "PO-Revision-Date: 2020-12-07 17:29+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -238,7 +238,7 @@ msgstr ""
 #: apps/challenge/forms/qualification.py:97
 #: apps/challenge/models/qualification.py:177
 #: apps/challenge/views/season.py:297
-msgid "Moniteur·rice·s 1"
+msgid "Moniteur·trice·s 1"
 msgstr ""
 
 #: apps/challenge/forms/qualification.py:105
@@ -411,7 +411,7 @@ msgid "Organisation de la livraison de pommes (quantité & logistique)"
 msgstr ""
 
 #: apps/challenge/forms/session.py:112 apps/challenge/models/session.py:87
-msgid "Heure de rendez-vous des moniteur·rice·s"
+msgid "Heure de rendez-vous des moniteur·trice·s"
 msgstr ""
 
 #: apps/challenge/forms/session.py:115 apps/challenge/models/session.py:71
@@ -645,7 +645,7 @@ msgid "Remarques"
 msgstr ""
 
 #: apps/challenge/models/qualification.py:260
-msgid "Moniteur·rice·s"
+msgid "Moniteur·trice·s"
 msgstr ""
 
 #: apps/challenge/models/qualification.py:266
@@ -1871,7 +1871,7 @@ msgid "Mois mis à jour"
 msgstr ""
 
 #: apps/challenge/views/season.py:293
-msgid "Moniteur·rice·s 2"
+msgid "Moniteur·trice·s 2"
 msgstr ""
 
 #: apps/challenge/views/season.py:301
@@ -1938,7 +1938,7 @@ msgid "Mois créé"
 msgstr ""
 
 #: apps/challenge/views/season.py:1650
-msgid "Moniteur·rice·s du mois"
+msgid "Moniteur·trice·s du mois"
 msgstr ""
 
 #: apps/challenge/views/season.py:1672
@@ -2008,19 +2008,19 @@ msgid "Planification (invisible)"
 msgstr ""
 
 #: apps/common/__init__.py:150
-msgid "Annoncé·e (rentrée des disponibilités)"
+msgid "Annoncé (rentrée des disponibilités)"
+msgstr ""
+
+#: apps/common/__init__.py:151
+msgid "En cours (corrections que par chargé·e·s de projet)"
+msgstr ""
+
+#: apps/common/__init__.py:152
+msgid "Terminé"
 msgstr ""
 
 #: apps/common/__init__.py:153
-msgid "En cours (corrections que par les chargé·e·s de projet)"
-msgstr ""
-
-#: apps/common/__init__.py:155
-msgid "Terminé·e"
-msgstr ""
-
-#: apps/common/__init__.py:156 apps/user/models.py:67
-msgid "Archivé·e"
+msgid "Archivé"
 msgstr ""
 
 #: apps/common/models.py:24 apps/orga/export.py:32 apps/user/export.py:83
@@ -2203,11 +2203,11 @@ msgid "Nombre de personnes ayant exercé"
 msgstr ""
 
 #: apps/info/exports.py:149
-msgid "… comme moniteur·rice·s 2"
+msgid "… comme moniteur·trice·s 2"
 msgstr ""
 
 #: apps/info/exports.py:150
-msgid "… comme moniteur·rice·s 1"
+msgid "… comme moniteur·trice·s 1"
 msgstr ""
 
 #: apps/info/exports.py:151
@@ -2344,12 +2344,12 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-#: apps/orga/models.py:41 apps/user/models.py:64
-msgid "Actif·ve"
+#: apps/orga/models.py:41
+msgid "Actif"
 msgstr ""
 
-#: apps/orga/models.py:42 apps/user/models.py:66
-msgid "Inactif·ve"
+#: apps/orga/models.py:42
+msgid "Inactif"
 msgstr ""
 
 #: apps/orga/models.py:134
@@ -2512,7 +2512,7 @@ msgstr ""
 #: apps/salary/models/timesheets.py:19
 #: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:23
 #: apps/salary/templates/salary/month_timesheets.html:131
-msgid "Participation(s) comme Moniteur·trice 2"
+msgid "Participation(s) comme moniteur·trice 2"
 msgstr ""
 
 #: apps/salary/models/timesheets.py:22
@@ -2923,7 +2923,7 @@ msgstr ""
 
 #: apps/user/forms.py:133
 msgid ""
-"Les moniteur·rice·s / intervenant·e·s ont besoin d’un canton d’affiliation."
+"Les moniteur·trice·s / intervenant·e·s ont besoin d’un canton d’affiliation."
 msgstr ""
 
 #: apps/user/forms.py:170
@@ -2944,8 +2944,20 @@ msgstr ""
 msgid "Email avant suppression: %s"
 msgstr ""
 
+#: apps/user/models.py:64
+msgid "Actif·ve"
+msgstr ""
+
 #: apps/user/models.py:65
 msgid "Réserve"
+msgstr ""
+
+#: apps/user/models.py:66
+msgid "Inactif·ve"
+msgstr ""
+
+#: apps/user/models.py:67
+msgid "Archivé·e"
 msgstr ""
 
 #: apps/user/models.py:68
@@ -3316,7 +3328,7 @@ msgid "Liste des utilisateur·rice·s"
 msgstr ""
 
 #: apps/user/views/standard.py:375 defivelo/templates/header.html:35
-msgid "Liste des moniteur·rice·s"
+msgid "Liste des moniteur·trice·s"
 msgstr ""
 
 #: apps/user/views/standard.py:386 defivelo/templates/header.html:37

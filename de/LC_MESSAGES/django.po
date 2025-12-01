@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-13 15:12+0100\n"
+"POT-Creation-Date: 2025-12-01 13:05+0100\n"
 "PO-Revision-Date: 2025-11-04 08:20+0000\n"
 "Last-Translator: Laurent Constantin <laurent.constantin@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -246,7 +246,7 @@ msgstr "Natelnr. Lehrperson"
 #: apps/challenge/views/season.py:297
 #, fuzzy
 #| msgid "Moniteur·trice 1"
-msgid "Moniteur·rice·s 1"
+msgid "Moniteur·trice·s 1"
 msgstr "LeiterIn 1"
 
 #: apps/challenge/forms/qualification.py:105
@@ -432,7 +432,7 @@ msgid "Organisation de la livraison de pommes (quantité & logistique)"
 msgstr "Lieferung der Äpfel (Menge, Organisation & Logistik)"
 
 #: apps/challenge/forms/session.py:112 apps/challenge/models/session.py:87
-msgid "Heure de rendez-vous des moniteur·rice·s"
+msgid "Heure de rendez-vous des moniteur·trice·s"
 msgstr "Zeit Treffpunkt Leiter"
 
 #: apps/challenge/forms/session.py:115 apps/challenge/models/session.py:71
@@ -673,7 +673,7 @@ msgstr "Bemerkungen"
 #: apps/challenge/models/qualification.py:260
 #, fuzzy
 #| msgid "Moniteur·trice"
-msgid "Moniteur·rice·s"
+msgid "Moniteur·trice·s"
 msgstr "LeiterIn"
 
 #: apps/challenge/models/qualification.py:266
@@ -2056,7 +2056,7 @@ msgstr "Monat aktualisiert"
 #: apps/challenge/views/season.py:293
 #, fuzzy
 #| msgid "Moniteur·trice 2"
-msgid "Moniteur·rice·s 2"
+msgid "Moniteur·trice·s 2"
 msgstr "LeiterIn 2"
 
 #: apps/challenge/views/season.py:301
@@ -2131,7 +2131,7 @@ msgid "Mois créé"
 msgstr "Monat erstellt"
 
 #: apps/challenge/views/season.py:1650
-msgid "Moniteur·rice·s du mois"
+msgid "Moniteur·trice·s du mois"
 msgstr "LeiterInnen des Monats"
 
 #: apps/challenge/views/season.py:1672
@@ -2203,21 +2203,25 @@ msgstr "In Planung (versteckt)"
 #: apps/common/__init__.py:150
 #, fuzzy
 #| msgid "Annoncé (rentrée des disponibilités)"
-msgid "Annoncé·e (rentrée des disponibilités)"
+msgid "Annoncé (rentrée des disponibilités)"
 msgstr "Veröffentlicht (Verfügbarkeiten eingeben)"
 
-#: apps/common/__init__.py:153
-msgid "En cours (corrections que par les chargé·e·s de projet)"
+#: apps/common/__init__.py:151
+#, fuzzy
+#| msgid "En cours (corrections que par les chargé·e·s de projet)"
+msgid "En cours (corrections que par chargé·e·s de projet)"
 msgstr "Im Gang (Änderungen nur durch Projektleitung)"
 
-#: apps/common/__init__.py:155
+#: apps/common/__init__.py:152
 #, fuzzy
 #| msgid "Terminé·e"
-msgid "Terminé·e"
+msgid "Terminé"
 msgstr "Abgeschlossen"
 
-#: apps/common/__init__.py:156 apps/user/models.py:67
-msgid "Archivé·e"
+#: apps/common/__init__.py:153
+#, fuzzy
+#| msgid "Archivée"
+msgid "Archivé"
 msgstr "Archiviert"
 
 #: apps/common/models.py:24 apps/orga/export.py:32 apps/user/export.py:83
@@ -2399,12 +2403,12 @@ msgstr "Anzahl Personen, die gearbeitet haben"
 
 #: apps/info/exports.py:149
 #, fuzzy
-#| msgid "… comme moniteur·rice·s 1"
-msgid "… comme moniteur·rice·s 2"
+#| msgid "… comme moniteur·trice·s 1"
+msgid "… comme moniteur·trice·s 2"
 msgstr "...als Leiter*in 2"
 
 #: apps/info/exports.py:150
-msgid "… comme moniteur·rice·s 1"
+msgid "… comme moniteur·trice·s 1"
 msgstr "...als Leiter*in 2"
 
 #: apps/info/exports.py:151
@@ -2541,12 +2545,16 @@ msgstr "Natelnr."
 msgid "Email"
 msgstr "E-Mail"
 
-#: apps/orga/models.py:41 apps/user/models.py:64
-msgid "Actif·ve"
+#: apps/orga/models.py:41
+#, fuzzy
+#| msgid "Actif·ve"
+msgid "Actif"
 msgstr "Aktiv"
 
-#: apps/orga/models.py:42 apps/user/models.py:66
-msgid "Inactif·ve"
+#: apps/orga/models.py:42
+#, fuzzy
+#| msgid "Inactif·ve"
+msgid "Inactif"
 msgstr "Inaktiv"
 
 #: apps/orga/models.py:134
@@ -2716,7 +2724,7 @@ msgstr "Einsatz/Einsätze"
 #: apps/salary/models/timesheets.py:19
 #: apps/salary/templates/salary/cleanup_orphaned_timesheets.html:23
 #: apps/salary/templates/salary/month_timesheets.html:131
-msgid "Participation(s) comme Moniteur·trice 2"
+msgid "Participation(s) comme moniteur·trice 2"
 msgstr "Teilnahme(n) als LeiterIn 2"
 
 #: apps/salary/models/timesheets.py:22
@@ -3150,7 +3158,7 @@ msgstr "Ein/e BenutzerIn mit dieser E-Mailadresse existiert bereits."
 #, fuzzy
 #| msgid "Moniteurs/intervenants ont besoin d’un canton d’affiliation."
 msgid ""
-"Les moniteur·rice·s / intervenant·e·s ont besoin d’un canton d’affiliation."
+"Les moniteur·trice·s / intervenant·e·s ont besoin d’un canton d’affiliation."
 msgstr ""
 "LeiterInnen / ReferentInnen brauchen eine Zugehörigkeit zu einem Kanton."
 
@@ -3172,9 +3180,21 @@ msgstr "Verwaltete Schulen"
 msgid "Email avant suppression: %s"
 msgstr "E-Mail vor dem Löschen: %s"
 
+#: apps/user/models.py:64
+msgid "Actif·ve"
+msgstr "Aktiv"
+
 #: apps/user/models.py:65
 msgid "Réserve"
 msgstr "Reserve"
+
+#: apps/user/models.py:66
+msgid "Inactif·ve"
+msgstr "Inaktiv"
+
+#: apps/user/models.py:67
+msgid "Archivé·e"
+msgstr "Archiviert"
 
 #: apps/user/models.py:68
 msgid "Supprimé·e"
@@ -3566,7 +3586,7 @@ msgid "Liste des utilisateur·rice·s"
 msgstr "Benutzerliste"
 
 #: apps/user/views/standard.py:375 defivelo/templates/header.html:35
-msgid "Liste des moniteur·rice·s"
+msgid "Liste des moniteur·trice·s"
 msgstr "Liste der LeiterInnen"
 
 #: apps/user/views/standard.py:386 defivelo/templates/header.html:37
