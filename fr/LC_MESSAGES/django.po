@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-09 11:07+0100\n"
+"POT-Creation-Date: 2025-12-09 15:49+0100\n"
 "PO-Revision-Date: 2020-12-07 17:29+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -1304,6 +1304,10 @@ msgstr ""
 #: apps/challenge/templates/challenge/season_availability.html:37
 #: apps/challenge/templates/challenge/session_detail.html:230
 msgid "Retour au mois"
+msgstr ""
+
+#: apps/challenge/templates/challenge/season_availability.html:49
+msgid "Rappel envoyé le "
 msgstr ""
 
 #: apps/challenge/templates/challenge/season_availability.html:53
