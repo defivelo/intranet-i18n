@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-09 15:49+0100\n"
-"PO-Revision-Date: 2020-12-07 17:29+0000\n"
+"PO-Revision-Date: 2026-02-05 13:11+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
 "fr/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.16.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #: apps/article/forms.py:25
 msgid "Publié"
@@ -28,7 +28,7 @@ msgstr "Titre"
 
 #: apps/article/models.py:42
 msgid "Slug"
-msgstr ""
+msgstr "Slug"
 
 #: apps/article/models.py:43
 msgid "Summary"
