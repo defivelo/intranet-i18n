@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-09 15:49+0100\n"
+"POT-Creation-Date: 2026-03-10 11:50+0100\n"
 "PO-Revision-Date: 2026-02-05 13:11+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -253,28 +253,28 @@ msgstr ""
 msgid "Intervenant·e"
 msgstr ""
 
-#: apps/challenge/forms/qualification.py:137
+#: apps/challenge/forms/qualification.py:138
 #, python-format
 msgid "Pas plus de %s moniteur·trices 1 !"
 msgstr ""
 
-#: apps/challenge/forms/qualification.py:152
+#: apps/challenge/forms/qualification.py:154
 msgid "Il y a des moniteur·trice·s à double !"
 msgstr ""
 
-#: apps/challenge/forms/qualification.py:165
+#: apps/challenge/forms/qualification.py:167
 msgid "L’intervenant·e n’est pas qualifié·e pour la rencontre prévue !"
 msgstr ""
 
-#: apps/challenge/forms/qualification.py:173
+#: apps/challenge/forms/qualification.py:175
 msgid "L’intervenant·e ne peut pas aussi être moniteur·trice !"
 msgstr ""
 
-#: apps/challenge/forms/qualification.py:186
+#: apps/challenge/forms/qualification.py:188
 msgid "Il y a trop de vélos prévus !"
 msgstr ""
 
-#: apps/challenge/forms/qualification.py:191
+#: apps/challenge/forms/qualification.py:193
 msgid "Il y a trop de casques prévus !"
 msgstr ""
 
