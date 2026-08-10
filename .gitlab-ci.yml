@@ -1,6 +1,6 @@
 Update parent repository:
     tags:
-        - docker-nonswiss-ok
+        - docker
     variables:
         GIT_STRATEGY: none
         PARENT_REPOSITORY_BRANCH: main
