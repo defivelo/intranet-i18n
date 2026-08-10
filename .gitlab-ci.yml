@@ -1,3 +1,15 @@
+test po files:
+    tags:
+        - docker
+    image: alpine:latest
+    before_script:
+        - apk add --no-cache gettext
+    script:
+        - 'set -ex;
+           for po in $(find . -name "*.po"); do
+               msgfmt --check --output-file=/dev/null "$po";
+           done'
+
 Update parent repository:
     tags:
         - docker
