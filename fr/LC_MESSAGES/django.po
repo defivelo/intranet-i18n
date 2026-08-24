@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-10 11:50+0100\n"
+"POT-Creation-Date: 2026-08-24 09:33+0200\n"
 "PO-Revision-Date: 2026-02-05 13:11+0000\n"
 "Last-Translator: Didier Raboud <didier.raboud@liip.ch>\n"
 "Language-Team: French <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -566,7 +566,7 @@ msgstr ""
 
 #: apps/challenge/models/qualification.py:50 apps/orga/export.py:31
 #: apps/orga/models.py:49 apps/orga/templates/orga/organization_filter.html:61
-#: apps/salary/models/validations.py:12 apps/salary/views/timesheets.py:450
+#: apps/salary/models/validations.py:12 apps/salary/views/timesheets.py:455
 #: apps/user/export.py:71 apps/user/templates/auth/user_detail.html:66
 #: apps/user/templates/auth/user_detailed_list.html:15
 #: apps/user/templates/auth/user_filter.html:56
@@ -937,18 +937,19 @@ msgstr ""
 #: apps/challenge/templates/challenge/invoice_detail.html:64
 #, python-format
 msgid ""
-"Prochainement, %(nb_participants)s étudiant·e·s\n"
-"      de votre établissement vont participer à « DÉFI VÉLO », compétition "
-"inter-cantonale pour la promotion du vélo. Par\n"
-"      la participation de votre établissement, vous contribuez au succès "
-"d’une action innovante de promotion du vélo, de\n"
-"      l’activité physique et de la sécurité routière, qui place le plaisir "
-"et l’apprentissage par l’action au premier\n"
-"      plan. DÉFI VÉLO est largement reconnu pour ces qualités: il est "
-"notamment soutenu par Promotion Santé Suisse, le\n"
-"      Fonds suisse de sécurité routière et l’Office fédéral de l’énergie "
-"(OFEN). Nous nous réjouissons de votre\n"
-"      confiance et vous remercions par avance de votre collaboration."
+"Nous avons le plaisir de vous faire parvenir la\n"
+"      facture pour votre participation à l’action « DÉFI VÉLO », compétition "
+"inter-cantonale pour la promotion du vélo.\n"
+"      Avec la participation de vos %(nb_participants)s élèves, vous "
+"contribuez au succès d’une action\n"
+"      innovante de promotion du vélo, de l’activité physique et de la "
+"sécurité routière, qui place le plaisir et\n"
+"      l’apprentissage par l’action au premier plan. DÉFI VÉLO est largement "
+"reconnu pour ces qualités : il est notamment\n"
+"      soutenu par Promotion Santé Suisse, le Fonds suisse de sécurité "
+"routière et l’Office fédéral de l’énergie (OFEN).\n"
+"      Nous nous réjouissons de votre confiance et vous remercions pour votre "
+"précieuse collaboration."
 msgstr ""
 
 #: apps/challenge/templates/challenge/invoice_detail.html:79
@@ -1883,7 +1884,7 @@ msgid "Intervenant·e·s"
 msgstr ""
 
 #: apps/challenge/views/season.py:555 apps/challenge/views/season.py:637
-#: apps/challenge/views/season.py:733 apps/salary/views/timesheets.py:615
+#: apps/challenge/views/season.py:733 apps/salary/views/timesheets.py:620
 msgid "{Prénom} {Nom}"
 msgstr ""
 
@@ -2439,27 +2440,27 @@ msgstr ""
 msgid "Établissement créé"
 msgstr ""
 
-#: apps/salary/forms.py:40 apps/salary/views/timesheets.py:451
+#: apps/salary/forms.py:40 apps/salary/views/timesheets.py:456
 #, python-brace-format
 msgid "Heures moni·teur·trice ({price}.-/h)"
 msgstr ""
 
-#: apps/salary/forms.py:43 apps/salary/views/timesheets.py:454
+#: apps/salary/forms.py:43 apps/salary/views/timesheets.py:459
 #, python-brace-format
 msgid "Intervention(s) ({price}.-/Qualif’)"
 msgstr ""
 
-#: apps/salary/forms.py:46 apps/salary/views/timesheets.py:456
+#: apps/salary/forms.py:46 apps/salary/views/timesheets.py:461
 #, python-brace-format
 msgid "Participation(s) comme moni·teur·trice 2 ({price}.-/Qualif’)"
 msgstr ""
 
-#: apps/salary/forms.py:50 apps/salary/views/timesheets.py:458
+#: apps/salary/forms.py:50 apps/salary/views/timesheets.py:463
 #, python-brace-format
 msgid "Heures supplémentaires ({price}.-/h)"
 msgstr ""
 
-#: apps/salary/forms.py:52 apps/salary/views/timesheets.py:461
+#: apps/salary/forms.py:52 apps/salary/views/timesheets.py:466
 msgid "Heures de trajet (aller-retour)"
 msgstr ""
 
@@ -2628,13 +2629,13 @@ msgid "Total"
 msgstr ""
 
 #: apps/salary/templates/salary/month_timesheets.html:79
-#: apps/salary/views/timesheets.py:462
+#: apps/salary/views/timesheets.py:467
 msgid "Total heures"
 msgstr ""
 
 #: apps/salary/templates/salary/month_timesheets.html:88
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:87
-#: apps/salary/views/timesheets.py:463
+#: apps/salary/views/timesheets.py:468
 msgid "Total CHF"
 msgstr ""
 
@@ -2774,44 +2775,44 @@ msgstr ""
 msgid "Aucun résultat."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:123
+#: apps/salary/views/timesheets.py:128
 #, python-format
 msgid "La session a lieu dans le canton \"%s\" que vous n'administrez pas."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:370
+#: apps/salary/views/timesheets.py:375
 #, python-brace-format
 msgid "Export Winbiz {month} {year}"
 msgstr ""
 
-#: apps/salary/views/timesheets.py:437
+#: apps/salary/views/timesheets.py:442
 #, python-brace-format
 msgid "Export de contrôle {month} {year}"
 msgstr ""
 
-#: apps/salary/views/timesheets.py:448 apps/user/export.py:167
+#: apps/salary/views/timesheets.py:453 apps/user/export.py:167
 msgid "Numéro d’employé Crésus"
 msgstr ""
 
-#: apps/salary/views/timesheets.py:449 apps/user/export.py:70
+#: apps/salary/views/timesheets.py:454 apps/user/export.py:70
 #: apps/user/templates/auth/user_detailed_list.html:14
 #: apps/user/templates/auth/user_filter.html:55
 msgid "Prénom"
 msgstr ""
 
-#: apps/salary/views/timesheets.py:522
+#: apps/salary/views/timesheets.py:527
 msgid "Aucune feuille d'heure orpheline à supprimer; tout va bien."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:572
+#: apps/salary/views/timesheets.py:577
 msgid "Aucun rappel à envoyer: les heures de ce mois sont déjà remplies."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:593
+#: apps/salary/views/timesheets.py:598
 msgid "Rappel de soumission des heures expédié."
 msgstr ""
 
-#: apps/salary/views/timesheets.py:623
+#: apps/salary/views/timesheets.py:628
 msgid "Soumission des heures"
 msgstr ""
 
