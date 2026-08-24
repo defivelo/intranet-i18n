@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Intranet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-10 12:00+0100\n"
+"POT-Creation-Date: 2026-08-24 09:33+0200\n"
 "PO-Revision-Date: 2026-07-16 08:52+0000\n"
 "Last-Translator: Laurent Constantin <laurent.constantin@liip.ch>\n"
 "Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
@@ -582,7 +582,7 @@ msgstr "Begegnung"
 
 #: apps/challenge/models/qualification.py:50 apps/orga/export.py:31
 #: apps/orga/models.py:49 apps/orga/templates/orga/organization_filter.html:61
-#: apps/salary/models/validations.py:12 apps/salary/views/timesheets.py:450
+#: apps/salary/models/validations.py:12 apps/salary/views/timesheets.py:455
 #: apps/user/export.py:71 apps/user/templates/auth/user_detail.html:66
 #: apps/user/templates/auth/user_detailed_list.html:15
 #: apps/user/templates/auth/user_filter.html:56
@@ -965,28 +965,30 @@ msgstr "Lausanne, %(date)s"
 #: apps/challenge/templates/challenge/invoice_detail.html:64
 #, python-format
 msgid ""
-"Prochainement, %(nb_participants)s étudiant·e·s\n"
-"      de votre établissement vont participer à « DÉFI VÉLO », compétition "
-"inter-cantonale pour la promotion du vélo. Par\n"
-"      la participation de votre établissement, vous contribuez au succès "
-"d’une action innovante de promotion du vélo, de\n"
-"      l’activité physique et de la sécurité routière, qui place le plaisir "
-"et l’apprentissage par l’action au premier\n"
-"      plan. DÉFI VÉLO est largement reconnu pour ces qualités: il est "
-"notamment soutenu par Promotion Santé Suisse, le\n"
-"      Fonds suisse de sécurité routière et l’Office fédéral de l’énergie "
-"(OFEN). Nous nous réjouissons de votre\n"
-"      confiance et vous remercions par avance de votre collaboration."
+"Nous avons le plaisir de vous faire parvenir la\n"
+"      facture pour votre participation à l’action « DÉFI VÉLO », compétition "
+"inter-cantonale pour la promotion du vélo.\n"
+"      Avec la participation de vos %(nb_participants)s élèves, vous "
+"contribuez au succès d’une action\n"
+"      innovante de promotion du vélo, de l’activité physique et de la "
+"sécurité routière, qui place le plaisir et\n"
+"      l’apprentissage par l’action au premier plan. DÉFI VÉLO est largement "
+"reconnu pour ces qualités : il est notamment\n"
+"      soutenu par Promotion Santé Suisse, le Fonds suisse de sécurité "
+"routière et l’Office fédéral de l’énergie (OFEN).\n"
+"      Nous nous réjouissons de votre confiance et vous remercions pour votre "
+"précieuse collaboration."
 msgstr ""
-"Demnächst werden %(nb_participants)s Schülerinnen und Schüler aus Ihrer "
-"Schule bei DEFI VELO teilnehmen, einem interkantonalen Wettbewerb zur "
-"Veloförderung. Durch die Teilnahme Ihrer Schule tragen Sie zum Erfolg einer "
-"innovativen Aktion zur Veloförderung, der körperlichen Aktivität und der "
-"Verkehrssicherheit bei, bei der der Spass und das Lernen durch Handeln im "
-"Vordergrund stehen. DEFI VELO ist für diese Qualitäten weithin anerkannt und "
-"wird unter anderem von der Stiftung Gesundheitsförderung Schweiz, dem Fonds "
-"für Verkehrssicherheit und dem Bundesamt für Energie (BFE) unterstützt. Wir "
-"freuen uns über Ihr Vertrauen und danken Ihnen im Voraus für Ihre Mitarbeit."
+"Wir freuen uns, Ihnen die Rechnung für Ihre Teilnahme an der Aktion «DEFI "
+"VELO», dem interkantonalen Wettbewerb zur Veloförderung, zukommen zu "
+"lassen. Mit der Teilnahme Ihrer %(nb_participants)s Schülerinnen und "
+"Schüler tragen Sie zum Erfolg einer innovativen Aktion zur Veloförderung, "
+"der körperlichen Aktivität und der Verkehrssicherheit bei, bei der der "
+"Spass und das Lernen durch Handeln im Vordergrund stehen. DEFI VELO ist "
+"für diese Qualitäten weithin anerkannt und wird unter anderem von der "
+"Stiftung Gesundheitsförderung Schweiz, dem Fonds für Verkehrssicherheit "
+"und dem Bundesamt für Energie (BFE) unterstützt. Wir freuen uns über Ihr "
+"Vertrauen und danken Ihnen für Ihre wertvolle Zusammenarbeit."
 
 #: apps/challenge/templates/challenge/invoice_detail.html:79
 #, python-format
@@ -2036,7 +2038,7 @@ msgid "Intervenant·e·s"
 msgstr "Referent*innen"
 
 #: apps/challenge/views/season.py:555 apps/challenge/views/season.py:637
-#: apps/challenge/views/season.py:733 apps/salary/views/timesheets.py:615
+#: apps/challenge/views/season.py:733 apps/salary/views/timesheets.py:620
 msgid "{Prénom} {Nom}"
 msgstr "{Vorname} {Name}"
 
@@ -2600,27 +2602,27 @@ msgstr "Schule aktualisiert"
 msgid "Établissement créé"
 msgstr "Schule erstellt"
 
-#: apps/salary/forms.py:40 apps/salary/views/timesheets.py:451
+#: apps/salary/forms.py:40 apps/salary/views/timesheets.py:456
 #, python-brace-format
 msgid "Heures moni·teur·trice ({price}.-/h)"
 msgstr "Stunden Leitende ({price}.-/h)"
 
-#: apps/salary/forms.py:43 apps/salary/views/timesheets.py:454
+#: apps/salary/forms.py:43 apps/salary/views/timesheets.py:459
 #, python-brace-format
 msgid "Intervention(s) ({price}.-/Qualif’)"
 msgstr "Einsatz/Einsätze ({price}.-/Qualif')"
 
-#: apps/salary/forms.py:46 apps/salary/views/timesheets.py:456
+#: apps/salary/forms.py:46 apps/salary/views/timesheets.py:461
 #, python-brace-format
 msgid "Participation(s) comme moni·teur·trice 2 ({price}.-/Qualif’)"
 msgstr "Teilnahme(n) als Leiter*in 2 ({price}.-/Quali)"
 
-#: apps/salary/forms.py:50 apps/salary/views/timesheets.py:458
+#: apps/salary/forms.py:50 apps/salary/views/timesheets.py:463
 #, python-brace-format
 msgid "Heures supplémentaires ({price}.-/h)"
 msgstr "Zusätzliche Stunden ({price}.-/h)"
 
-#: apps/salary/forms.py:52 apps/salary/views/timesheets.py:461
+#: apps/salary/forms.py:52 apps/salary/views/timesheets.py:466
 msgid "Heures de trajet (aller-retour)"
 msgstr "Reisezeit (Hin- & Rückreise)"
 
@@ -2804,13 +2806,13 @@ msgid "Total"
 msgstr "Total"
 
 #: apps/salary/templates/salary/month_timesheets.html:79
-#: apps/salary/views/timesheets.py:462
+#: apps/salary/views/timesheets.py:467
 msgid "Total heures"
 msgstr "Total der Stunden"
 
 #: apps/salary/templates/salary/month_timesheets.html:88
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:87
-#: apps/salary/views/timesheets.py:463
+#: apps/salary/views/timesheets.py:468
 msgid "Total CHF"
 msgstr "Total CHF"
 
@@ -2957,46 +2959,46 @@ msgstr "Exporte zur Kontrolle"
 msgid "Aucun résultat."
 msgstr "Kein Resultat."
 
-#: apps/salary/views/timesheets.py:123
+#: apps/salary/views/timesheets.py:128
 #, python-format
 msgid "La session a lieu dans le canton \"%s\" que vous n'administrez pas."
 msgstr "Der Halbtag fand im Kanton \"%s\" statt, den du nicht betreust."
 
-#: apps/salary/views/timesheets.py:370
+#: apps/salary/views/timesheets.py:375
 #, python-brace-format
 msgid "Export Winbiz {month} {year}"
 msgstr "Export Winbiz {month} {year}"
 
-#: apps/salary/views/timesheets.py:437
+#: apps/salary/views/timesheets.py:442
 #, python-brace-format
 msgid "Export de contrôle {month} {year}"
 msgstr "Kontrollexport {month} {year}"
 
-#: apps/salary/views/timesheets.py:448 apps/user/export.py:167
+#: apps/salary/views/timesheets.py:453 apps/user/export.py:167
 msgid "Numéro d’employé Crésus"
 msgstr "Mitarbeitendennummer Crésus"
 
-#: apps/salary/views/timesheets.py:449 apps/user/export.py:70
+#: apps/salary/views/timesheets.py:454 apps/user/export.py:70
 #: apps/user/templates/auth/user_detailed_list.html:14
 #: apps/user/templates/auth/user_filter.html:55
 msgid "Prénom"
 msgstr "Vorname"
 
-#: apps/salary/views/timesheets.py:522
+#: apps/salary/views/timesheets.py:527
 msgid "Aucune feuille d'heure orpheline à supprimer; tout va bien."
 msgstr "Keine leere Stundenabrechnung zum Löschen, alles in Ordnung."
 
-#: apps/salary/views/timesheets.py:572
+#: apps/salary/views/timesheets.py:577
 msgid "Aucun rappel à envoyer: les heures de ce mois sont déjà remplies."
 msgstr ""
 "Keine Erinnerung verschicken: die Stunden von diesem Monat wurden bereits "
 "angegeben."
 
-#: apps/salary/views/timesheets.py:593
+#: apps/salary/views/timesheets.py:598
 msgid "Rappel de soumission des heures expédié."
 msgstr "Erinnerung zur Einreichung der Stunden verschickt."
 
-#: apps/salary/views/timesheets.py:623
+#: apps/salary/views/timesheets.py:628
 msgid "Soumission des heures"
 msgstr "Einreichen der Stunden"
 
