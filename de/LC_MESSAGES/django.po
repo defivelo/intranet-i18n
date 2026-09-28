@@ -11,8 +11,7 @@ msgstr ""
 "POT-Creation-Date: 2026-08-25 15:01+0200\n"
 "PO-Revision-Date: 2026-08-28 11:30+0000\n"
 "Last-Translator: Norina Bürkler <norina@defi-velo.ch>\n"
-"Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/"
-"de/>\n"
+"Language-Team: German <https://translate.liip.ch/projects/defivelo/intranet/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,11 +20,12 @@ msgstr ""
 "X-Generator: Weblate 2026.8.1\n"
 
 #: apps/article/forms.py:25
-msgid "Publié"
+msgid "Ouvert"
 msgstr "Veröffentlicht"
 
-#: apps/article/models.py:41
-msgid "Title"
+#: apps/article/models.py:41 apps/challenge/models/invoices.py:54
+#: apps/challenge/templates/challenge/invoice_list.html:17
+msgid "Titre"
 msgstr "Titel"
 
 #: apps/article/models.py:42
@@ -41,7 +41,7 @@ msgid "Image"
 msgstr "Bild"
 
 #: apps/article/models.py:47
-msgid "Modified"
+msgid "Modifié"
 msgstr "Verändert"
 
 #: apps/article/models.py:49
@@ -302,8 +302,8 @@ msgstr ""
 
 #: apps/challenge/forms/registration.py:80
 msgid ""
-"Il est impossible de créer 2 sessions pour la même demi-journée pour le même "
-"établissement."
+"Il est impossible de créer 2 sessions pour la même demi-journée pour le même"
+" établissement."
 msgstr ""
 "Es ist nicht möglich, 2 Halbtage für den gleichen halben Tag für dieselbe "
 "Schule zu erstellen."
@@ -316,7 +316,8 @@ msgstr "Ich bin mit den Allgemeinen Geschäftsbedingungen einverstanden"
 msgid "Cette inscription n'a pas été validée."
 msgstr "Diese Anmeldung ist noch nicht bestätigt"
 
-#: apps/challenge/forms/registration.py:148 apps/challenge/views/session.py:171
+#: apps/challenge/forms/registration.py:148
+#: apps/challenge/views/session.py:171
 #, python-format
 msgid "Classe %s"
 msgstr "Klasse %s"
@@ -341,12 +342,12 @@ msgstr "Zusätzliche Angaben"
 
 #: apps/challenge/forms/season.py:100
 msgid ""
-"Attention: Le courriel est envoyé à chaque destinataire dans sa langue, mais "
-"ce texte est envoyé tel quel, il ne sera pas traduit."
+"Attention: Le courriel est envoyé à chaque destinataire dans sa langue, mais"
+" ce texte est envoyé tel quel, il ne sera pas traduit."
 msgstr ""
-"Achtung: Der vorgegebene Text der E-Mail wird jeder*m Empfänger*in in seiner "
-"eigenen Sprache gesendet. Der selbst formulierte Text wird nicht automatisch "
-"übersetzt."
+"Achtung: Der vorgegebene Text der E-Mail wird jeder*m Empfänger*in in seiner"
+" eigenen Sprache gesendet. Der selbst formulierte Text wird nicht "
+"automatisch übersetzt."
 
 #: apps/challenge/forms/season.py:156
 msgid "Disponibilités pour :"
@@ -354,7 +355,8 @@ msgstr "Verfügbarkeiten für:"
 
 #: apps/challenge/forms/season.py:224 apps/challenge/models/season.py:67
 #: apps/info/forms.py:25 apps/orga/views.py:69
-#: apps/user/templates/auth/user_filter.html:60 apps/user/views/standard.py:296
+#: apps/user/templates/auth/user_filter.html:60
+#: apps/user/views/standard.py:296
 msgid "Cantons"
 msgstr "Kantone"
 
@@ -377,8 +379,8 @@ msgstr "Alle Schulen"
 
 #: apps/challenge/forms/session.py:37
 msgid ""
-"La date ne peut plus être modifiée, car des heures ont déjà été saisies dans "
-"au moins une des Qualifs de cette session."
+"La date ne peut plus être modifiée, car des heures ont déjà été saisies dans"
+" au moins une des Qualifs de cette session."
 msgstr ""
 "Das Datum kann nicht mehr geändert werden, weil bereits in mindestens einer "
 "Quali an diesem Halbtag Stunden eingetragen wurden."
@@ -479,7 +481,8 @@ msgstr "Wenn nötig"
 msgid "Non"
 msgstr "Nein"
 
-#: apps/challenge/models/availability.py:77 apps/challenge/models/session.py:99
+#: apps/challenge/models/availability.py:77
+#: apps/challenge/models/session.py:99
 #: apps/challenge/templates/challenge/season_errors.html:12
 #: apps/challenge/templates/challenge/session_detail.html:5
 #: apps/challenge/templates/challenge/session_detail.html:38
@@ -535,7 +538,8 @@ msgstr "Bestätigt"
 #: apps/orga/export.py:55 apps/orga/models.py:52
 #: apps/orga/templates/orga/organization_filter.html:59 apps/orga/views.py:74
 #: apps/user/export.py:136 apps/user/models.py:235
-#: apps/user/templates/auth/user_filter.html:59 apps/user/views/standard.py:299
+#: apps/user/templates/auth/user_filter.html:59
+#: apps/user/views/standard.py:299
 msgid "Statut"
 msgstr "Status"
 
@@ -543,11 +547,6 @@ msgstr "Status"
 #: apps/challenge/templates/challenge/invoice_list.html:16
 msgid "Référence"
 msgstr "Referenz"
-
-#: apps/challenge/models/invoices.py:54
-#: apps/challenge/templates/challenge/invoice_list.html:17
-msgid "Titre"
-msgstr "Titel"
 
 #: apps/challenge/models/invoices.py:69
 #, python-brace-format
@@ -558,12 +557,12 @@ msgstr "Rechnung {self.ref} für {self.organization} / {self.season}"
 #, python-brace-format
 msgid ""
 "{self.invoice.ref}: {self.historical_session} - Vélos: {self.nb_bikes} "
-"({self.cost_bikes} CHF) - Participants: {self.nb_participants} ({self."
-"cost_participants} CHF)"
+"({self.cost_bikes} CHF) - Participants: {self.nb_participants} "
+"({self.cost_participants} CHF)"
 msgstr ""
 "{self.invoice.ref}: {self.historical_session} - Velos: {self.nb_bikes} "
-"({self.cost_bikes} CHF) - Teilnehmende: {self.nb_participants} ({self."
-"cost_participants} CHF)"
+"({self.cost_bikes} CHF) - Teilnehmende: {self.nb_participants} "
+"({self.cost_participants} CHF)"
 
 #: apps/challenge/models/qualification.py:38
 #: apps/challenge/templates/challenge/session_detail.html:163
@@ -853,29 +852,25 @@ msgstr "Kantonale Konfigurationen pro Jahr"
 #: apps/challenge/models/settings.py:54
 #, python-brace-format
 msgid ""
-"{self.year}: {self.canton} vélos: {self.cost_per_bike} participants: {self."
-"cost_per_participant}"
+"{self.year}: {self.canton} vélos: {self.cost_per_bike} participants: "
+"{self.cost_per_participant}"
 msgstr ""
-"{self.year}: {self.canton} Velos: {self.cost_per_bike} Teilnehmende: {self."
-"cost_per_participant}"
+"{self.year}: {self.canton} Velos: {self.cost_per_bike} Teilnehmende: "
+"{self.cost_per_participant}"
 
 #: apps/challenge/templates/challenge/_qualification_warning_timesheets.html:4
 #, python-format
 msgid ""
 "\n"
 "            <b>Attention:</b>\n"
-"            Si vous retirez un·e <b>%(actor)s</b>, <b>%(helpers)s</b>, ou <b>"
-"%(leader)s</b>,\n"
-"            ses fiches d'heures seront définitivement supprimées. Fiches "
-"concernées :\n"
+"            Si vous retirez un·e <b>%(actor)s</b>, <b>%(helpers)s</b>, ou <b>%(leader)s</b>,\n"
+"            ses fiches d'heures seront définitivement supprimées. Fiches concernées :\n"
 "        "
 msgstr ""
 "\n"
 "            <b>Achtung:</b>\n"
-"            Wenn ihr eine*n <b>%(actor)s</b>, <b>%(helpers)s</b>, oder <b>"
-"%(leader)s</b> entfernt,\n"
-"            werden ihre/seine Stundenabrechnungen definitiv gelöscht. "
-"Betroffene Abrechnungen:\n"
+"            Wenn ihr eine*n <b>%(actor)s</b>, <b>%(helpers)s</b>, oder <b>%(leader)s</b> entfernt,\n"
+"            werden ihre/seine Stundenabrechnungen definitiv gelöscht. Betroffene Abrechnungen:\n"
 "        "
 
 #: apps/challenge/templates/challenge/annualstatesetting_form.html:4
@@ -966,32 +961,17 @@ msgstr "Lausanne, %(date)s"
 #, python-format
 msgid ""
 "Nous avons le plaisir de vous faire parvenir la\n"
-"      facture pour votre participation à l’action « DÉFI VÉLO », compétition "
-"inter-cantonale pour la promotion du vélo.\n"
-"      Avec la participation de %(nb_participants)s élèves de votre "
-"établissement, vous contribuez au succès d’une action\n"
-"      innovante de promotion du vélo, de l’activité physique et de la "
-"sécurité routière, qui place le plaisir et\n"
-"      l’apprentissage par l’action au premier plan. DÉFI VÉLO est largement "
-"reconnu pour ces qualités : il est notamment\n"
-"      soutenu par Promotion Santé Suisse, le Fonds suisse de sécurité "
-"routière et l’Office fédéral de l’énergie (OFEN).\n"
-"      Nous nous réjouissons de votre confiance et vous remercions pour votre "
-"précieuse collaboration."
+"      facture pour votre participation à l’action « DÉFI VÉLO », compétition inter-cantonale pour la promotion du vélo.\n"
+"      Avec la participation de %(nb_participants)s élèves de votre établissement, vous contribuez au succès d’une action\n"
+"      innovante de promotion du vélo, de l’activité physique et de la sécurité routière, qui place le plaisir et\n"
+"      l’apprentissage par l’action au premier plan. DÉFI VÉLO est largement reconnu pour ces qualités : il est notamment\n"
+"      soutenu par Promotion Santé Suisse, le Fonds suisse de sécurité routière et l’Office fédéral de l’énergie (OFEN).\n"
+"      Nous nous réjouissons de votre confiance et vous remercions pour votre précieuse collaboration."
 msgstr ""
-"%(nb_participants)s Schülerinnen und Schüler Ihrer Schule haben an der "
-"nationalen Veloförderungsaktion DEFI VELO teilgenommen. Für diese Teilnahme "
-"stellen wir Ihnen hiermit die entsprechende Teilnahmegebühr in Rechnung.\n"
-"Mit Ihrer Unterstützung leisten Sie einen wichtigen Beitrag zu einer "
-"innovativen Initiative, die Velofahren, Bewegung und Verkehrssicherheit "
-"verbindet. Im Zentrum stehen dabei der Spass am Velofahren sowie das Lernen "
-"durch praktisches Erleben und eigenes Handeln.\n"
-"DEFI VELO wird für seinen innovativen und wirkungsvollen Ansatz breit "
-"anerkannt und unter anderem von der Stiftung Gesundheitsförderung Schweiz, "
-"dem Fonds für Verkehrssicherheit und dem Bundesamt für Energie (BFE) "
-"unterstützt.\n"
-"Wir freuen uns sehr über Ihr Vertrauen und danken Ihnen herzlich für die "
-"angenehme und wertvolle Zusammenarbeit."
+"%(nb_participants)s Schülerinnen und Schüler Ihrer Schule haben an der nationalen Veloförderungsaktion DEFI VELO teilgenommen. Für diese Teilnahme stellen wir Ihnen hiermit die entsprechende Teilnahmegebühr in Rechnung.\n"
+"Mit Ihrer Unterstützung leisten Sie einen wichtigen Beitrag zu einer innovativen Initiative, die Velofahren, Bewegung und Verkehrssicherheit verbindet. Im Zentrum stehen dabei der Spass am Velofahren sowie das Lernen durch praktisches Erleben und eigenes Handeln.\n"
+"DEFI VELO wird für seinen innovativen und wirkungsvollen Ansatz breit anerkannt und unter anderem von der Stiftung Gesundheitsförderung Schweiz, dem Fonds für Verkehrssicherheit und dem Bundesamt für Energie (BFE) unterstützt.\n"
+"Wir freuen uns sehr über Ihr Vertrauen und danken Ihnen herzlich für die angenehme und wertvolle Zusammenarbeit."
 
 #: apps/challenge/templates/challenge/invoice_detail.html:79
 #, python-format
@@ -1010,8 +990,7 @@ msgstr "Total (CHF)"
 
 #: apps/challenge/templates/challenge/invoice_detail.html:127
 msgid ""
-"La facture est établie selon les listes fournies par le·la "
-"coordinateur·trice de\n"
+"La facture est établie selon les listes fournies par le·la coordinateur·trice de\n"
 "      l’établissement."
 msgstr ""
 "Die Rechnung wird anhand der Teilnehmendenlisten erstellt, die von der "
@@ -1020,8 +999,7 @@ msgstr ""
 #: apps/challenge/templates/challenge/invoice_detail.html:129
 #, python-format
 msgid ""
-"Paiement à 30 jours sur le compte de notre mandataire, avec la mention "
-"« DÉFI\n"
+"Paiement à 30 jours sur le compte de notre mandataire, avec la mention « DÉFI\n"
 "      VÉLO %(ref)s »"
 msgstr ""
 "Wir möchten Sie bitten, den angegebenen Betrag innert 30 Tagen mit dem "
@@ -1124,6 +1102,7 @@ msgstr "Quali %(qualification)s löschen?"
 #: apps/challenge/templates/challenge/session_confirm_delete.html:15
 #: apps/user/templates/actions/mark_inactive.html:21
 #: apps/user/templates/roles/assign.html:19
+#: defivelo/templates/account/email_confirm.html:20
 msgid "Confirmer"
 msgstr "Bestätigen"
 
@@ -1206,23 +1185,23 @@ msgstr "Allgemeine Bedingungen"
 msgid ""
 "<h3>Conditions générales DÉFI VÉLO</h3> <p>En validant l’inscription de "
 "votre établissement à DÉFI VÉLO, vous vous engagez à :</p> <ul> <li>Fournir "
-"les informations nécessaires à la bonne organisation (dates, horaires, lieu, "
-"nombre de participant·es, nom et n° de téléphone de l’enseignant·e sur place "
-"et commandes des vélos et casques en prêt) au plus tard 3 semaines avant le "
-"premier jour de Qualifs.</li> <li>Mettre à disposition un espace extérieur "
-"pour le déroulement des Qualifs et intérieur en cas de choix de la variante "
-"programme déluge en cas de mauvais temps.</li> <li>Transmettre les "
-"informations aux participant·e·s</li> <li>Assurer la présence d’un·e "
-"représentant·e de l’établissement durant chaque Qualif’ (3h). Cette personne "
-"n’est pas tenue de faire du vélo mais doit être informée sur son rôle</li> "
+"les informations nécessaires à la bonne organisation (dates, horaires, lieu,"
+" nombre de participant·es, nom et n° de téléphone de l’enseignant·e sur "
+"place et commandes des vélos et casques en prêt) au plus tard 3 semaines "
+"avant le premier jour de Qualifs.</li> <li>Mettre à disposition un espace "
+"extérieur pour le déroulement des Qualifs et intérieur en cas de choix de la"
+" variante programme déluge en cas de mauvais temps.</li> <li>Transmettre les"
+" informations aux participant·e·s</li> <li>Assurer la présence d’un·e "
+"représentant·e de l’établissement durant chaque Qualif’ (3h). Cette personne"
+" n’est pas tenue de faire du vélo mais doit être informée sur son rôle</li> "
 "<li>Assumer le rôle d’autorité vis-à-vis des participant·e·s</li> "
-"<li>Effectuer d'avance le versement de la finance de participation de CHF 5./"
-"participant·e et, le cas échéant, CHF 16./vélo/jour (identique pour une demi-"
-"journée ou journée complète). Rabais en cas de journées consécutives : 2 "
-"jours = 5 %%; 3 jours = 10 %%; 4 jours = 20 %%; 5 jours = 30 %%). Dans "
+"<li>Effectuer d'avance le versement de la finance de participation de CHF "
+"5./participant·e et, le cas échéant, CHF 16./vélo/jour (identique pour une "
+"demi-journée ou journée complète). Rabais en cas de journées consécutives : "
+"2 jours = 5 %%; 3 jours = 10 %%; 4 jours = 20 %%; 5 jours = 30 %%). Dans "
 "certains cantons les frais d’inscription et/ou la location des vélos sont "
-"pris en charge par le canton.</li> <li>En cas de programme Déluge, les frais "
-"de location vélos restent dus.</li> <li>En cas d’annulation jusqu’à une "
+"pris en charge par le canton.</li> <li>En cas de programme Déluge, les frais"
+" de location vélos restent dus.</li> <li>En cas d’annulation jusqu’à une "
 "semaine avant la première Qualif’, aucun frais n’est dû. A moins d’une "
 "semaine de la première Qualif’, 50 %% des frais seront facturés. En cas "
 "d’annulation 3 jours, ou moins, avant la première Qualif’ 100 %% des frais "
@@ -1230,60 +1209,22 @@ msgid ""
 "motiver à y participer.</li> <li>Confirmer aux organisateurs de DÉFI VÉLO "
 "les inscriptions des équipes finalistes</li> <li>Les éventuels dégâts "
 "constatés sur les vélos loués seront facturés. En cas de vol d’un vélo de "
-"location, DÉFI VÉLO se réserve le droit, après éclaircissement des faits, de "
-"facturer le coût du vélo à l’établissement</li> </ul> <p>De plus, DÉFI VÉLO "
-"s’engage à</p> <ul> <li>Être disponible pour répondre à toutes vos "
+"location, DÉFI VÉLO se réserve le droit, après éclaircissement des faits, de"
+" facturer le coût du vélo à l’établissement</li> </ul> <p>De plus, DÉFI VÉLO"
+" s’engage à</p> <ul> <li>Être disponible pour répondre à toutes vos "
 "questions</li> <li>Assurer la bonne organisation (commande des vélos et "
 "casques en prêt et communication)</li> <li>Engager des moniteur·trice·s "
 "formé·e·s selon les exigences du Conseil Suisse de Sécurité Routière. Ces "
 "moniteurs sont au nombre de 3 par classe (de 15 à 2 participant·e·s), c’est-"
-"à-dire 1 par équipe de 5 à 8 participant·e·s</li> <li>Assurer la sécurité et "
-"porter la responsabilité vis-à-vis des participant·e·s, c’est à dire "
-"s’assurer que toutes les mesures aient été prises et toutes les informations "
-"transmises pour que les participant·e·s puissent prendre part aux activités "
-"en sécurité, en particulier lors des sorties dans le trafic</li> "
+"à-dire 1 par équipe de 5 à 8 participant·e·s</li> <li>Assurer la sécurité et"
+" porter la responsabilité vis-à-vis des participant·e·s, c’est à dire "
+"s’assurer que toutes les mesures aient été prises et toutes les informations"
+" transmises pour que les participant·e·s puissent prendre part aux activités"
+" en sécurité, en particulier lors des sorties dans le trafic</li> "
 "<li>Organiser la Finale</li> </ul>"
 msgstr ""
-"<h3>Allgemeine Geschäftsbedingungen DEFI VELO</h3> <p>Mit der Bestätigung "
-"der Anmeldung Ihrer Schule bei DEFI VELO verpflichten Sie sich :</p> <ul> "
-"<li>Spätestens 3 Wochen vor dem ersten Tag der Quali, die für eine "
-"reibungslose Organisation notwendigen Informationen (Datum, Uhrzeit, Ort, "
-"Teilnehmerzahl, Name und Telefonnummer der Lehrperson vor Ort und "
-"Bestellungen von Mietvelos und Helmen) bereitzustellen.</li> <li>Einen "
-"Aussenplatz fürs Schönwetterprogramm und Räume fürs Schlechtwetterprogramm "
-"zu reservieren.</li> <li>Die Informationen an die Teilnehmer*innen "
-"weiterzuleiten.</li> <li>Sicherzustellen, dass eine Lehrkraft der Schule bei "
-"den einzelnen Qualis (3h) anwesend ist. Diese Person muss nicht Velo fahren, "
-"aber übernimmt nötigenfalls die Rolle der Autoritätsperson gegenüber der "
-"Teilnehmenden, kümmert sich um Teilnehmende, die aus Sicherheitsgründen "
-"nicht mit in den Verkehr können und ist, falls nötig, verantwortlich für\n"
-"das Wertsachendepot.</li><li>Im Voraus die Teilnahmegebühr von CHF 5.- pro "
-"Teilnehmer*in und ggf. CHF 16.- pro Velo pro Tag (gleiche Gebühr für einen "
-"halben oder ganzen Tag) zu bezahlen. Rabatt für die Velomiete für "
-"aufeinanderfolgende Tage: 2 Tage = 5%%; 3 Tage = 10%%; 4 Tage = 20%%; 5 Tage "
-"= 30%%). In einigen Kantonen werden die Anmeldegebühren und/oder die "
-"Velomiete vom Kanton übernommen, respektive können keine Velos gemietet "
-"werden.</li><li>Im Falle des Schlechtwetterprogramms bleiben die "
-"Velomietgebühren fällig.</li> <li>Bei einer Stornierung bis zu einer Woche "
-"vor der ersten Quali wird keine Gebühr fällig. Weniger als eine Woche vor "
-"der ersten Quali werden 50%% der Kosten verrechnet. Bei einer Absage 3 Tage "
-"oder weniger vor der ersten Quali werden 100%% der Gebühren fällig.</li> "
-"<li>Die Teilnehmer*innen an das Datum des Finals zu erinnern und sie zu "
-"motivieren, daran teilzunehmen. Sie bestätigen zudem die Anmeldungen der "
-"eingeschriebenen Teams.</li> <li>Festgestellte allfällige Beschädigungen an "
-"den Velos werden ebenfalls in Rechnung gestellt. Im Falle eines Diebstahls "
-"eines Mietvelos behält sich DEFI VELO das Recht vor, nach Klärung des "
-"Sachverhaltes der Schule die Kosten des Velos in Rechnung zu stellen. </li> "
-"</ul> <p>DEFI VELO verpflichtet sich: </p> <ul> <li>Für all Ihre Fragen zur "
-"Verfügung zu stehen.</li><li>eine reibungslose Organisation (Bestellungen "
-"von Mietvelos und Helmen, Informationsmaterial, Kommunikation zu garantieren."
-"</li> <li>ausgebildete Leiterinnen und Leiter (in Übereinstimmung mit den "
-"Anforderungen des Schweizerischen Verkehrssicherheitsrates VSR): drei "
-"Leitende pro Klasse (bei 15 bis 24 Teilnehmenden) bzw. eine Leitperson pro "
-"Team (mit 5 bis 8 Teilnehmenden) zu engagieren. </li> <li>die Sicherheit und "
-"übernehmen die Verantwortung gegenüber den Teilnehmer*innen, insbesondere "
-"bei Fahrten im Strassenverkehr zu gewährleisten.</li> <li>Das Final zu "
-"organisieren.</li> </ul>"
+"<h3>Allgemeine Geschäftsbedingungen DEFI VELO</h3> <p>Mit der Bestätigung der Anmeldung Ihrer Schule bei DEFI VELO verpflichten Sie sich :</p> <ul> <li>Spätestens 3 Wochen vor dem ersten Tag der Quali, die für eine reibungslose Organisation notwendigen Informationen (Datum, Uhrzeit, Ort, Teilnehmerzahl, Name und Telefonnummer der Lehrperson vor Ort und Bestellungen von Mietvelos und Helmen) bereitzustellen.</li> <li>Einen Aussenplatz fürs Schönwetterprogramm und Räume fürs Schlechtwetterprogramm zu reservieren.</li> <li>Die Informationen an die Teilnehmer*innen weiterzuleiten.</li> <li>Sicherzustellen, dass eine Lehrkraft der Schule bei den einzelnen Qualis (3h) anwesend ist. Diese Person muss nicht Velo fahren, aber übernimmt nötigenfalls die Rolle der Autoritätsperson gegenüber der Teilnehmenden, kümmert sich um Teilnehmende, die aus Sicherheitsgründen nicht mit in den Verkehr können und ist, falls nötig, verantwortlich für\n"
+"das Wertsachendepot.</li><li>Im Voraus die Teilnahmegebühr von CHF 5.- pro Teilnehmer*in und ggf. CHF 16.- pro Velo pro Tag (gleiche Gebühr für einen halben oder ganzen Tag) zu bezahlen. Rabatt für die Velomiete für aufeinanderfolgende Tage: 2 Tage = 5%%; 3 Tage = 10%%; 4 Tage = 20%%; 5 Tage = 30%%). In einigen Kantonen werden die Anmeldegebühren und/oder die Velomiete vom Kanton übernommen, respektive können keine Velos gemietet werden.</li><li>Im Falle des Schlechtwetterprogramms bleiben die Velomietgebühren fällig.</li> <li>Bei einer Stornierung bis zu einer Woche vor der ersten Quali wird keine Gebühr fällig. Weniger als eine Woche vor der ersten Quali werden 50%% der Kosten verrechnet. Bei einer Absage 3 Tage oder weniger vor der ersten Quali werden 100%% der Gebühren fällig.</li> <li>Die Teilnehmer*innen an das Datum des Finals zu erinnern und sie zu motivieren, daran teilzunehmen. Sie bestätigen zudem die Anmeldungen der eingeschriebenen Teams.</li> <li>Festgestellte allfällige Beschädigungen an den Velos werden ebenfalls in Rechnung gestellt. Im Falle eines Diebstahls eines Mietvelos behält sich DEFI VELO das Recht vor, nach Klärung des Sachverhaltes der Schule die Kosten des Velos in Rechnung zu stellen. </li> </ul> <p>DEFI VELO verpflichtet sich: </p> <ul> <li>Für all Ihre Fragen zur Verfügung zu stehen.</li><li>eine reibungslose Organisation (Bestellungen von Mietvelos und Helmen, Informationsmaterial, Kommunikation zu garantieren.</li> <li>ausgebildete Leiterinnen und Leiter (in Übereinstimmung mit den Anforderungen des Schweizerischen Verkehrssicherheitsrates VSR): drei Leitende pro Klasse (bei 15 bis 24 Teilnehmenden) bzw. eine Leitperson pro Team (mit 5 bis 8 Teilnehmenden) zu engagieren. </li> <li>die Sicherheit und übernehmen die Verantwortung gegenüber den Teilnehmer*innen, insbesondere bei Fahrten im Strassenverkehr zu gewährleisten.</li> <li>Das Final zu organisieren.</li> </ul>"
 
 #: apps/challenge/templates/challenge/registration_confirm.html:84
 msgid "Soumettre la pré-inscription"
@@ -1368,13 +1309,13 @@ msgstr "Kontaktperson : %(full_name)s"
 
 #: apps/challenge/templates/challenge/registration_validate.html:121
 msgid ""
-"Pour confirmer les pré-inscriptions de l'établissement, vous devez donner un "
-"statut (<strong>supprimé</strong> ou <strong>accepté</strong>) à "
+"Pour confirmer les pré-inscriptions de l'établissement, vous devez donner un"
+" statut (<strong>supprimé</strong> ou <strong>accepté</strong>) à "
 "<strong>toutes</strong> les sessions de la liste."
 msgstr ""
 "Um die Voranmeldung Ihrer Schule zu bestätigen, müssen Sie "
-"(<strong>supprimé</strong> ou <strong>accepté</strong>) à <strong>toutes</"
-"strong> alle Qualis in der Liste mit einem Status versehen."
+"(<strong>supprimé</strong> ou <strong>accepté</strong>) à "
+"<strong>toutes</strong> alle Qualis in der Liste mit einem Status versehen."
 
 #: apps/challenge/templates/challenge/registration_validate.html:140
 msgid "Actions"
@@ -1550,36 +1491,25 @@ msgstr "Alle Halbtage"
 msgid ""
 "Salut %(full_name)s,\n"
 "\n"
-"Nous avons remarqué que tu n’as pas encore complété ton planning DÉFI VÉLO "
-"%(season_desc)s, ou que partiellement. Merci de renseigner tes "
-"disponibilités au plus vite afin que nous puissions préparer le planning "
-"dans les meilleures conditions.\n"
+"Nous avons remarqué que tu n’as pas encore complété ton planning DÉFI VÉLO %(season_desc)s, ou que partiellement. Merci de renseigner tes disponibilités au plus vite afin que nous puissions préparer le planning dans les meilleures conditions.\n"
 "\n"
-"Même si tu n’es pas disponible durant la période concernée, pense à "
-"l’indiquer dans le planning : cela nous permet d’avoir une vue claire et "
-"d’éviter des relances inutiles.\n"
+"Même si tu n’es pas disponible durant la période concernée, pense à l’indiquer dans le planning : cela nous permet d’avoir une vue claire et d’éviter des relances inutiles.\n"
 "\n"
 "En cas de question, ton·ta chargé·e de projet reste bien sûr à disposition.\n"
 "\n"
-"Tu peux accéder au planning directement ici ou via ton compte personnel "
-"intranet.\n"
+"Tu peux accéder au planning directement ici ou via ton compte personnel intranet.\n"
 "\n"
 "    %(planning_link)s"
 msgstr ""
 "Hallo %(full_name)s,\n"
 "\n"
-"Du hast den Einsatzplan bei DEFI VELO  %(season_desc)s nicht oder nur "
-"teilweise ausgefüllt.  Bitte kontrolliere deine Verfügbarkeiten so schnell "
-"wie möglich, damit wir eine optimale Planung machen können. Danke! \n"
+"Du hast den Einsatzplan bei DEFI VELO  %(season_desc)s nicht oder nur teilweise ausgefüllt.  Bitte kontrolliere deine Verfügbarkeiten so schnell wie möglich, damit wir eine optimale Planung machen können. Danke! \n"
 "\n"
-"Fülle den Einsatzplan bitte auch aus, wenn du keine freien Verfügbarkeiten "
-"hast. Das erleichtert uns die Planung und vermeidet unnötige "
-"Erinnerungsmails. \n"
+"Fülle den Einsatzplan bitte auch aus, wenn du keine freien Verfügbarkeiten hast. Das erleichtert uns die Planung und vermeidet unnötige Erinnerungsmails. \n"
 "\n"
 "Melde dich bei Fragen bei deiner zuständigen Projektleitung. \n"
 "\n"
-"Den Zugang zum Einsatzplan findest du direkt hier oder via deinem "
-"persönlichen Intranetzugang. \n"
+"Den Zugang zum Einsatzplan findest du direkt hier oder via deinem persönlichen Intranetzugang. \n"
 "\n"
 "    %(planning_link)s"
 
@@ -1588,34 +1518,26 @@ msgstr ""
 msgid ""
 "PS : Tu reçois ce message parce que tu es affilié·e à ce canton, ou parce "
 "que tu l’as sélectionné comme canton mobile. Si tu ne souhaites plus "
-"travailler dans ce canton, tu peux modifier ton profil intranet ou contacter "
-"ton·ta chargé·e de projet régional·e.\n"
+"travailler dans ce canton, tu peux modifier ton profil intranet ou contacter"
+" ton·ta chargé·e de projet régional·e.\n"
 msgstr ""
-"PS: Du erhältst diese E-Mail, weil du diesem Kanton zugeteilt bist oder weil "
-"du ihn als mobilen Kanton ausgewählt hast. Falls du nicht mehr in diesem "
+"PS: Du erhältst diese E-Mail, weil du diesem Kanton zugeteilt bist oder weil"
+" du ihn als mobilen Kanton ausgewählt hast. Falls du nicht mehr in diesem "
 "Kanton arbeiten möchtest, kannst du dies in deinem Intranet-Profil anpassen "
 "oder deine regionale Projektleitung kontaktieren.\n"
 
 #: apps/challenge/templates/challenge/season_email_to_state_open_pre.txt:3
 #, python-format
 msgid ""
-"Le planning DÉFI VÉLO du canton %(season_desc)s est désormais disponible sur "
-"intranet. Merci de remplir tes disponibilités au plus vite afin qu’on puisse "
-"préparer le mois au mieux. En cas de questions, tu peux t’adresser à ton·ta "
-"chargé·e de projet.\n"
+"Le planning DÉFI VÉLO du canton %(season_desc)s est désormais disponible sur intranet. Merci de remplir tes disponibilités au plus vite afin qu’on puisse préparer le mois au mieux. En cas de questions, tu peux t’adresser à ton·ta chargé·e de projet.\n"
 "\n"
-"Tu peux accéder au planning directement ici ou via ton compte personnel "
-"intranet.\n"
+"Tu peux accéder au planning directement ici ou via ton compte personnel intranet.\n"
 "\n"
 "    %(planning_link)s"
 msgstr ""
-"Der Einsatzplan von DEFI VELO %(season_desc)s ist nun auf dem Intranet "
-"bereit. Bitte fülle so rasch wie möglich deine Verfügbarkeiten aus, damit "
-"wir den Monat vorbereiten können. Bei Fragen wende dich an deine "
-"Projektleitung.\n"
+"Der Einsatzplan von DEFI VELO %(season_desc)s ist nun auf dem Intranet bereit. Bitte fülle so rasch wie möglich deine Verfügbarkeiten aus, damit wir den Monat vorbereiten können. Bei Fragen wende dich an deine Projektleitung.\n"
 "\n"
-"Du kannst direkt hier auf den Einsatzplan zugreifen oder über dein "
-"persönliches Intranet-Konto.\n"
+"Du kannst direkt hier auf den Einsatzplan zugreifen oder über dein persönliches Intranet-Konto.\n"
 "\n"
 "    %(planning_link)s"
 
@@ -1634,25 +1556,15 @@ msgstr ""
 #: apps/challenge/templates/challenge/season_email_to_state_running_pre.txt:3
 #, python-format
 msgid ""
-"Le planning DÉFI VÉLO définitif %(season_desc)s est maintenant disponible "
-"sur l’Intranet. Merci d’aller le consulter et de prendre note des dates des "
-"Qualifs où tu dois être présent·e. Dès à présent, tu es tenu·e d’être "
-"présent·e aux Qualifs auxquelles tu t'es engagé·e ou de trouver un·e "
-"remplaçant·e parmi les autres moniteurs·trices. En cas de questions, tu peux "
-"t’adresser à ton·ta chargé·e de projet.\n"
+"Le planning DÉFI VÉLO définitif %(season_desc)s est maintenant disponible sur l’Intranet. Merci d’aller le consulter et de prendre note des dates des Qualifs où tu dois être présent·e. Dès à présent, tu es tenu·e d’être présent·e aux Qualifs auxquelles tu t'es engagé·e ou de trouver un·e remplaçant·e parmi les autres moniteurs·trices. En cas de questions, tu peux t’adresser à ton·ta chargé·e de projet.\n"
 "\n"
-"Tu peux accéder au planning directement ici ou via ton compte personnel "
-"Intranet.\n"
+"Tu peux accéder au planning directement ici ou via ton compte personnel Intranet.\n"
 "\n"
 "    %(planning_link)s"
 msgstr ""
-"Der definitive Einsatzplan von DEFI VELO %(season_desc)s ist nun auf dem "
-"Intranet bereit. Bitte schau ihn dir an und notiere dir die Daten der "
-"Qualis, für welche du eingeteilt bist. Bei Fragen wende dich an deine "
-"Projektleitung.\n"
+"Der definitive Einsatzplan von DEFI VELO %(season_desc)s ist nun auf dem Intranet bereit. Bitte schau ihn dir an und notiere dir die Daten der Qualis, für welche du eingeteilt bist. Bei Fragen wende dich an deine Projektleitung.\n"
 "\n"
-"Du kannst direkt hier auf den Einsatzplan zugreifen oder über dein "
-"persönliches Intranet-Konto.\n"
+"Du kannst direkt hier auf den Einsatzplan zugreifen oder über dein persönliches Intranet-Konto.\n"
 "\n"
 "    %(planning_link)s"
 
@@ -2092,7 +2004,8 @@ msgstr "Verfügbarkeiten aktualisiert"
 
 #: apps/challenge/views/season.py:1474
 msgid ""
-"Il n'est pas possible de mettre à jour tes disponibilités; voici le planning."
+"Il n'est pas possible de mettre à jour tes disponibilités; voici le "
+"planning."
 msgstr ""
 "Es ist nicht möglich, deine Verfügbarkeit zu aktualisieren; hier ist der "
 "Einsatzplan."
@@ -2148,19 +2061,19 @@ msgid "Configuration cantonale par année mise à jour"
 msgstr "Kantonale Konfiguration pro Jahr aktualisiert"
 
 #: apps/common/__init__.py:110 defivelo/settings/base.py:208
-msgid "French"
+msgid "Français"
 msgstr "Französisch"
 
 #: apps/common/__init__.py:111 defivelo/settings/base.py:209
-msgid "German"
+msgid "Allemand"
 msgstr "Deutsch"
 
 #: apps/common/__init__.py:112
-msgid "Italian"
+msgid "Italien"
 msgstr "Italienisch"
 
 #: apps/common/__init__.py:113
-msgid "English"
+msgid "Anglais"
 msgstr "Englisch"
 
 #: apps/common/__init__.py:134
@@ -2247,7 +2160,7 @@ msgstr "DV-{exportfilename}_{YMD_date}.{extension}"
 
 #: apps/email_outbox/templates/admin/base_site.html:7
 #: apps/email_outbox/views.py:358
-msgid "Emails"
+msgid "E-mails"
 msgstr "E-Mails"
 
 #: apps/email_outbox/templates/admin/outbox_detail.html:11
@@ -2471,7 +2384,8 @@ msgstr "Statistik der Saison"
 msgid "Abréviation"
 msgstr "Abkürzung"
 
-#: apps/orga/export.py:40 apps/orga/templates/orga/_organization_detail.html:39
+#: apps/orga/export.py:40
+#: apps/orga/templates/orga/_organization_detail.html:39
 #: apps/user/export.py:160 apps/user/models.py:199
 #: apps/user/templates/auth/user_detail.html:192
 #: apps/user/views/standard.py:290
@@ -2485,17 +2399,19 @@ msgstr "Webseite"
 
 #: apps/orga/export.py:44 apps/orga/forms.py:51 apps/orga/models.py:59
 #: apps/orga/templates/orga/_organization_detail.html:43
-#: apps/orga/templates/orga/organization_filter.html:64 apps/user/models.py:540
-#: defivelo/roles.py:155
+#: apps/orga/templates/orga/organization_filter.html:64
+#: apps/user/models.py:540 defivelo/roles.py:155
 msgid "Coordina·teur·trice"
 msgstr "Kontaktperson"
 
-#: apps/orga/export.py:47 apps/orga/templates/orga/_organization_detail.html:60
+#: apps/orga/export.py:47
+#: apps/orga/templates/orga/_organization_detail.html:60
 #: apps/user/models.py:197 apps/user/templates/auth/user_detail.html:97
 msgid "Téléphone"
 msgstr "Telefon"
 
-#: apps/orga/export.py:50 apps/orga/templates/orga/_organization_detail.html:56
+#: apps/orga/export.py:50
+#: apps/orga/templates/orga/_organization_detail.html:56
 #: apps/orga/templates/orga/organization_filter.html:65 apps/user/export.py:81
 #: apps/user/templates/auth/user_detail.html:93
 #: apps/user/templates/auth/user_detailed_list.html:16
@@ -2527,8 +2443,8 @@ msgid ""
 "Votre préinscription a été enregistrée et le/la chargé·e de projet de votre "
 "canton a été notifié·e!"
 msgstr ""
-"Die Voranmeldung wurde registriert und der*die Projektleitende Ihres Kantons "
-"benachrichtigt!"
+"Die Voranmeldung wurde registriert und der*die Projektleitende Ihres Kantons"
+" benachrichtigt!"
 
 #: apps/orga/models.py:161
 msgid "Vos inscriptions à DEFIVELO"
@@ -2593,7 +2509,8 @@ msgid "Nouvel établissement"
 msgstr "Neue Schule"
 
 #: apps/orga/views.py:81 apps/user/templates/user_search_form.html:8
-#: apps/user/templates/user_search_form.html:10 apps/user/views/standard.py:328
+#: apps/user/templates/user_search_form.html:10
+#: apps/user/views/standard.py:328
 msgid "Recherche"
 msgstr "Suchen"
 
@@ -2636,8 +2553,8 @@ msgstr "Keine Arbeitsstunden zählen"
 #: apps/salary/forms.py:126
 #, python-format
 msgid ""
-"Vous ne pouvez pas rentrer des heures pour le %(day)s: aucune qualif ce jour-"
-"ci."
+"Vous ne pouvez pas rentrer des heures pour le %(day)s: aucune qualif ce "
+"jour-ci."
 msgstr ""
 "Für den %(day)s: können keine Stunden eingetragen werden: keine Quali an "
 "diesem Tag."
@@ -2767,18 +2684,12 @@ msgstr "Alle Stundenabrechnungen löschen"
 #: apps/salary/templates/salary/email_send_timesheets_reminder.txt:3
 #, python-format
 msgid ""
-"Nous avons remarqué que tu n’as pas encore rempli tes heures supplémentaires "
-"et tes heures de trajet dans ton décompte d’heures DÉFI VÉLO. Merci de le "
-"remplir au plus vite afin qu’on puisse procéder au paiement des salaires. En "
-"cas de questions, tu peux t’adresser à ton·ta chargé·e de projet.\n"
+"Nous avons remarqué que tu n’as pas encore rempli tes heures supplémentaires et tes heures de trajet dans ton décompte d’heures DÉFI VÉLO. Merci de le remplir au plus vite afin qu’on puisse procéder au paiement des salaires. En cas de questions, tu peux t’adresser à ton·ta chargé·e de projet.\n"
 "\n"
 "Tu peux accéder au décompte d’heures via le lien ci-dessous:\n"
 "%(timesheets_url)s\n"
 msgstr ""
-"Wir haben festgestellt, dass du deine zusätzlichen Stunden und die Reisezeit "
-"noch nicht in deiner DEFI VELO Stundenabrechnung eingetragen hast. Bitte "
-"erledige dies so rasch wie möglich, damit wir die Lohnauszahlung ausführen "
-"können. Bei Fragen melde dich bei deiner Projektleitung.\n"
+"Wir haben festgestellt, dass du deine zusätzlichen Stunden und die Reisezeit noch nicht in deiner DEFI VELO Stundenabrechnung eingetragen hast. Bitte erledige dies so rasch wie möglich, damit wir die Lohnauszahlung ausführen können. Bei Fragen melde dich bei deiner Projektleitung.\n"
 "\n"
 "Du kannst über folgenden Link auf deine Stundenabrechnung zugreifen:\n"
 "%(timesheets_url)s\n"
@@ -2821,8 +2732,8 @@ msgstr "Total CHF"
 
 #: apps/salary/templates/salary/month_timesheets.html:89
 msgid ""
-"Attention : Ceci n’est pas le salaire net mais le décompte des heures et des "
-"indemmnités"
+"Attention : Ceci n’est pas le salaire net mais le décompte des heures et des"
+" indemmnités"
 msgstr ""
 "Achtung: Dies ist nicht der Nettolohn, sondern die Stundenabrechnung und "
 "Entschädigungen"
@@ -2949,7 +2860,8 @@ msgstr[1] "%(count)s leere Einträge"
 
 #: apps/salary/templates/salary/timesheets_yearly_overview.html:118
 msgid ""
-"Envoyer un rappel aux collabora·teur·trices qui n’ont pas rempli leurs heures"
+"Envoyer un rappel aux collabora·teur·trices qui n’ont pas rempli leurs "
+"heures"
 msgstr ""
 "Eine Erinnerung an die Mitarbeitenden schicken, welche ihre Stunden noch "
 "nicht angegeben haben"
@@ -3279,9 +3191,6 @@ msgid "Ceci est un message automatique."
 msgstr "Dies ist eine automatische Nachricht."
 
 #: apps/user/signals.py:170
-#, fuzzy
-#| msgid ""
-#| "Merci de mette à jour la base de données des salaires en conséquences"
 msgid "Merci de mettre à jour la base de données des salaires en conséquences"
 msgstr "Bitte die Datenbank für die Löhne entsprechend anpassen"
 
@@ -3302,8 +3211,7 @@ msgstr ""
 #: apps/user/templates/auth/email_user_send_credentials.txt:3
 #, python-format
 msgid ""
-"%(from_full_name)s (%(from_email)s) vous a créé un login sur le site "
-"'%(site_name)s'.\n"
+"%(from_full_name)s (%(from_email)s) vous a créé un login sur le site '%(site_name)s'.\n"
 "\n"
 "Voilà vos données de connexion :\n"
 "\n"
@@ -3314,8 +3222,7 @@ msgid ""
 "Merci de compléter votre profil avec vos données personnelles.\n"
 "\n"
 msgstr ""
-"%(from_full_name)s (%(from_email)s) hat Ihnen ein Login für das "
-"'%(site_name)s' erstellt.\n"
+"%(from_full_name)s (%(from_email)s) hat Ihnen ein Login für das '%(site_name)s' erstellt.\n"
 "\n"
 "Ihre Zugangsdaten:\n"
 "\n"
@@ -3418,7 +3325,8 @@ msgstr "Benutzendenliste filtern"
 msgid "Langues"
 msgstr "Sprachen"
 
-#: apps/user/templates/auth/user_filter.html:62 apps/user/views/standard.py:324
+#: apps/user/templates/auth/user_filter.html:62
+#: apps/user/views/standard.py:324
 msgid "Rôle"
 msgstr "Rolle"
 
@@ -3438,7 +3346,7 @@ msgid "CCP ?"
 msgstr "Postkonto?"
 
 #: apps/user/templates/auth/user_form.html:151
-msgid "Update"
+msgid "Mettre à jour"
 msgstr "Aktualisieren"
 
 #: apps/user/templates/auth/user_form.html:151
@@ -3456,8 +3364,8 @@ msgstr "Zum IBAN-Rechner"
 
 #: apps/user/templates/auth/user_form.html:213
 msgid ""
-"https://www.postfinance.ch/fr/particuliers/assistance/outils-calculateurs/"
-"calculateur-iban.html"
+"https://www.postfinance.ch/fr/particuliers/assistance/outils-"
+"calculateurs/calculateur-iban.html"
 msgstr ""
 "https://www.postfinance.ch/de/privat/support/tools-rechner/iban-rechner.html"
 
@@ -3486,8 +3394,8 @@ msgstr "%(name)s löschen?"
 #: apps/user/templates/delete/user_delete.html:12
 #, python-format
 msgid ""
-"Cette action va <b>marquer %(name)s comme supprimé</b>. Il ne pourra plus se "
-"connecter ni être sélectionné pour une Qualif’ ! Son adresse email sera "
+"Cette action va <b>marquer %(name)s comme supprimé</b>. Il ne pourra plus se"
+" connecter ni être sélectionné pour une Qualif’ ! Son adresse email sera "
 "effacée de son profil."
 msgstr ""
 "Diese Aktion wird <b> %(name)s als gelöscht markieren</b>. Er/sie kann sich "
@@ -3615,114 +3523,109 @@ msgid "Hébergement"
 msgstr "Beherbergung"
 
 #: defivelo/templates/account/email.html:5
-msgid "Account"
+msgid "Compte"
 msgstr "Konto"
 
 #: defivelo/templates/account/email.html:8
-msgid "E-mail Addresses"
+msgid "Adresses e-mail"
 msgstr "E-Mail-Adresse"
 
 #: defivelo/templates/account/email.html:10
-msgid "The following e-mail addresses are associated with your account:"
+msgid "Les adresses e-mail suivantes sont associées à votre compte :"
 msgstr "Folgende E-Mail-Adressen sind deinem Konto zugeteilt:"
 
 #: defivelo/templates/account/email.html:21
-msgid "Verified"
+msgid "Vérifiée"
 msgstr "Bestätigt"
 
 #: defivelo/templates/account/email.html:23
-msgid "Unverified"
+msgid "Non vérifiée"
 msgstr "Nicht bestätigt"
 
 #: defivelo/templates/account/email.html:25
-msgid "Primary"
+msgid "Principale"
 msgstr "Als primäre Adresse festlegen"
 
 #: defivelo/templates/account/email.html:31
-msgid "Make Primary"
+msgid "Rendre Principale"
 msgstr "Als primäre Adresse festlegen"
 
 #: defivelo/templates/account/email.html:32
-msgid "Re-send Verification"
+msgid "Renvoyer la vérification"
 msgstr "Bestätigung nochmals schicken"
 
 #: defivelo/templates/account/email.html:33
-msgid "Remove"
+msgid "Retirer"
 msgstr "Entfernen"
 
 #: defivelo/templates/account/email.html:41
-msgid "Warning:"
+msgid "Attention :"
 msgstr "Achtung:"
 
 #: defivelo/templates/account/email.html:41
 msgid ""
-"You currently do not have any e-mail address set up. You should really add "
-"an e-mail address so you can receive notifications, reset your password, etc."
+"Vous n'avez aucune adresse e-mail associée à votre compte. Vous devriez "
+"ajouter une adresse email pour pouvoir recevoir des notifications, "
+"réinitialiser votre mot de passe, etc."
 msgstr ""
 "Du hast keine E-Mail-Adresse für dieses Konto angegeben. Gib eine E-Mail-"
 "Adresse an, um Meldungen zu erhalten, dein Passwort zurücksetzen zu können, "
 "usw."
 
 #: defivelo/templates/account/email.html:46
-msgid "Add E-mail Address"
+msgid "Ajouter une adresse E-mail"
 msgstr "E-Mail-Adresse hinzufügen"
 
 #: defivelo/templates/account/email.html:51
-msgid "Add E-mail"
+msgid "Ajouter E-mail"
 msgstr "E-Mail hinzufügen"
 
 #: defivelo/templates/account/email.html:60
-msgid "Do you really want to remove the selected e-mail address?"
+msgid "Voulez-vous vraiment retirer cette adresse e-mail ?"
 msgstr "Wollen Sie wirklich Ihre E-Mail-Adresse entfernen?"
 
 #: defivelo/templates/account/email/email_confirmation_message.txt:1
 #, python-format
 msgid ""
-"Hello from %(site_name)s!\n"
+"Courriel de %(site_name)s !\n"
 "\n"
-"You're receiving this e-mail because user %(user_display)s at "
-"%(site_domain)s has given yours as an e-mail address to connect their "
-"account.\n"
+"L'utilisateur %(user_display)s du site %(site_domain)s nous a indiqué posséder cette adresse email.\n"
 "\n"
-"To confirm this is correct, go to %(activate_url)s\n"
+"Pour confirmer que vous êtes bien le propriétaire, allez à %(activate_url)s\n"
 msgstr ""
 "E-Mail von %(site_name)s!\n"
 "\n"
-"Du erhältst dieses E-Mail, weil %(user_display)s der Seite %(site_domain)s "
-"deine E-Mail-Adresse angegeben hat, um den Account zu verbinden.\n"
+"Du erhältst dieses E-Mail, weil %(user_display)s der Seite %(site_domain)s deine E-Mail-Adresse angegeben hat, um den Account zu verbinden.\n"
 "\n"
-"Um zu bestätigen, dass du der*die Besitzer*in bist, klicke auf "
-"%(activate_url)s\n"
+"Um zu bestätigen, dass du der*die Besitzer*in bist, klicke auf %(activate_url)s\n"
 
 #: defivelo/templates/account/email/email_confirmation_message.txt:7
 #, python-format
 msgid ""
-"Thank you from %(site_name)s!\n"
+"%(site_name)s vous remercie !\n"
 "%(site_domain)s"
 msgstr ""
-"%(site_name)sdankt dir!\n"
+"%(site_name)s dankt dir!\n"
 "%(site_domain)s"
 
 #: defivelo/templates/account/email/email_confirmation_subject.txt:3
-msgid "Please Confirm Your E-mail Address"
+#: defivelo/templates/account/email_confirm.html:6
+#: defivelo/templates/account/email_confirm.html:10
+msgid "Confirmer l'adresse e-mail"
 msgstr "E-Mail-Adresse bestätigen"
 
 #: defivelo/templates/account/email/password_reset_key_message.txt:1
 #, python-format
 msgid ""
-"Hello from %(site_name)s!\n"
+"Courriel de %(site_name)s !\n"
 "\n"
-"You're receiving this e-mail because you or someone else has requested a "
-"password for your user account at %(site_domain)s.\n"
-"It can be safely ignored if you did not request a password reset. Click the "
-"link below to reset your password."
+"Vous recevez cet email car vous ou quelqu'un d'autre a demandé un mot de passe pour votre compte utilisateur·rice du site %(site_domain)s.\n"
+"Vous pouvez simplement ignorer ce message si vous n'êtes pas à l'origine de cette demande. Sinon, cliquez sur le lien ci-dessous pour réinitialiser votre mot de passe."
 msgstr ""
 "E-Mail von %(site_name)s!\n"
 "\n"
-"Du erhältst diese E-Mail, weil du oder jemand anderes ein Passwort angefragt "
-"hat für das Benutzendenkonto von %(site_domain)s.\n"
-"Falls du nichts angefragt hast, kannst du diese Nachricht ignorieren. "
-"Ansonsten klicke auf den nachfolgenden Link, um das Passwort zurückzusetzen."
+"Du erhältst diese E-Mail, weil du oder jemand anderes ein Passwort angefragt hat für das Benutzendenkonto von %(site_domain)s.\n"
+"Falls du nichts angefragt hast, kannst du diese Nachricht ignorieren. Ansonsten klicke auf den nachfolgenden Link, um das Passwort zurückzusetzen."
 
 #: defivelo/templates/account/email/password_reset_key_message.txt:8
 #, python-format
@@ -3732,61 +3635,56 @@ msgstr "Falls du es vergessen hast, dein Benutzername ist %(username)s."
 #: defivelo/templates/account/email/password_reset_key_message.txt:10
 #, python-format
 msgid ""
-"Thank you for using %(site_name)s!\n"
+"Merci d'utiliser %(site_name)s !\n"
 "%(site_domain)s"
 msgstr ""
 "Bitte verwende %(site_name)s!\n"
 "%(site_domain)s"
 
 #: defivelo/templates/account/email/password_reset_key_subject.txt:3
-msgid "Password Reset E-mail"
+#: defivelo/templates/account/password_reset.html:6
+#: defivelo/templates/account/password_reset.html:9
+#: defivelo/templates/account/password_reset_done.html:6
+#: defivelo/templates/account/password_reset_done.html:9
+msgid "Réinitialisation du mot de passe"
 msgstr "Passwort zurücksetzen"
-
-#: defivelo/templates/account/email_confirm.html:6
-#: defivelo/templates/account/email_confirm.html:10
-msgid "Confirm E-mail Address"
-msgstr "E-Mail-Adresse bestätigen"
 
 #: defivelo/templates/account/email_confirm.html:16
 #, python-format
 msgid ""
-"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
-"address for user %(user_display)s."
+"Merci de confirmer que <a href=\"mailto:%(email)s\">%(email)s</a> est "
+"l'adresse email de %(user_display)s."
 msgstr ""
 "Bitte bestätige, dass <a href=\"mailto:%(email)s\">%(email)s</a> die E-Mail-"
 "Adresse von %(user_display)s ist."
 
-#: defivelo/templates/account/email_confirm.html:20
-msgid "Confirm"
-msgstr "Bestätigen"
-
 #: defivelo/templates/account/email_confirm.html:27
 #, python-format
 msgid ""
-"This e-mail confirmation link expired or is invalid. Please <a href="
-"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+"Ce lien de confirmation d'adresse email est expiré ou non valide. Veuillez "
+"faire <a href=\"%(email_url)s\">une nouvelle demande de confirmation</a>."
 msgstr ""
-"Dieser Link zur Bestätigung der E-Mail-Adresse ist abgelaufen oder ungültig. "
-"Bitte mache <a href=\"%(email_url)s\">eine neue Bestätigungsanfrage</a>."
+"Dieser Link zur Bestätigung der E-Mail-Adresse ist abgelaufen oder ungültig."
+" Bitte mache <a href=\"%(email_url)s\">eine neue Bestätigungsanfrage</a>."
 
 #: defivelo/templates/account/login.html:6
 #: defivelo/templates/account/login.html:9
 #: defivelo/templates/account/login.html:18
-msgid "Sign In"
+msgid "Connexion"
 msgstr "Anmeldung"
 
 #: defivelo/templates/account/login.html:19
-msgid "Forgot Password?"
+msgid "Mot de passe oublié ?"
 msgstr "Passwort vergessen?"
 
 #: defivelo/templates/account/logout.html:5
 #: defivelo/templates/account/logout.html:8
 #: defivelo/templates/account/logout.html:18
-msgid "Sign Out"
+msgid "Se Déconnecter"
 msgstr "Abmelden"
 
 #: defivelo/templates/account/logout.html:10
-msgid "Are you sure you want to sign out?"
+msgid "Êtes-vous sûr de vouloir vous déconnecter ?"
 msgstr "Bist du sicher, dass du dich abmelden möchtest?"
 
 #: defivelo/templates/account/password_change.html:6
@@ -3795,59 +3693,56 @@ msgstr "Bist du sicher, dass du dich abmelden möchtest?"
 #: defivelo/templates/account/password_reset_from_key.html:4
 #: defivelo/templates/account/password_reset_from_key.html:7
 #: defivelo/templates/account/password_reset_from_key.html:18
-msgid "Change Password"
+msgid "Modifier le mot de passe"
 msgstr "Passwort ändern"
-
-#: defivelo/templates/account/password_reset.html:6
-#: defivelo/templates/account/password_reset.html:9
-#: defivelo/templates/account/password_reset_done.html:6
-#: defivelo/templates/account/password_reset_done.html:9
-msgid "Password Reset"
-msgstr "Passwort zurücksetzen"
 
 #: defivelo/templates/account/password_reset.html:13
 msgid ""
-"Forgotten your password? Enter your e-mail address below, and we'll send you "
-"an e-mail allowing you to reset it."
+"Mot de passe oublié ? Indiquez votre adresse email ci-dessous et nous vous "
+"enverrons un email pour le réinitialiser."
 msgstr ""
 "Passwort vergessen? Gib deine E-Mail-Adresse unten ein, dann schicken wir "
 "dir einen Link um das Passwort zurückzusetzen."
 
 #: defivelo/templates/account/password_reset.html:20
-msgid "Reset My Password"
+msgid "Réinitialiser mon mot de passe"
 msgstr "Passwort zurücksetzen"
 
 #: defivelo/templates/account/password_reset.html:24
-msgid "Please contact us if you have any trouble resetting your password."
+msgid ""
+"Merci de nous contacter si vous n'arrivez pas à réinitialiser votre mot de "
+"passe."
 msgstr ""
 "Bitte kontaktiere uns, wenn das Zurücksetzen des Passworts nicht klappt."
 
 #: defivelo/templates/account/password_reset_done.html:14
 msgid ""
-"We have sent you an email. If you have not received it please check your "
-"spam folder. Otherwise contact us if you do not receive it in a few minutes."
+"Nous vous avons envoyé un email de vérification. Merci de cliquer sur le "
+"lien inclus dans ce courriel. Contactez-nous si vous ne l'avez pas reçu "
+"d'ici quelques minutes."
 msgstr ""
 "Wir haben Dir eine E-Mail geschickt. Wenn du die E-Mail nicht in deinem "
 "Posteingang siehst, überprüfe bitte deinen Spam-Ordner. Wenn die E-Mail "
 "ansonsten nicht in ein paar Minuten angekommen ist, gib uns bitte Bescheid."
 
 #: defivelo/templates/account/password_reset_from_key.html:7
-msgid "Bad Token"
+msgid "Mauvais jeton d'identification"
 msgstr "Falsche Identifikation"
 
 #: defivelo/templates/account/password_reset_from_key.html:11
 #, python-format
 msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
-"a>."
+"Le lien de réinitialisation du mot de passe est invalide. Il a peut être "
+"déjà été utilisé. Veuillez faire une nouvelle <a "
+"href=\"%(passwd_reset_url)s\">demande de réinitialisation de mot de "
+"passe</a>."
 msgstr ""
-"Der Link zum Zurücksetzen des Passworts war ungültig, womöglich wurde dieser "
-"Link bereits benutzt. Bitte lass dein Passwort noch mal <a href="
-"\"%(passwd_reset_url)s\">zurücksetzen</a>."
+"Der Link zum Zurücksetzen des Passworts war ungültig, womöglich wurde dieser"
+" Link bereits benutzt. Bitte lass dein Passwort noch mal <a "
+"href=\"%(passwd_reset_url)s\">zurücksetzen</a>."
 
 #: defivelo/templates/account/password_reset_from_key.html:22
-msgid "Your password is now changed."
+msgid "Votre mot de passe a été modifié."
 msgstr "Dein Passwort wurde geändert."
 
 #: defivelo/templates/coordinator_home.html:5
@@ -3865,19 +3760,17 @@ msgstr "(siehe unten)"
 
 #: defivelo/templates/coordinator_home.html:8
 msgid ""
-"Photo de 11 moniteurs Défi Vélo représentant les mots 'Défi Vélo' avec leurs "
-"corps, au soleil du gymnase de Burier"
+"Photo de 11 moniteurs Défi Vélo représentant les mots 'Défi Vélo' avec leurs"
+" corps, au soleil du gymnase de Burier"
 msgstr ""
-"Foto von 11 DEFI VELO Leitenden, die in der Sonne beim Gymnasiums Burier mit "
-"ihren Körpern DEFI VELO schreiben"
+"Foto von 11 DEFI VELO Leitenden, die in der Sonne beim Gymnasiums Burier mit"
+" ihren Körpern DEFI VELO schreiben"
 
 #: defivelo/templates/coordinator_home.html:11
 msgid ""
-"https://player.vimeo.com/video/588319676?"
-"badge=0&autopause=0&player_id=0&app_id=58479&h=6c8330a8bf"
+"https://player.vimeo.com/video/588319676?badge=0&autopause=0&player_id=0&app_id=58479&h=6c8330a8bf"
 msgstr ""
-"https://player.vimeo.com/video/588322851?"
-"badge=0&autopause=0&player_id=0&app_id=58479&h=5a5a14de1f"
+"https://player.vimeo.com/video/588322851?badge=0&autopause=0&player_id=0&app_id=58479&h=5a5a14de1f"
 
 #: defivelo/templates/header.html:9 defivelo/templates/header.html:64
 msgid "Tous les mois"
@@ -3940,15 +3833,15 @@ msgid "Configurations cantonales annuelles"
 msgstr "Jährliche kantonale Konfigurationen"
 
 #: defivelo/templates/header.html:178
-msgid "Change password"
+msgid "Changer mon mot de passe"
 msgstr "Mein Passwort ändern"
 
 #: defivelo/templates/header.html:179
-msgid "Log out"
+msgid "Se déconnecter"
 msgstr "Abmelden"
 
 #: defivelo/templates/header.html:183
-msgid "Log in"
+msgid "Se connecter"
 msgstr "Anmelden"
 
 #: defivelo/templates/home.html:26
@@ -3974,154 +3867,3 @@ msgstr "Hauptseite"
 #: defivelo/urls.py:54
 msgid "Intranet DÉFI VÉLO"
 msgstr "DEFI VELO Intranet"
-
-#~ msgid "Moniteurs"
-#~ msgstr "LeiterInnen"
-
-#~ msgid "Moniteurs 1"
-#~ msgstr "LeiterIn 1"
-
-#~ msgid "Moniteurs 2"
-#~ msgstr "LeiterInnen 2"
-
-#~ msgid "Planning_Mois"
-#~ msgstr "Einsatzplan_Monat"
-
-#~ msgid "Mois supprimé"
-#~ msgstr "Monat gelöscht"
-
-#~ msgid "En partenariat dissous judiciairement"
-#~ msgstr "In einer gerichtlich aufgelöste Partnerschaft"
-
-#~ msgid "En partenariat dissous par décès"
-#~ msgstr "In einer durch Tod aufgelöste Partnerschaft"
-
-#~ msgid "En partenariat dissous ensuite de déclaration d’absence"
-#~ msgstr "In einer durch Verschollenerklärung aufgelöste Partnerschaft"
-
-#~ msgid "Permis B UE/AELE"
-#~ msgstr "Ausweis B EU/EFTA"
-
-#~ msgid "Permis C UE/AELE"
-#~ msgstr "Ausweis C EU/EFTA"
-
-#~ msgid "Permis Ci UE/AELE"
-#~ msgstr "Ausweis Ci EU/EFTA"
-
-#~ msgid "Permis G UE/AELE"
-#~ msgstr "Ausweis G EU/EFTA"
-
-#~ msgid "Permis L UE/AELE"
-#~ msgstr "Ausweis L EU/EFTA"
-
-#~ msgid "Livret B Etat tiers"
-#~ msgstr "Ausweis B Drittstaat"
-
-#~ msgid "Livret C Etat tiers"
-#~ msgstr "Ausweis C Drittstaat"
-
-#~ msgid "Livret Ci Etat tiers"
-#~ msgstr "Ausweis Ci Drittstaat"
-
-#~ msgid "Livret F Etat tiers"
-#~ msgstr "Ausweis F Drittstaat"
-
-#~ msgid "Livret G Etat tiers"
-#~ msgstr "Ausweis G Drittstaat"
-
-#~ msgid "Livret L Etat tiers"
-#~ msgstr "Ausweis L Drittstaat"
-
-#~ msgid "Livret N Etat tiers"
-#~ msgstr "Ausweis N Drittstaat"
-
-#~ msgid "Livret S Etat tiers"
-#~ msgstr "Ausweis S Drittstaat"
-
-#~ msgid "c/o Label Vert sàrl"
-#~ msgstr "c/o Label Vert GmbH"
-
-#~ msgid "Retour à la liste des mois"
-#~ msgstr "Zurück zur Liste der Monate"
-
-#~ msgid "Haut-Valais"
-#~ msgstr "Oberwallis"
-
-#~ msgid "Statistiques du mois {season} {year}"
-#~ msgstr "Zahlen des Monats {season} {year}"
-
-#~ msgid "Super-utilisa·teur·trice"
-#~ msgstr "Super-NutzerIn"
-
-#~ msgid "Personnes"
-#~ msgstr "Personen"
-
-#~ msgid "Exports"
-#~ msgstr "Exporte"
-
-#~ msgid "Exports par mois"
-#~ msgstr "Exporte pro Monat"
-
-#~ msgid "Prochaines Qualifs (public)"
-#~ msgstr "Nächste Qualis (öffentlich)"
-
-#~ msgid "Saison"
-#~ msgstr "Saison"
-
-#~ msgid "Saisons"
-#~ msgstr "Saisons"
-
-#~ msgid "Retour à la liste des saisons"
-#~ msgstr "Zurück zur Liste der Saisons"
-
-#~ msgid ""
-#~ "Envoyer le courriel suivant et passer la saison vers \"%(tostate)s\" ?"
-#~ msgstr ""
-#~ "Nächste Nachricht verschicken und die Saison zu \"%(tostate)s\" ändern ?"
-
-#~ msgid "Saison mise à jour"
-#~ msgstr "Saison aktualisiert"
-
-#~ msgid "Toutes les saisons"
-#~ msgstr "Alle Saisons"
-
-#~ msgid "Exports par saison"
-#~ msgstr "Exporte pro Saison"
-
-#~ msgid "Vélo urbain"
-#~ msgstr "Geschicklichkeit"
-
-#~ msgid "Exports pour %(month)s %(year)s"
-#~ msgstr "Exporte für %(month)s%(year)s"
-
-#~ msgid "Export pour les salaires moniteurs"
-#~ msgstr "Exporte für die Lohnabrechnung der LeiterInnen"
-
-#~ msgid "Export pour les défraiements intervenants"
-#~ msgstr "Export für die Entschädigung der ReferentInnen"
-
-#~ msgid "Coordinateur"
-#~ msgstr "Kontaktperson"
-
-#~ msgid "Destinataires"
-#~ msgstr "EmpfängerInnen"
-
-#~ msgid "Permis de travail (si pas suisse)"
-#~ msgstr "Arbeitsbewilligung (falls nicht SchweizerIn)"
-
-#~ msgid "Accès au site '{site_name}'"
-#~ msgstr "Zugang zur Webseite '{site_name}'"
-
-#~ msgid ""
-#~ "%(site_name)s vous remercie !\n"
-#~ "\n"
-#~ "%(site_domain)s"
-#~ msgstr ""
-#~ "%(site_name)s dankt dir!\n"
-#~ "%(site_domain)s"
-
-#~ msgid "Cours samaritain suivi"
-#~ msgstr "Erste-Hilfe-Kurs absolviert"
-
-#~ msgid "Cours samaritain suivi?"
-#~ msgstr "Erste-Hilfe-Kurs absolviert?"
